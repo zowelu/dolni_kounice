@@ -26,7 +26,7 @@ class _LoadingPageState extends State<LoadingPage> {
                   height: 200,
                   child: Image(
                     image: AssetImage(
-                      'assets/images/apetool1024.png',
+                      'assets/images/dk_znak_icon.png',
                     ),
                   ),
                 ),

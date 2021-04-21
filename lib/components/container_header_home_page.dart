@@ -9,10 +9,10 @@ class ContainerHeaderHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(
-          left: 100, right: 100, top: 20, bottom: 20),
+          left: 100, right: 100),
       child: Image(
         //height: 100,
-        image: AssetImage('assets/images/apetool1024.png'),
+        image: AssetImage('assets/images/dk_znak_icon.png'),
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mesto_pamatek/constants/constants.dart';
 
 
 class ChoiceContainer extends StatelessWidget {
@@ -23,7 +24,7 @@ class ChoiceContainer extends StatelessWidget {
             borderRadius: BorderRadius.circular(10.0),
             boxShadow: [
               BoxShadow(
-                color: Color(0xFF2C3E50),
+                color: kDefaultBoxShadowColor,
                 offset: const Offset(1.0, 1.0),
                 blurRadius: 5.0,
                 spreadRadius: 2.0,
@@ -36,16 +37,20 @@ class ChoiceContainer extends StatelessWidget {
           ),
           child: DecoratedBox(
             decoration: BoxDecoration(
-              color: Color(0x4D000000),
+              color: kDefaultTextBackgroundTransparent,
               borderRadius: BorderRadius.circular(10.0),
             ),
-            child: Text(
-              textOfChoice,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 25,
+            child: Padding(
+              padding:  EdgeInsets.only(top: kDefaultPadding, bottom: kDefaultPadding),
+              child: Text(
+                textOfChoice,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: kDefaultFontSizeText,
+                  fontFamily: kDefaultFontFamily,
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.center,
             ),
           ),
         ),

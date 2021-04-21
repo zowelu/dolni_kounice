@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/container_header.dart';
 
-class DefaultPage extends StatelessWidget {
-  DefaultPage(
+class DefaultPageOfChoice extends StatelessWidget {
+  DefaultPageOfChoice(
       {@required this.tittleOfAppbar,
         @required this.titleOfHeaderText,
         @required this.listOfWidget});

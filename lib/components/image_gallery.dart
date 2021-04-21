@@ -34,6 +34,7 @@ class ImageGallery extends StatelessWidget {
   ];
 
   ///porovná zadaný text s názvem Listu galerie památky a vrátí ho
+  // ignore: missing_return
   List getImageGallery(String nameOfImageGallery){
     if(nameOfImageGallery == 'imageGalleryRosaCoeli'){
       return imageGalleryRosaCoeli;
