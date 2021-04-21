@@ -3,11 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/components/gallery_photo_view_page.dart';
 import 'package:mesto_pamatek/components/monuments_page.dart';
 import 'package:mesto_pamatek/components/choice_container.dart';
-import 'package:mesto_pamatek/components/single_photo_view_page.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/text_default_standart.dart';
 import 'package:mesto_pamatek/components/text_default_header.dart';
-import 'package:mesto_pamatek/components/image_on_page_with_ontap.dart';
 
 class MonumentsJevishSynagogue extends StatefulWidget {
   ///Stránka památky Synagoga
@@ -52,7 +50,7 @@ class _MonumentsJevishSynagogueState extends State<MonumentsJevishSynagogue> {
         SizedBox(
           height: kDefaultMarginLarger,
         ),
-        ImageOnPageWithOnTap(assetImage: 'assets/images/pamatky/klaster_rosa_coeli/klaster-1400.jpg', onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SinglePhotoViewPage(assetImage: 'assets/images/pamatky/klaster_rosa_coeli/klaster-1400.jpg'),),);},),
+
       ],
     );
   }

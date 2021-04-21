@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/container_header.dart';
+import 'package:mesto_pamatek/components/my_app_bar.dart';
 
 class DefaultPageOfChoice extends StatelessWidget {
   DefaultPageOfChoice(
       {@required this.tittleOfAppbar,
-        @required this.titleOfHeaderText,
-        @required this.listOfWidget});
+      @required this.titleOfHeaderText,
+      @required this.listOfWidget});
 
   final String tittleOfAppbar;
   final String titleOfHeaderText;
@@ -18,25 +19,11 @@ class DefaultPageOfChoice extends StatelessWidget {
       title: 'Město památek',
       home: Scaffold(
         backgroundColor: kBackgroundColor,
-        appBar: AppBar(
-          centerTitle: true,
-          backgroundColor: kBackgroundColor,
-          automaticallyImplyLeading: true,
-          leading: IconButton(
-            icon: Icon(
-              Icons.arrow_back,
-              color: Colors.white,
-            ),
-            onPressed: () {
-              Navigator.pop(context, '/audioGuide');
-            },
-          ),
-          title: Text(
-            tittleOfAppbar,
-            style: TextStyle(
-                fontFamily: kDefaultFontFamily,
-                fontSize: kDefaultFontSizeHeader),
-          ),
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(kDefaultMyAppBarHeight),
+          child: MyAppBar(tittleOfAppbar: tittleOfAppbar, onPressedBackButton: () {
+            Navigator.pop(context);
+          },),
         ),
         body: SafeArea(
           child: SingleChildScrollView(
@@ -62,3 +49,4 @@ class DefaultPageOfChoice extends StatelessWidget {
     );
   }
 }
+

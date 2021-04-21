@@ -42,7 +42,9 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
                 ),
               );
             }),
-        SizedBox(height: kDefaultMarginLarger,),
+        SizedBox(
+          height: kDefaultMarginLarger,
+        ),
         TextDefaultHeader(text: 'Historie'),
         SizedBox(height: kDefaultMargin),
         TextDefaultStandart(
@@ -52,7 +54,34 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
         SizedBox(
           height: kDefaultMarginLarger,
         ),
-        ImageOnPageWithOnTap(assetImage: 'assets/images/pamatky/klaster_rosa_coeli/klaster-1400.jpg', onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SinglePhotoViewPage(assetImage: 'assets/images/pamatky/klaster_rosa_coeli/klaster-1400.jpg'),),);},),
+        ImageOnPageWithOnTap(
+          assetImage:
+              'assets/images/pamatky/klaster_rosa_coeli/klaster-1400.jpg',
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => SinglePhotoViewPage(
+                    assetImage:
+                        'assets/images/pamatky/klaster_rosa_coeli/klaster-1400.jpg'),
+              ),
+            );
+          },
+        ),
+        ImageOnPageWithOnTap(
+          assetImage:
+          'assets/images/pamatky/klaster_rosa_coeli/klaster-1423.jpg',
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => SinglePhotoViewPage(
+                    assetImage:
+                    'assets/images/pamatky/klaster_rosa_coeli/klaster-1423.jpg'),
+              ),
+            );
+          },
+        ),
         SizedBox(
           height: kDefaultMarginLarger,
         ),
@@ -75,5 +104,3 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
     );
   }
 }
-
-

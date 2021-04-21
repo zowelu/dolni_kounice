@@ -58,7 +58,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                       height: 20.0,
                     ),
                     Icon(
-                      IconData(0xe7a9, fontFamily: 'MaterialIcons'),
+                      const IconData(0xe7a9, fontFamily: 'MaterialIcons'),
                       color: Colors.white,
                       size: 50,
                     ),

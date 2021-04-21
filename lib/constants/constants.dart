@@ -22,3 +22,4 @@ Color kDefaultBoxShadowColor = Color(0xFF2C3E50);
 double kDefaultPadding = 10.0;
 double kDefaultMargin = 10.0;
 double kDefaultMarginLarger = 30.0;
+double kDefaultMyAppBarHeight = 55.0;

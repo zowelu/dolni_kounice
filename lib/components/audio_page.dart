@@ -3,6 +3,7 @@ import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/rosa_coeli_map_of_path_and_text.dart';
 import 'package:mesto_pamatek/components/container_header_image_background.dart';
 import 'package:mesto_pamatek/components/audioplayer_with_local_asset.dart';
+import 'package:mesto_pamatek/components/my_app_bar.dart';
 
 //Vrací stránku pro kapitoly audioprůvodce
 class AudioPage extends StatelessWidget {
@@ -31,25 +32,11 @@ class AudioPage extends StatelessWidget {
       title: 'Město památek',
       home: Scaffold(
         backgroundColor: kBackgroundColor,
-        appBar: AppBar(
-          centerTitle: true,
-          backgroundColor: kBackgroundColor,
-          automaticallyImplyLeading: true,
-          leading: IconButton(
-            icon: Icon(
-              Icons.arrow_back,
-              color: Colors.white,
-            ),
-            onPressed: () {
-              Navigator.pop(context, '/audioGuide');
-            },
-          ),
-          title: Text(
-            'Audioprůvodce',
-            style: TextStyle(
-                fontFamily: kDefaultFontFamily,
-                fontSize: kDefaultFontSizeHeader),
-          ),
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(kDefaultMyAppBarHeight),
+          child: MyAppBar(tittleOfAppbar: 'Audioprůvodce', onPressedBackButton: () {
+            Navigator.pop(context);
+          },),
         ),
         body: SafeArea(
           child: SingleChildScrollView(
