@@ -52,7 +52,7 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
               'Roku 1181 si Vilém z Kounic k sobě pozval Gotšalka, opata v Želivském klášteře, který měl značné zkušenosti s budováním klášterů. Radili o výstavbě budoucího kounického kláštera a společně patrně vybrali i místo pro budoucí stavbu. Zvolili je tak vhodně, aby zůstávalo ukryto zrakům příchozích z jihomoravské roviny a v ohbí řeky skryto na jih kopcem, kde byl později vybudován mohutný hrad.\n\nO dva roky později byl klášter postaven. Jednalo se velmi pravděpodobně pouze o dřevěné budovy konventu a modlitebny, které byly brány jako provizorium. S kamennými stavbami se obvykle začínalo až mnohem později. Do dnešních dnů se zachovaly rozsáhlé zbytky románského kamenného kostela v obvodovém zdivu západního a severního ambitu.\n\nV říjnu 1183 byl obsazen jeptiškami z kláštera Louňovice v Čechách. Data jsou historicky podložena, proto jsou prvním skutečným dokladem o existenci Dolních Kounic. I když se nikde nepíše o názvu Rosa coeli a tento název se objevuje až v 15. století, tak je zřejmé, že byl klášter od počátku zasvěcen Panně Marii. Církev nazývá Pannu Marii také „Růží nebeskou“ - latinsky Rosa coeli.\n\nVe 14. století byl klášterní areál výrazně přestavěn. Románskou baziliku nahradil mnohem větší gotický kostel, na severu s novou křížovou chodbou. Jde o dodnes zachovanou ruinu s obnaženým zdivem, na němž se dá poměrně dobře sledovat postupnost výstavby a stanovit tak její relativní chronologii.',
         ),
         SizedBox(
-          height: kDefaultMarginLarger,
+          height: kDefaultMargin,
         ),
         ImageOnPageWithOnTap(
           assetImage:
@@ -83,7 +83,7 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
           },
         ),
         SizedBox(
-          height: kDefaultMarginLarger,
+          height: kDefaultMargin,
         ),
         TextDefaultStandart(
             text:
@@ -91,11 +91,39 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
         SizedBox(
           height: kDefaultMargin,
         ),
+        ImageOnPageWithOnTap(
+          assetImage:
+          'assets/images/pamatky/klaster_rosa_coeli/klaster-1720.jpg',
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => SinglePhotoViewPage(
+                    assetImage:
+                    'assets/images/pamatky/klaster_rosa_coeli/klaster-1720.jpg'),
+              ),
+            );
+          },
+        ),
         TextDefaultStandart(
             text:
                 'Přes postupné opravy jsou zprávy o kounickém klášteře většinou neradostné. Objekt pustoší procházející vojska, škody vznikají na klášterní budově v jejich otevřených částech vlivem deště a sněhu. Od roku 1804 začal klášter rychle propadat zkáze a po projednání a se souhlasem Strahova byl prodán knížeti Janu z Dietrichsteina a tím opět připojen ke kounickému panství. Od těch let byl klášter vystaven napospas povětrnostním vlivům a lidem, kteří využívali klášterních budov jako kamenného lomu. Panští úřednici rozdávali celé desítky povozů stavebního kamene, spolu s kamenem a cihlami byly bez jakéhokoliv výběru vyváženy i celé kusy klenebních žeber, klenební svorníky a jiné tesané kamenické prvky, součásti klášterní stavby. Tento stav trval přibližně do roku 1890, kdy se nový majitel panství, syn poslední kněžny z Dietrichsteina Josef Johan z Herbersteina rozhodl, že klášter zachrání před zkázou nejnaléhavější opravou.\n\nTeprve po roce 1927 bylo zastaveno devastování kláštera a postupně se ruina začala sanovat a udržovat. Právě v tomto roce přešel zámek i s klášterem do vlastnictví původně hraběcího správce Emila Tomce. Ten předal kostelní zříceninu do správy právě se tvořícího „Komitétu pro záchranu památek v Dolních Kounicích“, čímž se tato vzácná památka stala obecně přístupnou, neboť společnost v ní zajišťovala průvodcovskou činnost. Zásluhou „Komitétu“ byly již o rok později provedeny některé práce nevyžadující velkých finančních nákladů, neboť financí se zejména na počátku nedostávalo. Díky všem pracím byla památka uspokojivě na řadu let fixována. Problematická ovšem byla otázka vlastnictví. Po zániku feudálního panství získal budovy zámku a kláštera již zmiňovaný hraběcí správce Emil Tomec a jako soukromé vlastnictví klášter prodal Dr. Jaromíru Košťálovi. Objekt byl v jejich vlastnictví prakticky po celou dobu existence „Komitétu“, který samozřejmě mohl investovat jen málo financí a tak je soustředil na klášterní chrám. Po druhé světové válce vznikla roku 1952 tzv. Osvětová beseda, jejímž členem se stal i Vlastivědný kroužek Osvětové besedy, nástupce původního Komité pro záchranu památek.'),
         SizedBox(
           height: kDefaultMargin,
+        ),
+        ImageOnPageWithOnTap(
+          assetImage:
+          'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg',
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => SinglePhotoViewPage(
+                    assetImage:
+                    'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg'),
+              ),
+            );
+          },
         ),
         TextDefaultStandart(
             text:

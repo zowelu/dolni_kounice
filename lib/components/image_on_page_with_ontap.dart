@@ -10,16 +10,22 @@ class ImageOnPageWithOnTap extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: kDefaultMarginLarger, bottom: kDefaultMarginLarger),
+      margin: EdgeInsets.only(
+          top: kDefaultMargin, bottom: kDefaultMargin),
       child: GestureDetector(
         onTap: onTap,
-          //Navigator.push(context, MaterialPageRoute(builder: (context) => SinglePhotoViewPage(assetImage: assetImage),),);
-
-        child: Image(
-          height: 250,
-          width: double.infinity,
-          image: AssetImage(
-            assetImage,
+        child: Container(
+          margin: EdgeInsets.only(left: kDefaultMarginLarger, right: kDefaultMarginLarger),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(15),
+            child: Image(
+              //height: 250,
+              width: double.infinity,
+              fit: BoxFit.fill,
+              image: AssetImage(
+                assetImage,
+              ),
+            ),
           ),
         ),
       ),

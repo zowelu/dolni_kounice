@@ -39,7 +39,6 @@ class GalleryPhotoViewPage extends StatelessWidget {
             imageProvider: AssetImage(
               imageList[index],
             ),
-            initialScale: 0.2,
             minScale: PhotoViewComputedScale.contained * 0.8,
             maxScale: PhotoViewComputedScale.covered * 1,
           );
