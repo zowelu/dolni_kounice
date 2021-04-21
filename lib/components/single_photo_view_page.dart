@@ -31,7 +31,6 @@ class SinglePhotoViewPage extends StatelessWidget {
       ),
       body: PhotoView(
         imageProvider: AssetImage(assetImage),
-        initialScale: 0.2,
         minScale: PhotoViewComputedScale.contained * 0.8,
         maxScale: PhotoViewComputedScale.covered * 1,
         backgroundDecoration:
