@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/components/gallery_photo_view_page.dart';
 import 'package:mesto_pamatek/components/monuments_page.dart';
 import 'package:mesto_pamatek/components/choice_container.dart';
+import 'package:mesto_pamatek/components/my_button.dart';
 import 'package:mesto_pamatek/components/single_photo_view_page.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/text_default_standart.dart';
@@ -45,6 +46,15 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
         SizedBox(
           height: kDefaultMarginLarger,
         ),
+        Center(
+          child: MyButton(
+              textOfButton:
+                  'Informace o vstupném, otevírací době a dalších naleznete zde',
+              onPressed: () {}),
+        ),
+        SizedBox(
+          height: kDefaultMarginLarger,
+        ),
         TextDefaultHeader(text: 'Historie'),
         SizedBox(height: kDefaultMargin),
         TextDefaultStandart(
@@ -70,14 +80,14 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
         ),
         ImageOnPageWithOnTap(
           assetImage:
-          'assets/images/pamatky/klaster_rosa_coeli/klaster-1423.jpg',
+              'assets/images/pamatky/klaster_rosa_coeli/klaster-1423.jpg',
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
                     assetImage:
-                    'assets/images/pamatky/klaster_rosa_coeli/klaster-1423.jpg'),
+                        'assets/images/pamatky/klaster_rosa_coeli/klaster-1423.jpg'),
               ),
             );
           },
@@ -93,14 +103,14 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
         ),
         ImageOnPageWithOnTap(
           assetImage:
-          'assets/images/pamatky/klaster_rosa_coeli/klaster-1720.jpg',
+              'assets/images/pamatky/klaster_rosa_coeli/klaster-1720.jpg',
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
                     assetImage:
-                    'assets/images/pamatky/klaster_rosa_coeli/klaster-1720.jpg'),
+                        'assets/images/pamatky/klaster_rosa_coeli/klaster-1720.jpg'),
               ),
             );
           },
@@ -113,14 +123,14 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
         ),
         ImageOnPageWithOnTap(
           assetImage:
-          'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg',
+              'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg',
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
                     assetImage:
-                    'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg'),
+                        'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg'),
               ),
             );
           },

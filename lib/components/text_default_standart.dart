@@ -3,13 +3,15 @@ import 'package:mesto_pamatek/constants/constants.dart';
 
 class TextDefaultStandart extends StatelessWidget {
   ///Standartní text v aplikaci pro běžné texty
-  const TextDefaultStandart({@required this.text});
+  const TextDefaultStandart({@required this.text, this.textAlign});
   final String text;
+  final TextAlign textAlign;
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
+      textAlign: textAlign,
       style: TextStyle(
         fontSize: kDefaultFontSizeText,
         color: kDefaultColorTextWhite,

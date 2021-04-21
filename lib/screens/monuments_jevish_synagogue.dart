@@ -6,6 +6,7 @@ import 'package:mesto_pamatek/components/choice_container.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/text_default_standart.dart';
 import 'package:mesto_pamatek/components/text_default_header.dart';
+import 'package:mesto_pamatek/components/my_button.dart';
 
 class MonumentsJevishSynagogue extends StatefulWidget {
   ///Stránka památky Synagoga
@@ -40,6 +41,15 @@ class _MonumentsJevishSynagogueState extends State<MonumentsJevishSynagogue> {
                 ),
               );
             }),
+        SizedBox(
+          height: kDefaultMarginLarger,
+        ),
+        Center(
+          child: MyButton(
+              textOfButton:
+              'Informace o vstupném, otevírací době a dalších naleznete zde',
+              onPressed: () {}),
+        ),
         SizedBox(height: kDefaultMarginLarger,),
         TextDefaultHeader(text: 'Historie'),
         SizedBox(height: kDefaultMargin),

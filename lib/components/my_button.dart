@@ -14,6 +14,7 @@ class MyButton extends StatelessWidget {
     return ElevatedButton(
       child: Text(
         textOfButton,
+        textAlign: TextAlign.center,
         style: TextStyle(fontSize: 20),
       ),
       style: ElevatedButton.styleFrom(

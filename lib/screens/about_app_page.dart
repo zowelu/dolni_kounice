@@ -17,20 +17,27 @@ class _AboutAppPageState extends State<AboutAppPage> {
       titleOfHeaderText: '',
       listOfWidget: [
         Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextDefaultStandart(text: 'Verze aplikace: 1.0'),
             SizedBox(height: kDefaultMarginLarger),
             TextDefaultStandart(
-                text: 'Aplikace je vytvořena zdarma pro město Dolní Kounice.'),
+                text: 'Aplikace je vytvořena zdarma pro město Dolní Kounice.', textAlign: TextAlign.center,),
             SizedBox(height: kDefaultMarginLarger,),
             TextDefaultStandart(
                 text: 'Aplikaci vytvořil WEBSTRONG'),
-            GestureDetector(
-              child: Image(image: AssetImage('assets/images/webstrong-logo.png'),),
-              onTap: (){},
+            SizedBox(height: kDefaultMarginLarger,),
+            Container(
+              width: 150,
+              child: GestureDetector(
+                child: Image(image: AssetImage('assets/images/webstrong-logo.png'),),
+                onTap: (){},
+              ),
             ),
+            SizedBox(height: kDefaultMarginLarger,),
+            TextDefaultStandart(
+                text: 'Vytvořeno v roce 2021'),
           ],
         ),
       ],
