@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
+import 'package:mesto_pamatek/components/my_app_bar.dart';
 
 class SinglePhotoViewPage extends StatelessWidget {
   ///Zobrazí obrázek, po zadání jména obrázku z assets se zobrazí obrázek
@@ -10,24 +11,11 @@ class SinglePhotoViewPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: kBackgroundColor,
-        automaticallyImplyLeading: true,
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back,
-            color: Colors.white,
-          ),
-          onPressed: () {
-            Navigator.pop(context, '/audioGuide');
-          },
-        ),
-        title: Text(
-          'Galerie',
-          style: TextStyle(
-              fontFamily: kDefaultFontFamily, fontSize: kDefaultFontSizeHeader),
-        ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kDefaultMyAppBarHeight),
+        child: MyAppBar(tittleOfAppbar: 'Galerie', onPressedBackButton: () {
+          Navigator.pop(context);
+        },),
       ),
       body: PhotoView(
         imageProvider: AssetImage(assetImage),
