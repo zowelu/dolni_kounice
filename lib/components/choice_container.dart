@@ -9,16 +9,16 @@ class ChoiceContainer extends StatelessWidget {
   final String assetImageOfChoice;
   final String textOfChoice;
   final Function onTap;
-  final String tag;
+  final String tag+
 
   @override
   Widget build(BuildContext context) {
-    return Hero(
-      tag: tag,
-      child: Container(
-        width: double.infinity,
-        child: GestureDetector(
-          onTap: onTap,
+    return Container(
+      width: double.infinity,
+      child: GestureDetector(
+        onTap: onTap,
+        child: Hero(
+          tag: tag,
           child: Container(
             padding: EdgeInsets.only(top: 60.0, bottom: 60.0, left: 50.0, right: 50.0),
             margin: EdgeInsets.only( bottom: 10.0),
