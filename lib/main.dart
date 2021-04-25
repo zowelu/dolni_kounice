@@ -30,7 +30,7 @@ void main() {
       routes: {
         HomePage.id: (context) => HomePage(),
         AudioGuide.id: (context) => AudioGuide(),
-        '/monuments': (context) => Monuments(),
+        Monuments.id: (context) => Monuments(),
         '/trips': (context) => Trips(),
         '/audioGuideRosaCoeli': (context) => AudioGuideRosaCoeli(),
         '/audioGuideJewishSynagogue': (context) => AudioGuideRosaCoeli(),

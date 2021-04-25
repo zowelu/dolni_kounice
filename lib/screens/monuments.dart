@@ -3,6 +3,7 @@ import 'package:mesto_pamatek/components/choice_container.dart';
 import 'package:mesto_pamatek/components/default_page_of_choice.dart';
 
 class Monuments extends StatefulWidget {
+  static String id = '/monuments';
   @override
   _MonumentsState createState() => _MonumentsState();
 }
