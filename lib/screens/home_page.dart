@@ -22,34 +22,30 @@ class _HomePageState extends State<HomePage> {
       titleOfHeaderText: '',
       listOfWidget: [
         ContainerHeaderHomePage(),
-        Container(
-          padding:
-              EdgeInsets.only(left: kDefaultPadding, right: kDefaultPadding),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              ChoiceContainer(
-                  assetImageOfChoice:
-                      'assets/images/pamatky/klaster_rosa_coeli/klaster_krizova_chodba.jpg',
-                  textOfChoice: 'Audioprůvodce',
-                  onTap: () {
-                    Navigator.pushNamed(context, AudioGuide.id);
-                  }),
-              ChoiceContainer(
-                  assetImageOfChoice:
-                      'assets/images/pamatky/mesto_pamatek_uvod/pamatky-mapa.jpg',
-                  textOfChoice: 'Památky ve městě',
-                  onTap: () {
-                    Navigator.pushNamed(context, Monuments.id);
-                  }),
-              ChoiceContainer(
-                  assetImageOfChoice:
-                      'assets/images/pamatky/mesto_pamatek_uvod/beautiful-scenery-greenfield-countryside-eifel-region-germany-M.jpg',
-                  textOfChoice: 'Tipy na výlety v okolí',
-                  onTap: () {}),
-            ],
-          ),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ChoiceContainer(
+                assetImageOfChoice:
+                    'assets/images/pamatky/klaster_rosa_coeli/klaster_krizova_chodba.jpg',
+                textOfChoice: 'Audioprůvodce',
+                onTap: () {
+                  Navigator.pushNamed(context, AudioGuide.id);
+                }),
+            ChoiceContainer(
+                assetImageOfChoice:
+                    'assets/images/pamatky/mesto_pamatek_uvod/pamatky-mapa.jpg',
+                textOfChoice: 'Památky ve městě',
+                onTap: () {
+                  Navigator.pushNamed(context, Monuments.id);
+                }),
+            ChoiceContainer(
+                assetImageOfChoice:
+                    'assets/images/pamatky/mesto_pamatek_uvod/beautiful-scenery-greenfield-countryside-eifel-region-germany-M.jpg',
+                textOfChoice: 'Tipy na výlety v okolí',
+                onTap: () {}),
+          ],
         ),
       ],
     );
