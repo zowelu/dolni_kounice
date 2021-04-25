@@ -23,13 +23,16 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: [
-            ChoiceContainer(
-                assetImageOfChoice:
-                    'assets/images/pamatky/klaster_rosa_coeli/klaster_krizova_chodba.jpg',
-                textOfChoice: 'Audioprůvodce',
-                onTap: () {
-                  Navigator.pushNamed(context, AudioGuide.id);
-                }),
+            Hero(
+              tag: 'audiopruvodce',
+              child: ChoiceContainer(
+                  assetImageOfChoice:
+                      'assets/images/pamatky/klaster_rosa_coeli/klaster_krizova_chodba.jpg',
+                  textOfChoice: 'Audioprůvodce',
+                  onTap: () {
+                    Navigator.pushNamed(context, AudioGuide.id);
+                  }),
+            ),
             ChoiceContainer(
                 assetImageOfChoice:
                     'assets/images/pamatky/mesto_pamatek_uvod/pamatky-mapa.jpg',

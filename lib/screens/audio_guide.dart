@@ -16,7 +16,14 @@ class _AudioGuideState extends State<AudioGuide> {
     return DefaultPageOfChoice(
       tittleOfAppbar: 'Audioprůvodce',
       listOfWidget: [
-        ContainerHeaderImageBackground(assetImage: 'assets/images/pamatky/mesto_pamatek_uvod/klenba.jpg', textHeader: 'Audioprůvodce', text: '',),
+        Hero(
+          tag: 'audiopruvodce',
+          child: ContainerHeaderImageBackground(
+            assetImage: 'assets/images/pamatky/mesto_pamatek_uvod/klenba.jpg',
+            textHeader: 'Audioprůvodce',
+            text: '',
+          ),
+        ),
         ChoiceContainer(
             assetImageOfChoice:
                 'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
@@ -28,4 +35,3 @@ class _AudioGuideState extends State<AudioGuide> {
     );
   }
 }
-
