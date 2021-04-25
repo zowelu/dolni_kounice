@@ -29,7 +29,7 @@ void main() {
       initialRoute: '/',
       routes: {
         HomePage.id: (context) => HomePage(),
-        '/audioGuide': (context) => AudioGuide(),
+        AudioGuide.id: (context) => AudioGuide(),
         '/monuments': (context) => Monuments(),
         '/trips': (context) => Trips(),
         '/audioGuideRosaCoeli': (context) => AudioGuideRosaCoeli(),
