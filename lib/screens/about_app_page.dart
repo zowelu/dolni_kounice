@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/components/default_page_of_choice.dart';
-import 'package:mesto_pamatek/components/text_default_header.dart';
 import 'package:mesto_pamatek/components/text_default_standart.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 
