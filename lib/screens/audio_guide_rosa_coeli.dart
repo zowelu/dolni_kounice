@@ -3,6 +3,7 @@ import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/choice_container.dart';
 import 'package:mesto_pamatek/components/container_header_image_background.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_1_portal.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_2_klasterni_kostel.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_uvod.dart';
 
 class AudioGuideRosaCoeli extends StatefulWidget {
@@ -115,7 +116,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: '2 - Klášterní kostel',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeli2KlasterniKostel');
+                              context, AudioGuideRosaCoeli2KlasterniKostel.id);
                         },
                       ),
                       ChoiceContainer(
