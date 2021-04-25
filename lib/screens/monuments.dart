@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/components/choice_container.dart';
 import 'package:mesto_pamatek/components/default_page_of_choice.dart';
+import 'package:mesto_pamatek/screens/monuments_jevish_synagogue.dart';
 import 'package:mesto_pamatek/screens/monuments_rosa_coeli.dart';
 
 class Monuments extends StatefulWidget {
@@ -29,7 +30,7 @@ class _MonumentsState extends State<Monuments> {
           'assets/images/pamatky/synagoga/synagoga-venek.jpg',
           textOfChoice: 'Židovská synagoga',
           onTap: () {
-            Navigator.pushNamed(context, '/monumentsJevishSynagogue');
+            Navigator.pushNamed(context, MonumentsJevishSynagogue.id);
           },
         ),
       ],
