@@ -4,6 +4,7 @@ import 'package:mesto_pamatek/components/choice_container.dart';
 import 'package:mesto_pamatek/components/container_header_image_background.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_1_portal.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_2_klasterni_kostel.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_3_vezicka.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_uvod.dart';
 
 class AudioGuideRosaCoeli extends StatefulWidget {
@@ -125,7 +126,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: '3 - Věžička',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeli3Vezicka');
+                              context, AudioGuideRosaCoeli3Vezicka.id);
                         },
                       ),
                       ChoiceContainer(
