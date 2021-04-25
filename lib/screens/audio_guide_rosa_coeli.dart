@@ -2,8 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/choice_container.dart';
 import 'package:mesto_pamatek/components/container_header_image_background.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_1_portal.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_2_klasterni_kostel.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_3_vezicka.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_4_prima_chramova_lod.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_5_rajska_zahrada.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_filmy_a_serialy.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_historie.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_strecha.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_uvod.dart';
 
 class AudioGuideRosaCoeli extends StatefulWidget {
+  static String id = '/audioGuideRosaCoeli';
   @override
   _AudioGuideRosaCoeliState createState() => _AudioGuideRosaCoeliState();
 }
@@ -94,7 +104,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: 'Úvod',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeliUvod');
+                              context, AudioGuideRosaCoeliUvod.id);
                         },
                       ),
                       ChoiceContainer(
@@ -103,7 +113,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: '1 - Portál',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeli1Portal');
+                              context, AudioGuideRosaCoeli1Portal.id);
                         },
                       ),
                       ChoiceContainer(
@@ -112,7 +122,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: '2 - Klášterní kostel',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeli2KlasterniKostel');
+                              context, AudioGuideRosaCoeli2KlasterniKostel.id);
                         },
                       ),
                       ChoiceContainer(
@@ -121,7 +131,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: '3 - Věžička',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeli3Vezicka');
+                              context, AudioGuideRosaCoeli3Vezicka.id);
                         },
                       ),
                       ChoiceContainer(
@@ -130,7 +140,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: '4 - Přímá chrámová loď',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeli4PrimaChramovaLod');
+                              context, AudioGuideRosaCoeli4PrimaChramovaLod.id);
                         },
                       ),
                       ChoiceContainer(
@@ -139,7 +149,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: '5 - Rajská zahrada',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeli5RajskaZahrada');
+                              context, AudioGuideRosaCoeli5RajskaZahrada.id);
                         },
                       ),
                       ChoiceContainer(
@@ -148,7 +158,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: 'Historie',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeliHistorie');
+                              context, AudioGuideRosaCoeliHistorie.id);
                         },
                       ),
                       ChoiceContainer(
@@ -157,7 +167,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: 'Které filmy a seriály se v klášteře natáčely?',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeliFilmyASerialy');
+                              context, AudioGuideRosaCoeliFilmyASerialy.id);
                         },
                       ),
                       ChoiceContainer(
@@ -166,7 +176,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: 'Proč klášter nemá střechu?',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeliStrecha');
+                              context, AudioGuideRosaCoeliStrecha.id);
                         },
                       ),
                     ],

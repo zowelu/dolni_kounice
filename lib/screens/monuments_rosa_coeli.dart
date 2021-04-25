@@ -12,6 +12,7 @@ import 'package:mesto_pamatek/components/image_on_page_with_ontap.dart';
 
 class MonumentsRosaCoeli extends StatefulWidget {
   ///Stránka památky Klášter Rosa Colei
+  static String id = '/monumentsRosaCoeli';
   @override
   _MonumentsRosaCoeliState createState() => _MonumentsRosaCoeliState();
 }

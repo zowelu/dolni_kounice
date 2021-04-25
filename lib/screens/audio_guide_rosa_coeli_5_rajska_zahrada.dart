@@ -3,6 +3,7 @@ import 'package:mesto_pamatek/components/rosa_coeli_map_of_path_and_text.dart';
 import 'package:mesto_pamatek/components/audio_page.dart';
 
 class AudioGuideRosaCoeli5RajskaZahrada extends StatefulWidget {
+  static String id = '/audioGuideRosaCoeli5RajskaZahrada';
   @override
   _AudioGuideRosaCoeli5RajskaZahradaState createState() =>
       _AudioGuideRosaCoeli5RajskaZahradaState();

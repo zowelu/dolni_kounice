@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 
 class ImageOnPageWithOnTap extends StatelessWidget {
+  ///Widget pro obrázky u památek s kulatými rohy a s možností prokliku
+
   ImageOnPageWithOnTap({@required this.assetImage, @required this.onTap});
+
 
   final String assetImage;
   final Function onTap;

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Trips extends StatefulWidget {
+  static String id = '/trips';
   @override
   _TripsState createState() => _TripsState();
 }

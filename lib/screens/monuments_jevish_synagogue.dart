@@ -10,6 +10,7 @@ import 'package:mesto_pamatek/components/my_button.dart';
 
 class MonumentsJevishSynagogue extends StatefulWidget {
   ///Stránka památky Synagoga
+  static String id = '/monumentsJevishSynagogue';
   @override
   _MonumentsJevishSynagogueState createState() => _MonumentsJevishSynagogueState();
 }
