@@ -39,7 +39,7 @@ void main() {
         AudioGuideRosaCoeli3Vezicka.id: (context) => AudioGuideRosaCoeli3Vezicka(),
         AudioGuideRosaCoeli4PrimaChramovaLod.id: (context) => AudioGuideRosaCoeli4PrimaChramovaLod(),
         AudioGuideRosaCoeli5RajskaZahrada.id: (context) => AudioGuideRosaCoeli5RajskaZahrada(),
-        '/audioGuideRosaCoeliHistorie': (context) => AudioGuideRosaCoeliHistorie(),
+        AudioGuideRosaCoeliHistorie.id: (context) => AudioGuideRosaCoeliHistorie(),
         '/audioGuideRosaCoeliFilmyASerialy': (context) => AudioGuideRosaCoeliFilmyASerialy(),
         '/audioGuideRosaCoeliStrecha': (context) => AudioGuideRosaCoeliStrecha(),
         '/monumentsRosaCoeli': (context) => MonumentsRosaCoeli(),
