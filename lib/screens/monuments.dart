@@ -18,7 +18,6 @@ class _MonumentsState extends State<Monuments> {
           assetImageOfChoice:
               'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
           textOfChoice: 'Klášter Rosa Coeli',
-          tag: 'rosaCoeli',
           onTap: () {
             Navigator.pushNamed(context, '/monumentsRosaCoeli');
           },
