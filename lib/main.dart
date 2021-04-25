@@ -31,7 +31,7 @@ void main() {
         HomePage.id: (context) => HomePage(),
         AudioGuide.id: (context) => AudioGuide(),
         Monuments.id: (context) => Monuments(),
-        '/trips': (context) => Trips(),
+        Trips.id: (context) => Trips(),
         '/audioGuideRosaCoeli': (context) => AudioGuideRosaCoeli(),
         '/audioGuideJewishSynagogue': (context) => AudioGuideRosaCoeli(),
         '/audioGuideChapelOfStAnthony': (context) => AudioGuideRosaCoeli(),
