@@ -7,6 +7,7 @@ import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_2_klasterni_kostel.
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_3_vezicka.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_4_prima_chramova_lod.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_5_rajska_zahrada.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_historie.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_uvod.dart';
 
 class AudioGuideRosaCoeli extends StatefulWidget {
@@ -155,7 +156,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: 'Historie',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeliHistorie');
+                              context, AudioGuideRosaCoeliHistorie.id);
                         },
                       ),
                       ChoiceContainer(
