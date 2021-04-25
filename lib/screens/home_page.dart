@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/components/default_page_of_choice.dart';
-import 'package:mesto_pamatek/components/my_app_bar.dart';
-import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/choice_container.dart';
 import 'package:mesto_pamatek/components/container_header_home_page.dart';
 import 'package:mesto_pamatek/screens/audio_guide.dart';
