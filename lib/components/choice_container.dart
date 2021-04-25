@@ -14,6 +14,7 @@ class ChoiceContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
+      margin: EdgeInsets.only(left: kDefaultMargin, right: kDefaultMargin),
       child: GestureDetector(
         onTap: onTap,
         child: Container(
