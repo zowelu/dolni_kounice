@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/components/choice_container.dart';
 import 'package:mesto_pamatek/components/default_page_of_choice.dart';
+import 'package:mesto_pamatek/screens/monuments_rosa_coeli.dart';
 
 class Monuments extends StatefulWidget {
   static String id = '/monuments';
@@ -20,7 +21,7 @@ class _MonumentsState extends State<Monuments> {
               'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
           textOfChoice: 'Klášter Rosa Coeli',
           onTap: () {
-            Navigator.pushNamed(context, '/monumentsRosaCoeli');
+            Navigator.pushNamed(context, MonumentsRosaCoeli.id);
           },
         ),
         ChoiceContainer(
