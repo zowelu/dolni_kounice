@@ -40,7 +40,7 @@ void main() {
         AudioGuideRosaCoeli4PrimaChramovaLod.id: (context) => AudioGuideRosaCoeli4PrimaChramovaLod(),
         AudioGuideRosaCoeli5RajskaZahrada.id: (context) => AudioGuideRosaCoeli5RajskaZahrada(),
         AudioGuideRosaCoeliHistorie.id: (context) => AudioGuideRosaCoeliHistorie(),
-        '/audioGuideRosaCoeliFilmyASerialy': (context) => AudioGuideRosaCoeliFilmyASerialy(),
+        AudioGuideRosaCoeliFilmyASerialy.id: (context) => AudioGuideRosaCoeliFilmyASerialy(),
         '/audioGuideRosaCoeliStrecha': (context) => AudioGuideRosaCoeliStrecha(),
         '/monumentsRosaCoeli': (context) => MonumentsRosaCoeli(),
         '/monumentsJevishSynagogue': (context) => MonumentsJevishSynagogue(),
