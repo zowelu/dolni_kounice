@@ -9,6 +9,7 @@ import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_4_prima_chramova_lo
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_5_rajska_zahrada.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_filmy_a_serialy.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_historie.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_strecha.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_uvod.dart';
 
 class AudioGuideRosaCoeli extends StatefulWidget {
@@ -175,7 +176,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: 'Proč klášter nemá střechu?',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeliStrecha');
+                              context, AudioGuideRosaCoeliStrecha.id);
                         },
                       ),
                     ],
