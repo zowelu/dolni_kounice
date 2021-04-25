@@ -41,7 +41,7 @@ void main() {
         AudioGuideRosaCoeli5RajskaZahrada.id: (context) => AudioGuideRosaCoeli5RajskaZahrada(),
         AudioGuideRosaCoeliHistorie.id: (context) => AudioGuideRosaCoeliHistorie(),
         AudioGuideRosaCoeliFilmyASerialy.id: (context) => AudioGuideRosaCoeliFilmyASerialy(),
-        '/audioGuideRosaCoeliStrecha': (context) => AudioGuideRosaCoeliStrecha(),
+        AudioGuideRosaCoeliStrecha.id: (context) => AudioGuideRosaCoeliStrecha(),
         '/monumentsRosaCoeli': (context) => MonumentsRosaCoeli(),
         '/monumentsJevishSynagogue': (context) => MonumentsJevishSynagogue(),
         '/aboutApp': (context) => AboutAppPage(),
