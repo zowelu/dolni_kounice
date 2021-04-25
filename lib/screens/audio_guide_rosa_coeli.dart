@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/choice_container.dart';
 import 'package:mesto_pamatek/components/container_header_image_background.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_uvod.dart';
 
 class AudioGuideRosaCoeli extends StatefulWidget {
   static String id = '/audioGuideRosaCoeli';
@@ -95,7 +96,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: 'Úvod',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeliUvod');
+                              context, AudioGuideRosaCoeliUvod.id);
                         },
                       ),
                       ChoiceContainer(
