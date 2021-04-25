@@ -24,9 +24,12 @@ class _LoadingPageState extends State<LoadingPage> {
                 decoration: BoxDecoration(),
                 child: Container(
                   height: 200,
-                  child: Image(
-                    image: AssetImage(
-                      'assets/images/dk_znak_icon.png',
+                  child: Hero(
+                    tag: 'dk_logo',
+                    child: Image(
+                      image: AssetImage(
+                        'assets/images/dk_znak_icon.png',
+                      ),
                     ),
                   ),
                 ),
