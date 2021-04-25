@@ -5,6 +5,7 @@ import 'package:mesto_pamatek/components/container_header_image_background.dart'
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_1_portal.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_2_klasterni_kostel.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_3_vezicka.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_4_prima_chramova_lod.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_uvod.dart';
 
 class AudioGuideRosaCoeli extends StatefulWidget {
@@ -135,7 +136,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: '4 - Přímá chrámová loď',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeli4PrimaChramovaLod');
+                              context, AudioGuideRosaCoeli4PrimaChramovaLod.id);
                         },
                       ),
                       ChoiceContainer(
