@@ -28,7 +28,7 @@ void main() {
       home: LoadingPage(),
       initialRoute: '/',
       routes: {
-        '/homePage': (context) => HomePage(),
+        HomePage.id: (context) => HomePage(),
         '/audioGuide': (context) => AudioGuide(),
         '/monuments': (context) => Monuments(),
         '/trips': (context) => Trips(),

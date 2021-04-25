@@ -6,11 +6,13 @@ import 'package:mesto_pamatek/components/choice_container.dart';
 import 'package:mesto_pamatek/components/container_header_home_page.dart';
 
 class HomePage extends StatefulWidget {
+  static String id = '/homePage';
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
