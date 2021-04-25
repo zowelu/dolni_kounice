@@ -29,10 +29,6 @@ class DefaultPageOfChoice extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                ContainerHeader(
-                  text: titleOfHeaderText,
-                  textHeader: '',
-                ),
                 Container(
                   padding: EdgeInsets.all(kDefaultPadding),
                   child: Column(
