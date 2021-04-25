@@ -5,11 +5,9 @@ import 'package:mesto_pamatek/components/my_app_bar.dart';
 class DefaultPageOfChoice extends StatelessWidget {
   DefaultPageOfChoice(
       {@required this.tittleOfAppbar,
-      @required this.titleOfHeaderText,
       @required this.listOfWidget});
 
   final String tittleOfAppbar;
-  final String titleOfHeaderText;
   final List<Widget> listOfWidget;
 
   @override
