@@ -6,6 +6,7 @@ import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_1_portal.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_2_klasterni_kostel.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_3_vezicka.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_4_prima_chramova_lod.dart';
+import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_5_rajska_zahrada.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_uvod.dart';
 
 class AudioGuideRosaCoeli extends StatefulWidget {
@@ -145,7 +146,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                         textOfChoice: '5 - Rajská zahrada',
                         onTap: () {
                           Navigator.pushNamed(
-                              context, '/audioGuideRosaCoeli5RajskaZahrada');
+                              context, AudioGuideRosaCoeli5RajskaZahrada.id);
                         },
                       ),
                       ChoiceContainer(
