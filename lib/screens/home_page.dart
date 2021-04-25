@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
       tittleOfAppbar: 'Město památek',
       titleOfHeaderText: '',
       listOfWidget: [
-        ContainerHeaderHomePage(),
+        Hero(tag: 'dk_logo',child: ContainerHeaderHomePage()),
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
