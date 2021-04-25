@@ -34,7 +34,7 @@ void main() {
         Trips.id: (context) => Trips(),
         AudioGuideRosaCoeli.id: (context) => AudioGuideRosaCoeli(),
         AudioGuideRosaCoeliUvod.id : (context) => AudioGuideRosaCoeliUvod(),
-        '/audioGuideRosaCoeli1Portal': (context) => AudioGuideRosaCoeli1Portal(),
+        AudioGuideRosaCoeli1Portal.id: (context) => AudioGuideRosaCoeli1Portal(),
         '/audioGuideRosaCoeli2KlasterniKostel': (context) => AudioGuideRosaCoeli2KlasterniKostel(),
         '/audioGuideRosaCoeli3Vezicka': (context) => AudioGuideRosaCoeli3Vezicka(),
         '/audioGuideRosaCoeli4PrimaChramovaLod': (context) => AudioGuideRosaCoeli4PrimaChramovaLod(),
