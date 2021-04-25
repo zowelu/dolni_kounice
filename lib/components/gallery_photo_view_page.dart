@@ -3,6 +3,7 @@ import 'package:photo_view/photo_view.dart';
 import 'package:photo_view/photo_view_gallery.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/image_gallery.dart';
+import 'package:mesto_pamatek/components/my_app_bar.dart';
 
 class GalleryPhotoViewPage extends StatelessWidget {
   ///Zobrazí gelarii obrázků, po zadání jména galerie se zobrazí galerie s obrázky z image_gallery.dart
@@ -13,24 +14,11 @@ class GalleryPhotoViewPage extends StatelessWidget {
   Widget build(BuildContext context) {
     List imageList = ImageGallery().getImageGallery(nameOfImageGallery);
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: kBackgroundColor,
-        automaticallyImplyLeading: true,
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back,
-            color: Colors.white,
-          ),
-          onPressed: () {
-            Navigator.pop(context, '/audioGuide');
-          },
-        ),
-        title: Text(
-          'Galerie',
-          style: TextStyle(
-              fontFamily: kDefaultFontFamily, fontSize: kDefaultFontSizeHeader),
-        ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kDefaultMyAppBarHeight),
+        child: MyAppBar(tittleOfAppbar: 'Galerie', onPressedBackButton: () {
+          Navigator.pop(context);
+        },),
       ),
       body: PhotoViewGallery.builder(
         itemCount: imageList.length,
