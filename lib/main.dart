@@ -44,7 +44,7 @@ void main() {
         AudioGuideRosaCoeliStrecha.id: (context) => AudioGuideRosaCoeliStrecha(),
         MonumentsRosaCoeli.id: (context) => MonumentsRosaCoeli(),
         MonumentsJevishSynagogue.id: (context) => MonumentsJevishSynagogue(),
-        '/aboutApp': (context) => AboutAppPage(),
+        AboutAppPage.id: (context) => AboutAppPage(),
       }
     ),
   );

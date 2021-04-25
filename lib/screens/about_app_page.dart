@@ -5,6 +5,7 @@ import 'package:mesto_pamatek/components/text_default_standart.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 
 class AboutAppPage extends StatefulWidget {
+  static String id = '/aboutApp';
   @override
   _AboutAppPageState createState() => _AboutAppPageState();
 }
