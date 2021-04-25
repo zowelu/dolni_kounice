@@ -32,7 +32,7 @@ void main() {
         AudioGuide.id: (context) => AudioGuide(),
         Monuments.id: (context) => Monuments(),
         Trips.id: (context) => Trips(),
-        '/audioGuideRosaCoeli': (context) => AudioGuideRosaCoeli(),
+        AudioGuideRosaCoeli.id: (context) => AudioGuideRosaCoeli(),
         '/audioGuideJewishSynagogue': (context) => AudioGuideRosaCoeli(),
         '/audioGuideChapelOfStAnthony': (context) => AudioGuideRosaCoeli(),
         '/audioGuideCastleAndChateau': (context) => AudioGuideRosaCoeli(),

@@ -4,6 +4,7 @@ import 'package:mesto_pamatek/components/choice_container.dart';
 import 'package:mesto_pamatek/components/container_header_image_background.dart';
 
 class AudioGuideRosaCoeli extends StatefulWidget {
+  static String id = '/audioGuideRosaCoeli';
   @override
   _AudioGuideRosaCoeliState createState() => _AudioGuideRosaCoeliState();
 }
