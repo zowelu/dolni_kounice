@@ -42,7 +42,7 @@ void main() {
         AudioGuideRosaCoeliHistorie.id: (context) => AudioGuideRosaCoeliHistorie(),
         AudioGuideRosaCoeliFilmyASerialy.id: (context) => AudioGuideRosaCoeliFilmyASerialy(),
         AudioGuideRosaCoeliStrecha.id: (context) => AudioGuideRosaCoeliStrecha(),
-        '/monumentsRosaCoeli': (context) => MonumentsRosaCoeli(),
+        MonumentsRosaCoeli.id: (context) => MonumentsRosaCoeli(),
         '/monumentsJevishSynagogue': (context) => MonumentsJevishSynagogue(),
         '/aboutApp': (context) => AboutAppPage(),
       }
