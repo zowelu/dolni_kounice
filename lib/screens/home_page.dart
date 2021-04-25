@@ -17,7 +17,6 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return DefaultPageOfChoice(
       tittleOfAppbar: 'Město památek',
-      titleOfHeaderText: '',
       listOfWidget: [
         Hero(tag: 'dk_logo',child: ContainerHeaderHomePage()),
         Column(

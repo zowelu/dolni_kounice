@@ -15,7 +15,6 @@ class _MonumentsState extends State<Monuments> {
   Widget build(BuildContext context) {
     return DefaultPageOfChoice(
       tittleOfAppbar: 'Památky ve městě',
-      titleOfHeaderText: 'Vyberte konkrétní památku níže',
       listOfWidget: [
         ChoiceContainer(
           assetImageOfChoice:

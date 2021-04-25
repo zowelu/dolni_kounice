@@ -14,7 +14,6 @@ class _AboutAppPageState extends State<AboutAppPage> {
   Widget build(BuildContext context) {
     return DefaultPageOfChoice(
       tittleOfAppbar: 'O aplikaci',
-      titleOfHeaderText: '',
       listOfWidget: [
         Column(
           mainAxisAlignment: MainAxisAlignment.end,

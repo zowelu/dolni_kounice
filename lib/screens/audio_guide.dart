@@ -15,7 +15,6 @@ class _AudioGuideState extends State<AudioGuide> {
   Widget build(BuildContext context) {
     return DefaultPageOfChoice(
       tittleOfAppbar: 'Audioprůvodce',
-      titleOfHeaderText: 'Vyberte si audioprůvodce níže',
       listOfWidget: [
         ContainerHeaderImageBackground(assetImage: 'assets/images/pamatky/mesto_pamatek_uvod/klenba.jpg', textHeader: '', text: '',),
         ChoiceContainer(
