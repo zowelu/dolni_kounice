@@ -16,7 +16,7 @@ class ContainerHeaderImageBackground extends StatelessWidget {
       children: [
         Container(
           width: double.infinity,
-          height: 200,
+          height: 165,
           padding: EdgeInsets.all(20.0),
           margin: EdgeInsets.only(bottom: kDefaultMargin),
           alignment: Alignment.bottomLeft,
