@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/components/choice_container.dart';
+import 'package:mesto_pamatek/components/container_header_image_background.dart';
 import 'package:mesto_pamatek/components/default_page_of_choice.dart';
 import 'package:mesto_pamatek/screens/monuments_jevish_synagogue.dart';
 import 'package:mesto_pamatek/screens/monuments_rosa_coeli.dart';
@@ -16,6 +17,7 @@ class _MonumentsState extends State<Monuments> {
     return DefaultPageOfChoice(
       tittleOfAppbar: 'Památky ve městě',
       listOfWidget: [
+        ContainerHeaderImageBackground(assetImage: 'assets/images/pamatky/mesto_pamatek_uvod/pamatky-mapa.jpg', textHeader: 'Památky ve městě', text: '',),
         ChoiceContainer(
           assetImageOfChoice:
               'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
