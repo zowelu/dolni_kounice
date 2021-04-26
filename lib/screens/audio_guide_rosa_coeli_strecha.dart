@@ -17,7 +17,7 @@ class _AudioGuideRosaCoeliStrechaState extends State<AudioGuideRosaCoeliStrecha>
   String kapitola = 'Proč klášter nemá střechu?';
   String path = 'audio/strecha.mp3';
   String keyOfMap = 'Střecha';
-  Function onPressedNextButton;
+  String tag = 'Střecha';
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class _AudioGuideRosaCoeliStrechaState extends State<AudioGuideRosaCoeliStrecha>
       path: path,
       textAudioMap: textAudioMap,
       keyOfMap: keyOfMap,
-
+      tag: this.tag,
     );
   }
 }

@@ -17,7 +17,7 @@ class _AudioGuideRosaCoeliUvodState extends State<AudioGuideRosaCoeliUvod> {
   String kapitola = 'Úvod';
   String path = 'audio/uvod.mp3';
   String keyOfMap = 'Úvod';
-  Function onPressedNextButton;
+  String tag = 'Úvod';
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class _AudioGuideRosaCoeliUvodState extends State<AudioGuideRosaCoeliUvod> {
         path: path,
         textAudioMap: textAudioMap,
         keyOfMap: keyOfMap,
-
+        tag: this.tag,
     );
   }
 }

@@ -17,7 +17,7 @@ class _AudioGuideRosaCoeliHistorieState extends State<AudioGuideRosaCoeliHistori
   String kapitola = 'Historie';
   String path = 'audio/historie.mp3';
   String keyOfMap = 'Historie';
-  Function onPressedNextButton;
+  String tag = 'Historie';
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class _AudioGuideRosaCoeliHistorieState extends State<AudioGuideRosaCoeliHistori
       path: path,
       textAudioMap: textAudioMap,
       keyOfMap: keyOfMap,
-
+      tag: this.tag,
     );
   }
 }

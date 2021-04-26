@@ -18,6 +18,7 @@ class _AudioGuideRosaCoeli3VezickaState extends State<AudioGuideRosaCoeli3Vezick
   String path = 'audio/3.mp3';
   String keyOfMap = '3 - Věžička';
   Function onPressedNextButton;
+  String tag = '3 - Věžička';
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +29,7 @@ class _AudioGuideRosaCoeli3VezickaState extends State<AudioGuideRosaCoeli3Vezick
       path: path,
       textAudioMap: textAudioMap,
       keyOfMap: keyOfMap,
+      tag: this.tag,
     );
   }
 }

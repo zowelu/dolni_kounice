@@ -17,7 +17,7 @@ class _AudioGuideRosaCoeliFilmyASerialyState extends State<AudioGuideRosaCoeliFi
   String kapitola = 'Jaké filmy a seriály se v klášteře natáčely?';
   String path = 'audio/filmy.mp3';
   String keyOfMap = 'FilmyASeriály';
-  Function onPressedNextButton;
+  String tag = 'FilmyASeriály';
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class _AudioGuideRosaCoeliFilmyASerialyState extends State<AudioGuideRosaCoeliFi
       path: path,
       textAudioMap: textAudioMap,
       keyOfMap: keyOfMap,
-
+      tag: this.tag,
     );
   }
 }

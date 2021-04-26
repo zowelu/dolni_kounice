@@ -17,7 +17,7 @@ class _AudioGuideRosaCoeli5RajskaZahradaState extends State<AudioGuideRosaCoeli5
   String kapitola = '5 - Rajská zahrada';
   String path = 'audio/5.mp3';
   String keyOfMap = '5 - Rajská zahrada';
-  Function onPressedNextButton;
+  String tag = '5 - Rajská zahrada';
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class _AudioGuideRosaCoeli5RajskaZahradaState extends State<AudioGuideRosaCoeli5
       path: path,
       textAudioMap: textAudioMap,
       keyOfMap: keyOfMap,
-
+      tag:  this.tag,
     );
   }
 }

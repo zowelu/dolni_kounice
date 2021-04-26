@@ -76,13 +76,16 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
         ),
 
         SizedBox(height: kDefaultMarginLarger),
-        ChoiceContainer(
-          assetImageOfChoice:
-              'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-brana.jpg',
-          textOfChoice: 'Úvod',
-          onTap: () {
-            Navigator.pushNamed(context, AudioGuideRosaCoeliUvod.id);
-          },
+        Hero(
+          tag: 'Úvod',
+          child: ChoiceContainer(
+            assetImageOfChoice:
+                'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-brana.jpg',
+            textOfChoice: 'Úvod',
+            onTap: () {
+              Navigator.pushNamed(context, AudioGuideRosaCoeliUvod.id);
+            },
+          ),
         ),
         Hero(
           tag: 'audioKlasterRosaCoeliPortal',
@@ -95,65 +98,86 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
             },
           ),
         ),
-        ChoiceContainer(
-          assetImageOfChoice:
-              'assets/images/pamatky/klaster_rosa_coeli/klaster-chram-1.jpg',
-          textOfChoice: '2 - Klášterní kostel',
-          onTap: () {
-            Navigator.pushNamed(
-                context, AudioGuideRosaCoeli2KlasterniKostel.id);
-          },
+        Hero(
+          tag: '2 - Klášterní kostel',
+          child: ChoiceContainer(
+            assetImageOfChoice:
+                'assets/images/pamatky/klaster_rosa_coeli/klaster-chram-1.jpg',
+            textOfChoice: '2 - Klášterní kostel',
+            onTap: () {
+              Navigator.pushNamed(
+                  context, AudioGuideRosaCoeli2KlasterniKostel.id);
+            },
+          ),
         ),
-        ChoiceContainer(
-          assetImageOfChoice:
-              'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
-          textOfChoice: '3 - Věžička',
-          onTap: () {
-            Navigator.pushNamed(context, AudioGuideRosaCoeli3Vezicka.id);
-          },
+        Hero(
+          tag: '3 - Věžička',
+          child: ChoiceContainer(
+            assetImageOfChoice:
+                'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
+            textOfChoice: '3 - Věžička',
+            onTap: () {
+              Navigator.pushNamed(context, AudioGuideRosaCoeli3Vezicka.id);
+            },
+          ),
         ),
-        ChoiceContainer(
-          assetImageOfChoice:
-              'assets/images/pamatky/klaster_rosa_coeli/klaster-chram-2.jpg',
-          textOfChoice: '4 - Přímá chrámová loď',
-          onTap: () {
-            Navigator.pushNamed(
-                context, AudioGuideRosaCoeli4PrimaChramovaLod.id);
-          },
+        Hero(
+          tag: '4 - Příčná chrámová loď',
+          child: ChoiceContainer(
+            assetImageOfChoice:
+                'assets/images/pamatky/klaster_rosa_coeli/klaster-chram-2.jpg',
+            textOfChoice: '4 - Přímá chrámová loď',
+            onTap: () {
+              Navigator.pushNamed(
+                  context, AudioGuideRosaCoeli4PrimaChramovaLod.id);
+            },
+          ),
         ),
-        ChoiceContainer(
-          assetImageOfChoice:
-              'assets/images/pamatky/klaster_rosa_coeli/klaster-rajska-zahrad.jpg',
-          textOfChoice: '5 - Rajská zahrada',
-          onTap: () {
-            Navigator.pushNamed(
-                context, AudioGuideRosaCoeli5RajskaZahrada.id);
-          },
+        Hero(
+          tag: '5 - Rajská zahrada',
+          child: ChoiceContainer(
+            assetImageOfChoice:
+                'assets/images/pamatky/klaster_rosa_coeli/klaster-rajska-zahrad.jpg',
+            textOfChoice: '5 - Rajská zahrada',
+            onTap: () {
+              Navigator.pushNamed(
+                  context, AudioGuideRosaCoeli5RajskaZahrada.id);
+            },
+          ),
         ),
-        ChoiceContainer(
-          assetImageOfChoice:
-              'assets/images/pamatky/klaster_rosa_coeli/klaster-1720.jpg',
-          textOfChoice: 'Historie',
-          onTap: () {
-            Navigator.pushNamed(context, AudioGuideRosaCoeliHistorie.id);
-          },
+        Hero(
+          tag: 'Historie',
+          child: ChoiceContainer(
+            assetImageOfChoice:
+                'assets/images/pamatky/klaster_rosa_coeli/klaster-1720.jpg',
+            textOfChoice: 'Historie',
+            onTap: () {
+              Navigator.pushNamed(context, AudioGuideRosaCoeliHistorie.id);
+            },
+          ),
         ),
-        ChoiceContainer(
-          assetImageOfChoice:
-              'assets/images/pamatky/klaster_rosa_coeli/photographic-film-wooden-background_compressed.jpg',
-          textOfChoice: 'Které filmy a seriály se v klášteře natáčely?',
-          onTap: () {
-            Navigator.pushNamed(
-                context, AudioGuideRosaCoeliFilmyASerialy.id);
-          },
+        Hero(
+          tag: 'FilmyASeriály',
+          child: ChoiceContainer(
+            assetImageOfChoice:
+                'assets/images/pamatky/klaster_rosa_coeli/photographic-film-wooden-background_compressed.jpg',
+            textOfChoice: 'Které filmy a seriály se v klášteře natáčely?',
+            onTap: () {
+              Navigator.pushNamed(
+                  context, AudioGuideRosaCoeliFilmyASerialy.id);
+            },
+          ),
         ),
-        ChoiceContainer(
-          assetImageOfChoice:
-              'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg',
-          textOfChoice: 'Proč klášter nemá střechu?',
-          onTap: () {
-            Navigator.pushNamed(context, AudioGuideRosaCoeliStrecha.id);
-          },
+        Hero(
+          tag: 'Střecha',
+          child: ChoiceContainer(
+            assetImageOfChoice:
+                'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg',
+            textOfChoice: 'Proč klášter nemá střechu?',
+            onTap: () {
+              Navigator.pushNamed(context, AudioGuideRosaCoeliStrecha.id);
+            },
+          ),
         ),
       ],
     );

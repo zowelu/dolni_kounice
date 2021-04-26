@@ -17,7 +17,7 @@ class _AudioGuideRosaCoeli4PrimaChramovaLodState extends State<AudioGuideRosaCoe
   String kapitola = '4 - Příčná chrámová loď';
   String path = 'audio/4.mp3';
   String keyOfMap = '4 - Příčná chrámová loď';
-  Function onPressedNextButton;
+  String tag = '4 - Příčná chrámová loď';
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class _AudioGuideRosaCoeli4PrimaChramovaLodState extends State<AudioGuideRosaCoe
       path: path,
       textAudioMap: textAudioMap,
       keyOfMap: keyOfMap,
-
+      tag: this.tag,
     );
   }
 }

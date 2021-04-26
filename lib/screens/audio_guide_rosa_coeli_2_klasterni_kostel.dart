@@ -29,7 +29,7 @@ class _AudioGuideRosaCoeli2KlasterniKostelState extends State<AudioGuideRosaCoel
       path: path,
       textAudioMap: textAudioMap,
       keyOfMap: keyOfMap,
-      tag: this.tag;
+      tag: this.tag,
     );
   }
 }
