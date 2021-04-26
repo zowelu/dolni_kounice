@@ -36,13 +36,16 @@ class _MonumentsState extends State<Monuments> {
             },
           ),
         ),
-        ChoiceContainer(
-          assetImageOfChoice:
-              'assets/images/pamatky/synagoga/synagoga-venek.jpg',
-          textOfChoice: 'Židovská synagoga',
-          onTap: () {
-            Navigator.pushNamed(context, MonumentsJevishSynagogue.id);
-          },
+        Hero(
+          tag: 'monumentsSynagogue',
+          child: ChoiceContainer(
+            assetImageOfChoice:
+                'assets/images/pamatky/synagoga/synagoga-venek.jpg',
+            textOfChoice: 'Židovská synagoga',
+            onTap: () {
+              Navigator.pushNamed(context, MonumentsJevishSynagogue.id);
+            },
+          ),
         ),
       ],
     );
