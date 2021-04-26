@@ -24,13 +24,16 @@ class _AudioGuideState extends State<AudioGuide> {
             text: '',
           ),
         ),
-        ChoiceContainer(
-            assetImageOfChoice:
-                'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
-            textOfChoice: 'Klášter Rosa Coeli',
-            onTap: () {
-              Navigator.pushNamed(context, AudioGuideRosaCoeli.id);
-            }),
+        Hero(
+          tag: 'audioKlasterRosaCoeli',
+          child: ChoiceContainer(
+              assetImageOfChoice:
+                  'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
+              textOfChoice: 'Klášter Rosa Coeli',
+              onTap: () {
+                Navigator.pushNamed(context, AudioGuideRosaCoeli.id);
+              }),
+        ),
       ],
     );
   }
