@@ -48,6 +48,7 @@ class ChoiceContainer extends StatelessWidget {
                   child: Text(
                     textOfChoice,
                     style: TextStyle(
+                      decoration: TextDecoration.none,
                       color: Colors.white,
                       fontSize: kDefaultFontSizeText,
                       fontFamily: kDefaultFontFamily,
