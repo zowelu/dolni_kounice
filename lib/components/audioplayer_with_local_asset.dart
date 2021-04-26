@@ -18,7 +18,6 @@ class AudioPlayerWithLocalAsset extends StatefulWidget {
 }
 
 class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
-
   AudioPlayer audioPlayer = AudioPlayer();
   AudioPlayerState audioPlayerState = AudioPlayerState.PAUSED;
   AudioCache audioCache;
@@ -26,7 +25,6 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
   int timeProgress = 0;
   int audioDuration = 0;
   String _kapitola;
-
 
   Widget slider() {
     return Container(
@@ -57,7 +55,6 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
         timeProgress = p.inMilliseconds;
       });
     });
-
   }
 
   @override
@@ -67,7 +64,6 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
     audioPlayer.dispose();
     audioCache.clearCache();
   }
-
 
   playMusic() async {
     await audioCache.play(_path);
@@ -97,13 +93,16 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            _kapitola,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                color: kDefaultColorTextWhite,
-                fontFamily: kDefaultFontFamily,
-                fontSize: kDefaultFontSizeHeader),
+          Container(
+            margin: EdgeInsets.only(top: kDefaultMargin),
+            child: Text(
+              _kapitola,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  color: kDefaultColorTextWhite,
+                  fontFamily: kDefaultFontFamily,
+                  fontSize: kDefaultFontSizeHeader),
+            ),
           ),
           SizedBox(height: 5.0),
           Row(
@@ -112,10 +111,9 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
               Text(
                 getTimeString(timeProgress),
                 style: TextStyle(
-                  color: kDefaultColorTextWhite,
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold
-                ),
+                    color: kDefaultColorTextWhite,
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold),
               ),
               SizedBox(width: 10.0),
               SizedBox(width: 10.0),
@@ -124,10 +122,9 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
                   : Text(
                       getTimeString(audioDuration),
                       style: TextStyle(
-                        color: kDefaultColorTextWhite,
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.bold
-                      ),
+                          color: kDefaultColorTextWhite,
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold),
                     ),
             ],
           ),
