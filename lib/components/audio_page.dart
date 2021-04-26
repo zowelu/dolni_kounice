@@ -15,7 +15,6 @@ class AudioPage extends StatelessWidget {
     @required this.path,
     @required this.textAudioMap,
     @required this.keyOfMap,
-    @required this.onPressedNextButton,
     @required this.tag,
   }) : super(key: key);
 
@@ -25,7 +24,6 @@ class AudioPage extends StatelessWidget {
   final String path;
   final AudioGuideRosaCoeliMapOfPathAndText textAudioMap;
   final String keyOfMap;
-  final Function onPressedNextButton;
   final String tag;
 
   @override
