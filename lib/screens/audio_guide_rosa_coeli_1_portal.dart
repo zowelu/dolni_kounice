@@ -11,7 +11,8 @@ class AudioGuideRosaCoeli1Portal extends StatefulWidget {
 
 class _AudioGuideRosaCoeli1PortalState
     extends State<AudioGuideRosaCoeli1Portal> {
-  AudioGuideRosaCoeliMapOfPathAndText textAudioMap = AudioGuideRosaCoeliMapOfPathAndText();
+  AudioGuideRosaCoeliMapOfPathAndText textAudioMap =
+      AudioGuideRosaCoeliMapOfPathAndText();
   String assetImage =
       'assets/images/pamatky/klaster_rosa_coeli/klaster-portal.jpg';
   String textHeader = 'Klášter Rosa Coeli';
@@ -19,17 +20,21 @@ class _AudioGuideRosaCoeli1PortalState
   String path = 'audio/1.mp3';
   String keyOfMap = '1 - Portál';
   Function onPressedNextButton;
+  String tag = 'audioKlasterRosaCoeliPortal';
 
   @override
   Widget build(BuildContext context) {
     return AudioPage(
-        assetImage: assetImage,
-        textHeader: textHeader,
-        kapitola: kapitola,
-        path: path,
-        textAudioMap: textAudioMap,
-        keyOfMap: keyOfMap,
-        onPressedNextButton: (){Navigator.pushNamed(context, '/audioGuideRosaCoeli2KlasterniKostel');},
+      assetImage: assetImage,
+      textHeader: textHeader,
+      kapitola: kapitola,
+      path: path,
+      textAudioMap: textAudioMap,
+      keyOfMap: keyOfMap,
+      onPressedNextButton: () {
+        Navigator.pushNamed(context, '/audioGuideRosaCoeli2KlasterniKostel');
+      },
+      tag: tag,
     );
   }
 }
