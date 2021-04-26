@@ -33,13 +33,16 @@ class _HomePageState extends State<HomePage> {
                     Navigator.pushNamed(context, AudioGuide.id);
                   }),
             ),
-            ChoiceContainer(
-                assetImageOfChoice:
-                    'assets/images/pamatky/mesto_pamatek_uvod/pamatky-mapa.jpg',
-                textOfChoice: 'Památky ve městě',
-                onTap: () {
-                  Navigator.pushNamed(context, Monuments.id);
-                }),
+            Hero(
+              tag: 'pamatkyVeMeste',
+              child: ChoiceContainer(
+                  assetImageOfChoice:
+                      'assets/images/pamatky/mesto_pamatek_uvod/pamatky-mapa.jpg',
+                  textOfChoice: 'Památky ve městě',
+                  onTap: () {
+                    Navigator.pushNamed(context, Monuments.id);
+                  }),
+            ),
             ChoiceContainer(
                 assetImageOfChoice:
                     'assets/images/pamatky/mesto_pamatek_uvod/beautiful-scenery-greenfield-countryside-eifel-region-germany-M.jpg',
