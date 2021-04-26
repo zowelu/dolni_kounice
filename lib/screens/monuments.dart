@@ -17,7 +17,7 @@ class _MonumentsState extends State<Monuments> {
     return DefaultPageOfChoice(
       tittleOfAppbar: 'Památky ve městě',
       listOfWidget: [
-        ContainerHeaderImageBackground(assetImage: 'assets/images/pamatky/mesto_pamatek_uvod/pamatky-mapa.jpg', textHeader: 'Památky ve městě', text: '',),
+        Hero(tag:'pamatkyVeMeste',child: ContainerHeaderImageBackground(assetImage: 'assets/images/pamatky/mesto_pamatek_uvod/pamatky-mapa.jpg', textHeader: 'Památky ve městě', text: '',)),
         ChoiceContainer(
           assetImageOfChoice:
               'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
