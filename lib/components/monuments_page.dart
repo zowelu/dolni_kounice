@@ -11,12 +11,14 @@ class MonumentsPage extends StatelessWidget {
     @required this.assetImage,
     @required this.textHeader,
     @required this.listOfWidget,
+    this.tag,
   }) : super(key: key);
 
   final String textOfAppBar;
   final String assetImage;
   final String textHeader;
   final List<Widget> listOfWidget;
+  final String tag;
 
   @override
   Widget build(BuildContext context) {
@@ -34,10 +36,13 @@ class MonumentsPage extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                ContainerHeaderImageBackground(
-                  assetImage: assetImage,
-                  textHeader: textHeader,
-                  text: '',
+                Hero(
+                  tag: this.tag,
+                  child: ContainerHeaderImageBackground(
+                    assetImage: assetImage,
+                    textHeader: textHeader,
+                    text: '',
+                  ),
                 ),
                 Container(
                   padding: EdgeInsets.all(kDefaultPadding),
