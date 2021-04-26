@@ -18,6 +18,7 @@ class _AudioGuideRosaCoeli2KlasterniKostelState extends State<AudioGuideRosaCoel
   String path = 'audio/2.mp3';
   String keyOfMap = '2 - Klášterní kostel';
   Function onPressedNextButton;
+  String tag = '2 - Klášterní kostel';
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +29,7 @@ class _AudioGuideRosaCoeli2KlasterniKostelState extends State<AudioGuideRosaCoel
       path: path,
       textAudioMap: textAudioMap,
       keyOfMap: keyOfMap,
+      tag: this.tag;
     );
   }
 }
