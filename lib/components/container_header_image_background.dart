@@ -45,6 +45,7 @@ class ContainerHeaderImageBackground extends StatelessWidget {
                 child: Text(
                   textHeader,
                   style: TextStyle(
+                    decoration: TextDecoration.none,
                       fontFamily: kDefaultFontFamily,
                       fontSize: kDefaultFontSizeHeader,
                       color: kDefaultColorTextWhite,
