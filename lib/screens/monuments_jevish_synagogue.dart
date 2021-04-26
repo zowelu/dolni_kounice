@@ -23,6 +23,7 @@ class _MonumentsJevishSynagogueState extends State<MonumentsJevishSynagogue> {
       'assets/images/pamatky/synagoga/synagoga-venek.jpg',
       textOfAppBar: 'Památky ve městě',
       textHeader: 'Židovská synagoga',
+      tag: 'monumentsSynagogue',
       listOfWidget: [
         TextDefaultStandart(
             text:
