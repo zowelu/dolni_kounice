@@ -25,6 +25,7 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
           'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
       textOfAppBar: 'Památky ve městě',
       textHeader: 'Klášter Rosa Coeli',
+      tag: 'monumentsRosaCoeli',
       listOfWidget: [
         TextDefaultStandart(
             text:
