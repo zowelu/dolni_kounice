@@ -16,6 +16,7 @@ class AudioPage extends StatelessWidget {
     @required this.textAudioMap,
     @required this.keyOfMap,
     @required this.onPressedNextButton,
+    @required this.tag,
   }) : super(key: key);
 
   final String assetImage;
@@ -25,6 +26,7 @@ class AudioPage extends StatelessWidget {
   final AudioGuideRosaCoeliMapOfPathAndText textAudioMap;
   final String keyOfMap;
   final Function onPressedNextButton;
+  final String tag;
 
   @override
   Widget build(BuildContext context) {
@@ -42,10 +44,13 @@ class AudioPage extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                ContainerHeaderImageBackground(
-                  assetImage: assetImage,
-                  textHeader: textHeader,
-                  text: 'Kapitola: $kapitola',
+                Hero(
+                  tag: this.tag,
+                  child: ContainerHeaderImageBackground(
+                    assetImage: assetImage,
+                    textHeader: textHeader,
+                    text: 'Kapitola: $kapitola',
+                  ),
                 ),
                 Container(
                   padding: EdgeInsets.all(kDefaultPadding),
