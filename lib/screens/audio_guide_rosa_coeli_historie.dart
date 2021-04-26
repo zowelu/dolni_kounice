@@ -28,7 +28,7 @@ class _AudioGuideRosaCoeliHistorieState extends State<AudioGuideRosaCoeliHistori
       path: path,
       textAudioMap: textAudioMap,
       keyOfMap: keyOfMap,
-      onPressedNextButton: (){Navigator.pushNamed(context, '/audioGuideRosaCoeliFilmyASerialy');},
+
     );
   }
 }

@@ -28,7 +28,6 @@ class _AudioGuideRosaCoeli3VezickaState extends State<AudioGuideRosaCoeli3Vezick
       path: path,
       textAudioMap: textAudioMap,
       keyOfMap: keyOfMap,
-      onPressedNextButton: (){Navigator.pushNamed(context, '/audioGuideRosaCoeli4PrimaChramovaLod');},
     );
   }
 }

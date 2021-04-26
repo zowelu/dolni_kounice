@@ -28,7 +28,7 @@ class _AudioGuideRosaCoeli5RajskaZahradaState extends State<AudioGuideRosaCoeli5
       path: path,
       textAudioMap: textAudioMap,
       keyOfMap: keyOfMap,
-      onPressedNextButton: (){Navigator.pushNamed(context, '/audioGuideRosaCoeliHistorie');},
+
     );
   }
 }

@@ -28,7 +28,6 @@ class _AudioGuideRosaCoeli2KlasterniKostelState extends State<AudioGuideRosaCoel
       path: path,
       textAudioMap: textAudioMap,
       keyOfMap: keyOfMap,
-      onPressedNextButton: (){Navigator.pushNamed(context, '/audioGuideRosaCoeli3Vezicka');},
     );
   }
 }

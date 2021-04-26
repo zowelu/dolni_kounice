@@ -28,7 +28,7 @@ class _AudioGuideRosaCoeliUvodState extends State<AudioGuideRosaCoeliUvod> {
         path: path,
         textAudioMap: textAudioMap,
         keyOfMap: keyOfMap,
-        onPressedNextButton: (){Navigator.pushNamed(context, '/audioGuideRosaCoeli1Portal');},
+
     );
   }
 }
