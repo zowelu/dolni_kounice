@@ -17,18 +17,28 @@ class _MonumentsState extends State<Monuments> {
     return DefaultPageOfChoice(
       tittleOfAppbar: 'Památky ve městě',
       listOfWidget: [
-        Hero(tag:'pamatkyVeMeste',child: ContainerHeaderImageBackground(assetImage: 'assets/images/pamatky/mesto_pamatek_uvod/pamatky-mapa.jpg', textHeader: 'Památky ve městě', text: '',)),
-        ChoiceContainer(
-          assetImageOfChoice:
-              'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
-          textOfChoice: 'Klášter Rosa Coeli',
-          onTap: () {
-            Navigator.pushNamed(context, MonumentsRosaCoeli.id);
-          },
+        Hero(
+            tag: 'pamatkyVeMeste',
+            child: ContainerHeaderImageBackground(
+              assetImage:
+                  'assets/images/pamatky/mesto_pamatek_uvod/pamatky-mapa.jpg',
+              textHeader: 'Památky ve městě',
+              text: '',
+            )),
+        Hero(
+          tag: 'monumentsRosaCoeli',
+          child: ChoiceContainer(
+            assetImageOfChoice:
+                'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
+            textOfChoice: 'Klášter Rosa Coeli',
+            onTap: () {
+              Navigator.pushNamed(context, MonumentsRosaCoeli.id);
+            },
+          ),
         ),
         ChoiceContainer(
           assetImageOfChoice:
-          'assets/images/pamatky/synagoga/synagoga-venek.jpg',
+              'assets/images/pamatky/synagoga/synagoga-venek.jpg',
           textOfChoice: 'Židovská synagoga',
           onTap: () {
             Navigator.pushNamed(context, MonumentsJevishSynagogue.id);
