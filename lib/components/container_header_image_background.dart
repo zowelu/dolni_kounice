@@ -39,7 +39,6 @@ class ContainerHeaderImageBackground extends StatelessWidget {
                       color: kDefaultColorTextWhite),
                       textAlign: TextAlign.left,
                 ),
-
                 padding: EdgeInsets.all(5.0),
               ),
               Container(
@@ -56,6 +55,7 @@ class ContainerHeaderImageBackground extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 padding: EdgeInsets.all(5.0),
+                margin: EdgeInsets.only(bottom: kDefaultMargin),
               ),
             ],
           ),
