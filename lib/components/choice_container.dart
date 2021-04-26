@@ -14,12 +14,11 @@ class ChoiceContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      margin: EdgeInsets.only(left: kDefaultMargin, right: kDefaultMargin),
+      margin: EdgeInsets.only(left: kDefaultMargin, right: kDefaultMargin, bottom: kDefaultMargin),
+      height: 165,
       child: GestureDetector(
         onTap: onTap,
         child: Container(
-          padding: EdgeInsets.only(top: 60.0, bottom: 60.0, left: 50.0, right: 50.0),
-          margin: EdgeInsets.only( bottom: 10.0),
           width: double.infinity,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10.0),
@@ -36,23 +35,28 @@ class ChoiceContainer extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          child: DecoratedBox(
-            decoration: BoxDecoration(
-              color: kDefaultTextBackgroundTransparent,
-              borderRadius: BorderRadius.circular(10.0),
-            ),
-            child: Padding(
-              padding:  EdgeInsets.only(top: kDefaultPadding, bottom: kDefaultPadding),
-              child: Text(
-                textOfChoice,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: kDefaultFontSizeText,
-                  fontFamily: kDefaultFontFamily,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              DecoratedBox(
+                decoration: BoxDecoration(
+                  color: kDefaultTextBackgroundTransparent,
+                  borderRadius: BorderRadius.circular(10.0),
                 ),
-                textAlign: TextAlign.center,
+                child: Padding(
+                  padding:  EdgeInsets.all(kDefaultPadding),
+                  child: Text(
+                    textOfChoice,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: kDefaultFontSizeText,
+                      fontFamily: kDefaultFontFamily,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
               ),
-            ),
+            ],
           ),
         ),
       ),
