@@ -84,13 +84,16 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
             Navigator.pushNamed(context, AudioGuideRosaCoeliUvod.id);
           },
         ),
-        ChoiceContainer(
-          assetImageOfChoice:
-              'assets/images/pamatky/klaster_rosa_coeli/klaster-portal.jpg',
-          textOfChoice: '1 - Portál',
-          onTap: () {
-            Navigator.pushNamed(context, AudioGuideRosaCoeli1Portal.id);
-          },
+        Hero(
+          tag: 'audioKlasterRosaCoeliPortal',
+          child: ChoiceContainer(
+            assetImageOfChoice:
+                'assets/images/pamatky/klaster_rosa_coeli/klaster-portal.jpg',
+            textOfChoice: '1 - Portál',
+            onTap: () {
+              Navigator.pushNamed(context, AudioGuideRosaCoeli1Portal.id);
+            },
+          ),
         ),
         ChoiceContainer(
           assetImageOfChoice:
