@@ -47,7 +47,7 @@ class AudioPage extends StatelessWidget {
                   child: ContainerHeaderImageBackground(
                     assetImage: assetImage,
                     textHeader: textHeader,
-                    text: 'Kapitola: $kapitola',
+                    text: '',
                   ),
                 ),
                 Container(
