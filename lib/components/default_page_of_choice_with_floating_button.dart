@@ -42,6 +42,7 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton.extended(
           onPressed: () {},
+          elevation: 5,
           label: Text('Mapa kláštera'),
           backgroundColor: kBackgroundColor,
           shape: RoundedRectangleBorder(
