@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/my_app_bar.dart';
@@ -42,7 +42,9 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
           ),
         ),
         floatingActionButton: FloatingActionButton.extended(
-          onPressed: () {},
+          onPressed: () {
+            showModalBottomSheet(context: context, builder: (context) => Container(child: Image(image: AssetImage('assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png'),),),);
+          },
           elevation: 5,
           label: Text(textOfFloatingButton),
           backgroundColor: kBackgroundColor,
