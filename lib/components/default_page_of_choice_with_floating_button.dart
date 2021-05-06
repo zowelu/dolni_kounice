@@ -6,11 +6,12 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
   DefaultPageOfChoiceWithFloatingButton(
       {@required this.tittleOfAppbar,
       @required this.listOfWidget,
-      @required this.textOfFloatingButton});
+      @required this.textOfFloatingButton, @required this.assetImageOfModal});
 
   final String tittleOfAppbar;
   final List<Widget> listOfWidget;
   final String textOfFloatingButton;
+  final String assetImageOfModal;
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +73,7 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(20.0),),
                         child: Image(
                           image: AssetImage(
-                              'assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png'),
+                              assetImageOfModal),
                         ),
                       ),
                     ],
