@@ -1,11 +1,12 @@
-
 import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/my_app_bar.dart';
 
 class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
   DefaultPageOfChoiceWithFloatingButton(
-      {@required this.tittleOfAppbar, @required this.listOfWidget, @required this.textOfFloatingButton});
+      {@required this.tittleOfAppbar,
+      @required this.listOfWidget,
+      @required this.textOfFloatingButton});
 
   final String tittleOfAppbar;
   final List<Widget> listOfWidget;
@@ -43,7 +44,21 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton.extended(
           onPressed: () {
-            showModalBottomSheet(context: context, builder: (context) => Container(child: Image(image: AssetImage('assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png'),),),);
+            showModalBottomSheet(
+              context: context,
+              builder: (context) => Container(
+                height: 1500.0,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image(
+                      image: AssetImage(
+                          'assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png'),
+                    ),
+                  ],
+                ),
+              ),
+            );
           },
           elevation: 5,
           label: Text(textOfFloatingButton),
