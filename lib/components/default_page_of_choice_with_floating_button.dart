@@ -65,6 +65,7 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
                       Icon(
                         Icons.arrow_downward,
                         color: Colors.white,
+                        size: kDefaultFontSizeHeader,
                       ),
                       SizedBox(height: kDefaultMarginLarger,),
                       ClipRRect(
