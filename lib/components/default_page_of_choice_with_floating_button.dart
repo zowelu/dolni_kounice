@@ -52,6 +52,7 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
               builder: (context) => Container(
                 height: screenSizeHeight / 2,
                 child: Container(
+                  padding: EdgeInsets.only(left: kDefaultPadding, right: kDefaultPadding),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
