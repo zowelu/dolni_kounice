@@ -49,15 +49,17 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
               context: context,
               builder: (context) => Container(
                 height: screenSizeHeight / 2,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.arrow_downward, color: Colors.white,),
-                    Image(
-                      image: AssetImage(
-                          'assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png'),
-                    ),
-                  ],
+                child: Container(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.arrow_downward, color: Colors.white,),
+                      Image(
+                        image: AssetImage(
+                            'assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png'),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             );
