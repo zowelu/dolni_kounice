@@ -14,6 +14,7 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenSizeHeight = MediaQuery.of(context).size.height;
     return MaterialApp(
       title: 'Město památek',
       home: Scaffold(
@@ -47,10 +48,11 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
             showModalBottomSheet(
               context: context,
               builder: (context) => Container(
-                height: 1500.0,
+                height: screenSizeHeight / 2,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    Icon(Icons.close),
                     Image(
                       image: AssetImage(
                           'assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png'),
