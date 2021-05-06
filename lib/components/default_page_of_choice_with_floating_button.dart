@@ -52,7 +52,7 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.close),
+                    Icon(Icons.arrow_downward, color: Colors.white,),
                     Image(
                       image: AssetImage(
                           'assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png'),
