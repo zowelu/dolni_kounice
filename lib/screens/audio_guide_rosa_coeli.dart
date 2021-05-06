@@ -62,7 +62,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                     color: kDefaultColorTextWhite,
                     fontSize: kDefaultFontSizeText),
               ),
-              SizedBox(height: kDefaultMarginLarger),
+              SizedBox(height: kDefaultMargin),
             ],
           ),
         ),
