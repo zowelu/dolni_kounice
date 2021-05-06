@@ -47,6 +47,7 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
           onPressed: () {
             showModalBottomSheet(
               context: context,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(topLeft: Radius.circular(20.0), topRight: Radius.circular(20.0),),),
               builder: (context) => Container(
                 height: screenSizeHeight / 2,
                 child: Container(
