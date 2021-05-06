@@ -72,8 +72,7 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
                       ClipRRect(
                         borderRadius: BorderRadius.all(Radius.circular(20.0),),
                         child: Image(
-                          image: AssetImage(
-                              assetImageOfModal),
+                          image: AssetImage(assetImageOfModal),
                         ),
                       ),
                     ],
