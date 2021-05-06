@@ -5,10 +5,11 @@ import 'package:mesto_pamatek/components/my_app_bar.dart';
 
 class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
   DefaultPageOfChoiceWithFloatingButton(
-      {@required this.tittleOfAppbar, @required this.listOfWidget});
+      {@required this.tittleOfAppbar, @required this.listOfWidget, @required this.textOfFloatingButton});
 
   final String tittleOfAppbar;
   final List<Widget> listOfWidget;
+  final String textOfFloatingButton;
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +44,7 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
         floatingActionButton: FloatingActionButton.extended(
           onPressed: () {},
           elevation: 5,
-          label: Text('Mapa kláštera'),
+          label: Text(textOfFloatingButton),
           backgroundColor: kBackgroundColor,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(

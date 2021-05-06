@@ -24,6 +24,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
   Widget build(BuildContext context) {
     return DefaultPageOfChoiceWithFloatingButton(
       tittleOfAppbar: 'Audioprůvodce',
+      textOfFloatingButton: 'Mapa kláštera',
       listOfWidget: [
         Hero(
           tag: 'audioKlasterRosaCoeli',
