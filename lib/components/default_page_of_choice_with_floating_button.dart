@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/my_app_bar.dart';
 
-class DefaultPageOfChoice extends StatelessWidget {
-  DefaultPageOfChoice(
+class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
+  DefaultPageOfChoiceWithFloatingButton(
       {@required this.tittleOfAppbar, @required this.listOfWidget});
 
   final String tittleOfAppbar;
