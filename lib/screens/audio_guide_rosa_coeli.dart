@@ -25,6 +25,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
     return DefaultPageOfChoiceWithFloatingButton(
       tittleOfAppbar: 'Audioprůvodce',
       textOfFloatingButton: 'Mapa kláštera',
+      assetImageOfModal: 'assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png',
       listOfWidget: [
         Hero(
           tag: 'audioKlasterRosaCoeli',
