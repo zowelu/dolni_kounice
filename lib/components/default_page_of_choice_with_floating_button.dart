@@ -47,19 +47,31 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
           onPressed: () {
             showModalBottomSheet(
               context: context,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(topLeft: Radius.circular(20.0), topRight: Radius.circular(20.0),),),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20.0),
+                  topRight: Radius.circular(20.0),
+                ),
+              ),
               backgroundColor: kBackgroundColor,
               builder: (context) => Container(
                 height: screenSizeHeight / 2,
                 child: Container(
-                  padding: EdgeInsets.only(left: kDefaultPadding, right: kDefaultPadding),
+                  padding: EdgeInsets.only(
+                      left: kDefaultPadding, right: kDefaultPadding),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.arrow_downward, color: Colors.white,),
-                      Image(
-                        image: AssetImage(
-                            'assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png'),
+                      Icon(
+                        Icons.arrow_downward,
+                        color: Colors.white,
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.all(Radius.circular(20.0),),
+                        child: Image(
+                          image: AssetImage(
+                              'assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png'),
+                        ),
                       ),
                     ],
                   ),
