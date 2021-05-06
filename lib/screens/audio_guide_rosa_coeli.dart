@@ -61,20 +61,9 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                     fontSize: kDefaultFontSizeText),
               ),
               SizedBox(height: kDefaultMarginLarger),
-              Container(
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
-                ),
-                child: Image(
-                  image: AssetImage(
-                      'assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png'),
-                ),
-              ),
             ],
           ),
         ),
-
         SizedBox(height: kDefaultMarginLarger),
         Hero(
           tag: 'Úvod',
