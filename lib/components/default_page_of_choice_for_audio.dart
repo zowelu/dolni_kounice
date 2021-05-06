@@ -39,6 +39,7 @@ class DefaultPageOfChoice extends StatelessWidget {
             ),
           ),
         ),
+        floatingActionButton: FloatingActionButton.extended(onPressed: (){}, label: Text('Mapa kláštera'),),
       ),
     );
   }
