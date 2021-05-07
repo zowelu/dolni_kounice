@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'package:mesto_pamatek/screens/about_app_page.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_1_portal.dart';
@@ -26,7 +27,24 @@ void main() {
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   runApp(
     MaterialApp(
-      home: Splash(),
+      home: SplashScreen(
+        seconds: 3,
+        navigateAfterSeconds: HomePage(),
+        title: Text(
+          'Město památek',
+          style: TextStyle(
+              fontFamily: kDefaultFontFamily,
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+          ),
+        ),
+        image: Image.asset('assets/images/dk_znak_icon.png'),
+        backgroundColor: kBackgroundColor,
+        styleTextUnderTheLoader: TextStyle(),
+        photoSize: 200.0,
+        loaderColor: Colors.white,
+      ),
       initialRoute: '/',
       routes: {
         HomePage.id: (context) => HomePage(),
@@ -58,5 +76,3 @@ void main() {
     ),
   );
 }
-
-
