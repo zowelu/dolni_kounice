@@ -12,7 +12,6 @@ import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_filmy_a_serialy.dar
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_historie.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_strecha.dart';
 import 'package:mesto_pamatek/screens/home_page.dart';
-import 'package:mesto_pamatek/screens/loading_page.dart';
 import 'package:mesto_pamatek/screens/audio_guide.dart';
 import 'package:mesto_pamatek/screens/monuments.dart';
 import 'package:mesto_pamatek/screens/monuments_jevish_synagogue.dart';
