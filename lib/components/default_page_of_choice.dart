@@ -19,7 +19,7 @@ class DefaultPageOfChoice extends StatelessWidget {
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(kDefaultMyAppBarHeight),
           child: MyAppBar(tittleOfAppbar: tittleOfAppbar, onPressedBackButton: () {
-            Navigator.pop(context);
+            Navigator.of(context).maybePop();
           },),
         ),
         body: SafeArea(
