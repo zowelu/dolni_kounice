@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:splashscreen/splashscreen.dart';
 import 'package:mesto_pamatek/screens/about_app_page.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_1_portal.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_2_klasterni_kostel.dart';
@@ -25,7 +26,7 @@ void main() {
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   runApp(
     MaterialApp(
-      home: LoadingPage(),
+      home: Splash(),
       initialRoute: '/',
       routes: {
         HomePage.id: (context) => HomePage(),
@@ -33,19 +34,29 @@ void main() {
         Monuments.id: (context) => Monuments(),
         Trips.id: (context) => Trips(),
         AudioGuideRosaCoeli.id: (context) => AudioGuideRosaCoeli(),
-        AudioGuideRosaCoeliUvod.id : (context) => AudioGuideRosaCoeliUvod(),
-        AudioGuideRosaCoeli1Portal.id: (context) => AudioGuideRosaCoeli1Portal(),
-        AudioGuideRosaCoeli2KlasterniKostel.id: (context) => AudioGuideRosaCoeli2KlasterniKostel(),
-        AudioGuideRosaCoeli3Vezicka.id: (context) => AudioGuideRosaCoeli3Vezicka(),
-        AudioGuideRosaCoeli4PrimaChramovaLod.id: (context) => AudioGuideRosaCoeli4PrimaChramovaLod(),
-        AudioGuideRosaCoeli5RajskaZahrada.id: (context) => AudioGuideRosaCoeli5RajskaZahrada(),
-        AudioGuideRosaCoeliHistorie.id: (context) => AudioGuideRosaCoeliHistorie(),
-        AudioGuideRosaCoeliFilmyASerialy.id: (context) => AudioGuideRosaCoeliFilmyASerialy(),
-        AudioGuideRosaCoeliStrecha.id: (context) => AudioGuideRosaCoeliStrecha(),
+        AudioGuideRosaCoeliUvod.id: (context) => AudioGuideRosaCoeliUvod(),
+        AudioGuideRosaCoeli1Portal.id: (context) =>
+            AudioGuideRosaCoeli1Portal(),
+        AudioGuideRosaCoeli2KlasterniKostel.id: (context) =>
+            AudioGuideRosaCoeli2KlasterniKostel(),
+        AudioGuideRosaCoeli3Vezicka.id: (context) =>
+            AudioGuideRosaCoeli3Vezicka(),
+        AudioGuideRosaCoeli4PrimaChramovaLod.id: (context) =>
+            AudioGuideRosaCoeli4PrimaChramovaLod(),
+        AudioGuideRosaCoeli5RajskaZahrada.id: (context) =>
+            AudioGuideRosaCoeli5RajskaZahrada(),
+        AudioGuideRosaCoeliHistorie.id: (context) =>
+            AudioGuideRosaCoeliHistorie(),
+        AudioGuideRosaCoeliFilmyASerialy.id: (context) =>
+            AudioGuideRosaCoeliFilmyASerialy(),
+        AudioGuideRosaCoeliStrecha.id: (context) =>
+            AudioGuideRosaCoeliStrecha(),
         MonumentsRosaCoeli.id: (context) => MonumentsRosaCoeli(),
         MonumentsJevishSynagogue.id: (context) => MonumentsJevishSynagogue(),
         AboutAppPage.id: (context) => AboutAppPage(),
-      }
+      },
     ),
   );
 }
+
+
