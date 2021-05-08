@@ -88,7 +88,7 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
               borderRadius: BorderRadius.all(
                 Radius.circular(30.0),
               ),
-              side: BorderSide(color: Colors.white)),
+              side: BorderSide(width: 2.0 , color: Colors.white)),
         ),
       ),
     );
