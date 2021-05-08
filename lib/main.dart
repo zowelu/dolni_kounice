@@ -41,7 +41,7 @@ void main() {
         image: Image.asset('assets/images/dk_znak_icon.png'),
         backgroundColor: kBackgroundColor,
         styleTextUnderTheLoader: TextStyle(),
-        photoSize: 200.0,
+        photoSize: 130.0,
         loaderColor: Colors.white,
       ),
       initialRoute: '/',

@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
       child: DefaultPageOfChoice(
         tittleOfAppbar: 'Město památek',
         listOfWidget: [
-          Hero(tag: 'dk_logo',child: ContainerHeaderHomePage()),
+          Hero(tag: 'splashscreenImage',child: ContainerHeaderHomePage()),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
