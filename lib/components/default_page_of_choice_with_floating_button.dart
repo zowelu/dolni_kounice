@@ -82,7 +82,7 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
             );
           },
           elevation: 5,
-          label: Text(textOfFloatingButton),
+          label: Text(textOfFloatingButton, style: TextStyle(fontFamily: kDefaultFontFamily, fontSize: 20.0),),
           backgroundColor: kBackgroundColor,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(
