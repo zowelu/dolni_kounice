@@ -32,10 +32,10 @@ void main() {
         title: Text(
           'Město památek',
           style: TextStyle(
-              fontFamily: kDefaultFontFamily,
-              fontSize: 30.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
+            fontFamily: kDefaultFontFamily,
+            fontSize: 30.0,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
           ),
         ),
         image: Image.asset('assets/images/dk_znak_icon.png'),
