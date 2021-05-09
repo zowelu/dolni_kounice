@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/components/rosa_coeli_map_of_path_and_text.dart';
@@ -60,7 +61,22 @@ class AudioPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Container(padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0, bottom: 10.0), decoration: BoxDecoration(color: Color(0xFF18938E), borderRadius: BorderRadius.circular(30.0),), child: Text(kapitola, style: TextStyle(fontFamily: kDefaultFontFamily, fontSize: kDefaultFontSizeHeader, color: kDefaultColorTextWhite),),),
+                      Container(
+                        padding: EdgeInsets.only(
+                            left: 20.0, right: 20.0, top: 10.0, bottom: 10.0),
+                        decoration: BoxDecoration(
+                          color: Color(0xFF18938E),
+                          borderRadius: BorderRadius.circular(30.0),
+                        ),
+                        child: Text(
+                          kapitola,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontFamily: kDefaultFontFamily,
+                              fontSize: kDefaultFontSizeHeader,
+                              color: kDefaultColorTextWhite),
+                        ),
+                      ),
                       SizedBox(height: kDefaultMargin),
                       Column(
                         children: [
