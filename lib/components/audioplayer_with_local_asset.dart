@@ -6,13 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 
-
-
 class AudioPlayerWithLocalAsset extends StatefulWidget {
   ///Audioplayer widget - vytvoření přehrávače a jeho funkčnosti
   AudioPlayerWithLocalAsset({@required this.path});
   final String path;
-
 
   @override
   AudioPlayerWithLocalAssetState createState() =>
@@ -30,7 +27,7 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
   Widget slider() {
     double sizeDeviceWidth = MediaQuery.of(context).size.width;
     return Container(
-      width: sizeDeviceWidth/100*80,
+      width: sizeDeviceWidth / 100 * 80,
       child: Slider.adaptive(
           value: (timeProgress / 1000).floorToDouble(),
           max: (audioDuration / 1000.floorToDouble()),
@@ -78,11 +75,14 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
   Widget build(BuildContext context) {
     double sizeDeviceHeight = MediaQuery.of(context).size.height;
     return Container(
-      height: sizeDeviceHeight/100*15,
+      height: sizeDeviceHeight / 100 * 15,
       width: double.infinity,
       decoration: BoxDecoration(
         color: Color(0xFF18938E),
-        borderRadius: BorderRadius.only(topLeft: Radius.circular(30.0), topRight: Radius.circular(30.0),),
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(30.0),
+          topRight: Radius.circular(30.0),
+        ),
         boxShadow: [
           BoxShadow(
             color: Color(0xFF2C3E50),
@@ -106,8 +106,7 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold),
               ),
-              SizedBox(width: 10.0),
-              SizedBox(width: 10.0),
+              SizedBox(width: 20.0),
               audioDuration == 0
                   ? getFileAudioDuration()
                   : Text(
@@ -131,9 +130,11 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
                       trackShape: RectangularSliderTrackShape(),
                       trackHeight: 5.0,
                       thumbColor: kDefaultColorTextColorBackground,
-                      thumbShape: RoundSliderThumbShape(enabledThumbRadius: 12.0),
+                      thumbShape:
+                          RoundSliderThumbShape(enabledThumbRadius: 12.0),
                       overlayColor: Color(0xAF5C9F9B),
-                      overlayShape: RoundSliderOverlayShape(overlayRadius: 28.0),
+                      overlayShape:
+                          RoundSliderOverlayShape(overlayRadius: 28.0),
                     ),
                     child: slider()),
                 IconButton(
@@ -153,7 +154,6 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
               ],
             ),
           ),
-
         ],
       ),
     );
