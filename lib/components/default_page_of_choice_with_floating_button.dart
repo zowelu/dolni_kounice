@@ -56,7 +56,7 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
               ),
               backgroundColor: kBackgroundColor,
               builder: (context) => Container(
-                height: screenSizeHeight / 2,
+                //height: screenSizeHeight / 2,
                 child: Container(
                   padding: EdgeInsets.all(kDefaultPadding),
                   child: Column(
@@ -67,7 +67,7 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
                         color: Colors.white,
                         size: kDefaultFontSizeHeader,
                       ),
-                      SizedBox(height: kDefaultMarginLarger,),
+                      SizedBox(height: kDefaultMargin,),
                       Expanded(
                         child: ClipRRect(
                           borderRadius: BorderRadius.all(Radius.circular(20.0),),
