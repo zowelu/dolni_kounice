@@ -73,6 +73,7 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
 
   @override
   Widget build(BuildContext context) {
+    double sizeWidth = MediaQuery.of(context).size.width;
     return Container(
       height: 200,
       width: double.infinity,
