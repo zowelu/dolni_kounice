@@ -34,9 +34,12 @@ class AudioPage extends StatelessWidget {
         backgroundColor: kBackgroundColor,
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(kDefaultMyAppBarHeight),
-          child: MyAppBar(tittleOfAppbar: 'Audioprůvodce', onPressedBackButton: () {
-            Navigator.pop(context);
-          },),
+          child: MyAppBar(
+            tittleOfAppbar: 'Audioprůvodce',
+            onPressedBackButton: () {
+              Navigator.pop(context);
+            },
+          ),
         ),
         body: SafeArea(
           child: SingleChildScrollView(
@@ -59,7 +62,6 @@ class AudioPage extends StatelessWidget {
                       SizedBox(height: kDefaultMargin),
                       AudioPlayerWithLocalAsset(path: path, kapitola: kapitola),
                       SizedBox(height: kDefaultMargin),
-
                       Column(
                         children: [
                           SizedBox(
@@ -68,11 +70,11 @@ class AudioPage extends StatelessWidget {
                           Text(
                             'Přepis v textové podobě:',
                             style: TextStyle(
-                                color: kDefaultColorTextWhite,
-                                fontSize: kDefaultFontSizeText,
-                                decoration: TextDecoration.underline,
-                                ),
+                              color: kDefaultColorTextWhite,
+                              fontSize: kDefaultFontSizeText,
+                              decoration: TextDecoration.underline,
                             ),
+                          ),
                           SizedBox(
                             height: 20.0,
                           ),
