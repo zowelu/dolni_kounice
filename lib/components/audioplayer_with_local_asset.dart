@@ -28,9 +28,9 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
   int audioDuration = 0;
 
   Widget slider() {
-    double sizeWidth = MediaQuery.of(context).size.width;
+    double sizeDeviceWidth = MediaQuery.of(context).size.width;
     return Container(
-      width: sizeWidth/100*80,
+      width: sizeDeviceWidth/100*80,
       child: Slider.adaptive(
           value: (timeProgress / 1000).floorToDouble(),
           max: (audioDuration / 1000.floorToDouble()),
