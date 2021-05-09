@@ -115,32 +115,41 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
                     ),
             ],
           ),
-          SliderTheme(
-              data: SliderTheme.of(context).copyWith(
-                activeTrackColor: kDefaultColorTextColorBackground,
-                inactiveTrackColor: Color(0xFF77BAB6),
-                trackShape: RectangularSliderTrackShape(),
-                trackHeight: 5.0,
-                thumbColor: kDefaultColorTextColorBackground,
-                thumbShape: RoundSliderThumbShape(enabledThumbRadius: 12.0),
-                overlayColor: Color(0xAF5C9F9B),
-                overlayShape: RoundSliderOverlayShape(overlayRadius: 28.0),
-              ),
-              child: slider()),
-          IconButton(
-            icon: Icon(
-              audioPlayerState == AudioPlayerState.PLAYING
-                  ? Icons.pause_circle_outline_rounded
-                  : Icons.play_circle_outline_rounded,
-              color: Colors.white,
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SliderTheme(
+                    data: SliderTheme.of(context).copyWith(
+                      activeTrackColor: kDefaultColorTextColorBackground,
+                      inactiveTrackColor: Color(0xFF77BAB6),
+                      trackShape: RectangularSliderTrackShape(),
+                      trackHeight: 5.0,
+                      thumbColor: kDefaultColorTextColorBackground,
+                      thumbShape: RoundSliderThumbShape(enabledThumbRadius: 12.0),
+                      overlayColor: Color(0xAF5C9F9B),
+                      overlayShape: RoundSliderOverlayShape(overlayRadius: 28.0),
+                    ),
+                    child: slider()),
+                IconButton(
+                  icon: Icon(
+                    audioPlayerState == AudioPlayerState.PLAYING
+                        ? Icons.pause_circle_outline_rounded
+                        : Icons.play_circle_outline_rounded,
+                    color: Colors.white,
+                  ),
+                  iconSize: 50.0,
+                  onPressed: () {
+                    audioPlayerState == AudioPlayerState.PLAYING
+                        ? pauseMusic()
+                        : playMusic();
+                  },
+                ),
+              ],
             ),
-            iconSize: 50.0,
-            onPressed: () {
-              audioPlayerState == AudioPlayerState.PLAYING
-                  ? pauseMusic()
-                  : playMusic();
-            },
           ),
+
         ],
       ),
     );
