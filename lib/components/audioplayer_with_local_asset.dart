@@ -74,11 +74,11 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //height: 200,
+      height: 200,
       width: double.infinity,
       decoration: BoxDecoration(
         color: Color(0xFF18938E),
-        borderRadius: BorderRadius.circular(30.0),
+        borderRadius: BorderRadius.only(topLeft: Radius.circular(30.0), topRight: Radius.circular(30.0),),
         boxShadow: [
           BoxShadow(
             color: Color(0xFF2C3E50),
