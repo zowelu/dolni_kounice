@@ -58,10 +58,9 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
               builder: (context) => Container(
                 height: screenSizeHeight / 2,
                 child: Container(
-                  padding: EdgeInsets.only(
-                      left: kDefaultPadding, right: kDefaultPadding),
+                  padding: EdgeInsets.all(kDefaultPadding),
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Icon(
                         Icons.arrow_downward,
@@ -69,10 +68,12 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
                         size: kDefaultFontSizeHeader,
                       ),
                       SizedBox(height: kDefaultMarginLarger,),
-                      ClipRRect(
-                        borderRadius: BorderRadius.all(Radius.circular(20.0),),
-                        child: Image(
-                          image: AssetImage(assetImageOfModal),
+                      Expanded(
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.all(Radius.circular(20.0),),
+                          child: Image(
+                            image: AssetImage(assetImageOfModal),
+                          ),
                         ),
                       ),
                     ],
