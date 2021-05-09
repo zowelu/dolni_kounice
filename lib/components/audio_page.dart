@@ -32,6 +32,7 @@ class AudioPage extends StatelessWidget {
       title: 'Město památek',
       home: Scaffold(
         backgroundColor: kBackgroundColor,
+        bottomNavigationBar: AudioPlayerWithLocalAsset(path: path, kapitola: kapitola),
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(kDefaultMyAppBarHeight),
           child: MyAppBar(
