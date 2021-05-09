@@ -61,7 +61,6 @@ class AudioPage extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       SizedBox(height: kDefaultMargin),
-                      SizedBox(height: kDefaultMargin),
                       Column(
                         children: [
                           SizedBox(
