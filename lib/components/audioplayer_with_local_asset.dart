@@ -8,9 +8,9 @@ import 'package:mesto_pamatek/constants/constants.dart';
 
 class AudioPlayerWithLocalAsset extends StatefulWidget {
   ///Audioplayer widget - vytvoření přehrávače a jeho funkčnosti
-  AudioPlayerWithLocalAsset({@required this.path, @required this.kapitola});
+  AudioPlayerWithLocalAsset({@required this.path});
   final String path;
-  final String kapitola;
+
 
   @override
   AudioPlayerWithLocalAssetState createState() =>
@@ -24,7 +24,6 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
   String _path;
   int timeProgress = 0;
   int audioDuration = 0;
-  String _kapitola;
 
   Widget slider() {
     return Container(
@@ -42,7 +41,6 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
   void initState() {
     super.initState();
     _path = widget.path;
-    _kapitola = widget.kapitola;
     audioCache = AudioCache(fixedPlayer: audioPlayer);
     audioPlayer.onPlayerStateChanged.listen((AudioPlayerState s) {
       setState(() {
@@ -93,17 +91,6 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-            margin: EdgeInsets.only(top: kDefaultMargin),
-            child: Text(
-              _kapitola,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  color: kDefaultColorTextWhite,
-                  fontFamily: kDefaultFontFamily,
-                  fontSize: kDefaultFontSizeHeader),
-            ),
-          ),
           SizedBox(height: 5.0),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
