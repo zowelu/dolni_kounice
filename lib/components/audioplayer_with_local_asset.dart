@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 
+
+
 class AudioPlayerWithLocalAsset extends StatefulWidget {
   ///Audioplayer widget - vytvoření přehrávače a jeho funkčnosti
   AudioPlayerWithLocalAsset({@required this.path});
@@ -26,8 +28,9 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
   int audioDuration = 0;
 
   Widget slider() {
+    double sizeWidth = MediaQuery.of(context).size.width;
     return Container(
-      width: 350,
+      width: sizeWidth/100*80,
       child: Slider.adaptive(
           value: (timeProgress / 1000).floorToDouble(),
           max: (audioDuration / 1000.floorToDouble()),
@@ -73,7 +76,6 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
 
   @override
   Widget build(BuildContext context) {
-    double sizeWidth = MediaQuery.of(context).size.width;
     return Container(
       height: 200,
       width: double.infinity,
