@@ -76,8 +76,9 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
 
   @override
   Widget build(BuildContext context) {
+    double sizeDeviceHeight = MediaQuery.of(context).size.height;
     return Container(
-      height: 200,
+      height: sizeDeviceHeight/100*15,
       width: double.infinity,
       decoration: BoxDecoration(
         color: Color(0xFF18938E),
@@ -120,7 +121,7 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
           ),
           Expanded(
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SliderTheme(
