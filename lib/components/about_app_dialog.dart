@@ -75,10 +75,8 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
                   ),
                   GestureDetector(
                     onTap: () {},
-                    child: Image( height: 25,
-                      image: AssetImage('assets/images/webstrong-logo.png'),
+                    child: Image.asset('assets/images/webstrong-logo.png', height: 25),
                     ),
-                  ),
                 ],
               ),
               Text(
