@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:splashscreen/splashscreen.dart';
-import 'package:mesto_pamatek/screens/about_app_page.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_1_portal.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_2_klasterni_kostel.dart';
 import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_3_vezicka.dart';
@@ -70,7 +69,6 @@ void main() {
             AudioGuideRosaCoeliStrecha(),
         MonumentsRosaCoeli.id: (context) => MonumentsRosaCoeli(),
         MonumentsJevishSynagogue.id: (context) => MonumentsJevishSynagogue(),
-        AboutAppPage.id: (context) => AboutAppPage(),
       },
     ),
   );
