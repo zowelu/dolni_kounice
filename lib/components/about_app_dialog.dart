@@ -81,6 +81,11 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
                   ),
                 ],
               ),
+              Text(
+                'www.webstrong.cz',
+                style: TextStyle(fontSize: 14),
+                textAlign: TextAlign.center,
+              ),
               SizedBox(
                 height: 22,
               ),
