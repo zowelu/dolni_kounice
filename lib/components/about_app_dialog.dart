@@ -46,6 +46,11 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
                 'Město památek',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
               ),
+              Text(
+                'verze: 1.0.0',
+                style: TextStyle(fontSize: 14),
+                textAlign: TextAlign.center,
+              ),
               SizedBox(
                 height: kDefaultMarginLarger,
               ),
