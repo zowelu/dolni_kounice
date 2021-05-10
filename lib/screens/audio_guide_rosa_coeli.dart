@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:mesto_pamatek/components/default_page_of_choice_with_floating_button.dart';
-import 'package:mesto_pamatek/constants/constants.dart';
-import 'package:mesto_pamatek/components/choice_container.dart';
-import 'package:mesto_pamatek/components/container_header_image_background.dart';
-import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_1_portal.dart';
-import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_2_klasterni_kostel.dart';
-import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_3_vezicka.dart';
-import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_4_prima_chramova_lod.dart';
-import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_5_rajska_zahrada.dart';
-import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_filmy_a_serialy.dart';
-import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_historie.dart';
-import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_strecha.dart';
-import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli_uvod.dart';
+import 'package:dolni_kounice/components/default_page_of_choice_with_floating_button.dart';
+import 'package:dolni_kounice/constants/constants.dart';
+import 'package:dolni_kounice/components/choice_container.dart';
+import 'package:dolni_kounice/components/container_header_image_background.dart';
+import 'package:dolni_kounice/screens/audio_guide_rosa_coeli_1_portal.dart';
+import 'package:dolni_kounice/screens/audio_guide_rosa_coeli_2_klasterni_kostel.dart';
+import 'package:dolni_kounice/screens/audio_guide_rosa_coeli_3_vezicka.dart';
+import 'package:dolni_kounice/screens/audio_guide_rosa_coeli_4_prima_chramova_lod.dart';
+import 'package:dolni_kounice/screens/audio_guide_rosa_coeli_5_rajska_zahrada.dart';
+import 'package:dolni_kounice/screens/audio_guide_rosa_coeli_filmy_a_serialy.dart';
+import 'package:dolni_kounice/screens/audio_guide_rosa_coeli_historie.dart';
+import 'package:dolni_kounice/screens/audio_guide_rosa_coeli_strecha.dart';
+import 'package:dolni_kounice/screens/audio_guide_rosa_coeli_uvod.dart';
 
 class AudioGuideRosaCoeli extends StatefulWidget {
   static String id = '/audioGuideRosaCoeli';

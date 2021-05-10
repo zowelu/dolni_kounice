@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cz.webstrong.mesto_pamatek">
+    package="cz.webstrong.dolni_kounice">
    <application
         android:label="Město památek"
         android:icon="@mipmap/ic_launcher">

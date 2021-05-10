@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mesto_pamatek/constants/constants.dart';
-import 'package:mesto_pamatek/components/my_app_bar.dart';
+import 'package:dolni_kounice/constants/constants.dart';
+import 'package:dolni_kounice/components/my_app_bar.dart';
 
 class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
   DefaultPageOfChoiceWithFloatingButton(

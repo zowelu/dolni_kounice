@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mesto_pamatek/constants/constants.dart';
+import 'package:dolni_kounice/constants/constants.dart';
 
 //Container s obrázkem na pozadí a názvem sekce nebo kapitoly a doprovodným textem
 class ContainerHeaderImageBackground extends StatelessWidget {

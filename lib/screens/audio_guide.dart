@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mesto_pamatek/components/choice_container.dart';
-import 'package:mesto_pamatek/components/container_header_image_background.dart';
-import 'package:mesto_pamatek/components/default_page_of_choice.dart';
-import 'package:mesto_pamatek/screens/audio_guide_rosa_coeli.dart';
+import 'package:dolni_kounice/components/choice_container.dart';
+import 'package:dolni_kounice/components/container_header_image_background.dart';
+import 'package:dolni_kounice/components/default_page_of_choice.dart';
+import 'package:dolni_kounice/screens/audio_guide_rosa_coeli.dart';
 
 class AudioGuide extends StatefulWidget {
   static String id = '/audioGuide';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mesto_pamatek/constants/constants.dart';
+import 'package:dolni_kounice/constants/constants.dart';
 
 class TextDefaultStandart extends StatelessWidget {
   ///Standartní text v aplikaci pro běžné texty

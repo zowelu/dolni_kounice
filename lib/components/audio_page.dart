@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mesto_pamatek/constants/constants.dart';
-import 'package:mesto_pamatek/components/rosa_coeli_map_of_path_and_text.dart';
-import 'package:mesto_pamatek/components/container_header_image_background.dart';
-import 'package:mesto_pamatek/components/audioplayer_with_local_asset.dart';
-import 'package:mesto_pamatek/components/my_app_bar.dart';
+import 'package:dolni_kounice/constants/constants.dart';
+import 'package:dolni_kounice/components/rosa_coeli_map_of_path_and_text.dart';
+import 'package:dolni_kounice/components/container_header_image_background.dart';
+import 'package:dolni_kounice/components/audioplayer_with_local_asset.dart';
+import 'package:dolni_kounice/components/my_app_bar.dart';
 
 //Vrací stránku pro kapitoly audioprůvodce
 class AudioPage extends StatelessWidget {

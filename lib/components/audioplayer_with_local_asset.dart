@@ -4,7 +4,7 @@ import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
-import 'package:mesto_pamatek/constants/constants.dart';
+import 'package:dolni_kounice/constants/constants.dart';
 
 class AudioPlayerWithLocalAsset extends StatefulWidget {
   ///Audioplayer widget - vytvoření přehrávače a jeho funkčnosti

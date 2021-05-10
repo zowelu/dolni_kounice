@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mesto_pamatek/components/about_app_dialog.dart';
-import 'package:mesto_pamatek/constants/constants.dart';
+import 'package:dolni_kounice/components/about_app_dialog.dart';
+import 'package:dolni_kounice/constants/constants.dart';
 
 class MyAppBar extends StatelessWidget {
   const MyAppBar(

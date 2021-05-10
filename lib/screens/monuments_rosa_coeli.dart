@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mesto_pamatek/components/gallery_photo_view_page.dart';
-import 'package:mesto_pamatek/components/monuments_page.dart';
-import 'package:mesto_pamatek/components/choice_container.dart';
-import 'package:mesto_pamatek/components/my_button.dart';
-import 'package:mesto_pamatek/components/single_photo_view_page.dart';
-import 'package:mesto_pamatek/constants/constants.dart';
-import 'package:mesto_pamatek/components/text_default_standart.dart';
-import 'package:mesto_pamatek/components/text_default_header.dart';
-import 'package:mesto_pamatek/components/image_on_page_with_ontap.dart';
+import 'package:dolni_kounice/components/gallery_photo_view_page.dart';
+import 'package:dolni_kounice/components/monuments_page.dart';
+import 'package:dolni_kounice/components/choice_container.dart';
+import 'package:dolni_kounice/components/my_button.dart';
+import 'package:dolni_kounice/components/single_photo_view_page.dart';
+import 'package:dolni_kounice/constants/constants.dart';
+import 'package:dolni_kounice/components/text_default_standart.dart';
+import 'package:dolni_kounice/components/text_default_header.dart';
+import 'package:dolni_kounice/components/image_on_page_with_ontap.dart';
 
 class MonumentsRosaCoeli extends StatefulWidget {
   ///Stránka památky Klášter Rosa Colei

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mesto_pamatek/components/choice_container.dart';
-import 'package:mesto_pamatek/components/container_header_image_background.dart';
-import 'package:mesto_pamatek/components/default_page_of_choice.dart';
-import 'package:mesto_pamatek/screens/monuments_jevish_synagogue.dart';
-import 'package:mesto_pamatek/screens/monuments_rosa_coeli.dart';
+import 'package:dolni_kounice/components/choice_container.dart';
+import 'package:dolni_kounice/components/container_header_image_background.dart';
+import 'package:dolni_kounice/components/default_page_of_choice.dart';
+import 'package:dolni_kounice/screens/monuments_jevish_synagogue.dart';
+import 'package:dolni_kounice/screens/monuments_rosa_coeli.dart';
 
 class Monuments extends StatefulWidget {
   static String id = '/monuments';

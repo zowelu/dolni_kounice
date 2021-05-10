@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
-import 'package:mesto_pamatek/constants/constants.dart';
-import 'package:mesto_pamatek/components/my_app_bar.dart';
+import 'package:dolni_kounice/constants/constants.dart';
+import 'package:dolni_kounice/components/my_app_bar.dart';
 
 class SinglePhotoViewPage extends StatelessWidget {
   ///Zobrazí obrázek, po zadání jména obrázku z assets se zobrazí obrázek
