@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mesto_pamatek/components/about_app_dialog.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
-import 'package:mesto_pamatek/screens/about_app_page.dart';
 
 class MyAppBar extends StatelessWidget {
   const MyAppBar(
