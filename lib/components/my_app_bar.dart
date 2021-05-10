@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:mesto_pamatek/components/about_app_dialog.dart';
 import 'package:mesto_pamatek/constants/constants.dart';
 import 'package:mesto_pamatek/screens/about_app_page.dart';
 
 class MyAppBar extends StatelessWidget {
-  const MyAppBar({@required this.tittleOfAppbar, @required this.onPressedBackButton});
+  const MyAppBar(
+      {@required this.tittleOfAppbar, @required this.onPressedBackButton});
 
   final String tittleOfAppbar;
   final Function onPressedBackButton;
@@ -28,12 +30,11 @@ class MyAppBar extends StatelessWidget {
               child: GestureDetector(
                 child: Text('O aplikaci'),
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => AboutAppPage(),
-                    ),
-                  );
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AboutAppDialog();
+                      });
                 },
               ),
             ),
