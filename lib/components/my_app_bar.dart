@@ -14,6 +14,7 @@ class MyAppBar extends StatelessWidget {
     return AppBar(
       centerTitle: true,
       backgroundColor: kBackgroundColor,
+      brightness: Brightness.dark,
       automaticallyImplyLeading: true,
       leading: IconButton(
         icon: Icon(
