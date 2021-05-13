@@ -75,7 +75,11 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
                     width: kDefaultMargin,
                   ),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () async {
+                      //po stisknutí otevře stránku v externím prohlížeči
+                      OpenUrlInBrowser().openUrl(
+                          'https://webstrong.cz/');
+                    },
                     child: Image.asset('assets/images/webstrong-logo.png',
                         height: 25),
                   ),
