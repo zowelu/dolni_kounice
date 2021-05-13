@@ -15,7 +15,6 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double screenSizeHeight = MediaQuery.of(context).size.height;
     return MaterialApp(
       title: 'Město památek',
       home: Scaffold(
