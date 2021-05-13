@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
+import 'package:dolni_kounice/components/open_url_in_browser.dart';
 
 class AboutAppDialog extends StatefulWidget {
   const AboutAppDialog({Key key}) : super(key: key);
@@ -75,14 +76,22 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
                   ),
                   GestureDetector(
                     onTap: () {},
-                    child: Image.asset('assets/images/webstrong-logo.png', height: 25),
-                    ),
+                    child: Image.asset('assets/images/webstrong-logo.png',
+                        height: 25),
+                  ),
                 ],
               ),
-              Text(
-                'www.webstrong.cz',
-                style: TextStyle(fontSize: 14),
-                textAlign: TextAlign.center,
+              InkWell(
+                child: Text(
+                  'www.webstrong.cz',
+                  style: TextStyle(fontSize: 14, decoration: TextDecoration.underline),
+                  textAlign: TextAlign.center,
+                ),
+                onTap: () async {
+                  //po stisknutí otevře stránku v externím prohlížeči
+                  OpenUrlInBrowser().openUrl(
+                      'https://webstrong.cz/');
+                },
               ),
               SizedBox(
                 height: 22,
