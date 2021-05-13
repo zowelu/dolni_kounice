@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:dolni_kounice/components/gallery_photo_view_page.dart';
 import 'package:dolni_kounice/components/monuments_page.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
@@ -50,11 +51,20 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
         ),
         Center(
           child: MyButton(
-              textOfButton:
-                  'Informace o vstupném, otevírací době a dalších naleznete zde',
-              onPressed: () {setState(() {
-
-              });}),
+            textOfButton:
+                'Informace o vstupném, otevírací době a dalších naleznete zde',
+            onPressed: () async {
+              String url = "https://www.fluttercampus.com";
+              var urllaunchable =
+                  await canLaunch(url); //canLaunch is from url_launcher package
+              if (urllaunchable) {
+                await launch(
+                    url); //launch is from url_launcher package to launch URL
+              } else {
+                print("URL can't be launched.");
+              }
+            },
+          ),
         ),
         SizedBox(
           height: kDefaultMarginLarger,
