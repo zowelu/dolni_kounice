@@ -14,11 +14,12 @@ class ChoiceContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       clipBehavior: Clip.antiAlias,
+      borderOnForeground: false,
       elevation: 10.0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20.0),
       ),
-      margin: EdgeInsets.only(left: kDefaultMarginLarger, right: kDefaultMarginLarger, bottom: kDefaultMargin),
+      margin: EdgeInsets.only(left: kDefaultMargin, right: kDefaultMargin, bottom: kDefaultMargin),
       child: Stack(
         alignment: Alignment.center,
         children: [
