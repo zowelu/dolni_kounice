@@ -1,23 +1,21 @@
 import 'package:url_launcher/url_launcher.dart';
 
+//funkce otevírající stránku v externím prohlížeči
 class OpenUrlInBrowser {
-  String _launchURL =
-      'https://www.dolnikounice.cz/klaster-rosa-coeli/d-78777/p1=4774';
+  //String _launchURL ='https://www.dolnikounice.cz/klaster-rosa-coeli/d-78777/p1=4774';
 
   Future<void> _launchInBrowser(String url) async {
-    if (await canLaunch(url)) {
+    var urllaunchable =
+    await canLaunch(url); //canLaunch is from url_launcher package
+    if (urllaunchable) {
       await launch(
-        url,
-        forceSafariVC: false,
-        forceWebView: false,
-        headers: <String, String>{'header_key': 'header_value'},
-      );
+          url, forceSafariVC: false, forceWebView: false, headers: <String, String>{'header_key': 'header_value'}); //launch is from url_launcher package to launch URL
     } else {
-      throw 'Could not lauch $url';
+      print("URL can't be launched.");
     }
   }
 
-  Function openUrl(String launchURL) {
-    _launchInBrowser(_launchURL);
+  void openUrl(String launchURL) {
+    _launchInBrowser(launchURL);
   }
 }
