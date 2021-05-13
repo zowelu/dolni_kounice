@@ -14,25 +14,30 @@ class ChoiceContainer2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      clipBehavior: Clip.antiAlias,
-      elevation: 10.0,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20.0),
-      ),
-      margin: EdgeInsets.only(left: kDefaultMarginLarger, right: kDefaultMarginLarger, bottom: kDefaultMargin),
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          Ink.image(
-            image: AssetImage(assetImageOfChoice),
-            height: 165.0,
-            fit: BoxFit.cover,
-            child: InkWell(
-              onTap: onTap,
+    return Container(
+      width: double.infinity,
+      margin: EdgeInsets.only(left: kDefaultMargin, right: kDefaultMargin, bottom: kDefaultMargin),
+      height: 165,
+      child: GestureDetector(
+        onTap: onTap,
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10.0),
+            boxShadow: [
+              BoxShadow(
+                color: kDefaultBoxShadowColor,
+                offset: const Offset(1.0, 1.0),
+                blurRadius: 5.0,
+                spreadRadius: 2.0,
+              ),
+            ],
+            image: DecorationImage(
+              image: AssetImage(assetImageOfChoice),
+              fit: BoxFit.cover,
             ),
           ),
-          Column(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               DecoratedBox(
@@ -41,7 +46,7 @@ class ChoiceContainer2 extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.all(kDefaultPadding),
+                  padding:  EdgeInsets.all(kDefaultPadding),
                   child: Text(
                     textOfChoice,
                     style: TextStyle(
@@ -56,8 +61,10 @@ class ChoiceContainer2 extends StatelessWidget {
               ),
             ],
           ),
-        ],
+        ),
       ),
     );
   }
 }
+
+
