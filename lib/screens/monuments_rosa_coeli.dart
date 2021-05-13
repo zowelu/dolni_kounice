@@ -1,3 +1,4 @@
+import 'package:dolni_kounice/components/open_url_in_browser.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -19,15 +20,9 @@ class MonumentsRosaCoeli extends StatefulWidget {
 }
 
 class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
-  Future<void> _launched;
+
   String _launchURL = 'https://www.dolnikounice.cz/klaster-rosa-coeli/d-78777/p1=4774';
-  Future<void> _launchInBrowser(String url) async {
-    if(await canLaunch(url)){
-      await launch(url, forceSafariVC: false, forceWebView: false, headers: <String, String>{'header_key': 'header_value'},);
-    } else {
-      throw 'Could not lauch $url';
-    }
-  }
+
   @override
   Widget build(BuildContext context) {
     return MonumentsPage(
@@ -62,7 +57,7 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
           child: MyButton(
               textOfButton:
                   'Informace o vstupném, otevírací době a dalších naleznete zde',
-              onPressed: () {_launchInBrowser(_launchURL);}),
+              onPressed: () {OpenUrlInBrowser().openUrl();}),
         ),
         SizedBox(
           height: kDefaultMarginLarger,
