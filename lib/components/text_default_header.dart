@@ -9,7 +9,7 @@ class TextDefaultHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      'Historie',
+      text,
       style: TextStyle(
         fontSize: kDefaultFontSizeHeader,
         color: kDefaultColorTextWhite,

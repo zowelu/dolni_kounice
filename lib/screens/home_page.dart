@@ -1,3 +1,4 @@
+import 'package:dolni_kounice/components/choice_container_2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
