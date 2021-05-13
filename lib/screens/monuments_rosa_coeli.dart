@@ -52,7 +52,9 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
           child: MyButton(
               textOfButton:
                   'Informace o vstupném, otevírací době a dalších naleznete zde',
-              onPressed: () {}),
+              onPressed: () {setState(() {
+
+              });}),
         ),
         SizedBox(
           height: kDefaultMarginLarger,
