@@ -20,8 +20,8 @@ class MonumentsRosaCoeli extends StatefulWidget {
 }
 
 class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
-
-  String _launchURL = 'https://www.dolnikounice.cz/klaster-rosa-coeli/d-78777/p1=4774';
+  String _launchURL =
+      'https://www.dolnikounice.cz/klaster-rosa-coeli/d-78777/p1=4774';
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +57,10 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
           child: MyButton(
               textOfButton:
                   'Informace o vstupném, otevírací době a dalších naleznete zde',
-              onPressed: () {OpenUrlInBrowser().openUrl();}),
+              onPressed: () {
+                OpenUrlInBrowser().openUrl(
+                    'https://www.dolnikounice.cz/klaster-rosa-coeli/d-78777/p1=4774');
+              }),
         ),
         SizedBox(
           height: kDefaultMarginLarger,
