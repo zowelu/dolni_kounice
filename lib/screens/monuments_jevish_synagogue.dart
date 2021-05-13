@@ -54,7 +54,7 @@ class _MonumentsJevishSynagogueState extends State<MonumentsJevishSynagogue> {
             onPressed: () async {
               //po stisknutí otevře stránku v externím prohlížeči
               OpenUrlInBrowser().openUrl(
-                  'https://www.dolnikounice.cz/klaster-rosa-coeli/d-78777/p1=4774');
+                  'https://dolnikounice.cz/synagoga/d-78785/p1=4778');
             },
           ),
         ),
