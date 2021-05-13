@@ -17,7 +17,7 @@ class OpenUrlInBrowser {
     }
   }
 
-  Function openUrl() {
+  Function openUrl(String launchURL) {
     _launchInBrowser(_launchURL);
   }
 }
