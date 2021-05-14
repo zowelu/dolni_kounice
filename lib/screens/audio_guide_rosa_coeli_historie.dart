@@ -15,7 +15,7 @@ class _AudioGuideRosaCoeliHistorieState extends State<AudioGuideRosaCoeliHistori
       'assets/images/pamatky/klaster_rosa_coeli/klaster-1720.jpg';
   String textHeader = 'Klášter Rosa Coeli';
   String kapitola = 'Historie';
-  String path = 'audio/historie.mp3';
+  String path = 'audio/rosa_coeli/historie.mp3';
   String keyOfMap = 'Historie';
   String tag = 'Historie';
 

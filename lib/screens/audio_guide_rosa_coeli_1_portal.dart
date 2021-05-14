@@ -18,7 +18,7 @@ class _AudioGuideRosaCoeli1PortalState
       'assets/images/pamatky/klaster_rosa_coeli/klaster-portal.jpg';
   String textHeader = 'Klášter Rosa Coeli';
   String kapitola = '1 - Portál';
-  String path = 'audio/1.mp3';
+  String path = 'audio/rosa_coeli/1.mp3';
   String keyOfMap = '1 - Portál';
   String tag = 'audioKlasterRosaCoeliPortal';
 

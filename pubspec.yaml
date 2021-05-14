@@ -56,6 +56,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/audio/
+    - assets/audio/rosa_coeli/
     - assets/images/
     - assets/images/pamatky/
     - assets/images/pamatky/dk_znak/

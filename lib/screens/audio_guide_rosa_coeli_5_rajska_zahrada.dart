@@ -15,7 +15,7 @@ class _AudioGuideRosaCoeli5RajskaZahradaState extends State<AudioGuideRosaCoeli5
       'assets/images/pamatky/klaster_rosa_coeli/klaster-rajska-zahrad.jpg';
   String textHeader = 'Klášter Rosa Coeli';
   String kapitola = '5 - Rajská zahrada';
-  String path = 'audio/5.mp3';
+  String path = 'audio/rosa_coeli/5.mp3';
   String keyOfMap = '5 - Rajská zahrada';
   String tag = '5 - Rajská zahrada';
 

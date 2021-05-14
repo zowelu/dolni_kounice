@@ -15,7 +15,7 @@ class _AudioGuideRosaCoeliStrechaState extends State<AudioGuideRosaCoeliStrecha>
       'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg';
   String textHeader = 'Klášter Rosa Coeli';
   String kapitola = 'Proč klášter nemá střechu?';
-  String path = 'audio/strecha.mp3';
+  String path = 'audio/rosa_coeli/strecha.mp3';
   String keyOfMap = 'Střecha';
   String tag = 'Střecha';
 

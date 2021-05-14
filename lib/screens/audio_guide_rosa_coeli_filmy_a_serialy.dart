@@ -15,7 +15,7 @@ class _AudioGuideRosaCoeliFilmyASerialyState extends State<AudioGuideRosaCoeliFi
       'assets/images/pamatky/klaster_rosa_coeli/photographic-film-wooden-background_compressed.jpg';
   String textHeader = 'Klášter Rosa Coeli';
   String kapitola = 'Jaké filmy a seriály se v klášteře natáčely?';
-  String path = 'audio/filmy.mp3';
+  String path = 'audio/rosa_coeli/filmy.mp3';
   String keyOfMap = 'FilmyASeriály';
   String tag = 'FilmyASeriály';
 

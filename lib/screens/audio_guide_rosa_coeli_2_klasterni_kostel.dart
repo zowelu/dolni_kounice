@@ -15,7 +15,7 @@ class _AudioGuideRosaCoeli2KlasterniKostelState extends State<AudioGuideRosaCoel
       'assets/images/pamatky/klaster_rosa_coeli/klaster-chram-1.jpg';
   String textHeader = 'Klášter Rosa Coeli';
   String kapitola = '2 - Klášterní kostel';
-  String path = 'audio/2.mp3';
+  String path = 'audio/rosa_coeli/2.mp3';
   String keyOfMap = '2 - Klášterní kostel';
   Function onPressedNextButton;
   String tag = '2 - Klášterní kostel';

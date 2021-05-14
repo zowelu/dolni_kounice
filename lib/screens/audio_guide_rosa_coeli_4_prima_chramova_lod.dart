@@ -15,7 +15,7 @@ class _AudioGuideRosaCoeli4PrimaChramovaLodState extends State<AudioGuideRosaCoe
       'assets/images/pamatky/klaster_rosa_coeli/klaster-chram-2.jpg';
   String textHeader = 'Klášter Rosa Coeli';
   String kapitola = '4 - Příčná chrámová loď';
-  String path = 'audio/4.mp3';
+  String path = 'audio/rosa_coeli/4.mp3';
   String keyOfMap = '4 - Příčná chrámová loď';
   String tag = '4 - Příčná chrámová loď';
 

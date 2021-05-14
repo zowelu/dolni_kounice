@@ -15,7 +15,7 @@ class _AudioGuideRosaCoeli3VezickaState extends State<AudioGuideRosaCoeli3Vezick
       'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg';
   String textHeader = 'Klášter Rosa Coeli';
   String kapitola = '3 - Věžička';
-  String path = 'audio/3.mp3';
+  String path = 'audio/rosa_coeli/3.mp3';
   String keyOfMap = '3 - Věžička';
   Function onPressedNextButton;
   String tag = '3 - Věžička';

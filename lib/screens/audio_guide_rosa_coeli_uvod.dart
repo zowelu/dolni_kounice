@@ -15,7 +15,7 @@ class _AudioGuideRosaCoeliUvodState extends State<AudioGuideRosaCoeliUvod> {
       'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-brana.jpg';
   String textHeader = 'Klášter Rosa Coeli';
   String kapitola = 'Úvod';
-  String path = 'audio/uvod.mp3';
+  String path = 'audio/rosa_coeli/uvod.mp3';
   String keyOfMap = 'Úvod';
   String tag = 'Úvod';
 
