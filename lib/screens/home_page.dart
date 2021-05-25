@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
     return WillPopScope(
       onWillPop: () async => false,
       child: DefaultPageOfChoice(
-        tittleOfAppbar: 'Město památek',
+        tittleOfAppbar: 'Dolní Kounice',
         listOfWidget: [
           Hero(
             tag: 'splashscreenImage',
