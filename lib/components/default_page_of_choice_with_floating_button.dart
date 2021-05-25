@@ -6,7 +6,8 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
   DefaultPageOfChoiceWithFloatingButton(
       {@required this.tittleOfAppbar,
       @required this.listOfWidget,
-      @required this.textOfFloatingButton, @required this.assetImageOfModal});
+      @required this.textOfFloatingButton,
+      @required this.assetImageOfModal});
 
   final String tittleOfAppbar;
   final List<Widget> listOfWidget;
@@ -66,13 +67,13 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
                         color: Colors.white,
                         size: kDefaultFontSizeHeader,
                       ),
-                      SizedBox(height: kDefaultMargin,),
-                      Expanded(
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.all(Radius.circular(20.0),),
-                          child: Image(
-                            image: AssetImage(assetImageOfModal),
-                          ),
+                      SizedBox(
+                        height: kDefaultMargin,
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image(
+                          image: AssetImage(assetImageOfModal),
                         ),
                       ),
                     ],
@@ -82,13 +83,16 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
             );
           },
           elevation: 5,
-          label: Text(textOfFloatingButton, style: TextStyle(fontFamily: kDefaultFontFamily, fontSize: 20.0),),
+          label: Text(
+            textOfFloatingButton,
+            style: TextStyle(fontFamily: kDefaultFontFamily, fontSize: 20.0),
+          ),
           backgroundColor: kBackgroundColor,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(
                 Radius.circular(30.0),
               ),
-              side: BorderSide(width: 2.0 , color: Colors.white)),
+              side: BorderSide(width: 2.0, color: Colors.white)),
         ),
       ),
     );
