@@ -37,7 +37,7 @@ void main() {
             color: Colors.white,
           ),
         ),
-        image: Image.asset('assets/images/dk_znak_icon.png'),
+        image: Image.asset(kDAppIconPath),
         backgroundColor: kBackgroundColor,
         styleTextUnderTheLoader: TextStyle(),
         photoSize: 130.0,
