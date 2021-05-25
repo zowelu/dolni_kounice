@@ -54,26 +54,32 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
                   topRight: Radius.circular(20.0),
                 ),
               ),
+              clipBehavior: Clip.antiAlias,
               backgroundColor: kBackgroundColor,
               builder: (context) => Container(
                 //height: screenSizeHeight / 2,
                 child: Container(
                   padding: EdgeInsets.all(kDefaultPadding),
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Icon(
-                        Icons.arrow_downward,
-                        color: Colors.white,
-                        size: kDefaultFontSizeHeader,
+                      FractionallySizedBox(
+                        widthFactor: 0.15,
+                        child: Container(
+                          height: 5.0,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.all(Radius.circular(2.5),),
+                          ),
+                        ),
                       ),
-                      SizedBox(
-                        height: kDefaultMargin,
-                      ),
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(20.0),
-                        child: Image(
-                          image: AssetImage(assetImageOfModal),
+                      Container(
+                        margin: EdgeInsets.only(bottom: kDefaultMarginLarger),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(20.0),
+                          child: Image(
+                            image: AssetImage(assetImageOfModal),
+                          ),
                         ),
                       ),
                     ],
