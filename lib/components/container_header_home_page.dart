@@ -1,3 +1,4 @@
+import 'package:dolni_kounice/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 class ContainerHeaderHomePage extends StatelessWidget {
@@ -9,10 +10,10 @@ class ContainerHeaderHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(
-          left: 100, right: 100),
+          top: 30, bottom: 30),
       child: Image(
-        //height: 100,
-        image: AssetImage('assets/images/dk_znak_icon.png'),
+        width: 130,
+        image: AssetImage(kDAppIconPath),
       ),
     );
   }
