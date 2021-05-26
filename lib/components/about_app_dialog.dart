@@ -48,7 +48,7 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
               ),
               Text(
-                'verze: 1.0.0',
+                'verze: $versionApp',
                 style: TextStyle(fontSize: 14),
                 textAlign: TextAlign.center,
               ),

@@ -24,3 +24,4 @@ double kDefaultMargin = 10.0;
 double kDefaultMarginLarger = 30.0;
 double kDefaultMyAppBarHeight = 55.0;
 String kDAppIconPath = 'assets/images/DK_znak_200px.png';
+String versionApp = '1.0.2';
