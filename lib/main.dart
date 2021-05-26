@@ -29,7 +29,7 @@ void main() {
         seconds: 3,
         navigateAfterSeconds: HomePage(),
         title: Text(
-          'Dolní Kounice jsou město památek',
+          'Dolní Kounice\njsou\n město památek',
           textAlign: TextAlign.center,
           style: TextStyle(
             fontFamily: kDefaultFontFamily,
