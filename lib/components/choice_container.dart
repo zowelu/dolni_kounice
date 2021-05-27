@@ -23,38 +23,44 @@ class ChoiceContainer extends StatelessWidget {
       child: Stack(
         alignment: Alignment.center,
         children: [
-          Ink.image(
-            image: AssetImage(assetImageOfChoice),
-            height: 165.0,
-            fit: BoxFit.cover,
-            child: InkWell(
-              onTap: onTap,
-            ),
-          ),
           Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              DecoratedBox(
-                decoration: BoxDecoration(
-                  color: kDefaultTextBackgroundTransparent,
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
-                child: Padding(
-                  padding: EdgeInsets.all(kDefaultPadding),
-                  child: Text(
-                    textOfChoice,
-                    style: TextStyle(
-                      decoration: TextDecoration.none,
-                      color: Colors.white,
-                      fontSize: kDefaultFontSizeText,
-                      fontFamily: kDefaultFontFamily,
-                    ),
-                    textAlign: TextAlign.center,
+              Ink.image(
+                image: AssetImage(assetImageOfChoice),
+                height: 165.0,
+                fit: BoxFit.cover,
+                child: InkWell(
+                  onTap: onTap,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      DecoratedBox(
+                        decoration: BoxDecoration(
+                          color: kDefaultTextBackgroundTransparent,
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.all(kDefaultPadding),
+                          child: Text(
+                            textOfChoice,
+                            style: TextStyle(
+                              decoration: TextDecoration.none,
+                              color: Colors.white,
+                              fontSize: kDefaultFontSizeText,
+                              fontFamily: kDefaultFontFamily,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
             ],
           ),
+
         ],
       ),
     );
