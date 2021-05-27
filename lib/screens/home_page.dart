@@ -19,17 +19,17 @@ class _HomePageState extends State<HomePage> {
     return showDialog(
           context: context,
           builder: (context) => AlertDialog(
-            title: Text('Are you sure?'),
-            content: Text('Do you want to exit an App'),
+            title: Text('Ukončení aplikace'),
+            content: Text('Opravdu si přejete ukončit aplikaci?'),
             actions: <Widget>[
               TextButton(
                 onPressed: () => Navigator.of(context).pop(false),
-                child: Text('No'),
+                child: Text('Ne'),
               ),
               TextButton(
                 onPressed: () => exit(0),
                 /*Navigator.of(context).pop(true)*/
-                child: Text('Yes'),
+                child: Text('Ano'),
               ),
             ],
           ),
