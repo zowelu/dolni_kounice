@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
 import 'package:dolni_kounice/components/container_header_home_page.dart';
-import 'package:dolni_kounice/screens/audio_guide.dart';
 import 'package:dolni_kounice/screens/monuments.dart';
 
 class HomePage extends StatefulWidget {

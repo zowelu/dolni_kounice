@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:dolni_kounice/components/jevish_synagogue.dart';
 import 'package:flutter/cupertino.dart';
