@@ -1,3 +1,4 @@
+import 'package:dolni_kounice/components/rosa_coeli.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -13,24 +14,25 @@ import 'package:dolni_kounice/components/image_on_page_with_ontap.dart';
 import 'package:dolni_kounice/components/open_url_in_browser.dart';
 
 class MonumentsRosaCoeli extends StatefulWidget {
-  ///Stránka památky Klášter Rosa Colei
-  static String id = '/monumentsRosaCoeli';
+  ///Stránka památky Klášter Rosa Coeli
+  static String id = RosaCoeli().id;
   @override
   _MonumentsRosaCoeliState createState() => _MonumentsRosaCoeliState();
 }
 
 class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
+  RosaCoeli rosaCoeli = RosaCoeli();
   @override
   Widget build(BuildContext context) {
     return MonumentsPage(
-      assetImage:
-          'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
+      assetImage: rosaCoeli.imageGalleryRosaCoeli[1],
       textOfAppBar: 'Průvodce památkami',
-      textHeader: 'Klášter Rosa Coeli',
-      tag: 'monumentsRosaCoeli',
+      textHeader: rosaCoeli.name,
+      tag: rosaCoeli.tag,
       isFloatingButton: true,
-      onPressedFloatingButton: (){
-        Navigator.pushNamed(context, AudioGuideRosaCoeli.id);},
+      onPressedFloatingButton: () {
+        Navigator.pushNamed(context, AudioGuideRosaCoeli.id);
+      },
       textOfFloatingButton: 'Přejít na audioprůvodce',
       listOfWidget: [
         TextDefaultStandart(
@@ -38,15 +40,14 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
                 'Působivou architekturu původně ženského kláštera můžeme spatřit nedaleko centra města. Jeho chladným kamenným stěnám a podmanivému kouzlu může návštěvník odolat jen stěží. Zřícenína kláštera Rosa coeli je uzamčený objekt který kromě otevírací doby není veřejnosti volně přístupný.\n\nTrosky kláštera Rosa coeli v Dolních Kounicích působí na citlivější jedince svou pozitivní energií. Už jen pouhých pár minut pobytu v magických prostorách syrové gotiky bývalého kláštera vám vylepší náladu.'),
         SizedBox(height: kDefaultMarginLarger),
         ChoiceContainer(
-            assetImageOfChoice:
-                'assets/images/pamatky/klaster_rosa_coeli/klaster-chram-slunce.jpg',
+            assetImageOfChoice: rosaCoeli.imageGalleryRosaCoeli[5],
             textOfChoice: 'Galerie',
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => GalleryPhotoViewPage(
-                    nameOfImageGallery: 'imageGalleryRosaCoeli',
+                    nameOfImageGallery: rosaCoeli.nameOfImageGallery,
                   ),
                 ),
               );
@@ -60,7 +61,7 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
                 'Informace o vstupném, otevírací době a dalších naleznete zde',
             onPressed: () async {
               //po stisknutí otevře stránku v externím prohlížeči
-              OpenUrlInBrowser().openUrl('https://www.dolnikounice.cz/klaster-rosa-coeli/d-78777/p1=4774');
+              OpenUrlInBrowser().openUrl(rosaCoeli.url);
             },
           ),
         ),
@@ -77,29 +78,25 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
           height: kDefaultMargin,
         ),
         ImageOnPageWithOnTap(
-          assetImage:
-              'assets/images/pamatky/klaster_rosa_coeli/klaster-1400.jpg',
+          assetImage: rosaCoeli.imageGalleryRosaCoeli[12],
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
-                    assetImage:
-                        'assets/images/pamatky/klaster_rosa_coeli/klaster-1400.jpg'),
+                    assetImage: rosaCoeli.imageGalleryRosaCoeli[12]),
               ),
             );
           },
         ),
         ImageOnPageWithOnTap(
-          assetImage:
-              'assets/images/pamatky/klaster_rosa_coeli/klaster-1423.jpg',
+          assetImage: rosaCoeli.imageGalleryRosaCoeli[13],
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
-                    assetImage:
-                        'assets/images/pamatky/klaster_rosa_coeli/klaster-1423.jpg'),
+                    assetImage: rosaCoeli.imageGalleryRosaCoeli[13]),
               ),
             );
           },
@@ -114,15 +111,13 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
           height: kDefaultMargin,
         ),
         ImageOnPageWithOnTap(
-          assetImage:
-              'assets/images/pamatky/klaster_rosa_coeli/klaster-1720.jpg',
+          assetImage: rosaCoeli.imageGalleryRosaCoeli[14],
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
-                    assetImage:
-                        'assets/images/pamatky/klaster_rosa_coeli/klaster-1720.jpg'),
+                    assetImage: rosaCoeli.imageGalleryRosaCoeli[14]),
               ),
             );
           },
@@ -134,15 +129,13 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
           height: kDefaultMargin,
         ),
         ImageOnPageWithOnTap(
-          assetImage:
-              'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg',
+          assetImage: rosaCoeli.imageGalleryRosaCoeli[15],
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
-                    assetImage:
-                        'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg'),
+                    assetImage: rosaCoeli.imageGalleryRosaCoeli[15]),
               ),
             );
           },
