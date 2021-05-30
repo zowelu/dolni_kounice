@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:dolni_kounice/components/rosa_coeli_map_of_path_and_text.dart';
+import 'package:dolni_kounice/components/rosa-coeli.dart';
 import 'package:dolni_kounice/components/audio_page.dart';
 
 class AudioGuideRosaCoeli4PrimaChramovaLod extends StatefulWidget {

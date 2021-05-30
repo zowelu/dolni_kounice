@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/audio_page.dart';
-import 'package:dolni_kounice/components/rosa_coeli_map_of_path_and_text.dart';
+import 'package:dolni_kounice/components/rosa-coeli.dart';
 
 class AudioGuideRosaCoeli1Portal extends StatefulWidget {
   static String id = '/audioGuideRosaCoeli1Portal';
