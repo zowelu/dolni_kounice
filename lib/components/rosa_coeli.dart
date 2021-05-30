@@ -1,5 +1,11 @@
 
 class RosaCoeli {
+  String id = '/monumentsRosaCoeli';
+  String name = 'Klášter Rosa Coeli';
+  String url = 'https://www.dolnikounice.cz/klaster-rosa-coeli/d-78777/p1=4774';
+  String tag = 'monumentsRosaCoeli';
+  String nameOfImageGallery = 'imageGalleryRosaCoeli';
+
   ///Map jednotlivých kapitol audioprůvodce a jejich přepisu
   Map<String, String> audioText = {
     'Úvod':  'Vítáme Vás v Dolních Kounicích a Klášteře Rosa coeli.\n\nKlášter se řadí k nejvýznamnějším středoevropským církevním stavbám vrcholné gotiky. Je nejstarší ženský premonstrátský klášter na Moravě i nejstarší šlechtickou fundací. Spolu s hradem tvoří harmonický celek, nemající v našich zemích obdoby.\n\nKlášter Rosa coeli (Růže nebeská) byl založen roku 1181 Vilémem z Pulína jako podmínka klatby, která na něho byla uvalena papežem za to, že plenil a pustošil rakouské kláštery a kostely. Musel učinit pokání a postavit klášter.\n\nŽenský premonstrátský klášter byl zasvěcený Panně Marii. První sestry premonstrátského řádu sem přišly o dva roky později v roce 1183 i se svým proboštem Petrem z Louňovic v Jižních Čechách.',
@@ -12,6 +18,26 @@ class RosaCoeli {
     'FilmyASeriály': 'Jaké filmy a seriály se v klášteře natáčeli?\n\n-	Záhada Freyerského opatství\n-	O statečném kováři\n-	Lekce Faust\n-	Četnické humoresky\n-	Záhady Toma Wizarda\n-	Hlas pro římského krále\n-	Labyrint II.\n-	Dobré ráno\n-	Pohádky krále Jiřího – čtení do ouška\na Toulavá kamera',
     'Střecha': 'Proč klášter nemá střechu?\n\n Protože jej roku 1423 vyplenila a zapálila husitská vojska. Chrámová loď poté byla zakryta pouze trámovým stropem a původní klenba již nikdy nebyla obnovena. Roku 1703 Dolní Kounice zachvátil obrovský požár, který zničil i zrestaurovaný klášter. Poté byla opravena jen budova konventu, kostel byl ponechán ve zříceninách.'
   };
+
+  ///List obrázků pro použití nejen v galerii
+  List<String> imageGalleryRosaCoeli = [
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-brana.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-portal.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-chram-1.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-chram-2.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-chram-slunce.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster_krizova_chodba.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klasterni-zahrada.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-rajska-zahrad.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-zad.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-kamenny-nahrobek.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-1200.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-1400.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-1423.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-1720.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg',
+  ];
 
   String getAudioTextOfMap(String keyOfMap){
     ///vezme text přepisu audioprůvodce na základě klíče
