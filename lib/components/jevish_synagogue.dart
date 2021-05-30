@@ -1,9 +1,9 @@
 class JevishSynagogue {
-  String id = '/monumentsRosaCoeli';
-  String name = 'Klášter Rosa Coeli';
-  String url = 'https://www.dolnikounice.cz/klaster-rosa-coeli/d-78777/p1=4774';
-  String tag = 'monumentsRosaCoeli';
-  String nameOfImageGallery = 'imageGalleryRosaCoeli';
+  String id = '/monumentsJevishSynagogue';
+  String name = 'Židovská synagoga';
+  String url = 'https://dolnikounice.cz/synagoga/d-78785/p1=4778';
+  String tag = 'monumentsSynagogue';
+  String nameOfImageGallery = 'imageGalleryJevishSynagogue';
 
   ///Map jednotlivých kapitol audioprůvodce a jejich přepisu
   Map<String, String> audioText = {

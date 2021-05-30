@@ -13,7 +13,7 @@ import 'package:dolni_kounice/components/open_url_in_browser.dart';
 
 class MonumentsJevishSynagogue extends StatefulWidget {
   ///Stránka památky Synagoga
-  static String id = '/monumentsJevishSynagogue';
+  static String id = JevishSynagogue().id;
   @override
   _MonumentsJevishSynagogueState createState() =>
       _MonumentsJevishSynagogueState();
@@ -26,11 +26,11 @@ class _MonumentsJevishSynagogueState extends State<MonumentsJevishSynagogue> {
     return MonumentsPage(
       assetImage: 'assets/images/pamatky/synagoga/synagoga-venek.jpg',
       textOfAppBar: 'Průvodce památkami',
-      textHeader: 'Židovská synagoga',
+      textHeader: jevishSynagogue.name,
       isFloatingButton: false,
       onPressedFloatingButton: null,
       textOfFloatingButton: null,
-      tag: 'monumentsSynagogue',
+      tag: jevishSynagogue.tag,
       listOfWidget: [
         TextDefaultStandart(
             text:
@@ -38,14 +38,14 @@ class _MonumentsJevishSynagogueState extends State<MonumentsJevishSynagogue> {
         SizedBox(height: kDefaultMarginLarger),
         ChoiceContainer(
             assetImageOfChoice:
-                'assets/images/pamatky/synagoga/synagoga-vnitrek-2.jpg',
+                jevishSynagogue.imageGalleryJevishSynagogue[7],
             textOfChoice: 'Galerie',
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => GalleryPhotoViewPage(
-                    nameOfImageGallery: 'imageGalleryJevishSynagogue',
+                    nameOfImageGallery: jevishSynagogue.nameOfImageGallery,
                   ),
                 ),
               );
@@ -60,7 +60,7 @@ class _MonumentsJevishSynagogueState extends State<MonumentsJevishSynagogue> {
             onPressed: () async {
               //po stisknutí otevře stránku v externím prohlížeči
               OpenUrlInBrowser().openUrl(
-                  'https://dolnikounice.cz/synagoga/d-78785/p1=4778');
+                  jevishSynagogue.url);
             },
           ),
         ),
