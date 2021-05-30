@@ -26,6 +26,53 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
       tittleOfAppbar: 'Audioprůvodce',
       textOfFloatingButton: 'Mapa kláštera',
       assetImageOfModal: 'assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png',
+      onPressedFloatingButton: (){
+        showModalBottomSheet(
+          context: context,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(20.0),
+              topRight: Radius.circular(20.0),
+            ),
+          ),
+          isScrollControlled: false,
+          clipBehavior: Clip.antiAlias,
+          backgroundColor: kBackgroundColor,
+          builder: (context) => Container(
+            //height: MediaQuery.of(context).size.height/3*2.5,
+            child: Container(
+              padding: EdgeInsets.all(kDefaultPadding),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  FractionallySizedBox(
+                    widthFactor: 0.15,
+                    child: Container(
+                      height: 5.0,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(2.5),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(bottom: kDefaultMarginLarger),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20.0),
+                      child: Image(
+                        image: AssetImage('assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png'),
+                      ),
+                    ),
+                  ),
+
+                ],
+              ),
+            ),
+          ),
+        );
+      },
       listOfWidget: [
         Hero(
           tag: 'audioKlasterRosaCoeli',
