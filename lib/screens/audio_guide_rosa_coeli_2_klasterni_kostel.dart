@@ -1,5 +1,5 @@
+import 'package:dolni_kounice/components/rosa_coeli.dart';
 import 'package:flutter/material.dart';
-import 'package:dolni_kounice/components/rosa-coeli.dart';
 import 'package:dolni_kounice/components/audio_page.dart';
 
 class AudioGuideRosaCoeli2KlasterniKostel extends StatefulWidget {
