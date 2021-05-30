@@ -12,6 +12,7 @@ import 'package:dolni_kounice/screens/audio_guide_rosa_coeli_filmy_a_serialy.dar
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli_historie.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli_strecha.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli_uvod.dart';
+import 'package:dolni_kounice/components/rosa_coeli.dart';
 
 class AudioGuideRosaCoeli extends StatefulWidget {
   static String id = '/audioGuideRosaCoeli';
@@ -20,13 +21,14 @@ class AudioGuideRosaCoeli extends StatefulWidget {
 }
 
 class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
+  RosaCoeli rosaCoeli = RosaCoeli();
   @override
   Widget build(BuildContext context) {
     return DefaultPageOfChoiceWithFloatingButton(
       tittleOfAppbar: 'Audioprůvodce',
-      textOfFloatingButton: 'Mapa kláštera',
-      assetImageOfModal: 'assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png',
-      onPressedFloatingButton: (){
+      textOfFloatingButton: 'Mapa',
+      assetImageOfModal: rosaCoeli.imageRosaCoeli[0],
+      onPressedFloatingButton: () {
         showModalBottomSheet(
           context: context,
           shape: RoundedRectangleBorder(
@@ -62,11 +64,10 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20.0),
                       child: Image(
-                        image: AssetImage('assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png'),
+                        image: AssetImage(rosaCoeli.imageRosaCoeli[0]),
                       ),
                     ),
                   ),
-
                 ],
               ),
             ),
@@ -77,14 +78,14 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
         Hero(
           tag: 'audioKlasterRosaCoeli',
           child: ContainerHeaderImageBackground(
-            assetImage:
-                'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
-            textHeader: 'Klášter Rosa Coeli',
+            assetImage: rosaCoeli.imageGalleryRosaCoeli[1],
+            textHeader: rosaCoeli.name,
             text: '',
           ),
         ),
         Container(
-          padding: EdgeInsets.only(left: kDefaultPadding, right: kDefaultPadding),
+          padding:
+              EdgeInsets.only(left: kDefaultPadding, right: kDefaultPadding),
           child: Column(
             children: [
               Text(
@@ -98,7 +99,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                 height: 20.0,
               ),
               Icon(
-                    Icons.headset,
+                Icons.headset,
                 color: Colors.white,
                 size: 50,
               ),
@@ -117,8 +118,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
         Hero(
           tag: 'Úvod',
           child: ChoiceContainer(
-            assetImageOfChoice:
-                'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-brana.jpg',
+            assetImageOfChoice: rosaCoeli.imageGalleryRosaCoeli[0],
             textOfChoice: 'Úvod',
             onTap: () {
               Navigator.pushNamed(context, AudioGuideRosaCoeliUvod.id);
@@ -128,8 +128,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
         Hero(
           tag: 'audioKlasterRosaCoeliPortal',
           child: ChoiceContainer(
-            assetImageOfChoice:
-                'assets/images/pamatky/klaster_rosa_coeli/klaster-portal.jpg',
+            assetImageOfChoice: rosaCoeli.imageGalleryRosaCoeli[2],
             textOfChoice: '1 - Portál',
             onTap: () {
               Navigator.pushNamed(context, AudioGuideRosaCoeli1Portal.id);
@@ -139,8 +138,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
         Hero(
           tag: '2 - Klášterní kostel',
           child: ChoiceContainer(
-            assetImageOfChoice:
-                'assets/images/pamatky/klaster_rosa_coeli/klaster-chram-1.jpg',
+            assetImageOfChoice: rosaCoeli.imageGalleryRosaCoeli[3],
             textOfChoice: '2 - Klášterní kostel',
             onTap: () {
               Navigator.pushNamed(
@@ -151,8 +149,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
         Hero(
           tag: '3 - Věžička',
           child: ChoiceContainer(
-            assetImageOfChoice:
-                'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
+            assetImageOfChoice: rosaCoeli.imageGalleryRosaCoeli[1],
             textOfChoice: '3 - Věžička',
             onTap: () {
               Navigator.pushNamed(context, AudioGuideRosaCoeli3Vezicka.id);
@@ -162,8 +159,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
         Hero(
           tag: '4 - Příčná chrámová loď',
           child: ChoiceContainer(
-            assetImageOfChoice:
-                'assets/images/pamatky/klaster_rosa_coeli/klaster-chram-2.jpg',
+            assetImageOfChoice: rosaCoeli.imageGalleryRosaCoeli[4],
             textOfChoice: '4 - Přímá chrámová loď',
             onTap: () {
               Navigator.pushNamed(
@@ -174,8 +170,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
         Hero(
           tag: '5 - Rajská zahrada',
           child: ChoiceContainer(
-            assetImageOfChoice:
-                'assets/images/pamatky/klaster_rosa_coeli/klaster-rajska-zahrad.jpg',
+            assetImageOfChoice: rosaCoeli.imageGalleryRosaCoeli[8],
             textOfChoice: '5 - Rajská zahrada',
             onTap: () {
               Navigator.pushNamed(
@@ -186,8 +181,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
         Hero(
           tag: 'Historie',
           child: ChoiceContainer(
-            assetImageOfChoice:
-                'assets/images/pamatky/klaster_rosa_coeli/klaster-1720.jpg',
+            assetImageOfChoice: rosaCoeli.imageGalleryRosaCoeli[14],
             textOfChoice: 'Historie',
             onTap: () {
               Navigator.pushNamed(context, AudioGuideRosaCoeliHistorie.id);
@@ -197,20 +191,17 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
         Hero(
           tag: 'FilmyASeriály',
           child: ChoiceContainer(
-            assetImageOfChoice:
-                'assets/images/pamatky/klaster_rosa_coeli/photographic-film-wooden-background_compressed.jpg',
+            assetImageOfChoice: rosaCoeli.imageRosaCoeli[2],
             textOfChoice: 'Které filmy a seriály se v klášteře natáčely?',
             onTap: () {
-              Navigator.pushNamed(
-                  context, AudioGuideRosaCoeliFilmyASerialy.id);
+              Navigator.pushNamed(context, AudioGuideRosaCoeliFilmyASerialy.id);
             },
           ),
         ),
         Hero(
           tag: 'Střecha',
           child: ChoiceContainer(
-            assetImageOfChoice:
-                'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg',
+            assetImageOfChoice: rosaCoeli.imageGalleryRosaCoeli[15],
             textOfChoice: 'Proč klášter nemá střechu?',
             onTap: () {
               Navigator.pushNamed(context, AudioGuideRosaCoeliStrecha.id);

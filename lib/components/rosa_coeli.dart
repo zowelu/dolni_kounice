@@ -39,6 +39,13 @@ class RosaCoeli {
     'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg',
   ];
 
+  List<String> imageRosaCoeli = [
+    'assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster-portal-vstupni.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/klaster_rosa_coeli_filmy_serialy.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/photographic-film-wooden-background_compressed.jpg',
+  ];
+
   String getAudioTextOfMap(String keyOfMap){
     ///vezme text přepisu audioprůvodce na základě klíče
     return audioText[keyOfMap];
