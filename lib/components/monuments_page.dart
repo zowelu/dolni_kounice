@@ -15,7 +15,8 @@ class MonumentsPage extends StatelessWidget {
     this.tag,
     @required this.onPressedFloatingButton,
     @required this.textOfFloatingButton,
-  }) : super(key: key);
+    @required this.isFloatingButton,
+  });
 
   final String textOfAppBar;
   final String assetImage;
@@ -24,6 +25,7 @@ class MonumentsPage extends StatelessWidget {
   final String tag;
   final Function onPressedFloatingButton;
   final String textOfFloatingButton;
+  final bool isFloatingButton;
 
   @override
   Widget build(BuildContext context) {
@@ -33,11 +35,18 @@ class MonumentsPage extends StatelessWidget {
         backgroundColor: kBackgroundColor,
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(kDefaultMyAppBarHeight),
-          child: MyAppBar(tittleOfAppbar: 'Památky ve městě', onPressedBackButton: () {
-            Navigator.pop(context);
-          },),
+          child: MyAppBar(
+            tittleOfAppbar: textOfAppBar,
+            onPressedBackButton: () {
+              Navigator.pop(context);
+            },
+          ),
         ),
-        floatingActionButton: FloatingButton(onPressedFloatingButton: onPressedFloatingButton, textOfFloatingButton: textOfFloatingButton),
+        floatingActionButton: isFloatingButton
+            ? FloatingButton(
+                onPressedFloatingButton: onPressedFloatingButton,
+                textOfFloatingButton: textOfFloatingButton)
+            : null,
         body: SafeArea(
           child: SingleChildScrollView(
             child: Column(
@@ -73,7 +82,3 @@ class MonumentsPage extends StatelessWidget {
     );
   }
 }
-
-
-
-
