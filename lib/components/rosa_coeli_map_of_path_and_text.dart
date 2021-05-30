@@ -1,5 +1,5 @@
 
-class AudioGuideRosaCoeliMapOfPathAndText {
+class RosaCoeli {
   ///Map jednotlivých kapitol audioprůvodce a jejich přepisu
   Map<String, String> audioText = {
     'Úvod':  'Vítáme Vás v Dolních Kounicích a Klášteře Rosa coeli.\n\nKlášter se řadí k nejvýznamnějším středoevropským církevním stavbám vrcholné gotiky. Je nejstarší ženský premonstrátský klášter na Moravě i nejstarší šlechtickou fundací. Spolu s hradem tvoří harmonický celek, nemající v našich zemích obdoby.\n\nKlášter Rosa coeli (Růže nebeská) byl založen roku 1181 Vilémem z Pulína jako podmínka klatby, která na něho byla uvalena papežem za to, že plenil a pustošil rakouské kláštery a kostely. Musel učinit pokání a postavit klášter.\n\nŽenský premonstrátský klášter byl zasvěcený Panně Marii. První sestry premonstrátského řádu sem přišly o dva roky později v roce 1183 i se svým proboštem Petrem z Louňovic v Jižních Čechách.',

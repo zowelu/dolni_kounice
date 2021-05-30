@@ -10,7 +10,7 @@ class AudioGuideRosaCoeli3Vezicka extends StatefulWidget {
 }
 
 class _AudioGuideRosaCoeli3VezickaState extends State<AudioGuideRosaCoeli3Vezicka> {
-  AudioGuideRosaCoeliMapOfPathAndText textAudioMap = AudioGuideRosaCoeliMapOfPathAndText();
+  RosaCoeli textAudioMap = RosaCoeli();
   String assetImage =
       'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg';
   String textHeader = 'Klášter Rosa Coeli';

@@ -10,7 +10,7 @@ class AudioGuideRosaCoeliFilmyASerialy extends StatefulWidget {
 }
 
 class _AudioGuideRosaCoeliFilmyASerialyState extends State<AudioGuideRosaCoeliFilmyASerialy> {
-  AudioGuideRosaCoeliMapOfPathAndText textAudioMap = AudioGuideRosaCoeliMapOfPathAndText();
+  RosaCoeli textAudioMap = RosaCoeli();
   String assetImage =
       'assets/images/pamatky/klaster_rosa_coeli/photographic-film-wooden-background_compressed.jpg';
   String textHeader = 'Klášter Rosa Coeli';

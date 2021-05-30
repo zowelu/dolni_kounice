@@ -23,7 +23,7 @@ class AudioPage extends StatelessWidget {
   final String textHeader;
   final String kapitola;
   final String path;
-  final AudioGuideRosaCoeliMapOfPathAndText textAudioMap;
+  final RosaCoeli textAudioMap;
   final String keyOfMap;
   final String tag;
 

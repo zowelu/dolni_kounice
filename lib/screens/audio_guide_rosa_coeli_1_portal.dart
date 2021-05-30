@@ -11,8 +11,8 @@ class AudioGuideRosaCoeli1Portal extends StatefulWidget {
 
 class _AudioGuideRosaCoeli1PortalState
     extends State<AudioGuideRosaCoeli1Portal> {
-  AudioGuideRosaCoeliMapOfPathAndText textAudioMap =
-      AudioGuideRosaCoeliMapOfPathAndText();
+  RosaCoeli textAudioMap =
+      RosaCoeli();
 
   String assetImage =
       'assets/images/pamatky/klaster_rosa_coeli/klaster-portal.jpg';
