@@ -1,3 +1,4 @@
+import 'package:dolni_kounice/screens/audio_guide_rosa_coeli.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/gallery_photo_view_page.dart';
@@ -27,6 +28,9 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
       textOfAppBar: 'Památky ve městě',
       textHeader: 'Klášter Rosa Coeli',
       tag: 'monumentsRosaCoeli',
+      onPressedFloatingButton: (){
+        Navigator.pushNamed(context, AudioGuideRosaCoeli.id);},
+      textOfFloatingButton: 'Přejít na audioprůvodce',
       listOfWidget: [
         TextDefaultStandart(
             text:
