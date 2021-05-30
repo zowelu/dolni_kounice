@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
 import 'package:dolni_kounice/components/container_header_image_background.dart';
-import 'package:dolni_kounice/screens/monuments_jevish_synagogue.dart';
-import 'package:dolni_kounice/screens/monuments_rosa_coeli.dart';
+import 'package:dolni_kounice/screens/monuments/monuments_jevish_synagogue.dart';
+import 'package:dolni_kounice/screens/monuments/monuments_rosa_coeli.dart';
 
 class Monuments extends StatefulWidget {
   static String id = '/monuments';
