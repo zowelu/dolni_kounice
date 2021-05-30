@@ -25,9 +25,10 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
     return MonumentsPage(
       assetImage:
           'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
-      textOfAppBar: 'Památky ve městě',
+      textOfAppBar: 'Průvodce památkami',
       textHeader: 'Klášter Rosa Coeli',
       tag: 'monumentsRosaCoeli',
+      isFloatingButton: true,
       onPressedFloatingButton: (){
         Navigator.pushNamed(context, AudioGuideRosaCoeli.id);},
       textOfFloatingButton: 'Přejít na audioprůvodce',
