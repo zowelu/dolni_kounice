@@ -1,23 +1,8 @@
+import 'package:dolni_kounice/components/rosa_coeli.dart';
 import 'package:flutter/material.dart';
 
 class ImageGallery extends StatelessWidget {
-  final List<String> imageGalleryRosaCoeli = [
-    'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-brana.jpg',
-    'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
-    'assets/images/pamatky/klaster_rosa_coeli/klaster-portal.jpg',
-    'assets/images/pamatky/klaster_rosa_coeli/klaster-chram-1.jpg',
-    'assets/images/pamatky/klaster_rosa_coeli/klaster-chram-2.jpg',
-    'assets/images/pamatky/klaster_rosa_coeli/klaster_krizova_chodba.jpg',
-    'assets/images/pamatky/klaster_rosa_coeli/klasterni-zahrada.jpg',
-    'assets/images/pamatky/klaster_rosa_coeli/klaster-rajska-zahrad.jpg',
-    'assets/images/pamatky/klaster_rosa_coeli/klaster-zad.jpg',
-    'assets/images/pamatky/klaster_rosa_coeli/klaster-kamenny-nahrobek.jpg',
-    'assets/images/pamatky/klaster_rosa_coeli/klaster-1200.jpg',
-    'assets/images/pamatky/klaster_rosa_coeli/klaster-1400.jpg',
-    'assets/images/pamatky/klaster_rosa_coeli/klaster-1423.jpg',
-    'assets/images/pamatky/klaster_rosa_coeli/klaster-1720.jpg',
-    'assets/images/pamatky/klaster_rosa_coeli/klaster-letecky.jpg',
-  ];
+  final List<String> imageGalleryRosaCoeli = RosaCoeli().imageGalleryRosaCoeli;
 
   final List<String> imageGalleryJevishSynagogue = [
     'assets/images/pamatky/synagoga/synagoga-venek.jpg',
