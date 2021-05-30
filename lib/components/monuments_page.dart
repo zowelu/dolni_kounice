@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
 import 'package:dolni_kounice/components/container_header_image_background.dart';
 import 'package:dolni_kounice/components/my_app_bar.dart';
+import 'package:dolni_kounice/components/floating_button.dart';
 
 //Vrací stránku pro kapitoly Památek ve městě
 class MonumentsPage extends StatelessWidget {
@@ -13,6 +14,7 @@ class MonumentsPage extends StatelessWidget {
     @required this.listOfWidget,
     this.tag,
     @required this.onPressedFloatingButton,
+    @required this.textOfFloatingButton,
   }) : super(key: key);
 
   final String textOfAppBar;
@@ -21,6 +23,7 @@ class MonumentsPage extends StatelessWidget {
   final List<Widget> listOfWidget;
   final String tag;
   final Function onPressedFloatingButton;
+  final String textOfFloatingButton;
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +37,7 @@ class MonumentsPage extends StatelessWidget {
             Navigator.pop(context);
           },),
         ),
-        floatingActionButton: FloatingButton(onPressedFloatingButton: onPressedFloatingButton),
+        floatingActionButton: FloatingButton(onPressedFloatingButton: onPressedFloatingButton, textOfFloatingButton: textOfFloatingButton),
         body: SafeArea(
           child: SingleChildScrollView(
             child: Column(
