@@ -7,12 +7,15 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
       {@required this.tittleOfAppbar,
       @required this.listOfWidget,
       @required this.textOfFloatingButton,
-      @required this.assetImageOfModal});
+      @required this.assetImageOfModal,
+      @required this.onPressedFloatingButton,
+      });
 
   final String tittleOfAppbar;
   final List<Widget> listOfWidget;
   final String textOfFloatingButton;
   final String assetImageOfModal;
+  final Function onPressedFloatingButton;
 
   @override
   Widget build(BuildContext context) {
@@ -45,60 +48,18 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
           ),
         ),
         floatingActionButton: FloatingActionButton.extended(
-          onPressed: () {
-            showModalBottomSheet(
-              context: context,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(20.0),
-                  topRight: Radius.circular(20.0),
-                ),
-              ),
-              clipBehavior: Clip.antiAlias,
-              backgroundColor: kBackgroundColor,
-              builder: (context) => Container(
-                //height: screenSizeHeight / 2,
-                child: Container(
-                  padding: EdgeInsets.all(kDefaultPadding),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      FractionallySizedBox(
-                        widthFactor: 0.15,
-                        child: Container(
-                          height: 5.0,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.all(Radius.circular(2.5),),
-                          ),
-                        ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(bottom: kDefaultMarginLarger),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(20.0),
-                          child: Image(
-                            image: AssetImage(assetImageOfModal),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            );
-          },
-          elevation: 5,
           label: Text(
             textOfFloatingButton,
             style: TextStyle(fontFamily: kDefaultFontFamily, fontSize: 20.0),
           ),
+          elevation: 5,
           backgroundColor: kBackgroundColor,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(
                 Radius.circular(30.0),
               ),
               side: BorderSide(width: 2.0, color: Colors.white)),
+          onPressed: onPressedFloatingButton,
         ),
       ),
     );
