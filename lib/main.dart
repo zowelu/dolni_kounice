@@ -16,7 +16,7 @@ import 'package:dolni_kounice/screens/monuments.dart';
 import 'package:dolni_kounice/screens/monuments_jevish_synagogue.dart';
 import 'package:dolni_kounice/screens/monuments_rosa_coeli.dart';
 import 'package:dolni_kounice/screens/trips.dart';
-import 'package:dolni_kounice/screens/audio_guide_rosa_coeli.dart';
+import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_uvod.dart';
 
 void main() {
