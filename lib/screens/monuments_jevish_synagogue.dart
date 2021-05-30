@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/gallery_photo_view_page.dart';
@@ -22,8 +24,11 @@ class _MonumentsJevishSynagogueState extends State<MonumentsJevishSynagogue> {
   Widget build(BuildContext context) {
     return MonumentsPage(
       assetImage: 'assets/images/pamatky/synagoga/synagoga-venek.jpg',
-      textOfAppBar: 'Památky ve městě',
+      textOfAppBar: 'Průvodce památkami',
       textHeader: 'Židovská synagoga',
+      isFloatingButton: false,
+      onPressedFloatingButton: null,
+      textOfFloatingButton: null,
       tag: 'monumentsSynagogue',
       listOfWidget: [
         TextDefaultStandart(
