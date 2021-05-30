@@ -12,6 +12,7 @@ class MonumentsPage extends StatelessWidget {
     @required this.textHeader,
     @required this.listOfWidget,
     this.tag,
+    @required this.onPressedFloatingButton,
   }) : super(key: key);
 
   final String textOfAppBar;
@@ -19,6 +20,7 @@ class MonumentsPage extends StatelessWidget {
   final String textHeader;
   final List<Widget> listOfWidget;
   final String tag;
+  final Function onPressedFloatingButton;
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +34,7 @@ class MonumentsPage extends StatelessWidget {
             Navigator.pop(context);
           },),
         ),
+        floatingActionButton: FloatingButton(onPressedFloatingButton: onPressedFloatingButton),
         body: SafeArea(
           child: SingleChildScrollView(
             child: Column(
@@ -64,6 +67,31 @@ class MonumentsPage extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+class FloatingButton extends StatelessWidget {
+  const FloatingButton({@required this.onPressedFloatingButton, @required this.textOfFloatingButton});
+
+  final String textOfFloatingButton;
+  final Function onPressedFloatingButton;
+
+  @override
+  Widget build(BuildContext context) {
+    return FloatingActionButton.extended(
+      label: Text(
+        textOfFloatingButton,
+        style: TextStyle(fontFamily: kDefaultFontFamily, fontSize: 20.0),
+      ),
+      elevation: 5,
+      backgroundColor: kBackgroundColor,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(30.0),
+          ),
+          side: BorderSide(width: 2.0, color: Colors.white)),
+      onPressed: onPressedFloatingButton,
     );
   }
 }
