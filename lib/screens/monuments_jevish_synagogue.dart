@@ -1,5 +1,6 @@
 import 'dart:ffi';
 
+import 'package:dolni_kounice/components/jevish_synagogue.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/gallery_photo_view_page.dart';
@@ -20,6 +21,7 @@ class MonumentsJevishSynagogue extends StatefulWidget {
 }
 
 class _MonumentsJevishSynagogueState extends State<MonumentsJevishSynagogue> {
+  JevishSynagogue jevishSynagogue = JevishSynagogue();
   @override
   Widget build(BuildContext context) {
     return MonumentsPage(
