@@ -16,9 +16,8 @@ import 'package:dolni_kounice/components/open_url_in_browser.dart';
 class MonumentsRosaCoeli extends StatelessWidget {
   ///Stránka památky Klášter Rosa Coeli
 
-
   static String id = RosaCoeli().id;
-  RosaCoeli rosaCoeli = RosaCoeli();
+  static RosaCoeli rosaCoeli = RosaCoeli();
   @override
   Widget build(BuildContext context) {
     return MonumentsPage(
