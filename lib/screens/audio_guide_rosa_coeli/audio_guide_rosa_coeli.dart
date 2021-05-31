@@ -116,20 +116,20 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
         ),
         SizedBox(height: kDefaultMarginLarger),
         Hero(
-          tag: 'Úvod',
+          tag: rosaCoeli.chapter[0],
           child: ChoiceContainer(
             assetImageOfChoice: rosaCoeli.imageGalleryRosaCoeli[0],
-            textOfChoice: 'Úvod',
+            textOfChoice: rosaCoeli.chapter[0],
             onTap: () {
               Navigator.pushNamed(context, AudioGuideRosaCoeliUvod.id);
             },
           ),
         ),
         Hero(
-          tag: 'audioKlasterRosaCoeliPortal',
+          tag: rosaCoeli.chapter[1],
           child: ChoiceContainer(
             assetImageOfChoice: rosaCoeli.imageGalleryRosaCoeli[2],
-            textOfChoice: '1 - Portál',
+            textOfChoice: rosaCoeli.chapter[1],
             onTap: () {
               Navigator.pushNamed(context, AudioGuideRosaCoeli1Portal.id);
             },

@@ -10,21 +10,19 @@ class AudioGuideRosaCoeliUvod extends StatefulWidget {
 }
 
 class _AudioGuideRosaCoeliUvodState extends State<AudioGuideRosaCoeliUvod> {
+  static int index = 0;
   RosaCoeli textAudioMap = RosaCoeli();
-  String assetImage =
-      'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-brana.jpg';
-  String textHeader = 'Klášter Rosa Coeli';
-  String kapitola = 'Úvod';
-  String path = 'audio/rosa_coeli/uvod.mp3';
-  String keyOfMap = 'Úvod';
-  String tag = 'Úvod';
+  String assetImage = RosaCoeli().imageGalleryRosaCoeli[index];
+  String textHeader = RosaCoeli().audioText.keys.elementAt(index);
+  String path = RosaCoeli().mp3[index];
+  String keyOfMap = RosaCoeli().audioText.keys.elementAt(index);
+  String tag = RosaCoeli().audioText.keys.elementAt(index);
 
   @override
   Widget build(BuildContext context) {
     return AudioPage(
         assetImage: assetImage,
         textHeader: textHeader,
-        kapitola: kapitola,
         path: path,
         textAudioMap: textAudioMap,
         keyOfMap: keyOfMap,

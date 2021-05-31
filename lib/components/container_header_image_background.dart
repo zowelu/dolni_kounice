@@ -44,6 +44,7 @@ class ContainerHeaderImageBackground extends StatelessWidget {
               Container(
                 child: Text(
                   textHeader,
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                     decoration: TextDecoration.none,
                       fontFamily: kDefaultFontFamily,

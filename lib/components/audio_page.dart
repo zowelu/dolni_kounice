@@ -12,7 +12,6 @@ class AudioPage extends StatelessWidget {
     Key key,
     @required this.assetImage,
     @required this.textHeader,
-    @required this.kapitola,
     @required this.path,
     @required this.textAudioMap,
     @required this.keyOfMap,
@@ -21,7 +20,6 @@ class AudioPage extends StatelessWidget {
 
   final String assetImage;
   final String textHeader;
-  final String kapitola;
   final String path;
   final RosaCoeli textAudioMap;
   final String keyOfMap;
@@ -61,36 +59,8 @@ class AudioPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Container(
-                        padding: EdgeInsets.only(
-                            left: 20.0, right: 20.0, top: 10.0, bottom: 10.0),
-                        decoration: BoxDecoration(
-                          color: Color(0xFF18938E),
-                          borderRadius: BorderRadius.circular(30.0),
-                        ),
-                        child: Text(
-                          kapitola,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontFamily: kDefaultFontFamily,
-                              fontSize: kDefaultFontSizeHeader,
-                              color: kDefaultColorTextWhite),
-                        ),
-                      ),
-                      SizedBox(height: kDefaultMargin),
                       Column(
                         children: [
-                          SizedBox(
-                            height: 20.0,
-                          ),
-                          Text(
-                            'Přepis v textové podobě:',
-                            style: TextStyle(
-                              color: kDefaultColorTextWhite,
-                              fontSize: kDefaultFontSizeText,
-                              decoration: TextDecoration.underline,
-                            ),
-                          ),
                           SizedBox(
                             height: 20.0,
                           ),
