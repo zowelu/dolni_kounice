@@ -1,5 +1,7 @@
 import 'package:dolni_kounice/components/castle_and_chateau.dart';
+import 'package:dolni_kounice/components/jevish_synagogue.dart';
 import 'package:dolni_kounice/components/default_page_of_choice_with_floating_button.dart';
+import 'package:dolni_kounice/components/rosa_coeli.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
@@ -7,6 +9,7 @@ import 'package:dolni_kounice/components/choice_container.dart';
 import 'package:dolni_kounice/components/container_header_image_background.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_jevish_synagogue.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_rosa_coeli.dart';
+import 'package:dolni_kounice/screens/monuments/monuments_castle_and_chateau.dart';
 
 class Monuments extends StatefulWidget {
   static String id = '/monuments';
@@ -78,22 +81,22 @@ class _MonumentsState extends State<Monuments> {
               text: '',
             )),
         Hero(
-          tag: 'monumentsRosaCoeli',
+          tag: RosaCoeli().tag,
           child: ChoiceContainer(
             assetImageOfChoice:
-                'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
-            textOfChoice: 'Klášter Rosa Coeli',
+                RosaCoeli().imageGalleryRosaCoeli[1],
+            textOfChoice: RosaCoeli().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsRosaCoeli.id);
             },
           ),
         ),
         Hero(
-          tag: 'monumentsSynagogue',
+          tag: JevishSynagogue().tag,
           child: ChoiceContainer(
             assetImageOfChoice:
-                'assets/images/pamatky/synagoga/synagoga-venek.jpg',
-            textOfChoice: 'Židovská synagoga',
+                JevishSynagogue().imageGalleryJevishSynagogue[0],
+            textOfChoice: JevishSynagogue().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsJevishSynagogue.id);
             },
@@ -106,7 +109,7 @@ class _MonumentsState extends State<Monuments> {
             CastleAndChateau().imageGalleryCastleAndChateau[0],
             textOfChoice: CastleAndChateau().name,
             onTap: () {
-              Navigator.pushNamed(context, MonumentsJevishSynagogue.id);
+              Navigator.pushNamed(context, MonumentsCastleAndChateau.id);
             },
           ),
         ),
