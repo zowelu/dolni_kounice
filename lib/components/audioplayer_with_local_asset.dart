@@ -78,7 +78,7 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
       height: sizeDeviceHeight / 100 * 15,
       width: double.infinity,
       decoration: BoxDecoration(
-        color: Color(0xFF18938E),
+        color: kDColorPlayerBackground,
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(30.0),
           topRight: Radius.circular(30.0),
