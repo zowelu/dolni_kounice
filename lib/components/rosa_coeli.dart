@@ -70,6 +70,7 @@ class RosaCoeli {
     'assets/images/pamatky/klaster_rosa_coeli/klaster-portal-vstupni.jpg',
     'assets/images/pamatky/klaster_rosa_coeli/klaster_rosa_coeli_filmy_serialy.jpg',
     'assets/images/pamatky/klaster_rosa_coeli/photographic-film-wooden-background_compressed.jpg',
+    'assets/images/pamatky/klaster_rosa_coeli/rosa_coeli_pudorys.png',
   ];
 
   ///vezme text přepisu audioprůvodce na základě klíče

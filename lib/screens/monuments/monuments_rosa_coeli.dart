@@ -143,6 +143,25 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
         TextDefaultStandart(
             text:
                 'Roku 1974 přešel klášter do vlastnictví Krajského ústavu státní památkové péče a ochrany přírody v Brně, jako státní památka I. kategorie. V tomto období byl využíván bytový objekt konventu k ubytování několika rodin. Okresní národní výbor Brno – venkov investoval asi 1, 6 milionu Kčs do oprav. Probíhalo zejména zpevnění a vyspárování korunního zdiva a oprava střech. Tyto práce probíhaly na konci osmdesátých let minulého století a posléze vedly v roce 1990 k novému slavnostnímu otevření a zpřístupnění památky pro veřejnost. V novém společenském systému, který ve státě nastal po roce 1989, připadl restituční nárok památky zpět na rodinu Košťálových. Rodina ji věnovala darem Biskupské konsistoři v Brně. Ta ve spolupráci s Městským úřadem v Dolních Kounicích zajišťuje v současnosti provoz kláštera.'),
+        SizedBox(height: kDMarginLarger),
+        TextDefaultHeader(text: 'Půdorys klášterního areálu Rosa coeli'),
+        SizedBox(height: kDMargin),
+        Container(
+          decoration: BoxDecoration(color: Colors.white),
+          child: ImageOnPageWithOnTap(
+            assetImage: rosaCoeli.imageRosaCoeli[4],
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SinglePhotoViewPage(
+                      assetImage: rosaCoeli.imageRosaCoeli[4]),
+                ),
+              );
+            },
+          ),
+        ),
+        TextDefaultStandart(text: 'I A presbyterium kostela\nI B transept kostela\nI C loď kostela\nI D portál kostela\nI E sakristie kostela\nII A rajský dvůr\nII B křížová chodba\nIII kapitulní síň\nIV klášterní budovy')
       ],
     );
   }
