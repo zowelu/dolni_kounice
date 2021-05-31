@@ -26,7 +26,7 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
     @override
     Widget build(BuildContext context) {
       return MonumentsPage(
-        assetImage: castleAndChateau.imageGalleryCastleAndChateau[1],
+        assetImage: castleAndChateau.imageGalleryCastleAndChateau[0],
         textOfAppBar: 'Průvodce památkami',
         textHeader: castleAndChateau.name,
         tag: castleAndChateau.tag,
@@ -38,10 +38,10 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
         listOfWidget: [
           TextDefaultStandart(
               text:
-              'Působivou architekturu původně ženského kláštera můžeme spatřit nedaleko centra města. Jeho chladným kamenným stěnám a podmanivému kouzlu může návštěvník odolat jen stěží. Zřícenína kláštera Rosa coeli je uzamčený objekt který kromě otevírací doby není veřejnosti volně přístupný.\n\nTrosky kláštera Rosa coeli v Dolních Kounicích působí na citlivější jedince svou pozitivní energií. Už jen pouhých pár minut pobytu v magických prostorách syrové gotiky bývalého kláštera vám vylepší náladu.'),
+              'Mohutná stavba původně klášterního hradu střeží město od západní strany. Rozsáhlý areál, léta chátrající, v posledních letech zažívá rozkvět.'),
           SizedBox(height: kDMarginLarger),
           ChoiceContainer(
-              assetImageOfChoice: castleAndChateau.imageGalleryCastleAndChateau[5],
+              assetImageOfChoice: castleAndChateau.imageGalleryCastleAndChateau[2],
               textOfChoice: 'Galerie',
               onTap: () {
                 Navigator.push(
@@ -73,31 +73,31 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
           SizedBox(height: kDMargin),
           TextDefaultStandart(
             text:
-            'Roku 1181 si Vilém z Kounic k sobě pozval Gotšalka, opata v Želivském klášteře, který měl značné zkušenosti s budováním klášterů. Radili o výstavbě budoucího kounického kláštera a společně patrně vybrali i místo pro budoucí stavbu. Zvolili je tak vhodně, aby zůstávalo ukryto zrakům příchozích z jihomoravské roviny a v ohbí řeky skryto na jih kopcem, kde byl později vybudován mohutný hrad.\n\nO dva roky později byl klášter postaven. Jednalo se velmi pravděpodobně pouze o dřevěné budovy konventu a modlitebny, které byly brány jako provizorium. S kamennými stavbami se obvykle začínalo až mnohem později. Do dnešních dnů se zachovaly rozsáhlé zbytky románského kamenného kostela v obvodovém zdivu západního a severního ambitu.\n\nV říjnu 1183 byl obsazen jeptiškami z kláštera Louňovice v Čechách. Data jsou historicky podložena, proto jsou prvním skutečným dokladem o existenci Dolních Kounic. I když se nikde nepíše o názvu Rosa coeli a tento název se objevuje až v 15. století, tak je zřejmé, že byl klášter od počátku zasvěcen Panně Marii. Církev nazývá Pannu Marii také „Růží nebeskou“ - latinsky Rosa coeli.\n\nVe 14. století byl klášterní areál výrazně přestavěn. Románskou baziliku nahradil mnohem větší gotický kostel, na severu s novou křížovou chodbou. Jde o dodnes zachovanou ruinu s obnaženým zdivem, na němž se dá poměrně dobře sledovat postupnost výstavby a stanovit tak její relativní chronologii.',
+            'Stavba kounického zámku, původně hradu, probíhala v letech 1285 až 1330. Jádrem je protáhlý lichoběžník, téměř obdélník, o středních příčkách 27 x 47 metrů. Je situován podle hrany prudkého svahu k řece Jihlavě. Kolem dvoupatrové palácové budovy obíhá ze tří stran velké vnější nádvoří, dnes z části obestavěné hospodářskými budovami.Král Václav II. vzal kounický klášter roku 1284 pod svůj patronát, což prakticky znamenalo začátek budování charakteru městečka, později města Dolních Kounic. Nad klášterem byl tedy v té době patronát panovníka i papeže. To samozřejmě vedle řady povinností přinášelo klášteru i samotným Dolním Kounicím určité výhody. Spolu s růstem prestiže kláštera a ochrany i rozšiřování majetku posilovalo i mocenské postavení kláštera. Také z těchto důvodů mohl klášter přistoupit k vybudování klášterního hradu, který pak sloužil jako sídlo probošta.',
           ),
           SizedBox(
             height: kDMargin,
           ),
           ImageOnPageWithOnTap(
-            assetImage: castleAndChateau.imageGalleryCastleAndChateau[12],
+            assetImage: castleAndChateau.imageGalleryCastleAndChateau[7],
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => SinglePhotoViewPage(
-                      assetImage: castleAndChateau.imageGalleryCastleAndChateau[12]),
+                      assetImage: castleAndChateau.imageGalleryCastleAndChateau[7]),
                 ),
               );
             },
           ),
           ImageOnPageWithOnTap(
-            assetImage: castleAndChateau.imageGalleryCastleAndChateau[13],
+            assetImage: castleAndChateau.imageGalleryCastleAndChateau[1],
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => SinglePhotoViewPage(
-                      assetImage: castleAndChateau.imageGalleryCastleAndChateau[13]),
+                      assetImage: castleAndChateau.imageGalleryCastleAndChateau[1]),
                 ),
               );
             },
@@ -112,13 +112,13 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
             height: kDMargin,
           ),
           ImageOnPageWithOnTap(
-            assetImage: castleAndChateau.imageGalleryCastleAndChateau[14],
+            assetImage: castleAndChateau.imageGalleryCastleAndChateau[1],
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => SinglePhotoViewPage(
-                      assetImage: castleAndChateau.imageGalleryCastleAndChateau[14]),
+                      assetImage: castleAndChateau.imageGalleryCastleAndChateau[1]),
                 ),
               );
             },
@@ -130,13 +130,13 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
             height: kDMargin,
           ),
           ImageOnPageWithOnTap(
-            assetImage: castleAndChateau.imageGalleryCastleAndChateau[15],
+            assetImage: castleAndChateau.imageGalleryCastleAndChateau[1],
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => SinglePhotoViewPage(
-                      assetImage: castleAndChateau.imageGalleryCastleAndChateau[15]),
+                      assetImage: castleAndChateau.imageGalleryCastleAndChateau[1]),
                 ),
               );
             },
@@ -150,13 +150,13 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
           Container(
             decoration: BoxDecoration(color: Colors.white),
             child: ImageOnPageWithOnTap(
-              assetImage: castleAndChateau.imageGalleryCastleAndChateau[4],
+              assetImage: castleAndChateau.imageGalleryCastleAndChateau[1],
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => SinglePhotoViewPage(
-                        assetImage: castleAndChateau.imageGalleryCastleAndChateau[4]),
+                        assetImage: castleAndChateau.imageGalleryCastleAndChateau[1]),
                   ),
                 );
               },

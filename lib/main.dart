@@ -1,3 +1,4 @@
+import 'package:dolni_kounice/screens/monuments/monuments_castle_and_chateau.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:dolni_kounice/constants/constants.dart';
@@ -70,6 +71,7 @@ void main() {
             AudioGuideRosaCoeliStrecha(),
         MonumentsRosaCoeli.id: (context) => MonumentsRosaCoeli(),
         MonumentsJevishSynagogue.id: (context) => MonumentsJevishSynagogue(),
+        MonumentsJevishSynagogue.id: (context) => MonumentsCastleAndChateau(),
       },
     ),
   );

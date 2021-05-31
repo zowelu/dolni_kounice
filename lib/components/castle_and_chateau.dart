@@ -30,6 +30,7 @@ class CastleAndChateau {
     'assets/images/pamatky/zamek/zamek-venek-vstup.jpg',
     'assets/images/pamatky/zamek/zamek-vnitrek-sal.jpg',
     'assets/images/pamatky/zamek/zamek-vnitrek-obradni-sin.jpg',
+    'assets/images/pamatky/zamek/zamek-skica.jpg',
   ];
 
   ///List zbytků obrázků

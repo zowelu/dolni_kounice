@@ -103,7 +103,7 @@ class _MonumentsState extends State<Monuments> {
           tag: CastleAndChateau().tag,
           child: ChoiceContainer(
             assetImageOfChoice:
-            CastleAndChateau().imageGalleryCastleAndChateau[1],
+            CastleAndChateau().imageGalleryCastleAndChateau[0],
             textOfChoice: CastleAndChateau().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsJevishSynagogue.id);
