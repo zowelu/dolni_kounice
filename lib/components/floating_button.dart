@@ -20,7 +20,7 @@ class FloatingButton extends StatelessWidget {
       backgroundColor: kDColorFloatingButton,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.all(
-          Radius.circular(30.0),
+          Radius.circular(15.0),
         ),
       ),
       onPressed: onPressedFloatingButton,
