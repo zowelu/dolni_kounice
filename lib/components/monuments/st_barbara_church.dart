@@ -23,12 +23,12 @@ class StBarbaraChurch{
 
   ///List obrázků pro použití nejen v galerii
   List<String> imageGallery = [
-    'assets/images/pamatky/kaple_sv_barbory/kaple-sv-barbory-venek-1.jpg',
-    'assets/images/pamatky/kaple_sv_barbory/kaple-sv-barbory-venek-2.jpg',
-    'assets/images/pamatky/kaple_sv_barbory/kaple-sv-barbory-venek-3.jpg',
-    'assets/images/pamatky/kaple_sv_barbory/kaple-sv-barbory-vnitrek-1.jpg',
-    'assets/images/pamatky/kaple_sv_barbory/kaple-sv-barbory-vnitrek-2.jpg',
-    'assets/images/pamatky/kaple_sv_barbory/kaple-sv-barbory-vnitrek-3.jpg',
+    'assets/images/pamatky/chram_sv_barbory/chram-sv-barbory-venek-1.jpg',
+    'assets/images/pamatky/chram_sv_barbory/chram-sv-barbory-venek-2.jpg',
+    'assets/images/pamatky/chram_sv_barbory/chram-sv-barbory-venek-3.jpg',
+    'assets/images/pamatky/chram_sv_barbory/chram-sv-barbory-vnitrek-1.jpg',
+    'assets/images/pamatky/chram_sv_barbory/chram-sv-barbory-vnitrek-2.jpg',
+    'assets/images/pamatky/chram_sv_barbory/chram-sv-barbory-vnitrek-3.jpg',
   ];
 
   ///List zbytků obrázků
