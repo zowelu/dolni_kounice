@@ -79,25 +79,13 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
             height: kDMargin,
           ),
           ImageOnPageWithOnTap(
-            assetImage: castleAndChateau.imageGalleryCastleAndChateau[7],
+            assetImage: castleAndChateau.imageCastleAndChateau[0],
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => SinglePhotoViewPage(
-                      assetImage: castleAndChateau.imageGalleryCastleAndChateau[7]),
-                ),
-              );
-            },
-          ),
-          ImageOnPageWithOnTap(
-            assetImage: castleAndChateau.imageGalleryCastleAndChateau[1],
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => SinglePhotoViewPage(
-                      assetImage: castleAndChateau.imageGalleryCastleAndChateau[1]),
+                      assetImage: castleAndChateau.imageCastleAndChateau[0]),
                 ),
               );
             },
@@ -107,7 +95,7 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
           ),
           TextDefaultStandart(
               text:
-              'Po smrti probošta hraběte Jana VI. z Althanu v r. 1517 nastoupil Martin Göschel. Tento ambiciózní kněz přestoupil v roce 1521 na luteránskou víru a dokonce si vzal jednu z kounických jeptišek za manželku, domnívaje se, že doba je mu natolik příznivá, že dojde svých velikých cílů. Podle jeho vzoru pak i ostatní jeptišky vedly údajně neřestný život. To vše mělo za následek, že jej olomoucký biskup suspendoval a král Ludvík Jagellonský na něj vydal vyhošťovací rozkaz, ale  Göschel toho nedbal a zůstal v klášteře až do r. 1526. To vše mělo za následek rostoucí hněv poddaných kláštera.  V Praze na český trůn mezitím nastoupil Ferdinand I. Habsburský, o kterém se mnozí domnívali, že je tolerantní vůči nekatolickým církvím a že u něj tito snáze prorazí. Tak se domníval i Göschel, který potom, co se uchýlil do Mikulova k Novokřtěncům, byl povolán Ferdinandem do Prahy. Sem Göschel přišel, ale panovník jej nechal uvěznit, vyslýchat právem útrpným a hlavu mu zachránila pouze přímluva některé šlechty, která dosáhla toho, že nebyl upálen za živa, ale byl na jejich přímluvu předán olomouckému biskupovi Stanislavovi Pavlovskému. Ten Göschla nechal znovu uvěznit a ve vězení nakonec  Göschel umírá.\n\nMezi tím si zbylých jedenáct řeholnic zvolilo za nového probošta Jana, avšak pohoršlivý život, který byl v klášteře veden, přivedl okolní obyvatelstvo k přepadení kláštera. Jeptišky se rozutekly po království a chrám byl částečně zpustošen a zneuctěn. Po útěku jeptišek se celého majetku ujaly Moravské zemské stavy a ty předaly panství nakonec panovníkovi Ferdinandu I. Habsburskému, neboť se vlastně jednalo o královský klášter. Ferdinand nejprve na čas zastavil panství královně Marii – vdově po Ludvíku Jagelonském, pak dáno k doživotnímu užívání tridentskému biskupovi Bernardovi a nakonec po předcházející zástavě dne 3. října 1537 dědičně prodáno celé panství místokancléři českého královstvi  panu Jiřímu Žabkovi z Limberka.\n\nPo několika významných šlechtických rodech, přešlo panství roku 1622 rodu Dietrichsteinů. Ferdinand z Dietrichsteina prodal v roce 1698 areál kláštera Strahovskému klášteru. Strahov se rozhodl kounický klášter opravit a zastřešit. Mimo další úpravy byla obnovena klenba dolního ambitu křížové chodby křídla vedle kostela, nová dřevěná - došková střecha kostela a postavena nová klášterní obytná budova. Ovšem 4. července 1703 vypukl ve městě obrovský požár a ten se z Růžové ulice přes panský statek a ovčín, ve kterém uhořelo na 600 ovcí, přenesl na rekonstruovaný klášter. Zde padla za oběť tomuto ohni střecha nad klášterním chrámem, kaplí, křížovou chodbou a ložnicemi pro kněze. V opravách kláštera se pokračovalo ještě dalších patnáct let, pouze klášterní chrám již zůstal nezastřešen.'),
+              'Roku 1537 získal kounické panství Jiří Žabka z Limberka. Postupně si Jiří Žabka vytvořil rozsáhlé dominium, a protože byl ekonomicky velice schopný, pustil se i do několika významných akcí. Začal s opravou kláštera, který si pak zvolil i za rodinnou hrobku a započal přestavbu hradu na zámek. Dnes na tuto přestavbu upomíná především točité schodiště hlavního paláce, unikátní na Moravě, jehož balustráda je zdobena plastikami hadů, želv, žab, ještěrek apod. Zámek byl vystavěn jako dvoupatrový, tři původní nárožní věže byly vestavěny do hmoty zdiva hlavního paláce. Hrad sice ztratil na malebnosti, ale získal na své mohutnosti.\n\nŽabkové drželi zámek s celým panstvím do roku 1561, kdy jej prodali pánům ze Zástřizl. Hynek a Jan ze Zástřizl jej prodali roku 1578 hejtmanovi Zdeňku Lvu z Rožmitálu a tito o deset let později Bernardu Drnovskému z Drnovic a na Rájci. Za něj došlo v letech 1588 –1618 k další fázi přestavby hradu a vznikla renesanční podoba, která se zachovala dodnes.'),
           SizedBox(
             height: kDMargin,
           ),
@@ -125,46 +113,47 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
           ),
           TextDefaultStandart(
               text:
-              'Přes postupné opravy jsou zprávy o kounickém klášteře většinou neradostné. Objekt pustoší procházející vojska, škody vznikají na klášterní budově v jejich otevřených částech vlivem deště a sněhu. Od roku 1804 začal klášter rychle propadat zkáze a po projednání a se souhlasem Strahova byl prodán knížeti Janu z Dietrichsteina a tím opět připojen ke kounickému panství. Od těch let byl klášter vystaven napospas povětrnostním vlivům a lidem, kteří využívali klášterních budov jako kamenného lomu. Panští úřednici rozdávali celé desítky povozů stavebního kamene, spolu s kamenem a cihlami byly bez jakéhokoliv výběru vyváženy i celé kusy klenebních žeber, klenební svorníky a jiné tesané kamenické prvky, součásti klášterní stavby. Tento stav trval přibližně do roku 1890, kdy se nový majitel panství, syn poslední kněžny z Dietrichsteina Josef Johan z Herbersteina rozhodl, že klášter zachrání před zkázou nejnaléhavější opravou.\n\nTeprve po roce 1927 bylo zastaveno devastování kláštera a postupně se ruina začala sanovat a udržovat. Právě v tomto roce přešel zámek i s klášterem do vlastnictví původně hraběcího správce Emila Tomce. Ten předal kostelní zříceninu do správy právě se tvořícího „Komitétu pro záchranu památek v Dolních Kounicích“, čímž se tato vzácná památka stala obecně přístupnou, neboť společnost v ní zajišťovala průvodcovskou činnost. Zásluhou „Komitétu“ byly již o rok později provedeny některé práce nevyžadující velkých finančních nákladů, neboť financí se zejména na počátku nedostávalo. Díky všem pracím byla památka uspokojivě na řadu let fixována. Problematická ovšem byla otázka vlastnictví. Po zániku feudálního panství získal budovy zámku a kláštera již zmiňovaný hraběcí správce Emil Tomec a jako soukromé vlastnictví klášter prodal Dr. Jaromíru Košťálovi. Objekt byl v jejich vlastnictví prakticky po celou dobu existence „Komitétu“, který samozřejmě mohl investovat jen málo financí a tak je soustředil na klášterní chrám. Po druhé světové válce vznikla roku 1952 tzv. Osvětová beseda, jejímž členem se stal i Vlastivědný kroužek Osvětové besedy, nástupce původního Komité pro záchranu památek.'),
+              'Před vstupní průčelí paláce nechali přistavit další trakt místnosti s Rytířským sálem a novým vstupním portálem. Celou budovu sjednotili sgrafitovou fasádou jako výzdobu stěn provedenou škrábáním ve vlhké omítce až na spodní vrstvu jiné barvy a opět rozšířili opevnění. Na východní baště nechali postavit kapli, ve které byla druhotně osazena dvě gotická hrotitá okna. Do kaple se vstupovalo nádherným pozdně renesančním portálem s erbem Drnovských z Drnovic. Některé místnosti prvního patra byly zaklenuty klenbami s geometrizujícími štukovými ornamenty. Z této doby pochází také mohutná vnější dělová bašta, později přestavěná na sýpku. Přestavbami Jiřího Žabky z Limberka a za Drnovských z Drnovic získal hrad podobu typického renesančního zámku, přičemž pevnostní charakter stavby zůstal zachován.\n\nPo pobělohorské konfiskaci zámek koupili roku 1622 Dietrichsteinové, kteří jej sice po požáru roku 1623 nechali v polovině 17. století opravit, ale nadále využívali pouze jako sídlo správy panství. Jediným vážnějším stavebním zásahem byly v průběhu 18. století úpravy hospodářských budov a stavba mohutné sýpky na jihovýchodní straně při dělové baště. Díky tomu se nám hlavní objekty původního hradu a pozdějšího zámku i s opevněním dochovaly ve své původní gotické a renesanční dispozici.\n\nKdyž v roce 1862 získali zámek sňatkem Herbersteinové, začal být využíván především k hospodářským účelům. Tím ovšem docházelo k postupné degradaci některých prostor, zejména druhého patra. Tato situace se nezměnila ani po roce 1918, kdy po První pozemkové reformě roku 1927 zámek získal bývalý správce hraběte Herbersteina Emil Tomec. Kolem roku 1935 Emil Tomec zemřel a majetek zdědil jeho bratr Bohuslav. Ten prodal zámek tehdejšímu obecnímu tajemníkovi Karlu Rubešovi. Po II. světové válce a různých právních záležitostech byl Rubeš označen za kolaboranta s říší. Ve městě se necítil mezi lidmi bezpečně a tak nakonec inzerátem zaměnil kounický zámek s Judr. Edlem za jeho vilu v Čechách a z Dolních Kounic se odstěhoval. Na konci druhé světové války došlo k vybourání gotického ostění druhé brány a k jejímu dosavadnímu provizornímu zabezpečení. V roce 1945 zámek poškodilo několik dělostřeleckých granátů.'),
           SizedBox(
             height: kDMargin,
           ),
           ImageOnPageWithOnTap(
-            assetImage: castleAndChateau.imageGalleryCastleAndChateau[1],
+            assetImage: castleAndChateau.imageGalleryCastleAndChateau[0],
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => SinglePhotoViewPage(
-                      assetImage: castleAndChateau.imageGalleryCastleAndChateau[1]),
+                      assetImage: castleAndChateau.imageGalleryCastleAndChateau[0]),
                 ),
               );
             },
           ),
           TextDefaultStandart(
               text:
-              'Roku 1974 přešel klášter do vlastnictví Krajského ústavu státní památkové péče a ochrany přírody v Brně, jako státní památka I. kategorie. V tomto období byl využíván bytový objekt konventu k ubytování několika rodin. Okresní národní výbor Brno – venkov investoval asi 1, 6 milionu Kčs do oprav. Probíhalo zejména zpevnění a vyspárování korunního zdiva a oprava střech. Tyto práce probíhaly na konci osmdesátých let minulého století a posléze vedly v roce 1990 k novému slavnostnímu otevření a zpřístupnění památky pro veřejnost. V novém společenském systému, který ve státě nastal po roce 1989, připadl restituční nárok památky zpět na rodinu Košťálových. Rodina ji věnovala darem Biskupské konsistoři v Brně. Ta ve spolupráci s Městským úřadem v Dolních Kounicích zajišťuje v současnosti provoz kláštera.'),
+              'Roku 1946 zámek zakoupil JUDr. Václav Edl a po roce 1948 se spolumajitelem objektu stal Státní statek. Teprve roku 1963 byl zámek i s opevněním zapsán jako kulturní památka. K definitivnímu znárodnění budov došlo až roku 1974. Tehdy celý areál převzalo tehdejší KSSPPOP (dnešní Památkový ústav) v Brně, jehož záměrem bylo zřídit zde své reprezentační, kulturní a společenské centrum. Dlouhá léta zanedbávaná údržba objektu si vyžádala generální rekonstrukci, v níž od roku 1986 pokračoval nový správce, tehdejší Státní vědecká knihovna (dnešní Moravská zemská knihovna) v Brně, která sem kromě svých depozitářů chtěla umístit Památník národního písemnictví.\n\nRoku 1992 byl zámek v rámci restituce navrácen do vlastnictví rodiny Edlů a rekonstrukční práce byly zastaveny. Objekt chátral a měnil se v ruiny. Edlovi neprojevili o využití objektu žádný zájem a prodali jej brněnské společnosti L. V. P., která zámek vlastní dodnes. V posledních letech majitel pilně pracuje na obnově zašlé slávy zámku. Nákladná a časově náročná rekonstrukce přináší velmi znatelné výsledky. Byly vykáceny náletové dřeviny a upravena příjezdová cesta. Během dubna až září probíhají prohlídky areálu a každý měsíc tzv. Hradní radovánky s programem pro rodiny s dětmi. Ve stanu za sýpkou jsou pořádány večerní diskotéky. Ve zrekonstruovaných prostorách reprezentačního sálu vlevo za vstupní bránou je oddací místnost pro svatebčany. Možnost pořádání narozenin, firemních akcí apod. nabízí opravené sklepení a první patro sýpky. V roce 2014 probíhala velmi náročná oprava střechy zámku.'),
           SizedBox(height: kDMarginLarger),
           TextDefaultHeader(text: 'Půdorys klášterního areálu Rosa coeli'),
           SizedBox(height: kDMargin),
           Container(
-            decoration: BoxDecoration(color: Colors.white),
+            color: Colors.white,
             child: ImageOnPageWithOnTap(
-              assetImage: castleAndChateau.imageGalleryCastleAndChateau[1],
+              assetImage: castleAndChateau.imageCastleAndChateau[1],
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => SinglePhotoViewPage(
-                        assetImage: castleAndChateau.imageGalleryCastleAndChateau[1]),
+                        assetImage: castleAndChateau.imageCastleAndChateau[1]),
                   ),
                 );
               },
             ),
           ),
+          SizedBox(height: kDMargin),
           TextDefaultStandart(
               text:
-              'I A presbyterium kostela\nI B transept kostela\nI C loď kostela\nI D portál kostela\nI E sakristie kostela\nII A rajský dvůr\nII B křížová chodba\nIII kapitulní síň\nIV klášterní budovy')
+              '1 první brána\n2 druhá brána\n3 třetí brána\nB barbakán\nD vnitřní dělová bašta\nH hospodářské budovy\nK kaple\nL branka na cestu ke klášteru\nO bašty\nS sýpka s vnější dělovou baštou\nZ točité schodiště Jiřího Žabky')
         ],
       );
   }
