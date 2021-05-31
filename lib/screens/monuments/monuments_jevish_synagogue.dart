@@ -11,16 +11,11 @@ import 'package:dolni_kounice/components/text_default_header.dart';
 import 'package:dolni_kounice/components/my_button.dart';
 import 'package:dolni_kounice/components/open_url_in_browser.dart';
 
-class MonumentsJevishSynagogue extends StatefulWidget {
+class MonumentsJevishSynagogue extends StatelessWidget {
   ///Stránka památky Synagoga
   static String id = JevishSynagogue().id;
-  @override
-  _MonumentsJevishSynagogueState createState() =>
-      _MonumentsJevishSynagogueState();
-}
 
-class _MonumentsJevishSynagogueState extends State<MonumentsJevishSynagogue> {
-  JevishSynagogue jevishSynagogue = JevishSynagogue();
+  static JevishSynagogue jevishSynagogue = JevishSynagogue();
   @override
   Widget build(BuildContext context) {
     return MonumentsPage(
