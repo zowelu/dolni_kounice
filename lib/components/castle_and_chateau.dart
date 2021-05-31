@@ -30,11 +30,12 @@ class CastleAndChateau {
     'assets/images/pamatky/zamek/zamek-venek-vstup.jpg',
     'assets/images/pamatky/zamek/zamek-vnitrek-sal.jpg',
     'assets/images/pamatky/zamek/zamek-vnitrek-obradni-sin.jpg',
-    'assets/images/pamatky/zamek/zamek-skica.jpg',
   ];
 
   ///List zbytků obrázků
-  List<String> imageRosaCoeli = [
+  List<String> imageCastleAndChateau = [
+    'assets/images/pamatky/zamek/zamek-skica.jpg',
+    'assets/images/pamatky/zamek/zamek-pudorys.png',
   ];
 
   ///vezme text přepisu audioprůvodce na základě klíče
