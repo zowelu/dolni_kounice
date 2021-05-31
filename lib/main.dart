@@ -71,7 +71,7 @@ void main() {
             AudioGuideRosaCoeliStrecha(),
         MonumentsRosaCoeli.id: (context) => MonumentsRosaCoeli(),
         MonumentsJevishSynagogue.id: (context) => MonumentsJevishSynagogue(),
-        MonumentsJevishSynagogue.id: (context) => MonumentsCastleAndChateau(),
+        MonumentsCastleAndChateau.id: (context) => MonumentsCastleAndChateau(),
       },
     ),
   );
