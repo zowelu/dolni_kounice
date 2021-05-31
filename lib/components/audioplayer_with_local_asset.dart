@@ -89,67 +89,68 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
           )
         ],
       ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
         children: [
           SizedBox(height: 5.0),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                getTimeString(timeProgress),
-                style: TextStyle(
-                    color: kDColorTextWhite,
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.bold),
-              ),
-              SizedBox(width: 20.0),
-              audioDuration == 0
-                  ? getFileAudioDuration()
-                  : Text(
-                      getTimeString(audioDuration),
-                      style: TextStyle(
-                          color: kDColorTextWhite,
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.bold),
-                    ),
-            ],
-          ),
-          Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                SliderTheme(
-                    data: SliderTheme.of(context).copyWith(
-                      activeTrackColor: kDColorTextColorBackground,
-                      inactiveTrackColor: Color(0xFF77BAB6),
-                      trackShape: RectangularSliderTrackShape(),
-                      trackHeight: 5.0,
-                      thumbColor: kDColorTextColorBackground,
-                      thumbShape:
-                          RoundSliderThumbShape(enabledThumbRadius: 12.0),
-                      overlayColor: Color(0xAF5C9F9B),
-                      overlayShape:
-                          RoundSliderOverlayShape(overlayRadius: 28.0),
-                    ),
-                    child: slider()),
-                IconButton(
-                  icon: Icon(
-                    audioPlayerState == AudioPlayerState.PLAYING
-                        ? Icons.pause_circle_outline_rounded
-                        : Icons.play_circle_outline_rounded,
-                    color: Colors.white,
-                  ),
-                  iconSize: 50.0,
-                  onPressed: () {
-                    audioPlayerState == AudioPlayerState.PLAYING
-                        ? pauseMusic()
-                        : playMusic();
-                  },
+              IconButton(
+                icon: Icon(
+                  audioPlayerState == AudioPlayerState.PLAYING
+                      ? Icons.pause_circle_outline_rounded
+                      : Icons.play_circle_outline_rounded,
+                  color: Colors.white,
                 ),
-              ],
-            ),
+                iconSize: 50.0,
+                onPressed: () {
+                  audioPlayerState == AudioPlayerState.PLAYING
+                      ? pauseMusic()
+                      : playMusic();
+                },
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        getTimeString(timeProgress),
+                        style: TextStyle(
+                            color: kDColorTextWhite,
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(width: 20.0),
+                      audioDuration == 0
+                          ? getFileAudioDuration()
+                          : Text(
+                              getTimeString(audioDuration),
+                              style: TextStyle(
+                                  color: kDColorTextWhite,
+                                  fontSize: 20.0,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                    ],
+                  ),
+                  SliderTheme(
+                      data: SliderTheme.of(context).copyWith(
+                        activeTrackColor: kDColorTextColorBackground,
+                        inactiveTrackColor: Color(0xFF77BAB6),
+                        trackShape: RectangularSliderTrackShape(),
+                        trackHeight: 5.0,
+                        thumbColor: kDColorTextColorBackground,
+                        thumbShape:
+                        RoundSliderThumbShape(enabledThumbRadius: 12.0),
+                        overlayColor: Color(0xAF5C9F9B),
+                        overlayShape:
+                        RoundSliderOverlayShape(overlayRadius: 28.0),
+                      ),
+                      child: slider()),
+                ],
+              ),
+            ],
           ),
         ],
       ),
