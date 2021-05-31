@@ -22,6 +22,7 @@ Color kDBoxShadowColor = Color(0xFF2C3E50);
 Color kDColorOfBackgroundHeader = Color(0xB3FFFFFF);
 Color kDColorFloatingButton = Color(0xFFA63D40);
 Color kDColorPlayerBackground = Color(0xFFE9B872);
+Color kDColorPlayerButton = Color(0xFFA63D40);
 double kDPadding = 10.0;
 double kDMargin = 10.0;
 double kDMarginLarger = 30.0;

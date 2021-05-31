@@ -27,7 +27,7 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
   Widget slider() {
     double sizeDeviceWidth = MediaQuery.of(context).size.width;
     return Container(
-      width: sizeDeviceWidth / 100 * 80,
+      width: sizeDeviceWidth / 100 * 60,
       child: Slider.adaptive(
           value: (timeProgress / 1000).floorToDouble(),
           max: (audioDuration / 1000.floorToDouble()),
@@ -79,7 +79,6 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
       width: double.infinity,
       decoration: BoxDecoration(
         color: kDColorPlayerBackground,
-
         boxShadow: [
           BoxShadow(
             color: Color(0xFF2C3E50),
@@ -98,9 +97,9 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
               IconButton(
                 icon: Icon(
                   audioPlayerState == AudioPlayerState.PLAYING
-                      ? Icons.pause_circle_outline_rounded
-                      : Icons.play_circle_outline_rounded,
-                  color: Colors.white,
+                      ? Icons.pause_circle_filled
+                      : Icons.play_circle_filled,
+                  color: kDColorPlayerButton,
                 ),
                 iconSize: 50.0,
                 onPressed: () {
