@@ -17,9 +17,7 @@ class ContainerHeaderImageBackground extends StatelessWidget {
         Container(
           width: double.infinity,
           height: 165,
-          padding: EdgeInsets.all(20.0),
           margin: EdgeInsets.only(bottom: kDefaultMargin),
-          alignment: Alignment.bottomLeft,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage(assetImage),
@@ -31,6 +29,7 @@ class ContainerHeaderImageBackground extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
+                width: MediaQuery.of(context).size.width/5*4,
                 child: Text(
                   textHeader,
                   textAlign: TextAlign.center,
@@ -42,11 +41,11 @@ class ContainerHeaderImageBackground extends StatelessWidget {
                   ),
                 ),
                 decoration: BoxDecoration(
-                  color: kDefaultTextBackgroundTransparent,
-                  borderRadius: BorderRadius.circular(10.0),
+                  color: Color(0xB3FFFFFF),
+                  borderRadius: BorderRadius.only(topRight: Radius.circular(10.0), bottomRight: Radius.circular(10.0)),
                 ),
-                padding: EdgeInsets.all(5.0),
-                margin: EdgeInsets.only(bottom: kDefaultMargin),
+                padding: EdgeInsets.only(top: 5.0, bottom: 5.0, left: 10.0, right: 10.0 ),
+                margin: EdgeInsets.only(bottom: kDefaultMarginLarger),
               ),
             ],
           ),
