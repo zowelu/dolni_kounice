@@ -17,7 +17,7 @@ class FloatingButton extends StatelessWidget {
         style: TextStyle(fontFamily: kDFontFamily, fontSize: 20.0),
       ),
       elevation: 5,
-      backgroundColor: kBackgroundColor,
+      backgroundColor: kDColorFloatingButton,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.all(
           Radius.circular(30.0),
