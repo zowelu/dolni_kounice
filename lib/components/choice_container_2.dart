@@ -16,7 +16,7 @@ class ChoiceContainer2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      margin: EdgeInsets.only(left: kDefaultMargin, right: kDefaultMargin, bottom: kDefaultMargin),
+      margin: EdgeInsets.only(left: kDMargin, right: kDMargin, bottom: kDMargin),
       height: 165,
       child: GestureDetector(
         onTap: onTap,
@@ -26,7 +26,7 @@ class ChoiceContainer2 extends StatelessWidget {
             borderRadius: BorderRadius.circular(10.0),
             boxShadow: [
               BoxShadow(
-                color: kDefaultBoxShadowColor,
+                color: kDBoxShadowColor,
                 offset: const Offset(1.0, 1.0),
                 blurRadius: 5.0,
                 spreadRadius: 2.0,
@@ -42,18 +42,18 @@ class ChoiceContainer2 extends StatelessWidget {
             children: [
               DecoratedBox(
                 decoration: BoxDecoration(
-                  color: kDefaultTextBackgroundTransparent,
+                  color: kDTextBackgroundTransparent,
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Padding(
-                  padding:  EdgeInsets.all(kDefaultPadding),
+                  padding:  EdgeInsets.all(kDPadding),
                   child: Text(
                     textOfChoice,
                     style: TextStyle(
                       decoration: TextDecoration.none,
                       color: Colors.white,
-                      fontSize: kDefaultFontSizeText,
-                      fontFamily: kDefaultFontFamily,
+                      fontSize: kDFontSizeText,
+                      fontFamily: kDFontFamily,
                     ),
                     textAlign: TextAlign.center,
                   ),

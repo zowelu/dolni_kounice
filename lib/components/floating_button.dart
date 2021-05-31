@@ -14,7 +14,7 @@ class FloatingButton extends StatelessWidget {
     return FloatingActionButton.extended(
       label: Text(
         textOfFloatingButton,
-        style: TextStyle(fontFamily: kDefaultFontFamily, fontSize: 20.0),
+        style: TextStyle(fontFamily: kDFontFamily, fontSize: 20.0),
       ),
       elevation: 5,
       backgroundColor: kBackgroundColor,

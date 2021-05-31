@@ -18,9 +18,9 @@ class ContainerHeader extends StatelessWidget {
               textHeader,
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: kDefaultColorTextWhite,
-                fontSize: kDefaultFontSizeHeader,
-                fontFamily: kDefaultFontFamily,
+                color: kDColorTextWhite,
+                fontSize: kDFontSizeHeader,
+                fontFamily: kDFontFamily,
               ),
             ),
             SizedBox(
@@ -30,8 +30,8 @@ class ContainerHeader extends StatelessWidget {
               text,
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: kDefaultColorTextWhite,
-                fontSize: kDefaultFontSizeText,
+                color: kDColorTextWhite,
+                fontSize: kDFontSizeText,
               ),
             ),
           ],

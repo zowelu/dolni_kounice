@@ -35,7 +35,7 @@ class _MonumentsState extends State<Monuments> {
           builder: (context) => Container(
             //height: MediaQuery.of(context).size.height/3*2.5,
             child: Container(
-              padding: EdgeInsets.all(kDefaultPadding),
+              padding: EdgeInsets.all(kDPadding),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -52,7 +52,7 @@ class _MonumentsState extends State<Monuments> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(bottom: kDefaultMarginLarger),
+                    margin: EdgeInsets.only(bottom: kDMarginLarger),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20.0),
                       child: Image(

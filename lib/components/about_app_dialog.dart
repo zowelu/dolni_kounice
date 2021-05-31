@@ -14,7 +14,7 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
   Widget build(BuildContext context) {
     return Dialog(
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(kDefaultPadding),
+        borderRadius: BorderRadius.circular(kDPadding),
       ),
       elevation: 0,
       backgroundColor: Colors.transparent,
@@ -27,15 +27,15 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
       children: <Widget>[
         Container(
           padding: EdgeInsets.only(
-              left: kDefaultPadding,
-              top: 70.0 + kDefaultPadding,
-              right: kDefaultPadding,
-              bottom: kDefaultPadding),
-          margin: EdgeInsets.only(top: kDefaultMarginLarger),
+              left: kDPadding,
+              top: 70.0 + kDPadding,
+              right: kDPadding,
+              bottom: kDPadding),
+          margin: EdgeInsets.only(top: kDMarginLarger),
           decoration: BoxDecoration(
               shape: BoxShape.rectangle,
               color: Colors.white,
-              borderRadius: BorderRadius.circular(kDefaultPadding),
+              borderRadius: BorderRadius.circular(kDPadding),
               boxShadow: [
                 BoxShadow(
                     color: Colors.black, offset: Offset(0, 10), blurRadius: 10),
@@ -53,7 +53,7 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: kDefaultMarginLarger,
+                height: kDMarginLarger,
               ),
               Text(
                 'Tato aplikace je poskytnuta zdarma Městu Dolní Kounice.',
@@ -61,7 +61,7 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: kDefaultMargin,
+                height: kDMargin,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -72,7 +72,7 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
                     textAlign: TextAlign.center,
                   ),
                   SizedBox(
-                    width: kDefaultMargin,
+                    width: kDMargin,
                   ),
                   GestureDetector(
                     onTap: () async {

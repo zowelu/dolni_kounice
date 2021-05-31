@@ -12,7 +12,7 @@ class SinglePhotoViewPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(kDefaultMyAppBarHeight),
+        preferredSize: Size.fromHeight(kDMyAppBarHeight),
         child: MyAppBar(tittleOfAppbar: 'Galerie', onPressedBackButton: () {
           Navigator.pop(context);
         },),
@@ -22,7 +22,7 @@ class SinglePhotoViewPage extends StatelessWidget {
         minScale: PhotoViewComputedScale.contained * 0.8,
         maxScale: PhotoViewComputedScale.covered * 1,
         backgroundDecoration:
-            BoxDecoration(color: kDefaultColorTextColorBackground),
+            BoxDecoration(color: kDColorTextColorBackground),
         loadingBuilder: (context, event) => Center(
           child: Container(
             width: 30.0,

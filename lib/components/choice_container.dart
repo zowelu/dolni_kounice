@@ -19,7 +19,7 @@ class ChoiceContainer extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20.0),
       ),
-      margin: EdgeInsets.only(left: kDefaultMargin, right: kDefaultMargin, bottom: kDefaultMargin),
+      margin: EdgeInsets.only(left: kDMargin, right: kDMargin, bottom: kDMargin),
       child: Stack(
         alignment: Alignment.center,
         children: [
@@ -39,18 +39,18 @@ class ChoiceContainer extends StatelessWidget {
                         width: MediaQuery.of(context).size.width/5*3,
                         child: DecoratedBox(
                           decoration: BoxDecoration(
-                            color: kDefaultTextBackgroundTransparent,
+                            color: kDTextBackgroundTransparent,
                             borderRadius: BorderRadius.circular(10.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(kDefaultPadding),
+                            padding: EdgeInsets.all(kDPadding),
                             child: Text(
                               textOfChoice,
                               style: TextStyle(
                                 decoration: TextDecoration.none,
                                 color: Colors.white,
-                                fontSize: kDefaultFontSizeText,
-                                fontFamily: kDefaultFontFamily,
+                                fontSize: kDFontSizeText,
+                                fontFamily: kDFontFamily,
                               ),
                               textAlign: TextAlign.center,
                             ),

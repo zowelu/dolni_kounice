@@ -43,7 +43,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
           builder: (context) => Container(
             //height: MediaQuery.of(context).size.height/3*2.5,
             child: Container(
-              padding: EdgeInsets.all(kDefaultPadding),
+              padding: EdgeInsets.all(kDPadding),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -60,7 +60,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(bottom: kDefaultMarginLarger),
+                    margin: EdgeInsets.only(bottom: kDMarginLarger),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20.0),
                       child: Image(
@@ -85,15 +85,15 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
         ),
         Container(
           padding:
-              EdgeInsets.only(left: kDefaultPadding, right: kDefaultPadding),
+              EdgeInsets.only(left: kDPadding, right: kDPadding),
           child: Column(
             children: [
               Text(
                 'Děkujeme, že jste zvolili audioprůvodce.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: kDefaultColorTextWhite,
-                    fontSize: kDefaultFontSizeText),
+                    color: kDColorTextWhite,
+                    fontSize: kDFontSizeText),
               ),
               SizedBox(
                 height: 20.0,
@@ -107,14 +107,14 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
                 'Prosíme poslouchejte se sluchátky nebo s mobilem na uchu, aby nebyli rušeni ostatní návštěvníci.\n\nPřípadně si můžete přečíst přepis nahrávky, který se nachází pod přehrávačem. Předem děkujeme.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: kDefaultColorTextWhite,
-                    fontSize: kDefaultFontSizeText),
+                    color: kDColorTextWhite,
+                    fontSize: kDFontSizeText),
               ),
-              SizedBox(height: kDefaultMargin),
+              SizedBox(height: kDMargin),
             ],
           ),
         ),
-        SizedBox(height: kDefaultMarginLarger),
+        SizedBox(height: kDMarginLarger),
         Hero(
           tag: rosaCoeli.chapter[0],
           child: ChoiceContainer(

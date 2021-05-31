@@ -34,7 +34,7 @@ class MonumentsPage extends StatelessWidget {
       home: Scaffold(
         backgroundColor: kBackgroundColor,
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(kDefaultMyAppBarHeight),
+          preferredSize: Size.fromHeight(kDMyAppBarHeight),
           child: MyAppBar(
             tittleOfAppbar: textOfAppBar,
             onPressedBackButton: () {
@@ -60,13 +60,13 @@ class MonumentsPage extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.all(kDefaultPadding),
+                  padding: EdgeInsets.all(kDPadding),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      SizedBox(height: kDefaultMargin),
+                      SizedBox(height: kDMargin),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: listOfWidget,

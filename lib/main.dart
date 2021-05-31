@@ -32,7 +32,7 @@ void main() {
           'Dolní Kounice\njsou\n město památek',
           textAlign: TextAlign.center,
           style: TextStyle(
-            fontFamily: kDefaultFontFamily,
+            fontFamily: kDFontFamily,
             fontSize: 30.0,
             fontWeight: FontWeight.bold,
             color: Colors.white,

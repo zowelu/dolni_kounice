@@ -11,8 +11,8 @@ class TextDefaultHeader extends StatelessWidget {
     return Text(
       text,
       style: TextStyle(
-        fontSize: kDefaultFontSizeHeader,
-        color: kDefaultColorTextWhite,
+        fontSize: kDFontSizeHeader,
+        color: kDColorTextWhite,
       ),
     );
   }

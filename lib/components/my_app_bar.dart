@@ -44,7 +44,7 @@ class MyAppBar extends StatelessWidget {
       title: Text(
         tittleOfAppbar,
         style: TextStyle(
-            fontFamily: kDefaultFontFamily, fontSize: kDefaultFontSizeHeader),
+            fontFamily: kDFontFamily, fontSize: kDFontSizeHeader),
       ),
     );
   }

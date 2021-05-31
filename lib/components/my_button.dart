@@ -19,7 +19,7 @@ class MyButton extends StatelessWidget {
       ),
       style: ElevatedButton.styleFrom(
         primary: Colors.white,
-        onPrimary: kDefaultColorTextColorBackground,
+        onPrimary: kDColorTextColorBackground,
         padding: EdgeInsets.only(left:20.0, right: 20.0, top: 10.0, bottom: 10.0),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(50.0),

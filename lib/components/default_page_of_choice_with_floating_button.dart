@@ -25,7 +25,7 @@ class DefaultPageOfChoiceWithFloatingButton extends StatelessWidget {
       home: Scaffold(
         backgroundColor: kBackgroundColor,
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(kDefaultMyAppBarHeight),
+          preferredSize: Size.fromHeight(kDMyAppBarHeight),
           child: MyAppBar(
             tittleOfAppbar: tittleOfAppbar,
             onPressedBackButton: () {

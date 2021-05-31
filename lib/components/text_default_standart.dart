@@ -13,8 +13,8 @@ class TextDefaultStandart extends StatelessWidget {
       text,
       textAlign: textAlign,
       style: TextStyle(
-        fontSize: kDefaultFontSizeText,
-        color: kDefaultColorTextWhite,
+        fontSize: kDFontSizeText,
+        color: kDColorTextWhite,
       ),
     );
   }

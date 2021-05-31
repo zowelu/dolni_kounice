@@ -33,7 +33,7 @@ class AudioPage extends StatelessWidget {
         backgroundColor: kBackgroundColor,
         bottomNavigationBar: AudioPlayerWithLocalAsset(path: path),
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(kDefaultMyAppBarHeight),
+          preferredSize: Size.fromHeight(kDMyAppBarHeight),
           child: MyAppBar(
             tittleOfAppbar: 'Audioprůvodce',
             onPressedBackButton: () {
@@ -54,7 +54,7 @@ class AudioPage extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.all(kDefaultPadding),
+                  padding: EdgeInsets.all(kDPadding),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.min,
@@ -67,8 +67,8 @@ class AudioPage extends StatelessWidget {
                           Text(
                             textAudioMap.getAudioTextOfMap(keyOfMap),
                             style: TextStyle(
-                                color: kDefaultColorTextWhite,
-                                fontSize: kDefaultFontSizeText),
+                                color: kDColorTextWhite,
+                                fontSize: kDFontSizeText),
                           ),
                         ],
                       ),

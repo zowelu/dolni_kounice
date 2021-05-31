@@ -15,7 +15,7 @@ class GalleryPhotoViewPage extends StatelessWidget {
     List imageList = ImageGallery().getImageGallery(nameOfImageGallery);
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(kDefaultMyAppBarHeight),
+        preferredSize: Size.fromHeight(kDMyAppBarHeight),
         child: MyAppBar(tittleOfAppbar: 'Galerie', onPressedBackButton: () {
           Navigator.pop(context);
         },),
@@ -33,7 +33,7 @@ class GalleryPhotoViewPage extends StatelessWidget {
         },
         scrollPhysics: ClampingScrollPhysics(),
         backgroundDecoration:
-            BoxDecoration(color: kDefaultColorTextColorBackground),
+            BoxDecoration(color: kDColorTextColorBackground),
         loadingBuilder: (context, event) => Container(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,

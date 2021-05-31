@@ -102,7 +102,7 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
               Text(
                 getTimeString(timeProgress),
                 style: TextStyle(
-                    color: kDefaultColorTextWhite,
+                    color: kDColorTextWhite,
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold),
               ),
@@ -112,7 +112,7 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
                   : Text(
                       getTimeString(audioDuration),
                       style: TextStyle(
-                          color: kDefaultColorTextWhite,
+                          color: kDColorTextWhite,
                           fontSize: 20.0,
                           fontWeight: FontWeight.bold),
                     ),
@@ -125,11 +125,11 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
               children: [
                 SliderTheme(
                     data: SliderTheme.of(context).copyWith(
-                      activeTrackColor: kDefaultColorTextColorBackground,
+                      activeTrackColor: kDColorTextColorBackground,
                       inactiveTrackColor: Color(0xFF77BAB6),
                       trackShape: RectangularSliderTrackShape(),
                       trackHeight: 5.0,
-                      thumbColor: kDefaultColorTextColorBackground,
+                      thumbColor: kDColorTextColorBackground,
                       thumbShape:
                           RoundSliderThumbShape(enabledThumbRadius: 12.0),
                       overlayColor: Color(0xAF5C9F9B),

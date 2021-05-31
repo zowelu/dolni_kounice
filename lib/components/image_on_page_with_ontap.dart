@@ -14,11 +14,11 @@ class ImageOnPageWithOnTap extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-          top: kDefaultMargin, bottom: kDefaultMargin),
+          top: kDMargin, bottom: kDMargin),
       child: GestureDetector(
         onTap: onTap,
         child: Container(
-          margin: EdgeInsets.only(left: kDefaultMarginLarger, right: kDefaultMarginLarger),
+          margin: EdgeInsets.only(left: kDMarginLarger, right: kDMarginLarger),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(15),
             child: Image(
