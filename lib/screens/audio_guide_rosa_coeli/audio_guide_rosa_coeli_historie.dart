@@ -14,7 +14,7 @@ class _AudioGuideRosaCoeliHistorieState extends State<AudioGuideRosaCoeliHistori
   static int index = 6;
   RosaCoeli rosaCoeli = RosaCoeli();
   RosaCoeli textAudioMap = RosaCoeli();
-  String assetImage =RosaCoeli().imageGalleryRosaCoeli[14];
+  String assetImage =RosaCoeli().imageGallery[14];
   String textHeader = RosaCoeli().audioText.keys.elementAt(index);
   String path = RosaCoeli().mp3[index];
   String keyOfMap = RosaCoeli().audioText.keys.elementAt(index);

@@ -14,7 +14,7 @@ class _AudioGuideRosaCoeli4PrimaChramovaLodState extends State<AudioGuideRosaCoe
   static int index = 4;
   RosaCoeli rosaCoeli = RosaCoeli();
   RosaCoeli textAudioMap = RosaCoeli();
-  String assetImage =RosaCoeli().imageGalleryRosaCoeli[index];
+  String assetImage =RosaCoeli().imageGallery[index];
   String textHeader = RosaCoeli().audioText.keys.elementAt(index);
   String path = RosaCoeli().mp3[index];
   String keyOfMap = RosaCoeli().audioText.keys.elementAt(index);

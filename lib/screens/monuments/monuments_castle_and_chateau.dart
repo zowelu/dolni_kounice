@@ -1,5 +1,4 @@
 import 'package:dolni_kounice/components/castle_and_chateau.dart';
-import 'package:dolni_kounice/components/rosa_coeli.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +25,7 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
     @override
     Widget build(BuildContext context) {
       return MonumentsPage(
-        assetImage: castleAndChateau.imageGalleryCastleAndChateau[0],
+        assetImage: castleAndChateau.imageGallery[0],
         textOfAppBar: 'Průvodce památkami',
         textHeader: castleAndChateau.name,
         tag: castleAndChateau.tag,
@@ -41,7 +40,7 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
               'Mohutná stavba původně klášterního hradu střeží město od západní strany. Rozsáhlý areál, léta chátrající, v posledních letech zažívá rozkvět.'),
           SizedBox(height: kDMarginLarger),
           ChoiceContainer(
-              assetImageOfChoice: castleAndChateau.imageGalleryCastleAndChateau[2],
+              assetImageOfChoice: castleAndChateau.imageGallery[2],
               textOfChoice: 'Galerie',
               onTap: () {
                 Navigator.push(
@@ -79,13 +78,13 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
             height: kDMargin,
           ),
           ImageOnPageWithOnTap(
-            assetImage: castleAndChateau.imageCastleAndChateau[0],
+            assetImage: castleAndChateau.images[0],
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => SinglePhotoViewPage(
-                      assetImage: castleAndChateau.imageCastleAndChateau[0]),
+                      assetImage: castleAndChateau.images[0]),
                 ),
               );
             },
@@ -100,13 +99,13 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
             height: kDMargin,
           ),
           ImageOnPageWithOnTap(
-            assetImage: castleAndChateau.imageGalleryCastleAndChateau[1],
+            assetImage: castleAndChateau.imageGallery[1],
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => SinglePhotoViewPage(
-                      assetImage: castleAndChateau.imageGalleryCastleAndChateau[1]),
+                      assetImage: castleAndChateau.imageGallery[1]),
                 ),
               );
             },
@@ -118,13 +117,13 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
             height: kDMargin,
           ),
           ImageOnPageWithOnTap(
-            assetImage: castleAndChateau.imageGalleryCastleAndChateau[0],
+            assetImage: castleAndChateau.imageGallery[0],
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => SinglePhotoViewPage(
-                      assetImage: castleAndChateau.imageGalleryCastleAndChateau[0]),
+                      assetImage: castleAndChateau.imageGallery[0]),
                 ),
               );
             },
@@ -138,13 +137,13 @@ class _MonumentsCastleAndChateauState extends State<MonumentsCastleAndChateau> {
           Container(
             color: Colors.white,
             child: ImageOnPageWithOnTap(
-              assetImage: castleAndChateau.imageCastleAndChateau[1],
+              assetImage: castleAndChateau.images[1],
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => SinglePhotoViewPage(
-                        assetImage: castleAndChateau.imageCastleAndChateau[1]),
+                        assetImage: castleAndChateau.images[1]),
                   ),
                 );
               },

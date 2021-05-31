@@ -25,7 +25,7 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
   @override
   Widget build(BuildContext context) {
     return MonumentsPage(
-      assetImage: rosaCoeli.imageGalleryRosaCoeli[1],
+      assetImage: rosaCoeli.imageGallery[1],
       textOfAppBar: 'Průvodce památkami',
       textHeader: rosaCoeli.name,
       tag: rosaCoeli.tag,
@@ -40,7 +40,7 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
                 'Působivou architekturu původně ženského kláštera můžeme spatřit nedaleko centra města. Jeho chladným kamenným stěnám a podmanivému kouzlu může návštěvník odolat jen stěží. Zřícenína kláštera Rosa coeli je uzamčený objekt který kromě otevírací doby není veřejnosti volně přístupný.\n\nTrosky kláštera Rosa coeli v Dolních Kounicích působí na citlivější jedince svou pozitivní energií. Už jen pouhých pár minut pobytu v magických prostorách syrové gotiky bývalého kláštera vám vylepší náladu.'),
         SizedBox(height: kDMarginLarger),
         ChoiceContainer(
-            assetImageOfChoice: rosaCoeli.imageGalleryRosaCoeli[5],
+            assetImageOfChoice: rosaCoeli.imageGallery[5],
             textOfChoice: 'Galerie',
             onTap: () {
               Navigator.push(
@@ -78,25 +78,25 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
           height: kDMargin,
         ),
         ImageOnPageWithOnTap(
-          assetImage: rosaCoeli.imageGalleryRosaCoeli[12],
+          assetImage: rosaCoeli.imageGallery[12],
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
-                    assetImage: rosaCoeli.imageGalleryRosaCoeli[12]),
+                    assetImage: rosaCoeli.imageGallery[12]),
               ),
             );
           },
         ),
         ImageOnPageWithOnTap(
-          assetImage: rosaCoeli.imageGalleryRosaCoeli[13],
+          assetImage: rosaCoeli.imageGallery[13],
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
-                    assetImage: rosaCoeli.imageGalleryRosaCoeli[13]),
+                    assetImage: rosaCoeli.imageGallery[13]),
               ),
             );
           },
@@ -111,13 +111,13 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
           height: kDMargin,
         ),
         ImageOnPageWithOnTap(
-          assetImage: rosaCoeli.imageGalleryRosaCoeli[14],
+          assetImage: rosaCoeli.imageGallery[14],
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
-                    assetImage: rosaCoeli.imageGalleryRosaCoeli[14]),
+                    assetImage: rosaCoeli.imageGallery[14]),
               ),
             );
           },
@@ -129,13 +129,13 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
           height: kDMargin,
         ),
         ImageOnPageWithOnTap(
-          assetImage: rosaCoeli.imageGalleryRosaCoeli[15],
+          assetImage: rosaCoeli.imageGallery[15],
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
-                    assetImage: rosaCoeli.imageGalleryRosaCoeli[15]),
+                    assetImage: rosaCoeli.imageGallery[15]),
               ),
             );
           },
@@ -149,13 +149,13 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
         Container(
           decoration: BoxDecoration(color: Colors.white),
           child: ImageOnPageWithOnTap(
-            assetImage: rosaCoeli.imageRosaCoeli[4],
+            assetImage: rosaCoeli.images[4],
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => SinglePhotoViewPage(
-                      assetImage: rosaCoeli.imageRosaCoeli[4]),
+                      assetImage: rosaCoeli.images[4]),
                 ),
               );
             },

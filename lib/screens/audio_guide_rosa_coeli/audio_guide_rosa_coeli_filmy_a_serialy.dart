@@ -14,7 +14,7 @@ class _AudioGuideRosaCoeliFilmyASerialyState extends State<AudioGuideRosaCoeliFi
   static int index = 7;
   RosaCoeli rosaCoeli = RosaCoeli();
   RosaCoeli textAudioMap = RosaCoeli();
-  String assetImage = RosaCoeli().imageRosaCoeli[2];
+  String assetImage = RosaCoeli().images[2];
   String textHeader = RosaCoeli().audioText.keys.elementAt(index);
   String path = RosaCoeli().mp3[index];
   String keyOfMap = RosaCoeli().audioText.keys.elementAt(index);

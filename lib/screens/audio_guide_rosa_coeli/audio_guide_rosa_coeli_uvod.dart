@@ -12,7 +12,7 @@ class AudioGuideRosaCoeliUvod extends StatefulWidget {
 class _AudioGuideRosaCoeliUvodState extends State<AudioGuideRosaCoeliUvod> {
   static int index = 0;
   RosaCoeli textAudioMap = RosaCoeli();
-  String assetImage = RosaCoeli().imageGalleryRosaCoeli[index];
+  String assetImage = RosaCoeli().imageGallery[index];
   String textHeader = RosaCoeli().audioText.keys.elementAt(index);
   String path = RosaCoeli().mp3[index];
   String keyOfMap = RosaCoeli().audioText.keys.elementAt(index);

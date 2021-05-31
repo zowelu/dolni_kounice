@@ -45,7 +45,7 @@ class RosaCoeli {
   };
 
   ///List obrázků pro použití nejen v galerii
-  List<String> imageGalleryRosaCoeli = [
+  List<String> imageGallery = [
     'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-brana.jpg',
     'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
     'assets/images/pamatky/klaster_rosa_coeli/klaster-portal.jpg',
@@ -65,7 +65,7 @@ class RosaCoeli {
   ];
 
   ///List zbytků obrázků
-  List<String> imageRosaCoeli = [
+  List<String> images = [
     'assets/images/pamatky/klaster_rosa_coeli/mapa_klaster.png',
     'assets/images/pamatky/klaster_rosa_coeli/klaster-portal-vstupni.jpg',
     'assets/images/pamatky/klaster_rosa_coeli/klaster_rosa_coeli_filmy_serialy.jpg',

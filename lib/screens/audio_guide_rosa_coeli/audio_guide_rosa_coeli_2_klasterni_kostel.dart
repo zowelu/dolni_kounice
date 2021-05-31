@@ -13,7 +13,7 @@ class _AudioGuideRosaCoeli2KlasterniKostelState extends State<AudioGuideRosaCoel
 
   static int index = 2;
   RosaCoeli textAudioMap = RosaCoeli();
-  String assetImage =RosaCoeli().imageGalleryRosaCoeli[3];
+  String assetImage =RosaCoeli().imageGallery[3];
   String textHeader = RosaCoeli().audioText.keys.elementAt(index);
   String path = RosaCoeli().mp3[index];
   String keyOfMap = RosaCoeli().audioText.keys.elementAt(index);

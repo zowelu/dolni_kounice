@@ -13,7 +13,7 @@ class _AudioGuideRosaCoeli1PortalState
     extends State<AudioGuideRosaCoeli1Portal> {
   static int index = 1;
   RosaCoeli textAudioMap = RosaCoeli();
-  String assetImage = RosaCoeli().imageGalleryRosaCoeli[2];
+  String assetImage = RosaCoeli().imageGallery[2];
   String textHeader = RosaCoeli().audioText.keys.elementAt(index);
   String path = RosaCoeli().mp3[index];
   String keyOfMap = RosaCoeli().audioText.keys.elementAt(index);

@@ -22,7 +22,7 @@ class CastleAndChateau {
   };
 
   ///List obrázků pro použití nejen v galerii
-  List<String> imageGalleryCastleAndChateau = [
+  List<String> imageGallery = [
     'assets/images/pamatky/zamek/zamek-letecky.jpg',
     'assets/images/pamatky/zamek/zamek-venek-brana.jpg',
     'assets/images/pamatky/zamek/zamek-venek-zepredu.jpg',
@@ -33,7 +33,7 @@ class CastleAndChateau {
   ];
 
   ///List zbytků obrázků
-  List<String> imageCastleAndChateau = [
+  List<String> images = [
     'assets/images/pamatky/zamek/zamek-skica.jpg',
     'assets/images/pamatky/zamek/zamek-pudorys.png',
   ];

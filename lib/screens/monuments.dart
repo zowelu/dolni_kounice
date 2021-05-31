@@ -84,7 +84,7 @@ class _MonumentsState extends State<Monuments> {
           tag: RosaCoeli().tag,
           child: ChoiceContainer(
             assetImageOfChoice:
-                RosaCoeli().imageGalleryRosaCoeli[1],
+                RosaCoeli().imageGallery[1],
             textOfChoice: RosaCoeli().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsRosaCoeli.id);
@@ -95,7 +95,7 @@ class _MonumentsState extends State<Monuments> {
           tag: JevishSynagogue().tag,
           child: ChoiceContainer(
             assetImageOfChoice:
-                JevishSynagogue().imageGalleryJevishSynagogue[0],
+                JevishSynagogue().imageGallery[0],
             textOfChoice: JevishSynagogue().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsJevishSynagogue.id);
@@ -106,7 +106,7 @@ class _MonumentsState extends State<Monuments> {
           tag: CastleAndChateau().tag,
           child: ChoiceContainer(
             assetImageOfChoice:
-            CastleAndChateau().imageGalleryCastleAndChateau[0],
+            CastleAndChateau().imageGallery[0],
             textOfChoice: CastleAndChateau().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsCastleAndChateau.id);

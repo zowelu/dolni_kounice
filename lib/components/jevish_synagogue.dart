@@ -19,7 +19,7 @@ class JevishSynagogue {
   };
 
   ///List obrázků pro použití nejen v galerii
-  List<String> imageGalleryJevishSynagogue = [
+  List<String> imageGallery = [
     'assets/images/pamatky/synagoga/synagoga-venek.jpg',
     'assets/images/pamatky/synagoga/synagoga-venek-3.jpg',
     'assets/images/pamatky/synagoga/synagoga-venek-2.jpg',

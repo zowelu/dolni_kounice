@@ -14,7 +14,7 @@ class _AudioGuideRosaCoeli5RajskaZahradaState extends State<AudioGuideRosaCoeli5
   static int index = 5;
   RosaCoeli rosaCoeli = RosaCoeli();
   RosaCoeli textAudioMap = RosaCoeli();
-  String assetImage =RosaCoeli().imageGalleryRosaCoeli[8];
+  String assetImage =RosaCoeli().imageGallery[8];
   String textHeader = RosaCoeli().audioText.keys.elementAt(index);
   String path = RosaCoeli().mp3[index];
   String keyOfMap = RosaCoeli().audioText.keys.elementAt(index);

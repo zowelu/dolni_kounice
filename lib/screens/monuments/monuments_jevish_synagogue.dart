@@ -38,7 +38,7 @@ class _MonumentsJevishSynagogueState extends State<MonumentsJevishSynagogue> {
         SizedBox(height: kDMarginLarger),
         ChoiceContainer(
             assetImageOfChoice:
-                jevishSynagogue.imageGalleryJevishSynagogue[7],
+                jevishSynagogue.imageGallery[7],
             textOfChoice: 'Galerie',
             onTap: () {
               Navigator.push(
