@@ -27,7 +27,7 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
   Widget slider() {
     double sizeDeviceWidth = MediaQuery.of(context).size.width;
     return Container(
-      width: sizeDeviceWidth / 100 * 60,
+      width: sizeDeviceWidth / 100 * 80,
       child: Slider.adaptive(
           value: (timeProgress / 1000).floorToDouble(),
           max: (audioDuration / 1000.floorToDouble()),
@@ -75,7 +75,7 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
   Widget build(BuildContext context) {
     double sizeDeviceHeight = MediaQuery.of(context).size.height;
     return Container(
-      height: sizeDeviceHeight / 100 * 15,
+      height: sizeDeviceHeight / 100 * 12,
       width: double.infinity,
       decoration: BoxDecoration(
         color: kDColorPlayerBackground,
@@ -89,66 +89,62 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
         ],
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          SizedBox(height: 5.0),
-          Row(
+          IconButton(
+            icon: Icon(
+              audioPlayerState == AudioPlayerState.PLAYING
+                  ? Icons.pause_circle_filled
+                  : Icons.play_circle_filled,
+              color: kDColorPlayerButton,
+            ),
+            iconSize: 50.0,
+            onPressed: () {
+              audioPlayerState == AudioPlayerState.PLAYING
+                  ? pauseMusic()
+                  : playMusic();
+            },
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              IconButton(
-                icon: Icon(
-                  audioPlayerState == AudioPlayerState.PLAYING
-                      ? Icons.pause_circle_filled
-                      : Icons.play_circle_filled,
-                  color: kDColorPlayerButton,
-                ),
-                iconSize: 50.0,
-                onPressed: () {
-                  audioPlayerState == AudioPlayerState.PLAYING
-                      ? pauseMusic()
-                      : playMusic();
-                },
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.end,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        getTimeString(timeProgress),
-                        style: TextStyle(
-                            color: kDColorTextWhite,
-                            fontSize: 20.0,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(width: 20.0),
-                      audioDuration == 0
-                          ? getFileAudioDuration()
-                          : Text(
-                              getTimeString(audioDuration),
-                              style: TextStyle(
-                                  color: kDColorTextWhite,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                    ],
+                  Text(
+                    getTimeString(timeProgress),
+                    style: TextStyle(
+                        color: kDColorTextWhite,
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold),
                   ),
-                  SliderTheme(
-                      data: SliderTheme.of(context).copyWith(
-                        activeTrackColor: kDColorTextColorBackground,
-                        inactiveTrackColor: Color(0xFF77BAB6),
-                        trackShape: RectangularSliderTrackShape(),
-                        trackHeight: 5.0,
-                        thumbColor: kDColorTextColorBackground,
-                        thumbShape:
-                        RoundSliderThumbShape(enabledThumbRadius: 12.0),
-                        overlayColor: Color(0xAF5C9F9B),
-                        overlayShape:
-                        RoundSliderOverlayShape(overlayRadius: 28.0),
-                      ),
-                      child: slider()),
+                  SizedBox(width: 20.0),
+                  audioDuration == 0
+                      ? getFileAudioDuration()
+                      : Text(
+                          getTimeString(audioDuration),
+                          style: TextStyle(
+                              color: kDColorTextWhite,
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold),
+                        ),
                 ],
               ),
+              SliderTheme(
+                  data: SliderTheme.of(context).copyWith(
+                    activeTrackColor: kDColorFloatingButton,
+                    inactiveTrackColor: Colors.white,
+                    trackShape: RectangularSliderTrackShape(),
+                    trackHeight: 5.0,
+                    thumbColor: kDColorFloatingButton,
+                    thumbShape:
+                    RoundSliderThumbShape(enabledThumbRadius: 10.0),
+                    overlayColor: Color(0xB3A63D40),
+                    overlayShape:
+                    RoundSliderOverlayShape(overlayRadius: 20.0),
+                  ),
+                  child: slider()),
             ],
           ),
         ],
