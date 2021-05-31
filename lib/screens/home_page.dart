@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                 tag: 'pruvodcePamatkami',
                 child: ChoiceContainer(
                     assetImageOfChoice:
-                        'assets/images/pamatky/mesto_pamatek_uvod/pamatky-mapa.jpg',
+                        'assets/images/pamatky/klaster_rosa_coeli/klaster_krizova_chodba.jpg',
                     textOfChoice: 'Průvodce památkami',
                     onTap: () {
                       Navigator.pushNamed(context, Monuments.id);
