@@ -13,14 +13,11 @@ import 'package:dolni_kounice/components/text_default_header.dart';
 import 'package:dolni_kounice/components/image_on_page_with_ontap.dart';
 import 'package:dolni_kounice/components/open_url_in_browser.dart';
 
-class MonumentsRosaCoeli extends StatefulWidget {
+class MonumentsRosaCoeli extends StatelessWidget {
   ///Stránka památky Klášter Rosa Coeli
-  static String id = RosaCoeli().id;
-  @override
-  _MonumentsRosaCoeliState createState() => _MonumentsRosaCoeliState();
-}
 
-class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
+
+  static String id = RosaCoeli().id;
   RosaCoeli rosaCoeli = RosaCoeli();
   @override
   Widget build(BuildContext context) {
