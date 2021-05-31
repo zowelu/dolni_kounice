@@ -6,11 +6,9 @@ import 'package:dolni_kounice/components/gallery_photo_view_page.dart';
 import 'package:dolni_kounice/components/monuments_page.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
 import 'package:dolni_kounice/components/my_button.dart';
-import 'package:dolni_kounice/components/single_photo_view_page.dart';
 import 'package:dolni_kounice/constants/constants.dart';
 import 'package:dolni_kounice/components/text_default_standart.dart';
 import 'package:dolni_kounice/components/text_default_header.dart';
-import 'package:dolni_kounice/components/image_on_page_with_ontap.dart';
 import 'package:dolni_kounice/components/open_url_in_browser.dart';
 
 class MonumentsStBarbaraChurch extends StatelessWidget {
