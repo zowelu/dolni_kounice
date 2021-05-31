@@ -32,24 +32,13 @@ class ContainerHeaderImageBackground extends StatelessWidget {
             children: [
               Container(
                 child: Text(
-                  text,
-                  style: TextStyle(
-                      //fontFamily: kDefaultFontFamily,
-                      fontSize: kDefaultFontSizeText,
-                      color: kDefaultColorTextWhite),
-                      textAlign: TextAlign.left,
-                ),
-                padding: EdgeInsets.all(5.0),
-              ),
-              Container(
-                child: Text(
                   textHeader,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     decoration: TextDecoration.none,
                       fontFamily: kDefaultFontFamily,
                       fontSize: kDefaultFontSizeHeader,
-                      color: kDefaultColorTextWhite,
+                      color: kBackgroundColor,
                   ),
                 ),
                 decoration: BoxDecoration(
