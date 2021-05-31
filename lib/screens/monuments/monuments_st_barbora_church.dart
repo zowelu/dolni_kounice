@@ -1,4 +1,3 @@
-import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/components/monuments/st_barbara_church.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli.dart';
@@ -16,14 +15,14 @@ import 'package:dolni_kounice/components/open_url_in_browser.dart';
 
 class MonumentsStBarbaraChurch extends StatelessWidget {
   static String id = StBarbaraChurch().id;
-  static ChapelOfStAntonine stAntonine = ChapelOfStAntonine();
+  static StBarbaraChurch stBarbaraChurch = StBarbaraChurch();
   @override
   Widget build(BuildContext context) {
     return MonumentsPage(
-      assetImage: stAntonine.imageGallery[0],
+      assetImage: stBarbaraChurch.imageGallery[0],
       textOfAppBar: 'Průvodce památkami',
-      textHeader: stAntonine.name,
-      tag: stAntonine.tag,
+      textHeader: stBarbaraChurch.name,
+      tag: stBarbaraChurch.tag,
       isFloatingButton: false,
       onPressedFloatingButton: () {
         Navigator.pushNamed(context, AudioGuideRosaCoeli.id);
@@ -35,14 +34,14 @@ class MonumentsStBarbaraChurch extends StatelessWidget {
             'Poutní kaple sv. Antonína se vypíná na stejnojmenném kopci nad řekou a je působivým objektem poutajícím ze široké vzdálenosti pozornost návštěvníků města.\n\nKaple je zavřená a přístupná pouze během pouti v červnu.'),
         SizedBox(height: kDMarginLarger),
         ChoiceContainer(
-            assetImageOfChoice: stAntonine.imageGallery[1],
+            assetImageOfChoice: stBarbaraChurch.imageGallery[1],
             textOfChoice: 'Galerie',
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => GalleryPhotoViewPage(
-                    nameOfImageGallery: stAntonine.nameOfImageGallery,
+                    nameOfImageGallery: stBarbaraChurch.nameOfImageGallery,
                   ),
                 ),
               );
@@ -56,7 +55,7 @@ class MonumentsStBarbaraChurch extends StatelessWidget {
             'Informace o vstupném, otevírací době a dalších naleznete zde',
             onPressed: () async {
               //po stisknutí otevře stránku v externím prohlížeči
-              OpenUrlInBrowser().openUrl(stAntonine.url);
+              OpenUrlInBrowser().openUrl(stBarbaraChurch.url);
             },
           ),
         ),
@@ -73,25 +72,25 @@ class MonumentsStBarbaraChurch extends StatelessWidget {
           height: kDMargin,
         ),
         ImageOnPageWithOnTap(
-          assetImage: stAntonine.imageGallery[3],
+          assetImage: stBarbaraChurch.imageGallery[3],
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
-                    assetImage: stAntonine.imageGallery[3]),
+                    assetImage: stBarbaraChurch.imageGallery[3]),
               ),
             );
           },
         ),
         ImageOnPageWithOnTap(
-          assetImage: stAntonine.imageGallery[4],
+          assetImage: stBarbaraChurch.imageGallery[4],
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
-                    assetImage: stAntonine.imageGallery[4]),
+                    assetImage: stBarbaraChurch.imageGallery[4]),
               ),
             );
           },
