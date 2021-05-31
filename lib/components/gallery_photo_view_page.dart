@@ -34,15 +34,20 @@ class GalleryPhotoViewPage extends StatelessWidget {
         scrollPhysics: ClampingScrollPhysics(),
         backgroundDecoration:
             BoxDecoration(color: kDefaultColorTextColorBackground),
-        loadingBuilder: (context, event) => Center(
-          child: Container(
-            width: 30.0,
-            height: 30.0,
-            child: CircularProgressIndicator(
-              backgroundColor: Colors.orange,
-              value: event == null
-                  ? 0
-                  : event.cumulativeBytesLoaded / event.expectedTotalBytes,
+        loadingBuilder: (context, event) => Container(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+          color: kBackgroundColor,
+          child: Center(
+            child: Container(
+              width: 30.0,
+              height: 30.0,
+              child: CircularProgressIndicator(
+                backgroundColor: Colors.orange,
+                value: event == null
+                    ? 0
+                    : event.cumulativeBytesLoaded / event.expectedTotalBytes,
+              ),
             ),
           ),
         ),
