@@ -1,6 +1,6 @@
-import 'package:dolni_kounice/components/castle_and_chateau.dart';
-import 'package:dolni_kounice/components/jevish_synagogue.dart';
-import 'package:dolni_kounice/components/rosa_coeli.dart';
+import 'package:dolni_kounice/components/monuments/castle_and_chateau.dart';
+import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
+import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
 
 class ImageGallery {
   final List<String> imageGalleryRosaCoeli = RosaCoeli().imageGallery;

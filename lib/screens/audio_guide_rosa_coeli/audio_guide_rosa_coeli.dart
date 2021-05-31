@@ -12,7 +12,7 @@ import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_co
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_historie.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_strecha.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_uvod.dart';
-import 'package:dolni_kounice/components/rosa_coeli.dart';
+import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
 
 class AudioGuideRosaCoeli extends StatefulWidget {
   static String id = '/audioGuideRosaCoeli';

@@ -1,4 +1,4 @@
-import 'package:dolni_kounice/components/castle_and_chateau.dart';
+import 'package:dolni_kounice/components/monuments/castle_and_chateau.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

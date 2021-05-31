@@ -1,7 +1,7 @@
-import 'package:dolni_kounice/components/castle_and_chateau.dart';
-import 'package:dolni_kounice/components/jevish_synagogue.dart';
+import 'package:dolni_kounice/components/monuments/castle_and_chateau.dart';
+import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
 import 'package:dolni_kounice/components/default_page_of_choice_with_floating_button.dart';
-import 'package:dolni_kounice/components/rosa_coeli.dart';
+import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
