@@ -35,22 +35,25 @@ class ChoiceContainer extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      DecoratedBox(
-                        decoration: BoxDecoration(
-                          color: kDefaultTextBackgroundTransparent,
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
-                        child: Padding(
-                          padding: EdgeInsets.all(kDefaultPadding),
-                          child: Text(
-                            textOfChoice,
-                            style: TextStyle(
-                              decoration: TextDecoration.none,
-                              color: Colors.white,
-                              fontSize: kDefaultFontSizeText,
-                              fontFamily: kDefaultFontFamily,
+                      Container(
+                        width: MediaQuery.of(context).size.width/5*3,
+                        child: DecoratedBox(
+                          decoration: BoxDecoration(
+                            color: kDefaultTextBackgroundTransparent,
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                          child: Padding(
+                            padding: EdgeInsets.all(kDefaultPadding),
+                            child: Text(
+                              textOfChoice,
+                              style: TextStyle(
+                                decoration: TextDecoration.none,
+                                color: Colors.white,
+                                fontSize: kDefaultFontSizeText,
+                                fontFamily: kDefaultFontFamily,
+                              ),
+                              textAlign: TextAlign.center,
                             ),
-                            textAlign: TextAlign.center,
                           ),
                         ),
                       ),
