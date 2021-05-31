@@ -161,7 +161,9 @@ class _MonumentsRosaCoeliState extends State<MonumentsRosaCoeli> {
             },
           ),
         ),
-        TextDefaultStandart(text: 'I A presbyterium kostela\nI B transept kostela\nI C loď kostela\nI D portál kostela\nI E sakristie kostela\nII A rajský dvůr\nII B křížová chodba\nIII kapitulní síň\nIV klášterní budovy')
+        TextDefaultStandart(
+            text:
+                'I A presbyterium kostela\nI B transept kostela\nI C loď kostela\nI D portál kostela\nI E sakristie kostela\nII A rajský dvůr\nII B křížová chodba\nIII kapitulní síň\nIV klášterní budovy')
       ],
     );
   }
