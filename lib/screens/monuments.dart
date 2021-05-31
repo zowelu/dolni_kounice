@@ -1,9 +1,11 @@
 import 'package:dolni_kounice/components/monuments/castle_and_chateau.dart';
 import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
+import 'package:dolni_kounice/components/monuments/st_barbara_church.dart';
 import 'package:dolni_kounice/components/default_page_of_choice_with_floating_button.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_antonine.dart';
+import 'package:dolni_kounice/screens/monuments/monuments_st_barbora_church.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
@@ -123,6 +125,17 @@ class _MonumentsState extends State<Monuments> {
             textOfChoice: ChapelOfStAntonine().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsChapelOfStAntonine.id);
+            },
+          ),
+        ),
+        Hero(
+          tag: StBarbaraChurch().tag,
+          child: ChoiceContainer(
+            assetImageOfChoice:
+            StBarbaraChurch().imageGallery[0],
+            textOfChoice: StBarbaraChurch().name,
+            onTap: () {
+              Navigator.pushNamed(context, MonumentsStBarbaraChurch.id);
             },
           ),
         ),
