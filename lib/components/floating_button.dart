@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
 
 class FloatingButton extends StatelessWidget {
-  const FloatingButton({@required this.onPressedFloatingButton, @required this.textOfFloatingButton});
+  const FloatingButton(
+      {@required this.onPressedFloatingButton,
+      @required this.textOfFloatingButton});
 
   final String textOfFloatingButton;
   final Function onPressedFloatingButton;
@@ -17,10 +19,10 @@ class FloatingButton extends StatelessWidget {
       elevation: 5,
       backgroundColor: kBackgroundColor,
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(30.0),
-          ),
-          side: BorderSide(width: 2.0, color: Colors.white)),
+        borderRadius: BorderRadius.all(
+          Radius.circular(30.0),
+        ),
+      ),
       onPressed: onPressedFloatingButton,
     );
   }
