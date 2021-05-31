@@ -65,13 +65,13 @@ class _HomePageState extends State<HomePage> {
                 tag: 'turistickeTrasy',
                 child: ChoiceContainer(
                     assetImageOfChoice:
-                        'assets/images/pamatky/mesto_pamatek_uvod/beautiful-scenery-greenfield-countryside-eifel-region-germany-M.jpg',
+                        'assets/images/pamatky/mesto_pamatek_uvod/pexels-elina-sazonova-2705756_compressed.jpg',
                     textOfChoice: 'Turistické trasy',
                     onTap: () {}),
               ),
               ChoiceContainer(
                   assetImageOfChoice:
-                      'assets/images/pamatky/mesto_pamatek_uvod/beautiful-scenery-greenfield-countryside-eifel-region-germany-M.jpg',
+                      'assets/images/pamatky/mesto_pamatek_uvod/pexels-chevanon-photography-302899_compressed.jpg',
                   textOfChoice: 'Služby',
                   onTap: () {}),
             ],
