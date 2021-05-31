@@ -1,3 +1,4 @@
+import 'package:dolni_kounice/components/castle_and_chateau.dart';
 import 'package:dolni_kounice/components/default_page_of_choice_with_floating_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -93,6 +94,17 @@ class _MonumentsState extends State<Monuments> {
             assetImageOfChoice:
                 'assets/images/pamatky/synagoga/synagoga-venek.jpg',
             textOfChoice: 'Židovská synagoga',
+            onTap: () {
+              Navigator.pushNamed(context, MonumentsJevishSynagogue.id);
+            },
+          ),
+        ),
+        Hero(
+          tag: CastleAndChateau().tag,
+          child: ChoiceContainer(
+            assetImageOfChoice:
+            CastleAndChateau().imageGalleryCastleAndChateau[1],
+            textOfChoice: CastleAndChateau().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsJevishSynagogue.id);
             },
