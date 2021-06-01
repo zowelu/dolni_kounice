@@ -77,10 +77,13 @@ void main() {
         MonumentsRosaCoeli.id: (context) => MonumentsRosaCoeli(),
         MonumentsJevishSynagogue.id: (context) => MonumentsJevishSynagogue(),
         MonumentsCastleAndChateau.id: (context) => MonumentsCastleAndChateau(),
-        MonumentsChapelOfStAntonine.id: (context) => MonumentsChapelOfStAntonine(),
+        MonumentsChapelOfStAntonine.id: (context) =>
+            MonumentsChapelOfStAntonine(),
         MonumentsStBarbaraChurch.id: (context) => MonumentsStBarbaraChurch(),
-        MonumentsChurchOfStPeterAndPavel.id: (context) => MonumentsChurchOfStPeterAndPavel(),
-        MonumentsChapelOfStJohnTheBaptist.id: (context) => MonumentsChapelOfStJohnTheBaptist(),
+        MonumentsChurchOfStPeterAndPavel.id: (context) =>
+            MonumentsChurchOfStPeterAndPavel(),
+        MonumentsChapelOfStJohnTheBaptist.id: (context) =>
+            MonumentsChapelOfStJohnTheBaptist(),
         MonumentsJevishCemetery.id: (context) => MonumentsJevishCemetery(),
       },
     ),
