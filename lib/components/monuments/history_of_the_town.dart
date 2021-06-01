@@ -25,7 +25,7 @@ class HistoryOfTheTown {
     'assets/images/pamatky/klaster_rosa_coeli/klaster-pohled-zepredu.jpg',
     'assets/images/pamatky/zamek/zamek-venek-zepredu.jpg',
     'assets/images/pamatky/chram_sv_barbory/chram-sv-barbory-venek-2.jpg',
-    'assets/images/DK_znak_200px.png',
+    'assets/images/DK_znak_800px.png',
   ];
 
   ///List zbytků obrázků
