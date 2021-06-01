@@ -5,6 +5,7 @@ import 'package:dolni_kounice/components/monuments/church_of_st_peter_and_pavel.
 import 'package:dolni_kounice/components/monuments/history_of_the_town.dart';
 import 'package:dolni_kounice/components/monuments/jevish_cemetery.dart';
 import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
+import 'package:dolni_kounice/components/monuments/middle_class_houses.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
 import 'package:dolni_kounice/components/monuments/st_barbara_church.dart';
 
@@ -35,6 +36,9 @@ class ImageGallery {
   final List<String> imageGalleryHistoryOfTheTown =
       HistoryOfTheTown().imageGallery;
 
+  final List<String> imageGalleryMiddleClassHouses =
+      MiddleClassHouses().imageGallery;
+
 
 
   ///porovná zadaný text s názvem Listu galerie památky a vrátí ho
@@ -60,8 +64,8 @@ class ImageGallery {
       return imageGalleryChurchOfStPeterAndPavel;
     } else if (nameOfImageGallery == 'imageGalleryHistoryOfTheTown') {
       return imageGalleryHistoryOfTheTown;
-    } else if (nameOfImageGallery == 'imageGalleryChurchOfStPeterAndPavel') {
-      return imageGalleryChurchOfStPeterAndPavel;
+    } else if (nameOfImageGallery == 'imageGalleryMiddleClassHouses') {
+      return imageGalleryMiddleClassHouses;
     } else if (nameOfImageGallery == 'imageGalleryChurchOfStPeterAndPavel') {
       return imageGalleryChurchOfStPeterAndPavel;
     }
