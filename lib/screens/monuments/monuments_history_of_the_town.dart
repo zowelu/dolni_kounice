@@ -12,7 +12,6 @@ import 'package:dolni_kounice/components/my_button.dart';
 import 'package:dolni_kounice/constants/constants.dart';
 import 'package:dolni_kounice/components/text_default_standart.dart';
 import 'package:dolni_kounice/components/open_url_in_browser.dart';
-import 'package:styled_text/styled_text.dart';
 
 class MonumentsHistoryOfTheTown extends StatelessWidget {
   static String id = HistoryOfTheTown().id;
