@@ -2,6 +2,7 @@ import 'package:dolni_kounice/screens/monuments/monuments_castle_and_chateau.dar
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_john_the_baptist.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_church_of_st_peter_and_pavel.dart';
+import 'package:dolni_kounice/screens/monuments/monuments_history_of_the_town.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_jevish_cemetery.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_middle_class_houses.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_st_barbora_church.dart';
@@ -87,6 +88,7 @@ void main() {
             MonumentsChapelOfStJohnTheBaptist(),
         MonumentsJevishCemetery.id: (context) => MonumentsJevishCemetery(),
         MonumentsMiddleClassHouses.id: (context) => MonumentsMiddleClassHouses(),
+        MonumentsHistoryOfTheTown.id: (context) => MonumentsHistoryOfTheTown(),
       },
     ),
   );
