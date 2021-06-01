@@ -23,6 +23,7 @@ class ChurchOfStPeterAndPavel{
   List<String> imageGallery = [
     'assets/images/pamatky/kostel_sv_petra_a_pavla/kostel-venek-1.jpg',
     'assets/images/pamatky/kostel_sv_petra_a_pavla/kostel-venek-2.jpg',
+    'assets/images/pamatky/kostel_sv_petra_a_pavla/kostel-venek-3.jpg',
     'assets/images/pamatky/kostel_sv_petra_a_pavla/kostel-vnitrek-1.jpg',
     'assets/images/pamatky/kostel_sv_petra_a_pavla/kostel-vnitrek-2.JPG',
     'assets/images/pamatky/kostel_sv_petra_a_pavla/kostel-vnitrek-3.JPG',
