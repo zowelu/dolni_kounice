@@ -1,11 +1,13 @@
 import 'package:dolni_kounice/components/monuments/castle_and_chateau.dart';
 import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
+import 'package:dolni_kounice/components/monuments/chapel_of_st_john_the_baptist.dart';
 import 'package:dolni_kounice/components/monuments/church_of_st_peter_and_pavel.dart';
 import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
 import 'package:dolni_kounice/components/monuments/st_barbara_church.dart';
 import 'package:dolni_kounice/components/default_page_of_choice_with_floating_button.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_antonine.dart';
+import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_john_the_baptist.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_church_of_st_peter_and_pavel.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_st_barbora_church.dart';
 import 'package:flutter/cupertino.dart';
@@ -149,6 +151,17 @@ class _MonumentsState extends State<Monuments> {
             textOfChoice: ChurchOfStPeterAndPavel().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsChurchOfStPeterAndPavel.id);
+            },
+          ),
+        ),
+        Hero(
+          tag: ChapelOfStJohnTheBaptist().tag,
+          child: ChoiceContainer(
+            assetImageOfChoice:
+            ChapelOfStJohnTheBaptist().imageGallery[0],
+            textOfChoice: ChapelOfStJohnTheBaptist().name,
+            onTap: () {
+              Navigator.pushNamed(context, MonumentsChapelOfStJohnTheBaptist.id);
             },
           ),
         ),
