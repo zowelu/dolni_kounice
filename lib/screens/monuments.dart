@@ -194,13 +194,13 @@ class _MonumentsState extends State<Monuments> {
           ),
         ),
         Hero(
-          tag: MiddleClassHouses().tag,
+          tag: 'není',
           child: ChoiceContainer(
             assetImageOfChoice:
             MiddleClassHouses().imageGallery[0],
-            textOfChoice: MiddleClassHouses().name,
+            textOfChoice: 'sakrální památky',
             onTap: () {
-              Navigator.pushNamed(context, MonumentsMiddleClassHouses.id);
+              Navigator.pushNamed(context, null);
             },
           ),
         ),
