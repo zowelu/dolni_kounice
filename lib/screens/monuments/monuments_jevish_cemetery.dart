@@ -32,7 +32,7 @@ class MonumentsJevishCemetery extends StatelessWidget {
             'Byl založen v roce 1680 ve svahu nad ghettem na jižním okraji města po zrušení staršího hřbitova, který stál na jiném místě. Původně byl přístupný ze severní strany pěší cestou. Nynější vchod je z jihu z ulice Trboušanské. Hřbitov je ohrazen masivní kamennou zdí. Nalézá se zde asi 1500 náhrobků nepravidelně rozmístěných. Řada z nich pochází z období baroka a klasicizmu, přičemž nejstarší se datuje k roku 1688.\n\nHřbitov je pro návštěvníky otevřen celoročně.'),
         SizedBox(height: kDMarginLarger),
         ChoiceContainer(
-            assetImageOfChoice: jevishCemetery.imageGallery[1],
+            assetImageOfChoice: jevishCemetery.imageGallery[2],
             textOfChoice: 'Galerie',
             onTap: () {
               Navigator.push(
