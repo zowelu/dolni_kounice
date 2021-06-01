@@ -1,7 +1,7 @@
 
 class RosaCoeli {
   String id = '/monumentsRosaCoeli';
-  String name = 'Klášter Rosa Coeli';
+  String name = 'Klášter Rosa coeli';
   String url = 'https://www.dolnikounice.cz/klaster-rosa-coeli/d-78777/p1=4774';
   String tag = 'monumentsRosaCoeli';
   String nameOfImageGallery = 'imageGalleryRosaCoeli';
