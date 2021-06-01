@@ -1,6 +1,7 @@
 import 'package:dolni_kounice/components/image_on_page_with_ontap.dart';
 import 'package:dolni_kounice/components/monuments/history_of_the_town.dart';
 import 'package:dolni_kounice/components/single_photo_view_page.dart';
+import 'package:dolni_kounice/components/text_default_styled_text.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli.dart';
 import 'package:flutter/cupertino.dart';
@@ -11,6 +12,7 @@ import 'package:dolni_kounice/components/my_button.dart';
 import 'package:dolni_kounice/constants/constants.dart';
 import 'package:dolni_kounice/components/text_default_standart.dart';
 import 'package:dolni_kounice/components/open_url_in_browser.dart';
+import 'package:styled_text/styled_text.dart';
 
 class MonumentsHistoryOfTheTown extends StatelessWidget {
   static String id = HistoryOfTheTown().id;
@@ -66,6 +68,7 @@ class MonumentsHistoryOfTheTown extends StatelessWidget {
               'Již před mnoha desítkami tisíc let zanechal pravěký člověk svoji pomyslnou šlépěj na půdě budoucího města. Nejstarší přítomnost člověka na území okolí Dolních Kounic datujeme až do období před 400 000 lety. Potvrzují to nálezy pěstních klínů – prvních nástrojů pravěkých lidí, které přinesli pedagog a mineralog Oldřich Svoboda a Antonín Otta, specialista na období starého paleolitu. Další důkazy, tentokrát o skutečném osídlení, máme z období 1 500 let př. n. l. Na vrchu Antoníček se rozkládalo sídliště Kultury Věteřovské z rozhraní starší a střední doby Bronzové. Bylo zde objeveno množství nádob, zbytky chat, hrnčířské pece a nálezy přeslenů – doklad tkalcovství.\n\nPrvní zmínka o Kounicích se nachází ve falsu zakládací listiny staroboleslavské kapituly z roku 1046. Pozdější informace a doklady hovoří k roku 1183 o vsi Kounice, kde je i kostel. Listina byla psána kolem roku 1276 a zde je psáno o vsi Chunicz.',
         ),
         SizedBox(height: kDMargin),
+        TextDefaultStyledText(text: '<bold>Další názvy města, jak se měnily během staletí:</bold> \n\n• 1275 - Cvoniz\n• 1351 - Cmutz\n• 1276, 1361 - Chunicz\n• 1385, 1417 - Inferior Cunicz\n• 1459, 1576, 1609 - Dolní Kounice\n• 1660 - Kanitz\n• 1696, 1737, 1878 - Unter Kanitz\n• 1904 - Stadt Kanitz\n• 1918 až 1945 – Kanitz, Dolní Kounice (oba názvy)\n • 1945 až dodnes - Dolní Kounice'),
         TextDefaultStandart(
             text:
                 'Další názvy města, jak se měnily během staletí: \n\n• 1275 - Cvoniz\n• 1351 - Cmutz\n• 1276, 1361 - Chunicz\n• 1385, 1417 - Inferior Cunicz\n• 1459, 1576, 1609 - Dolní Kounice\n• 1660 - Kanitz\n• 1696, 1737, 1878 - Unter Kanitz\n• 1904 - Stadt Kanitz\n• 1918 až 1945 – Kanitz, Dolní Kounice (oba názvy)\n • 1945 až dodnes - Dolní Kounice'),
@@ -170,3 +173,5 @@ class MonumentsHistoryOfTheTown extends StatelessWidget {
     );
   }
 }
+
+
