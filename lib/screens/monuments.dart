@@ -1,5 +1,6 @@
 import 'package:dolni_kounice/components/monuments/castle_and_chateau.dart';
 import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
+import 'package:dolni_kounice/components/monuments/church_of_st_peter_and_pavel.dart';
 import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
 import 'package:dolni_kounice/components/monuments/st_barbara_church.dart';
 import 'package:dolni_kounice/components/default_page_of_choice_with_floating_button.dart';
@@ -136,6 +137,17 @@ class _MonumentsState extends State<Monuments> {
             textOfChoice: StBarbaraChurch().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsStBarbaraChurch.id);
+            },
+          ),
+        ),
+        Hero(
+          tag: ChurchOfStPeterAndPavel().tag,
+          child: ChoiceContainer(
+            assetImageOfChoice:
+            ChurchOfStPeterAndPavel().imageGallery[0],
+            textOfChoice: ChurchOfStPeterAndPavel().name,
+            onTap: () {
+              Navigator.pushNamed(context, MonumentsChurchOfStPeterAndPavel.id);
             },
           ),
         ),
