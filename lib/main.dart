@@ -1,5 +1,6 @@
 import 'package:dolni_kounice/screens/monuments/monuments_castle_and_chateau.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_antonine.dart';
+import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_john_the_baptist.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_church_of_st_peter_and_pavel.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_st_barbora_church.dart';
 import 'package:flutter/material.dart';
@@ -78,6 +79,7 @@ void main() {
         MonumentsChapelOfStAntonine.id: (context) => MonumentsChapelOfStAntonine(),
         MonumentsStBarbaraChurch.id: (context) => MonumentsStBarbaraChurch(),
         MonumentsChurchOfStPeterAndPavel.id: (context) => MonumentsChurchOfStPeterAndPavel(),
+        MonumentsChapelOfStJohnTheBaptist.id: (context) => MonumentsChapelOfStJohnTheBaptist(),
       },
     ),
   );
