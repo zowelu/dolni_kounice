@@ -1,7 +1,4 @@
-import 'package:dolni_kounice/components/image_on_page_with_ontap.dart';
-import 'package:dolni_kounice/components/monuments/chapel_of_st_john_the_baptist.dart';
 import 'package:dolni_kounice/components/monuments/jevish_cemetery.dart';
-import 'package:dolni_kounice/components/single_photo_view_page.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli.dart';
 import 'package:flutter/cupertino.dart';
