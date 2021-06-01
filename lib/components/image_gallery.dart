@@ -2,6 +2,7 @@ import 'package:dolni_kounice/components/monuments/castle_and_chateau.dart';
 import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/components/monuments/chapel_of_st_john_the_baptist.dart';
 import 'package:dolni_kounice/components/monuments/church_of_st_peter_and_pavel.dart';
+import 'package:dolni_kounice/components/monuments/history_of_the_town.dart';
 import 'package:dolni_kounice/components/monuments/jevish_cemetery.dart';
 import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
@@ -31,6 +32,10 @@ class ImageGallery {
   final List<String> imageGalleryJevishCemetery =
       JevishCemetery().imageGallery;
 
+  final List<String> imageGalleryHistoryOfTheTown =
+      HistoryOfTheTown().imageGallery;
+
+
 
   ///porovná zadaný text s názvem Listu galerie památky a vrátí ho
   // ignore: missing_return
@@ -51,6 +56,12 @@ class ImageGallery {
       return imageGalleryChapelOfStJohnTheBaptist;
     } else if (nameOfImageGallery == 'imageGalleryJevishCemetery') {
       return imageGalleryJevishCemetery;
+    } else if (nameOfImageGallery == 'imageGalleryChurchOfStPeterAndPavel') {
+      return imageGalleryChurchOfStPeterAndPavel;
+    } else if (nameOfImageGallery == 'imageGalleryHistoryOfTheTown') {
+      return imageGalleryHistoryOfTheTown;
+    } else if (nameOfImageGallery == 'imageGalleryChurchOfStPeterAndPavel') {
+      return imageGalleryChurchOfStPeterAndPavel;
     } else if (nameOfImageGallery == 'imageGalleryChurchOfStPeterAndPavel') {
       return imageGalleryChurchOfStPeterAndPavel;
     }
