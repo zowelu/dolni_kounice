@@ -2,6 +2,7 @@ import 'package:dolni_kounice/components/monuments/castle_and_chateau.dart';
 import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/components/monuments/chapel_of_st_john_the_baptist.dart';
 import 'package:dolni_kounice/components/monuments/church_of_st_peter_and_pavel.dart';
+import 'package:dolni_kounice/components/monuments/jevish_cemetery.dart';
 import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
 import 'package:dolni_kounice/components/monuments/st_barbara_church.dart';
 import 'package:dolni_kounice/components/default_page_of_choice_with_floating_button.dart';
@@ -9,6 +10,7 @@ import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_john_the_baptist.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_church_of_st_peter_and_pavel.dart';
+import 'package:dolni_kounice/screens/monuments/monuments_jevish_cemetery.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_st_barbora_church.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -162,6 +164,17 @@ class _MonumentsState extends State<Monuments> {
             textOfChoice: ChapelOfStJohnTheBaptist().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsChapelOfStJohnTheBaptist.id);
+            },
+          ),
+        ),
+        Hero(
+          tag: JevishCemetery().tag,
+          child: ChoiceContainer(
+            assetImageOfChoice:
+            JevishCemetery().imageGallery[0],
+            textOfChoice: JevishCemetery().name,
+            onTap: () {
+              Navigator.pushNamed(context, MonumentsJevishCemetery.id);
             },
           ),
         ),
