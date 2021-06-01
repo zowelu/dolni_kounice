@@ -3,6 +3,7 @@ import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_antonine.
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_john_the_baptist.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_church_of_st_peter_and_pavel.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_jevish_cemetery.dart';
+import 'package:dolni_kounice/screens/monuments/monuments_middle_class_houses.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_st_barbora_church.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -85,6 +86,7 @@ void main() {
         MonumentsChapelOfStJohnTheBaptist.id: (context) =>
             MonumentsChapelOfStJohnTheBaptist(),
         MonumentsJevishCemetery.id: (context) => MonumentsJevishCemetery(),
+        MonumentsMiddleClassHouses.id: (context) => MonumentsMiddleClassHouses(),
       },
     ),
   );
