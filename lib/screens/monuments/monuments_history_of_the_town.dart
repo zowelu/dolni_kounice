@@ -66,18 +66,18 @@ class MonumentsHistoryOfTheTown extends StatelessWidget {
           'Již před mnoha desítkami tisíc let zanechal pravěký člověk svoji pomyslnou šlépěj na půdě budoucího města. Nejstarší přítomnost člověka na území okolí Dolních Kounic datujeme až do období před 400 000 lety. Potvrzují to nálezy pěstních klínů – prvních nástrojů pravěkých lidí, které přinesli pedagog a mineralog Oldřich Svoboda a Antonín Otta, specialista na období starého paleolitu. Další důkazy, tentokrát o skutečném osídlení, máme z období 1 500 let př. n. l. Na vrchu Antoníček se rozkládalo sídliště Kultury Věteřovské z rozhraní starší a střední doby Bronzové. Bylo zde objeveno množství nádob, zbytky chat, hrnčířské pece a nálezy přeslenů – doklad tkalcovství.\n\nPrvní zmínka o Kounicích se nachází ve falsu zakládací listiny staroboleslavské kapituly z roku 1046. Pozdější informace a doklady hovoří k roku 1183 o vsi Kounice, kde je i kostel. Listina byla psána kolem roku 1276 a zde je psáno o vsi Chunicz.',
         ),
         SizedBox(height: kDMargin),
-        TextDefaultStandart(text: 'Další názvy města, jak se měnily během staletí: \n\n • 1275 - Cvoniz\n• 1351 - Cmutz\n• 1276, 1361 - Chunicz\n• 1385, 1417 - Inferior Cunicz\n• 1459, 1576, 1609 - Dolní Kounice\n• 1660 - Kanitz\n• 1696, 1737, 1878 - Unter Kanitz\n• 1904 - Stadt Kanitz\n• 1918 až 1945 – Kanitz, Dolní Kounice (oba názvy)\n • 1945 až dodnes - Dolní Kounice'),
+        TextDefaultStandart(text: 'Další názvy města, jak se měnily během staletí: \n\n• 1275 - Cvoniz\n• 1351 - Cmutz\n• 1276, 1361 - Chunicz\n• 1385, 1417 - Inferior Cunicz\n• 1459, 1576, 1609 - Dolní Kounice\n• 1660 - Kanitz\n• 1696, 1737, 1878 - Unter Kanitz\n• 1904 - Stadt Kanitz\n• 1918 až 1945 – Kanitz, Dolní Kounice (oba názvy)\n • 1945 až dodnes - Dolní Kounice'),
         SizedBox(height: kDMargin),
         TextDefaultStandart(text: 'Další dějiny města jsou úzce spjaty s klášterem Rosa coeli, postaveným v letech 1181 až 1183 Vilémem z Pulína (nebo také z Kounic?). Klášter prožil tři a půl století vzestupů a úpadků až po krizi začátkem šestnáctého století zanikl. Roku 1702 byl učiněn pokus o jeho obnovení, ovšem o rok později vypukl ve městě obrovský požár, který se přenesl na rekonstruovaný klášter. Ohni padla za oběť střecha nad klášterním chrámem, kaplí, křížovou chodbou a ložnicemi pro kněze. Po požáru již střecha klášterního chrámu nebyla nikdy obnovena.'),
         SizedBox(height: kDMargin),
         ImageOnPageWithOnTap(
-          assetImage: historyOfTheTown.imageGallery[12],
+          assetImage: historyOfTheTown.imageGallery[1],
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
-                    assetImage: historyOfTheTown.imageGallery[12]),
+                    assetImage: historyOfTheTown.imageGallery[1]),
               ),
             );
           },
@@ -86,13 +86,13 @@ class MonumentsHistoryOfTheTown extends StatelessWidget {
         TextDefaultStandart(text: 'Klášterní areál stráží zámek, původně klášterní hrad, postavený v letech 1284 až 1330'),
         SizedBox(height: kDMargin),
         ImageOnPageWithOnTap(
-          assetImage: historyOfTheTown.imageGallery[12],
+          assetImage: historyOfTheTown.imageGallery[1],
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
-                    assetImage: historyOfTheTown.imageGallery[12]),
+                    assetImage: historyOfTheTown.imageGallery[1]),
               ),
             );
           },
