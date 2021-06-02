@@ -16,6 +16,7 @@ import 'package:dolni_kounice/screens/monuments/monuments_church_of_st_peter_and
 import 'package:dolni_kounice/screens/monuments/monuments_history_of_the_town.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_jevish_cemetery.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_middle_class_houses.dart';
+import 'package:dolni_kounice/screens/monuments/monuments_sacral_buildings.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_st_barbora_church.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -201,7 +202,7 @@ class _MonumentsState extends State<Monuments> {
             SacralBuildings().imageGallery[0],
             textOfChoice: 'Menší sakrální stavby',
             onTap: () {
-              Navigator.pushNamed(context, null);
+              Navigator.pushNamed(context, MonumentsSacralBuildings.id);
             },
           ),
         ),
