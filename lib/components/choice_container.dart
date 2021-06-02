@@ -28,7 +28,8 @@ class ChoiceContainer extends StatelessWidget {
             children: [
               Ink.image(
                 image: AssetImage(assetImageOfChoice),
-                height: 165.0,
+                //height: 165.0,
+                height: MediaQuery.of(context).size.height/4,
                 fit: BoxFit.cover,
                 child: InkWell(
                   onTap: onTap,

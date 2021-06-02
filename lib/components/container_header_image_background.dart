@@ -16,7 +16,8 @@ class ContainerHeaderImageBackground extends StatelessWidget {
       children: [
         Container(
           width: double.infinity,
-          height: 165,
+          //height: 165,
+          height: MediaQuery.of(context).size.height/4,
           margin: EdgeInsets.only(bottom: kDMargin),
           decoration: BoxDecoration(
             image: DecorationImage(
