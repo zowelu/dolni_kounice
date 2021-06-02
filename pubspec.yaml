@@ -34,7 +34,6 @@ dependencies:
   change_app_package_name: ^1.0.0
   flutter_launcher_name: ^0.0.1
   url_launcher: ^6.0.4
-  styled_text: ^3.0.1
 
 flutter_launcher_name:
   name: "Dolní Kounice"
