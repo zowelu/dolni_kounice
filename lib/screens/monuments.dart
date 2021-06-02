@@ -6,6 +6,7 @@ import 'package:dolni_kounice/components/monuments/history_of_the_town.dart';
 import 'package:dolni_kounice/components/monuments/jevish_cemetery.dart';
 import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
 import 'package:dolni_kounice/components/monuments/middle_class_houses.dart';
+import 'package:dolni_kounice/components/monuments/sacral_buildings.dart';
 import 'package:dolni_kounice/components/monuments/st_barbara_church.dart';
 import 'package:dolni_kounice/components/default_page_of_choice_with_floating_button.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
@@ -194,11 +195,11 @@ class _MonumentsState extends State<Monuments> {
           ),
         ),
         Hero(
-          tag: 'není',
+          tag: SacralBuildings().tag,
           child: ChoiceContainer(
             assetImageOfChoice:
-            MiddleClassHouses().imageGallery[0],
-            textOfChoice: 'sakrální památky',
+            SacralBuildings().imageGallery[0],
+            textOfChoice: 'Menší sakrální stavby',
             onTap: () {
               Navigator.pushNamed(context, null);
             },
