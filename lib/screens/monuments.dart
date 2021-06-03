@@ -18,7 +18,6 @@ import 'package:dolni_kounice/screens/monuments/monuments_jevish_cemetery.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_middle_class_houses.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_sacral_buildings.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_st_barbora_church.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
