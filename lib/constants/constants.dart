@@ -28,4 +28,4 @@ double kDMargin = 10.0;
 double kDMarginLarger = 30.0;
 double kDMyAppBarHeight = 55.0;
 String kDAppIconPath = 'assets/images/DK_znak_200px.png';
-String versionApp = '1.0.3';
+String versionApp = '1.1.0';
