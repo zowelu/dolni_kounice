@@ -15,8 +15,8 @@ class RosaCoeli {
     '4 - Příčná chrámová loď',
     '5 - Rajská zahrada',
     'Historie',
-    'FilmyASeriály',
-    'Střecha',
+    'Které filmy a seriály se v klášteře natáčely?',
+    'Proč klášter nemá střechu?',
   ];
 
   List<String> mp3 = [
