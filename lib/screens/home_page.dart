@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:dolni_kounice/screens/map_of_sights.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
@@ -73,7 +74,12 @@ class _HomePageState extends State<HomePage> {
                   assetImageOfChoice:
                       'assets/images/pamatky/mesto_pamatek_uvod/pexels-chevanon-photography-302899_compressed.jpg',
                   textOfChoice: 'Služby',
-                  onTap: () {}),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MapOfSights()),
+                    );
+                  }),
             ],
           ),
         ],
