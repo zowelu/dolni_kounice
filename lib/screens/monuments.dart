@@ -10,6 +10,7 @@ import 'package:dolni_kounice/components/monuments/sacral_buildings.dart';
 import 'package:dolni_kounice/components/monuments/st_barbara_church.dart';
 import 'package:dolni_kounice/components/default_page_of_choice_with_floating_button.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
+import 'package:dolni_kounice/components/open_url_in_browser.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_john_the_baptist.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_church_of_st_peter_and_pavel.dart';
@@ -39,53 +40,58 @@ class _MonumentsState extends State<Monuments> {
       tittleOfAppbar: 'Průvodce památkami',
       textOfFloatingButton: 'Mapa památek',
       assetImageOfModal: 'assets/images/DK_znak_200px.png',
-      onPressedFloatingButton: (){
-        showModalBottomSheet(
-          context: context,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(20.0),
-              topRight: Radius.circular(20.0),
-            ),
-          ),
-          isScrollControlled: false,
-          clipBehavior: Clip.antiAlias,
-          backgroundColor: kBackgroundColor,
-          builder: (context) => Container(
-            //height: MediaQuery.of(context).size.height/3*2.5,
-            child: Container(
-              padding: EdgeInsets.all(kDPadding),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  FractionallySizedBox(
-                    widthFactor: 0.15,
-                    child: Container(
-                      height: 5.0,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(2.5),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(bottom: kDMarginLarger),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20.0),
-                      child: Image(
-                        image: AssetImage('assets/images/pamatky/mesto_pamatek_uvod/pamatky-mapa.jpg'),
-                      ),
-                    ),
-                  ),
-
-                ],
-              ),
-            ),
-          ),
-        );
-      },
+      onPressedFloatingButton:() async {
+      //po stisknutí otevře stránku v externím prohlížeči
+      OpenUrlInBrowser().openUrl(
+          'https://www.google.com/maps/d/u/0/edit?mid=1DwOCwtBw3JTccht4w1IO8okqNxtFc4uS&usp=sharing');
+    },
+      // onPressedFloatingButton: (){
+      //   showModalBottomSheet(
+      //     context: context,
+      //     shape: RoundedRectangleBorder(
+      //       borderRadius: BorderRadius.only(
+      //         topLeft: Radius.circular(20.0),
+      //         topRight: Radius.circular(20.0),
+      //       ),
+      //     ),
+      //     isScrollControlled: false,
+      //     clipBehavior: Clip.antiAlias,
+      //     backgroundColor: kBackgroundColor,
+      //     builder: (context) => Container(
+      //       //height: MediaQuery.of(context).size.height/3*2.5,
+      //       child: Container(
+      //         padding: EdgeInsets.all(kDPadding),
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //           children: [
+      //             FractionallySizedBox(
+      //               widthFactor: 0.15,
+      //               child: Container(
+      //                 height: 5.0,
+      //                 decoration: BoxDecoration(
+      //                   color: Colors.white,
+      //                   borderRadius: BorderRadius.all(
+      //                     Radius.circular(2.5),
+      //                   ),
+      //                 ),
+      //               ),
+      //             ),
+      //             Container(
+      //               margin: EdgeInsets.only(bottom: kDMarginLarger),
+      //               child: ClipRRect(
+      //                 borderRadius: BorderRadius.circular(20.0),
+      //                 child: Image(
+      //                   image: AssetImage('assets/images/pamatky/mesto_pamatek_uvod/pamatky-mapa.jpg'),
+      //                 ),
+      //               ),
+      //             ),
+      //
+      //           ],
+      //         ),
+      //       ),
+      //     ),
+      //   );
+      // },
       listOfWidget: [
         Hero(
             tag: 'pruvodcePamatkami',
