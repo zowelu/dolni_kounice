@@ -42,7 +42,7 @@ class _MonumentsState extends State<Monuments> {
       onPressedFloatingButton:() async {
       //po stisknutí otevře stránku v externím prohlížeči
       OpenUrlInBrowser().openUrl(
-          'https://www.google.com/maps/d/u/0/edit?mid=1DwOCwtBw3JTccht4w1IO8okqNxtFc4uS&usp=sharing');
+          'https://www.google.com/maps/d/edit?mid=1DwOCwtBw3JTccht4w1IO8okqNxtFc4uS&usp=sharing');
     },
       // onPressedFloatingButton: (){
       //   showModalBottomSheet(
