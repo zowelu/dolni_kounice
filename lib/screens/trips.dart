@@ -1,23 +1,7 @@
 import 'package:dolni_kounice/components/monuments/castle_and_chateau.dart';
-import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
-import 'package:dolni_kounice/components/monuments/chapel_of_st_john_the_baptist.dart';
-import 'package:dolni_kounice/components/monuments/church_of_st_peter_and_pavel.dart';
-import 'package:dolni_kounice/components/monuments/history_of_the_town.dart';
-import 'package:dolni_kounice/components/monuments/jevish_cemetery.dart';
 import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
-import 'package:dolni_kounice/components/monuments/middle_class_houses.dart';
-import 'package:dolni_kounice/components/monuments/sacral_buildings.dart';
-import 'package:dolni_kounice/components/monuments/st_barbara_church.dart';
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
-import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_antonine.dart';
-import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_john_the_baptist.dart';
-import 'package:dolni_kounice/screens/monuments/monuments_church_of_st_peter_and_pavel.dart';
-import 'package:dolni_kounice/screens/monuments/monuments_history_of_the_town.dart';
-import 'package:dolni_kounice/screens/monuments/monuments_jevish_cemetery.dart';
-import 'package:dolni_kounice/screens/monuments/monuments_middle_class_houses.dart';
-import 'package:dolni_kounice/screens/monuments/monuments_sacral_buildings.dart';
-import 'package:dolni_kounice/screens/monuments/monuments_st_barbora_church.dart';
 import 'package:dolni_kounice/screens/trips/tripThreeMainDominants.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
@@ -125,94 +109,7 @@ class _TripsState extends State<Trips> {
             },
           ),
         ),
-        Hero(
-          tag: ChapelOfStAntonine().tag,
-          child: ChoiceContainer(
-            assetImageOfChoice:
-            ChapelOfStAntonine().imageGallery[0],
-            textOfChoice: ChapelOfStAntonine().name,
-            onTap: () {
-              Navigator.pushNamed(context, MonumentsChapelOfStAntonine.id);
-            },
-          ),
-        ),
-        Hero(
-          tag: StBarbaraChurch().tag,
-          child: ChoiceContainer(
-            assetImageOfChoice:
-            StBarbaraChurch().imageGallery[0],
-            textOfChoice: StBarbaraChurch().name,
-            onTap: () {
-              Navigator.pushNamed(context, MonumentsStBarbaraChurch.id);
-            },
-          ),
-        ),
-        Hero(
-          tag: ChurchOfStPeterAndPavel().tag,
-          child: ChoiceContainer(
-            assetImageOfChoice:
-            ChurchOfStPeterAndPavel().imageGallery[0],
-            textOfChoice: ChurchOfStPeterAndPavel().name,
-            onTap: () {
-              Navigator.pushNamed(context, MonumentsChurchOfStPeterAndPavel.id);
-            },
-          ),
-        ),
-        Hero(
-          tag: ChapelOfStJohnTheBaptist().tag,
-          child: ChoiceContainer(
-            assetImageOfChoice:
-            ChapelOfStJohnTheBaptist().imageGallery[0],
-            textOfChoice: ChapelOfStJohnTheBaptist().name,
-            onTap: () {
-              Navigator.pushNamed(context, MonumentsChapelOfStJohnTheBaptist.id);
-            },
-          ),
-        ),
-        Hero(
-          tag: JevishCemetery().tag,
-          child: ChoiceContainer(
-            assetImageOfChoice:
-            JevishCemetery().imageGallery[0],
-            textOfChoice: JevishCemetery().name,
-            onTap: () {
-              Navigator.pushNamed(context, MonumentsJevishCemetery.id);
-            },
-          ),
-        ),
-        Hero(
-          tag: MiddleClassHouses().tag,
-          child: ChoiceContainer(
-            assetImageOfChoice:
-            MiddleClassHouses().imageGallery[0],
-            textOfChoice: MiddleClassHouses().name,
-            onTap: () {
-              Navigator.pushNamed(context, MonumentsMiddleClassHouses.id);
-            },
-          ),
-        ),
-        Hero(
-          tag: SacralBuildings().tag,
-          child: ChoiceContainer(
-            assetImageOfChoice:
-            SacralBuildings().imageGallery[0],
-            textOfChoice: 'Menší sakrální stavby',
-            onTap: () {
-              Navigator.pushNamed(context, MonumentsSacralBuildings.id);
-            },
-          ),
-        ),
-        Hero(
-          tag: HistoryOfTheTown().tag,
-          child: ChoiceContainer(
-            assetImageOfChoice:
-            HistoryOfTheTown().imageGallery[0],
-            textOfChoice: HistoryOfTheTown().name,
-            onTap: () {
-              Navigator.pushNamed(context, MonumentsHistoryOfTheTown.id);
-            },
-          ),
-        ),
+
       ],
     );
   }
