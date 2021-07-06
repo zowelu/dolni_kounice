@@ -28,6 +28,7 @@ import 'package:dolni_kounice/screens/trips.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_uvod.dart';
 import 'package:dolni_kounice/screens/trips/tripThreeMainDominants.dart';
+import 'package:dolni_kounice/screens/trips/tripToChapelOfStAntonine.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -93,6 +94,7 @@ void main() {
         MonumentsHistoryOfTheTown.id: (context) => MonumentsHistoryOfTheTown(),
         MonumentsSacralBuildings.id: (context) => MonumentsSacralBuildings(),
         TripThreeMainDominants.id: (context) => TripThreeMainDominants(),
+        TripToChapelOfStAntonine.id: (context) => TripToChapelOfStAntonine(),
       },
     ),
   );
