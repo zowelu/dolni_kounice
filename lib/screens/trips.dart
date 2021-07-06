@@ -10,7 +10,6 @@ import 'package:dolni_kounice/components/monuments/sacral_buildings.dart';
 import 'package:dolni_kounice/components/monuments/st_barbara_church.dart';
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
-import 'package:dolni_kounice/components/open_url_in_browser.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_john_the_baptist.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_church_of_st_peter_and_pavel.dart';
@@ -24,7 +23,6 @@ import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
 import 'package:dolni_kounice/components/container_header_image_background.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_jevish_synagogue.dart';
-import 'package:dolni_kounice/screens/monuments/monuments_rosa_coeli.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_castle_and_chateau.dart';
 
 class Trips extends StatefulWidget {
