@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:dolni_kounice/components/open_url_in_browser.dart';
+import 'package:dolni_kounice/screens/trips.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
@@ -68,11 +69,9 @@ class _HomePageState extends State<HomePage> {
                     assetImageOfChoice:
                         'assets/images/pamatky/mesto_pamatek_uvod/pexels-elina-sazonova-2705756_compressed.jpg',
                     textOfChoice: 'Turistické trasy',
-                    onTap: () async {
-                      //po stisknutí otevře stránku v externím prohlížeči
-                      OpenUrlInBrowser().openUrl(
-                          'https://www.dolnikounice.cz/pesi-turistika/ds-4473/archiv=0&p1=4752');
-                    },),
+                    onTap: () {
+                      Navigator.pushNamed(context, Trips.id);
+                    }),
               ),
               Hero(
                 tag: 'sluzby',
