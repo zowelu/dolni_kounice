@@ -42,7 +42,7 @@ class TripThreeMainDominants extends StatelessWidget {
           thickness: 5,
         ),
         SizedBox(height: kDMarginLarger),
-        TextDefaultStandartBold(text: '1. Židovská synagoga cca 30 minut'),
+        TextDefaultStandartBold(text: '1. Židovská synagoga \(cca 30 minut\)'),
         SizedBox(height: kDMargin),
         ImageOnPageWithOnTap(
           assetImage: JevishSynagogue().imageGallery[7],
@@ -156,13 +156,13 @@ class TripThreeMainDominants extends StatelessWidget {
         TextDefaultStandartBold(text: '3. Hrad a zámek \(cca 75 minut\)'),
         SizedBox(height: kDMargin),
         ImageOnPageWithOnTap(
-          assetImage: CastleAndChateau().imageGallery[1],
+          assetImage: CastleAndChateau().imageGallery[0],
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => SinglePhotoViewPage(
-                    assetImage: CastleAndChateau().imageGallery[1]),
+                    assetImage: CastleAndChateau().imageGallery[0]),
               ),
             );
           },
