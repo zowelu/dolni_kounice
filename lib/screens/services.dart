@@ -10,7 +10,7 @@ import 'package:dolni_kounice/components/choice_container.dart';
 import 'package:dolni_kounice/components/container_header_image_background.dart';
 
 class Services extends StatefulWidget {
-  static String id = '/trips';
+  static String id = '/services';
   @override
   _ServicesState createState() => _ServicesState();
 }
