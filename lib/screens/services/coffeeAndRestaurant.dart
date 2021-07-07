@@ -1,6 +1,7 @@
 import 'package:dolni_kounice/components/image_on_page_with_ontap.dart';
 import 'package:dolni_kounice/components/monuments/castle_and_chateau.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
+import 'package:dolni_kounice/components/open_phone_url.dart';
 import 'package:dolni_kounice/components/text_default_standart.dart';
 import 'package:dolni_kounice/components/text_default_standart_bold.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_rosa_coeli.dart';
@@ -20,7 +21,8 @@ class CoffeeAndRestaurant extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MonumentsPage(
-      assetImage: 'assets/images/pamatky/services/pexels-lisa-907142_compressed.jpg',
+      assetImage:
+          'assets/images/pamatky/services/pexels-lisa-907142_compressed.jpg',
       textOfAppBar: 'Služby',
       textHeader: name,
       tag: tag,
@@ -30,22 +32,16 @@ class CoffeeAndRestaurant extends StatelessWidget {
       },
       textOfFloatingButton: 'Mapa trasy',
       listOfWidget: [
-        TextDefaultStandartBold(text: 'Cukrárna u Dvořáků'),
-        SizedBox(height: kDMarginLarger),
-        Row(
-          children: [
-            TextDefaultStandart(
-                text:
-                'Telefon:'),
-            GestureDetector(
-              onTap: () async {
-                //po stisknutí otevře stránku v externím prohlížeči
-                OpenUrlInBrowser().openUrl('https://webstrong.cz/');
-              },
-              child: Image.asset('assets/images/webstrong-logo.png',
-                  height: 25),
-            ),
-          ],
+        CardOfSubject(
+          name: 'Cukrárna U Dvořáků',
+          phoneNumber: '546 421 253',
+          webPage: 'www.studena-kuchyne.cz',
+          webPageURL: 'http://www.studena-kuchyne.cz/',
+          address: 'Hlavní 6',
+          addressURL:
+              'http://www.google.com/maps?q=49.0694522,16.4662409&z=14&t=m',
+          label:
+              'Platba kartou, Se psem, Bezbariérové, Dětský koutek, Zahrádka',
         ),
         SizedBox(height: kDMarginLarger),
         Divider(
@@ -54,6 +50,7 @@ class CoffeeAndRestaurant extends StatelessWidget {
           thickness: 5,
         ),
         SizedBox(height: kDMarginLarger),
+        CardOfSubject(name: 'Hotel Vinum coeli', phoneNumber: '730 825 882', webPage: 'www.vinumcoeli.cz', webPageURL: 'http://www.vinumcoeli.cz/', address: 'Masarykovo náměstí 5', addressURL: 'http://www.google.com/maps?q=49.0700406,16.464826&z=14&t=m', label: 'Platba kartou, Denní menu, Zahrádka'),
         TextDefaultStandartBold(text: '1. Židovská synagoga \(cca 30 minut\)'),
         SizedBox(height: kDMargin),
         ImageOnPageWithOnTap(
@@ -73,7 +70,7 @@ class CoffeeAndRestaurant extends StatelessWidget {
         ),
         TextDefaultStandart(
             text:
-            'Možnost samostatné prohlídky s tištěným průvodcem nebo s komentářem průvodce, dle počtu návštěvníků a vytíženosti průvodce.\n\nMožnost soukromé prohlídky mimo otevírací dobu.'),
+                'Možnost samostatné prohlídky s tištěným průvodcem nebo s komentářem průvodce, dle počtu návštěvníků a vytíženosti průvodce.\n\nMožnost soukromé prohlídky mimo otevírací dobu.'),
         SizedBox(
           height: kDMarginLarger,
         ),
@@ -96,7 +93,7 @@ class CoffeeAndRestaurant extends StatelessWidget {
             width: double.infinity,
             child: MyButton(
               textOfButton:
-              'Informace o vstupném, otevírací době a dalších naleznete zde',
+                  'Informace o vstupném, otevírací době a dalších naleznete zde',
               onPressed: () async {
                 //po stisknutí otevře stránku v externím prohlížeči
                 OpenUrlInBrowser().openUrl(JevishSynagogue().url);
@@ -130,7 +127,7 @@ class CoffeeAndRestaurant extends StatelessWidget {
         ),
         TextDefaultStandart(
             text:
-            'Možnost samostatné prohlídky s tištěným průvodcem nebo s komentářem průvodce, dle počtu návštěvníků a vytíženosti průvodce.\n\nMožnost soukromé prohlídky mimo otevírací dobu.'),
+                'Možnost samostatné prohlídky s tištěným průvodcem nebo s komentářem průvodce, dle počtu návštěvníků a vytíženosti průvodce.\n\nMožnost soukromé prohlídky mimo otevírací dobu.'),
         SizedBox(
           height: kDMarginLarger,
         ),
@@ -153,7 +150,7 @@ class CoffeeAndRestaurant extends StatelessWidget {
             width: double.infinity,
             child: MyButton(
               textOfButton:
-              'Informace o vstupném, otevírací době a dalších naleznete zde',
+                  'Informace o vstupném, otevírací době a dalších naleznete zde',
               onPressed: () async {
                 //po stisknutí otevře stránku v externím prohlížeči
                 OpenUrlInBrowser().openUrl(RosaCoeli().url);
@@ -184,7 +181,7 @@ class CoffeeAndRestaurant extends StatelessWidget {
         ),
         TextDefaultStandart(
             text:
-            'Prohlídka s komentářem průvodce\n\nMožnost soukromé prohlídky mimo otevírací dobu.'),
+                'Prohlídka s komentářem průvodce\n\nMožnost soukromé prohlídky mimo otevírací dobu.'),
         SizedBox(
           height: kDMarginLarger,
         ),
@@ -207,7 +204,7 @@ class CoffeeAndRestaurant extends StatelessWidget {
             width: double.infinity,
             child: MyButton(
               textOfButton:
-              'Informace o vstupném, otevírací době a dalších naleznete zde',
+                  'Informace o vstupném, otevírací době a dalších naleznete zde',
               onPressed: () async {
                 //po stisknutí otevře stránku v externím prohlížeči
                 OpenUrlInBrowser().openUrl(CastleAndChateau().url);
@@ -217,6 +214,89 @@ class CoffeeAndRestaurant extends StatelessWidget {
         ),
         SizedBox(
           height: kDMarginLarger,
+        ),
+      ],
+    );
+  }
+}
+
+class CardOfSubject extends StatelessWidget {
+  const CardOfSubject(
+      {@required this.name,
+      @required this.phoneNumber,
+      @required this.webPage,
+      @required this.webPageURL,
+      @required this.address,
+      @required this.addressURL,
+      @required this.label});
+  final String name;
+  final String phoneNumber;
+  final String webPage;
+  final String webPageURL;
+  final String address;
+  final String addressURL;
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        TextDefaultStandartBold(text: name, textAlign: TextAlign.start,),
+        SizedBox(height: kDMarginLarger),
+        Row(
+          children: [
+            TextDefaultStandart(text: 'Telefon:'),
+            SizedBox(
+              width: 20,
+            ),
+            GestureDetector(
+              onTap: () async {
+                //po stisknutí otevře dialer pro volání
+                OpenPhoneURL().makePhoneCall(phoneNumber);
+              },
+              child: TextDefaultStandartBold(
+                text: phoneNumber,
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            TextDefaultStandart(text: 'Web:'),
+            SizedBox(
+              width: 20,
+            ),
+            GestureDetector(
+              onTap: () async {
+                //po stisknutí otevře stránku v externím prohlížeči
+                OpenUrlInBrowser().openUrl(webPageURL);
+              },
+              child: TextDefaultStandartBold(
+                text: webPage,
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            TextDefaultStandart(text: 'Adresa:'),
+            SizedBox(
+              width: 20,
+            ),
+            GestureDetector(
+              onTap: () async {
+                //po stisknutí otevře stránku v externím prohlížeči
+                OpenUrlInBrowser().openUrl(addressURL);
+              },
+              child: TextDefaultStandartBold(
+                text: address,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: kDMarginLarger),
+        TextDefaultStandart(
+          text: label,
         ),
       ],
     );
