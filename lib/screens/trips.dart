@@ -2,6 +2,7 @@ import 'package:dolni_kounice/components/monuments/castle_and_chateau.dart';
 import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
+import 'package:dolni_kounice/screens/trips/tripAroundDolniKounice.dart';
 import 'package:dolni_kounice/screens/trips/tripThreeMainDominants.dart';
 import 'package:dolni_kounice/screens/trips/tripToChapelOfStAntonine.dart';
 import 'package:flutter/material.dart';
@@ -99,13 +100,12 @@ class _TripsState extends State<Trips> {
           ),
         ),
         Hero(
-          tag: CastleAndChateau().tag,
+          tag: TripAroundDolniKounice.tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-            CastleAndChateau().imageGallery[0],
-            textOfChoice: CastleAndChateau().name,
+            assetImageOfChoice:'assets/images/pamatky/mesto/mesto-letecky.jpg',
+            textOfChoice: TripAroundDolniKounice.name,
             onTap: () {
-              Navigator.pushNamed(context, MonumentsCastleAndChateau.id);
+              Navigator.pushNamed(context, TripAroundDolniKounice.id);
             },
           ),
         ),
