@@ -77,8 +77,7 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
                   GestureDetector(
                     onTap: () async {
                       //po stisknutí otevře stránku v externím prohlížeči
-                      OpenUrlInBrowser().openUrl(
-                          'https://webstrong.cz/');
+                      OpenUrlInBrowser().openUrl('https://webstrong.cz/');
                     },
                     child: Image.asset('assets/images/webstrong-logo.png',
                         height: 25),
@@ -88,17 +87,30 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
               InkWell(
                 child: Text(
                   'www.webstrong.cz',
-                  style: TextStyle(fontSize: 14, decoration: TextDecoration.underline),
+                  style: TextStyle(
+                      fontSize: 14, decoration: TextDecoration.underline),
                   textAlign: TextAlign.center,
                 ),
                 onTap: () async {
                   //po stisknutí otevře stránku v externím prohlížeči
-                  OpenUrlInBrowser().openUrl(
-                      'https://webstrong.cz/');
+                  OpenUrlInBrowser().openUrl('https://webstrong.cz/');
                 },
               ),
               SizedBox(
                 height: 22,
+              ),
+              Text(
+                'Text, fotografie jsou použity\nz dostupných pramenů\na zdrojů od TIC Dolní Kounice\na z webových stránek www.DolniKounice.cz',
+                style: TextStyle(fontSize: 14),
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(
+                height: 22,
+              ),
+              Text(
+                'Audiozáznam je profesionálně namluven\npanem Martinem Karlíkem,\nmoderátorem ČRo Radiožurnál.',
+                style: TextStyle(fontSize: 14),
+                textAlign: TextAlign.center,
               ),
               Align(
                 alignment: Alignment.bottomRight,
