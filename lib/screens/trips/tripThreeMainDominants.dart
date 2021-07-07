@@ -24,7 +24,7 @@ class TripThreeMainDominants extends StatelessWidget {
       textOfAppBar: 'Trasy',
       textHeader: name,
       tag: tag,
-      isFloatingButton: true,
+      isFloatingButton: false,
       onPressedFloatingButton: () {
         Navigator.pushNamed(context, TripThreeMainDominants.id);
       },
