@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
                       .openUrl('https://play.google.com/store/apps/details?id=cz.webstrong.dolni_kounice');
                 },
                 /*Navigator.of(context).pop(true)*/
-                child: Text('Ohdnotit aplikaci!'),
+                child: Text('Ohodnotit aplikaci!'),
               ),
             ],
           ),
