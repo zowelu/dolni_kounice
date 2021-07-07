@@ -1,4 +1,3 @@
-import 'package:dolni_kounice/components/monuments/castle_and_chateau.dart';
 import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
@@ -8,7 +7,6 @@ import 'package:dolni_kounice/screens/trips/tripToChapelOfStAntonine.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
 import 'package:dolni_kounice/components/container_header_image_background.dart';
-import 'package:dolni_kounice/screens/monuments/monuments_castle_and_chateau.dart';
 
 class Trips extends StatefulWidget {
   static String id = '/trips';
