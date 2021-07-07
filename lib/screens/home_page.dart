@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:dolni_kounice/components/open_url_in_browser.dart';
+import 'package:dolni_kounice/screens/services.dart';
 import 'package:dolni_kounice/screens/trips.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -35,8 +36,8 @@ class _HomePageState extends State<HomePage> {
               TextButton(
                 onPressed: () async {
                   //po stisknutí otevře stránku v externím prohlížeči
-                  OpenUrlInBrowser()
-                      .openUrl('https://play.google.com/store/apps/details?id=cz.webstrong.dolni_kounice');
+                  OpenUrlInBrowser().openUrl(
+                      'https://play.google.com/store/apps/details?id=cz.webstrong.dolni_kounice');
                 },
                 /*Navigator.of(context).pop(true)*/
                 child: Text('Ohodnotit aplikaci!'),
@@ -83,15 +84,13 @@ class _HomePageState extends State<HomePage> {
                     }),
               ),
               Hero(
-                tag: 'sluzby',
+                tag: 'services',
                 child: ChoiceContainer(
                   assetImageOfChoice:
-                      'assets/images/pamatky/mesto_pamatek_uvod/pexels-chevanon-photography-302899_compressed.jpg',
+                      'assets/images/pamatky/services/pexels-lisa-907142_compressed.jpg',
                   textOfChoice: 'Služby',
-                  onTap: () async {
-                    //po stisknutí otevře stránku v externím prohlížeči
-                    OpenUrlInBrowser().openUrl(
-                        'https://www.dolnikounice.cz/sluzby-ve-meste-a-okoli/os-1121/p1=8934');
+                  onTap: () {
+                    Navigator.pushNamed(context, Services.id);
                   },
                 ),
               ),
