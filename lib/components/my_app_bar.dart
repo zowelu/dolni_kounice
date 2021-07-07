@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/about_app_dialog.dart';
 import 'package:dolni_kounice/constants/constants.dart';
+import 'package:dolni_kounice/components/open_url_in_browser.dart';
 
 class MyAppBar extends StatelessWidget {
   const MyAppBar(
@@ -28,13 +29,24 @@ class MyAppBar extends StatelessWidget {
           itemBuilder: (context) => [
             PopupMenuItem(
               child: GestureDetector(
+                child: Text('Jak se Vám to líbilo?'),
+                onTap: () async {
+                  //po stisknutí otevře stránku v externím prohlížeči
+                  OpenUrlInBrowser().openUrl(
+                      'https://forms.gle/HsntueYtXXuubp5FA');
+                },
+              ),
+            ),
+            PopupMenuItem(
+              child: GestureDetector(
                 child: Text('O aplikaci'),
                 onTap: () {
                   showDialog(
-                      context: context,
-                      builder: (BuildContext context) {
-                        return AboutAppDialog();
-                      });
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AboutAppDialog();
+                    },
+                  );
                 },
               ),
             ),
@@ -43,8 +55,7 @@ class MyAppBar extends StatelessWidget {
       ],
       title: Text(
         tittleOfAppbar,
-        style: TextStyle(
-            fontFamily: kDFontFamily, fontSize: 20),
+        style: TextStyle(fontFamily: kDFontFamily, fontSize: 20),
       ),
     );
   }
