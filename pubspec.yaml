@@ -73,6 +73,7 @@ flutter:
     - assets/images/pamatky/synagoga/
     - assets/images/pamatky/zamek/
     - assets/images/pamatky/zidovsky_hrbitov/
+    - assets/images/pamatky/services/
 
   fonts:
     - family: Kaushan
