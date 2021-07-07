@@ -32,6 +32,15 @@ class _HomePageState extends State<HomePage> {
                 /*Navigator.of(context).pop(true)*/
                 child: Text('Ano'),
               ),
+              TextButton(
+                onPressed: () async {
+                  //po stisknutí otevře stránku v externím prohlížeči
+                  OpenUrlInBrowser()
+                      .openUrl('https://play.google.com/store/apps/details?id=cz.webstrong.dolni_kounice');
+                },
+                /*Navigator.of(context).pop(true)*/
+                child: Text('Ohdnotit aplikaci!'),
+              ),
             ],
           ),
         ) ??
@@ -76,14 +85,15 @@ class _HomePageState extends State<HomePage> {
               Hero(
                 tag: 'sluzby',
                 child: ChoiceContainer(
-                    assetImageOfChoice:
-                        'assets/images/pamatky/mesto_pamatek_uvod/pexels-chevanon-photography-302899_compressed.jpg',
-                    textOfChoice: 'Služby',
-                    onTap: () async {
-                      //po stisknutí otevře stránku v externím prohlížeči
-                      OpenUrlInBrowser().openUrl(
-                          'https://www.dolnikounice.cz/sluzby-ve-meste-a-okoli/os-1121/p1=8934');
-                    },),
+                  assetImageOfChoice:
+                      'assets/images/pamatky/mesto_pamatek_uvod/pexels-chevanon-photography-302899_compressed.jpg',
+                  textOfChoice: 'Služby',
+                  onTap: () async {
+                    //po stisknutí otevře stránku v externím prohlížeči
+                    OpenUrlInBrowser().openUrl(
+                        'https://www.dolnikounice.cz/sluzby-ve-meste-a-okoli/os-1121/p1=8934');
+                  },
+                ),
               ),
             ],
           ),
