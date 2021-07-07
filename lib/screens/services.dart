@@ -1,9 +1,7 @@
 import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
-import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
 import 'package:dolni_kounice/screens/services/coffeeAndRestaurant.dart';
 import 'package:dolni_kounice/screens/trips/tripAroundDolniKounice.dart';
-import 'package:dolni_kounice/screens/trips/tripThreeMainDominants.dart';
 import 'package:dolni_kounice/screens/trips/tripToChapelOfStAntonine.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
