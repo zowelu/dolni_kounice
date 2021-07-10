@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> {
                 tag: 'services',
                 child: ChoiceContainer(
                   assetImageOfChoice:
-                      'assets/images/pamatky/services/pexels-lisa-907142_compressed.jpg',
+                      'assets/images/pamatky/mesto_pamatek_uvod/pexels-chevanon-photography-302899_compressed.jpg',
                   textOfChoice: 'Služby',
                   onTap: () {
                     Navigator.pushNamed(context, Services.id);
