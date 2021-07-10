@@ -50,7 +50,22 @@ class CoffeeAndRestaurant extends StatelessWidget {
           thickness: 5,
         ),
         SizedBox(height: kDMarginLarger),
-        CardOfSubject(name: 'Hotel Vinum coeli', phoneNumber: '730 825 882', webPage: 'www.vinumcoeli.cz', webPageURL: 'http://www.vinumcoeli.cz/', address: 'Masarykovo náměstí 5', addressURL: 'http://www.google.com/maps?q=49.0700406,16.464826&z=14&t=m', label: 'Platba kartou, Denní menu, Zahrádka'),
+        CardOfSubject(
+            name: 'Hotel Vinum coeli',
+            phoneNumber: '730 825 882',
+            webPage: 'www.vinumcoeli.cz',
+            webPageURL: 'http://www.vinumcoeli.cz/',
+            address: 'Masarykovo náměstí 5',
+            addressURL:
+                'http://www.google.com/maps?q=49.0700406,16.464826&z=14&t=m',
+            label: 'Platba kartou, Denní menu, Zahrádka'),
+        SizedBox(height: kDMarginLarger),
+        Divider(
+          height: 5,
+          color: kDividerColor,
+          thickness: 5,
+        ),
+        SizedBox(height: kDMarginLarger),
         TextDefaultStandartBold(text: '1. Židovská synagoga \(cca 30 minut\)'),
         SizedBox(height: kDMargin),
         ImageOnPageWithOnTap(
@@ -241,7 +256,13 @@ class CardOfSubject extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        TextDefaultStandartBold(text: name, textAlign: TextAlign.start,),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: TextDefaultStandartBold(
+            text: name,
+            textAlign: TextAlign.start,
+          ),
+        ),
         SizedBox(height: kDMarginLarger),
         Row(
           children: [
@@ -249,6 +270,10 @@ class CardOfSubject extends StatelessWidget {
             SizedBox(
               width: 20,
             ),
+            MyButton(textOfButton: phoneNumber, onPressed: () async {
+              //po stisknutí otevře dialer pro volání
+              OpenPhoneURL().makePhoneCall(phoneNumber);
+            },),
             GestureDetector(
               onTap: () async {
                 //po stisknutí otevře dialer pro volání
