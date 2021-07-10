@@ -17,7 +17,7 @@ class _ServicesState extends State<Services> {
   @override
   Widget build(BuildContext context) {
     return DefaultPageOfChoice(
-      tittleOfAppbar: 'Turistické trasy',
+      tittleOfAppbar: 'Služby',
       // onPressedFloatingButton: (){
       //   showModalBottomSheet(
       //     context: context,
@@ -78,7 +78,7 @@ class _ServicesState extends State<Services> {
           tag: CoffeeAndRestaurant.tag,
           child: ChoiceContainer(
             assetImageOfChoice:
-            'assets/images/pamatky/services/pexels-lisa-907142_compressed.jpg',
+            'assets/images/pamatky/services/kavarna.jpg',
             textOfChoice: CoffeeAndRestaurant.name,
             onTap: () {
               Navigator.pushNamed(context, CoffeeAndRestaurant.id);
