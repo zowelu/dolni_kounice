@@ -2,7 +2,6 @@ import 'package:dolni_kounice/components/image_on_page_with_ontap.dart';
 import 'package:dolni_kounice/components/monuments/castle_and_chateau.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
 import 'package:dolni_kounice/components/open_phone_url.dart';
-import 'package:dolni_kounice/components/text_default_header.dart';
 import 'package:dolni_kounice/components/text_default_standart.dart';
 import 'package:dolni_kounice/components/text_default_standart_bold.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_rosa_coeli.dart';
@@ -259,8 +258,14 @@ class CardOfSubject extends StatelessWidget {
       children: [
         Align(
           alignment: Alignment.center,
-          child: TextDefaultHeader(
-            text: name,
+          child: Text(
+            name,
+            style: TextStyle(
+                decoration: TextDecoration.underline,
+                decorationColor: kDividerColor,
+                decorationThickness: 3.0,
+                color: Colors.white,
+                fontSize: kDFontSizeHeader),
             //textAlign: TextAlign.start,
           ),
         ),
