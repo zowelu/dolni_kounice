@@ -35,6 +35,7 @@ class CardOfSubject extends StatelessWidget {
                 decorationColor: Colors.white,
                 decorationThickness: 3.0,
                 color: Colors.white,
+                fontWeight: FontWeight.bold,
                 fontSize: kDFontSizeHeader),
             //textAlign: TextAlign.start,
           ),
