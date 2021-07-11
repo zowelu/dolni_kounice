@@ -257,7 +257,7 @@ class CardOfSubject extends StatelessWidget {
     return Column(
       children: [
         Align(
-          alignment: Alignment.centerLeft,
+          alignment: Alignment.center,
           child: TextDefaultStandartBold(
             text: name,
             textAlign: TextAlign.start,
@@ -270,18 +270,12 @@ class CardOfSubject extends StatelessWidget {
             SizedBox(
               width: 20,
             ),
-            MyButton(textOfButton: phoneNumber, onPressed: () async {
-              //po stisknutí otevře dialer pro volání
-              OpenPhoneURL().makePhoneCall(phoneNumber);
-            },),
-            GestureDetector(
-              onTap: () async {
+            MyButton(
+              textOfButton: phoneNumber,
+              onPressed: () async {
                 //po stisknutí otevře dialer pro volání
                 OpenPhoneURL().makePhoneCall(phoneNumber);
               },
-              child: TextDefaultStandartBold(
-                text: phoneNumber,
-              ),
             ),
           ],
         ),
@@ -291,14 +285,12 @@ class CardOfSubject extends StatelessWidget {
             SizedBox(
               width: 20,
             ),
-            GestureDetector(
-              onTap: () async {
+            MyButton(
+              textOfButton: webPage,
+              onPressed: () async {
                 //po stisknutí otevře stránku v externím prohlížeči
                 OpenUrlInBrowser().openUrl(webPageURL);
               },
-              child: TextDefaultStandartBold(
-                text: webPage,
-              ),
             ),
           ],
         ),
@@ -308,14 +300,12 @@ class CardOfSubject extends StatelessWidget {
             SizedBox(
               width: 20,
             ),
-            GestureDetector(
-              onTap: () async {
+            MyButton(
+              textOfButton: address,
+              onPressed: () async {
                 //po stisknutí otevře stránku v externím prohlížeči
                 OpenUrlInBrowser().openUrl(addressURL);
               },
-              child: TextDefaultStandartBold(
-                text: address,
-              ),
             ),
           ],
         ),
