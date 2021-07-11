@@ -31,8 +31,8 @@ class CardOfSubject extends StatelessWidget {
           child: Text(
             name,
             style: TextStyle(
-                decoration: TextDecoration.underline,
-                decorationColor: kDividerColor,
+                decoration: TextDecoration.none,
+                decorationColor: Colors.white,
                 decorationThickness: 3.0,
                 color: Colors.white,
                 fontSize: kDFontSizeHeader),
