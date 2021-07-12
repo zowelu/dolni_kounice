@@ -15,6 +15,7 @@ class CardOfSubject extends StatelessWidget {
     @required this.webPageURL,
     @required this.address,
     @required this.addressURL,
+    @required this.isLabel,
     @required this.label,
     @required this.isImage,
      this.image,
@@ -25,6 +26,7 @@ class CardOfSubject extends StatelessWidget {
   final String webPageURL;
   final String address;
   final String addressURL;
+  final bool isLabel;
   final String label;
   final bool isImage;
   final String image;
@@ -112,9 +114,9 @@ class CardOfSubject extends StatelessWidget {
             ],
           ),
           SizedBox(height: kDMarginLarger),
-          TextDefaultStandart(
+          isLabel ? TextDefaultStandart(
             text: label,
-          ),
+          ): SizedBox(height: 0,),
         ],
       ),
     );
