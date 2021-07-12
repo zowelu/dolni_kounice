@@ -8,6 +8,7 @@ import 'package:dolni_kounice/screens/monuments/monuments_middle_class_houses.da
 import 'package:dolni_kounice/screens/monuments/monuments_sacral_buildings.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_st_barbora_church.dart';
 import 'package:dolni_kounice/screens/services.dart';
+import 'package:dolni_kounice/screens/services/accommodations.dart';
 import 'package:dolni_kounice/screens/services/coffeeAndRestaurant.dart';
 import 'package:dolni_kounice/screens/services/winery.dart';
 import 'package:dolni_kounice/screens/trips/tripAroundDolniKounice.dart';
@@ -103,6 +104,7 @@ void main() {
         CoffeeAndRestaurant.id: (context) => CoffeeAndRestaurant(),
         Services.id: (context) => Services(),
         Winery.id: (context) => Winery(),
+        Accommodations.id: (context) => Accommodations(),
       },
     ),
   );
