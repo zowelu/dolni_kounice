@@ -10,6 +10,7 @@ import 'package:dolni_kounice/screens/monuments/monuments_st_barbora_church.dart
 import 'package:dolni_kounice/screens/services.dart';
 import 'package:dolni_kounice/screens/services/accommodations.dart';
 import 'package:dolni_kounice/screens/services/coffeeAndRestaurant.dart';
+import 'package:dolni_kounice/screens/services/shops.dart';
 import 'package:dolni_kounice/screens/services/winery.dart';
 import 'package:dolni_kounice/screens/trips/tripAroundDolniKounice.dart';
 import 'package:flutter/material.dart';
@@ -105,6 +106,7 @@ void main() {
         Services.id: (context) => Services(),
         Winery.id: (context) => Winery(),
         Accommodations.id: (context) => Accommodations(),
+        Shops.id: (context) => Shops(),
       },
     ),
   );
