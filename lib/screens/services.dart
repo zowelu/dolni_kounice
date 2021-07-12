@@ -2,7 +2,6 @@ import 'package:dolni_kounice/components/default_page_of_choice.dart';
 import 'package:dolni_kounice/screens/services/accommodations.dart';
 import 'package:dolni_kounice/screens/services/coffeeAndRestaurant.dart';
 import 'package:dolni_kounice/screens/services/winery.dart';
-import 'package:dolni_kounice/screens/trips/tripAroundDolniKounice.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
 import 'package:dolni_kounice/components/container_header_image_background.dart';
