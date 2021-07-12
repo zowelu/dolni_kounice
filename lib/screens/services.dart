@@ -1,6 +1,7 @@
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
 import 'package:dolni_kounice/screens/services/accommodations.dart';
 import 'package:dolni_kounice/screens/services/coffeeAndRestaurant.dart';
+import 'package:dolni_kounice/screens/services/shops.dart';
 import 'package:dolni_kounice/screens/services/winery.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
@@ -106,7 +107,17 @@ class _ServicesState extends State<Services> {
             },
           ),
         ),
-
+        Hero(
+          tag: Shops.tag,
+          child: ChoiceContainer(
+            assetImageOfChoice:
+            'assets/images/pamatky/services/ubytovani.jpg',
+            textOfChoice: Shops.name,
+            onTap: () {
+              Navigator.pushNamed(context, Shops.id);
+            },
+          ),
+        ),
       ],
     );
   }
