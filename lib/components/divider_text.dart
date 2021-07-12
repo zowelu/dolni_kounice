@@ -11,7 +11,7 @@ class DividerText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: kDMarginLarger),
+        SizedBox(height: kDMargin),
         Divider(
           height: 5,
           color: kDividerColor,
