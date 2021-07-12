@@ -1,4 +1,5 @@
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
+import 'package:dolni_kounice/screens/services/accommodations.dart';
 import 'package:dolni_kounice/screens/services/coffeeAndRestaurant.dart';
 import 'package:dolni_kounice/screens/services/winery.dart';
 import 'package:dolni_kounice/screens/trips/tripAroundDolniKounice.dart';
@@ -96,12 +97,13 @@ class _ServicesState extends State<Services> {
           ),
         ),
         Hero(
-          tag: TripAroundDolniKounice.tag,
+          tag: Accommodations.tag,
           child: ChoiceContainer(
-            assetImageOfChoice:'assets/images/pamatky/mesto/mesto-letecky.jpg',
-            textOfChoice: TripAroundDolniKounice.name,
+            assetImageOfChoice:
+            'assets/images/pamatky/services/ubytovani.jpg',
+            textOfChoice: Accommodations.name,
             onTap: () {
-              Navigator.pushNamed(context, TripAroundDolniKounice.id);
+              Navigator.pushNamed(context, Accommodations.id);
             },
           ),
         ),
