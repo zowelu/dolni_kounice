@@ -11,7 +11,7 @@ class Shops extends StatelessWidget {
   Widget build(BuildContext context) {
     return MonumentsPage(
       assetImage:
-      'assets/images/pamatky/services/pexels-lisa-907142_compressed.jpg',
+      'assets/images/pamatky/services/obchody.jpg',
       textOfAppBar: 'Služby',
       textHeader: name,
       tag: tag,
@@ -22,13 +22,13 @@ class Shops extends StatelessWidget {
       textOfFloatingButton: 'Mapa trasy',
       listOfWidget: [
         CardOfSubject(
-          name: 'Hotel Vinum coeli',
-          phoneNumber: '730 825 882',
-          webPage: 'www.vinumcoeli.cz',
-          webPageURL: 'http://www.vinumcoeli.cz/',
-          address: 'Masarykovo náměstí 5',
+          name: 'Potraviny A.T.G. Centrum',
+          phoneNumber: '546 420 409',
+          webPage: 'ne',
+          webPageURL: 'ne',
+          address: 'Masarykovo náměstí 1',
           addressURL:
-          'http://www.google.com/maps?q=49.0700406,16.464826&z=14&t=m',
+          'http://www.google.com/maps?q=49.0695904,16.4657692&z=14&t=m',
           isLabel: false,
           label:
           'Platba kartou, Se psem, Bezbariérové, Dětský koutek, Zahrádka',
@@ -37,13 +37,26 @@ class Shops extends StatelessWidget {
         ),
         DividerText(),
         CardOfSubject(
-          name: 'Penzion Rosa coeli',
-          phoneNumber: '733 161 613',
-          webPage: 'www.penzionrosacoeli.cz',
-          webPageURL: 'http://www.penzionrosacoeli.cz/',
-          address: 'Růžová 26',
+          name: 'Minimarket (večerka)',
+          phoneNumber: '724 682 561',
+          webPage: 'ne',
+          webPageURL: 'ne',
+          address: 'Masarykovo náměstí 19',
           addressURL:
-          'http://www.google.com/maps?q=49.0693325,16.4713459&z=14&t=m',
+          'http://www.google.com/maps?q=49.0702689,16.4658694&z=14&t=m',
+          isLabel: false,
+          label: 'Platba kartou, Denní menu, Zahrádka',
+          isImage: false,
+        ),
+        DividerText(),
+        CardOfSubject(
+          name: 'Samoška Radost',
+          phoneNumber: '546 421 325',
+          webPage: 'ne',
+          webPageURL: 'ne',
+          address: 'Náměstí míru 35',
+          addressURL:
+          'http://www.google.com/maps?q=49.0730969,16.4648232&z=14&t=m',
           isLabel: false,
           label: 'Platba kartou, Denní menu, Zahrádka',
           isImage: false,
