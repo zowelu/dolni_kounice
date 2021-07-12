@@ -1,8 +1,7 @@
-import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
 import 'package:dolni_kounice/screens/services/coffeeAndRestaurant.dart';
+import 'package:dolni_kounice/screens/services/winery.dart';
 import 'package:dolni_kounice/screens/trips/tripAroundDolniKounice.dart';
-import 'package:dolni_kounice/screens/trips/tripToChapelOfStAntonine.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
 import 'package:dolni_kounice/components/container_header_image_background.dart';
@@ -86,13 +85,13 @@ class _ServicesState extends State<Services> {
           ),
         ),
         Hero(
-          tag: TripToChapelOfStAntonine.tag,
+          tag: Winery.tag,
           child: ChoiceContainer(
             assetImageOfChoice:
-            ChapelOfStAntonine().imageGallery[0],
-            textOfChoice: TripToChapelOfStAntonine.name,
+            'assets/images/pamatky/services/vinarstvi.jpg',
+            textOfChoice: Winery.name,
             onTap: () {
-              Navigator.pushNamed(context, TripToChapelOfStAntonine.id);
+              Navigator.pushNamed(context, Winery.id);
             },
           ),
         ),
