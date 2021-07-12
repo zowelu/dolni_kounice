@@ -111,7 +111,7 @@ class _ServicesState extends State<Services> {
           tag: Shops.tag,
           child: ChoiceContainer(
             assetImageOfChoice:
-            'assets/images/pamatky/services/ubytovani.jpg',
+            'assets/images/pamatky/services/obchody.jpg',
             textOfChoice: Shops.name,
             onTap: () {
               Navigator.pushNamed(context, Shops.id);
