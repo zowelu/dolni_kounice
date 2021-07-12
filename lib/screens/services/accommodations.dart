@@ -11,7 +11,7 @@ class Accommodations extends StatelessWidget {
   Widget build(BuildContext context) {
     return MonumentsPage(
       assetImage:
-      'assets/images/pamatky/services/pexels-lisa-907142_compressed.jpg',
+      'assets/images/pamatky/services/ubytovani.jpg',
       textOfAppBar: 'Služby',
       textHeader: name,
       tag: tag,
