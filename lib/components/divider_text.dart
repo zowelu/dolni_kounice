@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
 
 class DividerText extends StatelessWidget {
+  ///oddělovač jednotlivých subjektů ve službách
   const DividerText({
     Key key,
   }) : super(key: key);
