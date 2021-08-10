@@ -1,4 +1,5 @@
 import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
+import 'package:dolni_kounice/screens/audio_guide_chapel_of_st_antonine/audio_guide_chapel_of_st_antonine.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli.dart';
 import 'package:flutter/cupertino.dart';
@@ -23,9 +24,9 @@ class MonumentsChapelOfStAntonine extends StatelessWidget {
       textOfAppBar: 'Průvodce památkami',
       textHeader: stAntonine.name,
       tag: stAntonine.tag,
-      isFloatingButton: false,
+      isFloatingButton: true,
       onPressedFloatingButton: () {
-        Navigator.pushNamed(context, AudioGuideRosaCoeli.id);
+        Navigator.pushNamed(context, AudioGuideChapelOfStAntonine.id);
       },
       textOfFloatingButton: 'Přejít na audioprůvodce',
       listOfWidget: [
