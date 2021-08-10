@@ -7,11 +7,11 @@ class ChapelOfStAntonine {
 
   ///List názvů kapitol
   List<String> chapter = [
-
+    'Kaple sv. Antonína',
   ];
 
   List<String> mp3 = [
-
+    'assets/audio/kaple_sv_antonina/kaple_sv_antonina.mp3',
   ];
 
   ///Map jednotlivých kapitol audioprůvodce a jejich přepisu
