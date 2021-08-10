@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
-import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
 import 'package:dolni_kounice/components/container_header_image_background.dart';
 import 'package:dolni_kounice/components/audioplayer_with_local_asset.dart';
 import 'package:dolni_kounice/components/my_app_bar.dart';
@@ -21,7 +20,7 @@ class AudioPage extends StatelessWidget {
   final String assetImage;
   final String textHeader;
   final String path;
-  final RosaCoeli textAudioMap;
+  final dynamic textAudioMap;
   final String keyOfMap;
   final String tag;
 
