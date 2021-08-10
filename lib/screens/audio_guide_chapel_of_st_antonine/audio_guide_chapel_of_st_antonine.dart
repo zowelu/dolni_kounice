@@ -6,13 +6,13 @@ import 'package:dolni_kounice/components/choice_container.dart';
 import 'package:dolni_kounice/components/container_header_image_background.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_uvod.dart';
 
-class AudioGuideRosaCoeli extends StatefulWidget {
+class AudioGuideChapelOfStAntonine extends StatefulWidget {
   static String id = '/audioGuideChapelOfStAntonine';
   @override
-  _AudioGuideRosaCoeliState createState() => _AudioGuideRosaCoeliState();
+  _AudioGuideChapelOfStAntonineState createState() => _AudioGuideChapelOfStAntonineState();
 }
 
-class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
+class _AudioGuideChapelOfStAntonineState extends State<AudioGuideChapelOfStAntonine> {
   ChapelOfStAntonine chapelOfStAntonine = ChapelOfStAntonine();
   @override
   Widget build(BuildContext context) {
