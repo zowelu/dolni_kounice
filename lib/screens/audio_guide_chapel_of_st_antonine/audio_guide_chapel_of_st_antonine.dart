@@ -1,10 +1,10 @@
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
 import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
+import 'package:dolni_kounice/screens/audio_guide_chapel_of_st_antonine/audio_guide_chapel_of_st_antonine_1.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
 import 'package:dolni_kounice/components/container_header_image_background.dart';
-import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_uvod.dart';
 
 class AudioGuideChapelOfStAntonine extends StatefulWidget {
   static String id = '/audioGuideChapelOfStAntonine';
@@ -65,7 +65,7 @@ class _AudioGuideChapelOfStAntonineState extends State<AudioGuideChapelOfStAnton
             assetImageOfChoice: chapelOfStAntonine.imageGallery[0],
             textOfChoice: chapelOfStAntonine.chapter[0],
             onTap: () {
-              Navigator.pushNamed(context, AudioGuideRosaCoeliUvod.id);
+              Navigator.pushNamed(context, AudioGuideChapelOfStAntonine1.id);
             },
           ),
         ),
