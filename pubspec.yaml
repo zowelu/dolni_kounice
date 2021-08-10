@@ -58,6 +58,7 @@ flutter:
   assets:
     - assets/audio/
     - assets/audio/rosa_coeli/
+    - assets/audio/kaple_sv_antonina/
     - assets/images/
     - assets/images/pamatky/
     - assets/images/pamatky/dk_znak/
