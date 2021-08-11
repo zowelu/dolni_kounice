@@ -1,6 +1,7 @@
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
 import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
-import 'package:dolni_kounice/screens/audio_guides/audio_guide_chapel_of_st_antonine/audio_guide_chapel_of_st_antonine_1.dart';
+import 'package:dolni_kounice/screens/audio_guides/audio_guide_jevish_synagogue/audio_guide_jevish_synagogue_1.dart';
+import 'package:dolni_kounice/screens/audio_guides/audio_guide_jevish_synagogue/audio_guide_jevish_synagogue_jevish_town.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
@@ -62,10 +63,10 @@ class _AudioGuideJevishSynagogueState extends State<AudioGuideJevishSynagogue> {
         Hero(
           tag: jevishSynagogue.chapter[0],
           child: ChoiceContainer(
-            assetImageOfChoice: jevishSynagogue.imageGallery[0],
+            assetImageOfChoice: jevishSynagogue.imageGallery[7],
             textOfChoice: jevishSynagogue.chapter[0],
             onTap: () {
-              Navigator.pushNamed(context, AudioGuideChapelOfStAntonine1.id);
+              Navigator.pushNamed(context, AudioGuideJevishSynagogue1.id);
             },
           ),
         ),
@@ -75,7 +76,7 @@ class _AudioGuideJevishSynagogueState extends State<AudioGuideJevishSynagogue> {
             assetImageOfChoice: jevishSynagogue.images[0],
             textOfChoice: jevishSynagogue.chapter[1],
             onTap: () {
-              Navigator.pushNamed(context, AudioGuideChapelOfStAntonine1.id);
+              Navigator.pushNamed(context, AudioGuideJevishSynagogueJevishTown.id);
             },
           ),
         ),
