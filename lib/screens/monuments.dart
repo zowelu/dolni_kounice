@@ -145,6 +145,17 @@ class _MonumentsState extends State<Monuments> {
           ),
         ),
         Hero(
+          tag: JevishCemetery().tag,
+          child: ChoiceContainer(
+            assetImageOfChoice: JevishCemetery().imageGallery[0],
+            textOfChoice: JevishCemetery().name,
+            onTap: () {
+              Navigator.pushNamed(context, MonumentsJevishCemetery.id);
+            },
+            isAudio: false,
+          ),
+        ),
+        Hero(
           tag: StBarbaraChurch().tag,
           child: ChoiceContainer(
             assetImageOfChoice: StBarbaraChurch().imageGallery[0],
@@ -174,17 +185,6 @@ class _MonumentsState extends State<Monuments> {
             onTap: () {
               Navigator.pushNamed(
                   context, MonumentsChapelOfStJohnTheBaptist.id);
-            },
-            isAudio: false,
-          ),
-        ),
-        Hero(
-          tag: JevishCemetery().tag,
-          child: ChoiceContainer(
-            assetImageOfChoice: JevishCemetery().imageGallery[0],
-            textOfChoice: JevishCemetery().name,
-            onTap: () {
-              Navigator.pushNamed(context, MonumentsJevishCemetery.id);
             },
             isAudio: false,
           ),
