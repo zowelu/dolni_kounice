@@ -71,45 +71,44 @@ class _TripsState extends State<Trips> {
             tag: 'turistickeTrasy',
             child: ContainerHeaderImageBackground(
               assetImage:
-              'assets/images/pamatky/mesto_pamatek_uvod/pexels-elina-sazonova-2705756_compressed.jpg',
+                  'assets/images/pamatky/mesto_pamatek_uvod/pexels-elina-sazonova-2705756_compressed.jpg',
               textHeader: 'Turistické trasy',
               text: '',
             )),
         Hero(
           tag: TripThreeMainDominants.tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-            RosaCoeli().imageGallery[15],
+            assetImageOfChoice: RosaCoeli().imageGallery[15],
             textOfChoice: TripThreeMainDominants.name,
             onTap: () {
               Navigator.pushNamed(context, TripThreeMainDominants.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
           tag: TripToChapelOfStAntonine.tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-            ChapelOfStAntonine().imageGallery[0],
+            assetImageOfChoice: ChapelOfStAntonine().imageGallery[0],
             textOfChoice: TripToChapelOfStAntonine.name,
             onTap: () {
               Navigator.pushNamed(context, TripToChapelOfStAntonine.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
           tag: TripAroundDolniKounice.tag,
           child: ChoiceContainer(
-            assetImageOfChoice:'assets/images/pamatky/mesto/mesto-letecky.jpg',
+            assetImageOfChoice: 'assets/images/pamatky/mesto/mesto-letecky.jpg',
             textOfChoice: TripAroundDolniKounice.name,
             onTap: () {
               Navigator.pushNamed(context, TripAroundDolniKounice.id);
             },
+            isAudio: false,
           ),
         ),
-
       ],
     );
   }
 }
-

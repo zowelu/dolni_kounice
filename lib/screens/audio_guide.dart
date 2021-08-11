@@ -32,7 +32,7 @@ class _AudioGuideState extends State<AudioGuide> {
               textOfChoice: 'Klášter Rosa Coeli',
               onTap: () {
                 Navigator.pushNamed(context, AudioGuideRosaCoeli.id);
-              }),
+              }, isAudio: false,),
         ),
       ],
     );

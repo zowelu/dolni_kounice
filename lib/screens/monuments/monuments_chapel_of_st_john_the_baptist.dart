@@ -45,7 +45,8 @@ class MonumentsChapelOfStJohnTheBaptist extends StatelessWidget {
                   ),
                 ),
               );
-            }),
+            },
+          isAudio: false,),
         SizedBox(
           height: kDMarginLarger,
         ),

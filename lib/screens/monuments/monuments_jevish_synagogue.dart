@@ -1,4 +1,3 @@
-
 import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
 import 'package:dolni_kounice/screens/audio_guides/audio_guide_jevish_synagogue/audio_guide_jevish_synagogue.dart';
 import 'package:flutter/cupertino.dart';
@@ -35,19 +34,20 @@ class MonumentsJevishSynagogue extends StatelessWidget {
                 'Byla postavena v roce 1652–1655 v raně barokním slohu a patří k nejstarším synagogám na Moravě. V roce 1851 byla přistavěna ženská galerie s pavlačí. Od druhé světové války sloužila převážně jako skladiště. V roce 1988 až 2004 byla komplexně zrestaurována a nyní slouží kulturním a společenským účelům.'),
         SizedBox(height: kDMarginLarger),
         ChoiceContainer(
-            assetImageOfChoice:
-                jevishSynagogue.imageGallery[7],
-            textOfChoice: 'Galerie',
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => GalleryPhotoViewPage(
-                    nameOfImageGallery: jevishSynagogue.nameOfImageGallery,
-                  ),
+          assetImageOfChoice: jevishSynagogue.imageGallery[7],
+          textOfChoice: 'Galerie',
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => GalleryPhotoViewPage(
+                  nameOfImageGallery: jevishSynagogue.nameOfImageGallery,
                 ),
-              );
-            }),
+              ),
+            );
+          },
+          isAudio: false,
+        ),
         SizedBox(
           height: kDMarginLarger,
         ),
@@ -57,8 +57,7 @@ class MonumentsJevishSynagogue extends StatelessWidget {
                 'Informace o vstupném, otevírací době a dalších naleznete zde',
             onPressed: () async {
               //po stisknutí otevře stránku v externím prohlížeči
-              OpenUrlInBrowser().openUrl(
-                  jevishSynagogue.url);
+              OpenUrlInBrowser().openUrl(jevishSynagogue.url);
             },
           ),
         ),

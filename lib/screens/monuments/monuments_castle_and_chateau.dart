@@ -45,7 +45,8 @@ class MonumentsCastleAndChateau extends StatelessWidget {
                   ),
                 ),
               );
-            }),
+            },
+          isAudio: false,),
         SizedBox(
           height: kDMarginLarger,
         ),

@@ -10,7 +10,8 @@ import 'package:dolni_kounice/components/container_header_image_background.dart'
 class AudioGuideJevishSynagogue extends StatefulWidget {
   static String id = '/audioGuideJevishSynagogue';
   @override
-  _AudioGuideJevishSynagogueState createState() => _AudioGuideJevishSynagogueState();
+  _AudioGuideJevishSynagogueState createState() =>
+      _AudioGuideJevishSynagogueState();
 }
 
 class _AudioGuideJevishSynagogueState extends State<AudioGuideJevishSynagogue> {
@@ -29,16 +30,14 @@ class _AudioGuideJevishSynagogueState extends State<AudioGuideJevishSynagogue> {
           ),
         ),
         Container(
-          padding:
-          EdgeInsets.only(left: kDPadding, right: kDPadding),
+          padding: EdgeInsets.only(left: kDPadding, right: kDPadding),
           child: Column(
             children: [
               Text(
                 'Děkujeme, že jste zvolili audioprůvodce.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: kDColorTextWhite,
-                    fontSize: kDFontSizeText),
+                    color: kDColorTextWhite, fontSize: kDFontSizeText),
               ),
               SizedBox(
                 height: 20.0,
@@ -52,8 +51,7 @@ class _AudioGuideJevishSynagogueState extends State<AudioGuideJevishSynagogue> {
                 'Prosíme poslouchejte se sluchátky nebo s mobilem na uchu, aby nebyli rušeni ostatní návštěvníci.\n\nPřípadně si můžete přečíst přepis nahrávky, který se nachází pod přehrávačem. Předem děkujeme.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: kDColorTextWhite,
-                    fontSize: kDFontSizeText),
+                    color: kDColorTextWhite, fontSize: kDFontSizeText),
               ),
               SizedBox(height: kDMargin),
             ],
@@ -68,6 +66,7 @@ class _AudioGuideJevishSynagogueState extends State<AudioGuideJevishSynagogue> {
             onTap: () {
               Navigator.pushNamed(context, AudioGuideJevishSynagogue1.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
@@ -76,8 +75,10 @@ class _AudioGuideJevishSynagogueState extends State<AudioGuideJevishSynagogue> {
             assetImageOfChoice: jevishSynagogue.images[0],
             textOfChoice: jevishSynagogue.chapter[1],
             onTap: () {
-              Navigator.pushNamed(context, AudioGuideJevishSynagogueJevishTown.id);
+              Navigator.pushNamed(
+                  context, AudioGuideJevishSynagogueJevishTown.id);
             },
+            isAudio: false,
           ),
         ),
       ],

@@ -9,10 +9,12 @@ import 'package:dolni_kounice/components/container_header_image_background.dart'
 class AudioGuideChapelOfStAntonine extends StatefulWidget {
   static String id = '/audioGuideChapelOfStAntonine';
   @override
-  _AudioGuideChapelOfStAntonineState createState() => _AudioGuideChapelOfStAntonineState();
+  _AudioGuideChapelOfStAntonineState createState() =>
+      _AudioGuideChapelOfStAntonineState();
 }
 
-class _AudioGuideChapelOfStAntonineState extends State<AudioGuideChapelOfStAntonine> {
+class _AudioGuideChapelOfStAntonineState
+    extends State<AudioGuideChapelOfStAntonine> {
   ChapelOfStAntonine chapelOfStAntonine = ChapelOfStAntonine();
   @override
   Widget build(BuildContext context) {
@@ -28,16 +30,14 @@ class _AudioGuideChapelOfStAntonineState extends State<AudioGuideChapelOfStAnton
           ),
         ),
         Container(
-          padding:
-          EdgeInsets.only(left: kDPadding, right: kDPadding),
+          padding: EdgeInsets.only(left: kDPadding, right: kDPadding),
           child: Column(
             children: [
               Text(
                 'Děkujeme, že jste zvolili audioprůvodce.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: kDColorTextWhite,
-                    fontSize: kDFontSizeText),
+                    color: kDColorTextWhite, fontSize: kDFontSizeText),
               ),
               SizedBox(
                 height: 20.0,
@@ -51,8 +51,7 @@ class _AudioGuideChapelOfStAntonineState extends State<AudioGuideChapelOfStAnton
                 'Prosíme poslouchejte se sluchátky nebo s mobilem na uchu, aby nebyli rušeni ostatní návštěvníci.\n\nPřípadně si můžete přečíst přepis nahrávky, který se nachází pod přehrávačem. Předem děkujeme.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: kDColorTextWhite,
-                    fontSize: kDFontSizeText),
+                    color: kDColorTextWhite, fontSize: kDFontSizeText),
               ),
               SizedBox(height: kDMargin),
             ],
@@ -67,6 +66,7 @@ class _AudioGuideChapelOfStAntonineState extends State<AudioGuideChapelOfStAnton
             onTap: () {
               Navigator.pushNamed(context, AudioGuideChapelOfStAntonine1.id);
             },
+            isAudio: false,
           ),
         ),
       ],

@@ -123,6 +123,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
             onTap: () {
               Navigator.pushNamed(context, AudioGuideRosaCoeliUvod.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
@@ -133,6 +134,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
             onTap: () {
               Navigator.pushNamed(context, AudioGuideRosaCoeli1Portal.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
@@ -144,6 +146,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
               Navigator.pushNamed(
                   context, AudioGuideRosaCoeli2KlasterniKostel.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
@@ -154,6 +157,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
             onTap: () {
               Navigator.pushNamed(context, AudioGuideRosaCoeli3Vezicka.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
@@ -165,6 +169,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
               Navigator.pushNamed(
                   context, AudioGuideRosaCoeli4PrimaChramovaLod.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
@@ -176,6 +181,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
               Navigator.pushNamed(
                   context, AudioGuideRosaCoeli5RajskaZahrada.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
@@ -186,6 +192,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
             onTap: () {
               Navigator.pushNamed(context, AudioGuideRosaCoeliHistorie.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
@@ -196,6 +203,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
             onTap: () {
               Navigator.pushNamed(context, AudioGuideRosaCoeliFilmyASerialy.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
@@ -206,6 +214,7 @@ class _AudioGuideRosaCoeliState extends State<AudioGuideRosaCoeli> {
             onTap: () {
               Navigator.pushNamed(context, AudioGuideRosaCoeliStrecha.id);
             },
+            isAudio: false,
           ),
         ),
       ],

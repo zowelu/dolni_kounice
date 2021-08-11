@@ -45,7 +45,8 @@ class MonumentsChapelOfStAntonine extends StatelessWidget {
                   ),
                 ),
               );
-            }),
+            },
+          isAudio: false,),
         SizedBox(
           height: kDMarginLarger,
         ),

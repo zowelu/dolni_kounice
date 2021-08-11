@@ -36,18 +36,20 @@ class MonumentsRosaCoeli extends StatelessWidget {
                 'Působivou architekturu původně ženského kláštera můžeme spatřit nedaleko centra města. Jeho chladným kamenným stěnám a podmanivému kouzlu může návštěvník odolat jen stěží. Zřícenína kláštera Rosa coeli je uzamčený objekt který kromě otevírací doby není veřejnosti volně přístupný.\n\nTrosky kláštera Rosa coeli v Dolních Kounicích působí na citlivější jedince svou pozitivní energií. Už jen pouhých pár minut pobytu v magických prostorách syrové gotiky bývalého kláštera vám vylepší náladu.'),
         SizedBox(height: kDMarginLarger),
         ChoiceContainer(
-            assetImageOfChoice: rosaCoeli.imageGallery[5],
-            textOfChoice: 'Galerie',
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => GalleryPhotoViewPage(
-                    nameOfImageGallery: rosaCoeli.nameOfImageGallery,
-                  ),
+          assetImageOfChoice: rosaCoeli.imageGallery[5],
+          textOfChoice: 'Galerie',
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => GalleryPhotoViewPage(
+                  nameOfImageGallery: rosaCoeli.nameOfImageGallery,
                 ),
-              );
-            }),
+              ),
+            );
+          },
+          isAudio: false,
+        ),
         SizedBox(
           height: kDMarginLarger,
         ),
@@ -79,8 +81,8 @@ class MonumentsRosaCoeli extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => SinglePhotoViewPage(
-                    assetImage: rosaCoeli.imageGallery[12]),
+                builder: (context) =>
+                    SinglePhotoViewPage(assetImage: rosaCoeli.imageGallery[12]),
               ),
             );
           },
@@ -91,8 +93,8 @@ class MonumentsRosaCoeli extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => SinglePhotoViewPage(
-                    assetImage: rosaCoeli.imageGallery[13]),
+                builder: (context) =>
+                    SinglePhotoViewPage(assetImage: rosaCoeli.imageGallery[13]),
               ),
             );
           },
@@ -112,8 +114,8 @@ class MonumentsRosaCoeli extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => SinglePhotoViewPage(
-                    assetImage: rosaCoeli.imageGallery[14]),
+                builder: (context) =>
+                    SinglePhotoViewPage(assetImage: rosaCoeli.imageGallery[14]),
               ),
             );
           },
@@ -130,8 +132,8 @@ class MonumentsRosaCoeli extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => SinglePhotoViewPage(
-                    assetImage: rosaCoeli.imageGallery[15]),
+                builder: (context) =>
+                    SinglePhotoViewPage(assetImage: rosaCoeli.imageGallery[15]),
               ),
             );
           },
@@ -150,8 +152,8 @@ class MonumentsRosaCoeli extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => SinglePhotoViewPage(
-                      assetImage: rosaCoeli.images[4]),
+                  builder: (context) =>
+                      SinglePhotoViewPage(assetImage: rosaCoeli.images[4]),
                 ),
               );
             },
