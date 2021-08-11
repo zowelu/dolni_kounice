@@ -2,6 +2,7 @@ import 'package:dolni_kounice/screens/audio_guides/audio_guide_chapel_of_st_anto
 import 'package:dolni_kounice/screens/audio_guides/audio_guide_chapel_of_st_antonine/audio_guide_chapel_of_st_antonine_1.dart';
 import 'package:dolni_kounice/screens/audio_guides/audio_guide_jevish_synagogue/audio_guide_jevish_synagogue.dart';
 import 'package:dolni_kounice/screens/audio_guides/audio_guide_jevish_synagogue/audio_guide_jevish_synagogue_1.dart';
+import 'package:dolni_kounice/screens/audio_guides/audio_guide_jevish_synagogue/audio_guide_jevish_synagogue_jevish_town.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_castle_and_chateau.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_john_the_baptist.dart';
@@ -117,6 +118,7 @@ void main() {
         AudioGuideChapelOfStAntonine1.id: (context) => AudioGuideChapelOfStAntonine1(),
         AudioGuideJevishSynagogue.id: (context) => AudioGuideJevishSynagogue(),
         AudioGuideJevishSynagogue1.id: (context) => AudioGuideJevishSynagogue1(),
+        AudioGuideJevishSynagogueJevishTown.id: (context) => AudioGuideJevishSynagogueJevishTown(),
       },
     ),
   );
