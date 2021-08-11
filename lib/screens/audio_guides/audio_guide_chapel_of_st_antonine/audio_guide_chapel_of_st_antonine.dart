@@ -1,6 +1,6 @@
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
 import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
-import 'package:dolni_kounice/screens/audio_guide_chapel_of_st_antonine/audio_guide_chapel_of_st_antonine_1.dart';
+import 'package:dolni_kounice/screens/audio_guides/audio_guide_chapel_of_st_antonine/audio_guide_chapel_of_st_antonine_1.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
