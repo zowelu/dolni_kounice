@@ -20,9 +20,9 @@ class _AudioGuideJevishSynagogueState extends State<AudioGuideJevishSynagogue> {
       tittleOfAppbar: 'Audioprůvodce',
       listOfWidget: [
         Hero(
-          tag: 'audioKlasterRosaCoeli',
+          tag: jevishSynagogue.tag,
           child: ContainerHeaderImageBackground(
-            assetImage: jevishSynagogue.imageGallery[1],
+            assetImage: jevishSynagogue.imageGallery[0],
             textHeader: jevishSynagogue.name,
             text: '',
           ),
@@ -64,6 +64,16 @@ class _AudioGuideJevishSynagogueState extends State<AudioGuideJevishSynagogue> {
           child: ChoiceContainer(
             assetImageOfChoice: jevishSynagogue.imageGallery[0],
             textOfChoice: jevishSynagogue.chapter[0],
+            onTap: () {
+              Navigator.pushNamed(context, AudioGuideChapelOfStAntonine1.id);
+            },
+          ),
+        ),
+        Hero(
+          tag: jevishSynagogue.chapter[1],
+          child: ChoiceContainer(
+            assetImageOfChoice: jevishSynagogue.images[0],
+            textOfChoice: jevishSynagogue.chapter[1],
             onTap: () {
               Navigator.pushNamed(context, AudioGuideChapelOfStAntonine1.id);
             },
