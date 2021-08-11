@@ -1,5 +1,6 @@
 
 import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
+import 'package:dolni_kounice/screens/audio_guide_jevish_synagogue/audio_guide_jevish_synagogue.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/gallery_photo_view_page.dart';
@@ -22,9 +23,11 @@ class MonumentsJevishSynagogue extends StatelessWidget {
       assetImage: 'assets/images/pamatky/synagoga/synagoga-venek.jpg',
       textOfAppBar: 'Průvodce památkami',
       textHeader: jevishSynagogue.name,
-      isFloatingButton: false,
-      onPressedFloatingButton: null,
-      textOfFloatingButton: null,
+      isFloatingButton: true,
+      onPressedFloatingButton: () {
+        Navigator.pushNamed(context, AudioGuideJevishSynagogue.id);
+      },
+      textOfFloatingButton: 'Přejít na audioprůvodce',
       tag: jevishSynagogue.tag,
       listOfWidget: [
         TextDefaultStandart(
