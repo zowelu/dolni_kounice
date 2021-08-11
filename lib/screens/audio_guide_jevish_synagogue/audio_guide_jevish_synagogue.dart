@@ -1,19 +1,19 @@
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
-import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
+import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
 import 'package:dolni_kounice/screens/audio_guide_chapel_of_st_antonine/audio_guide_chapel_of_st_antonine_1.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
 import 'package:dolni_kounice/components/container_header_image_background.dart';
 
-class AudioGuideChapelOfStAntonine extends StatefulWidget {
-  static String id = '/audioGuideChapelOfStAntonine';
+class AudioGuideJevishSynagogue extends StatefulWidget {
+  static String id = '/audioGuideJevishSynagogue';
   @override
-  _AudioGuideChapelOfStAntonineState createState() => _AudioGuideChapelOfStAntonineState();
+  _AudioGuideJevishSynagogueState createState() => _AudioGuideJevishSynagogueState();
 }
 
-class _AudioGuideChapelOfStAntonineState extends State<AudioGuideChapelOfStAntonine> {
-  ChapelOfStAntonine chapelOfStAntonine = ChapelOfStAntonine();
+class _AudioGuideJevishSynagogueState extends State<AudioGuideJevishSynagogue> {
+  JevishSynagogue jevishSynagogue = JevishSynagogue();
   @override
   Widget build(BuildContext context) {
     return DefaultPageOfChoice(
@@ -22,8 +22,8 @@ class _AudioGuideChapelOfStAntonineState extends State<AudioGuideChapelOfStAnton
         Hero(
           tag: 'audioKlasterRosaCoeli',
           child: ContainerHeaderImageBackground(
-            assetImage: chapelOfStAntonine.imageGallery[1],
-            textHeader: chapelOfStAntonine.name,
+            assetImage: jevishSynagogue.imageGallery[1],
+            textHeader: jevishSynagogue.name,
             text: '',
           ),
         ),
@@ -60,10 +60,10 @@ class _AudioGuideChapelOfStAntonineState extends State<AudioGuideChapelOfStAnton
         ),
         SizedBox(height: kDMarginLarger),
         Hero(
-          tag: chapelOfStAntonine.chapter[0],
+          tag: jevishSynagogue.chapter[0],
           child: ChoiceContainer(
-            assetImageOfChoice: chapelOfStAntonine.imageGallery[0],
-            textOfChoice: chapelOfStAntonine.chapter[0],
+            assetImageOfChoice: jevishSynagogue.imageGallery[0],
+            textOfChoice: jevishSynagogue.chapter[0],
             onTap: () {
               Navigator.pushNamed(context, AudioGuideChapelOfStAntonine1.id);
             },
