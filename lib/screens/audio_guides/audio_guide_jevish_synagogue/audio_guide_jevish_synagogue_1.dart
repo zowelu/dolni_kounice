@@ -13,7 +13,7 @@ class _AudioGuideJevishSynagogue1State
     extends State<AudioGuideJevishSynagogue1> {
   static int index = 0;
   JevishSynagogue textAudioMap = JevishSynagogue();
-  String assetImage = JevishSynagogue().imageGallery[2];
+  String assetImage = JevishSynagogue().imageGallery[7];
   String textHeader = JevishSynagogue().audioText.keys.elementAt(index);
   String path = JevishSynagogue().mp3[index];
   String keyOfMap = JevishSynagogue().audioText.keys.elementAt(index);
