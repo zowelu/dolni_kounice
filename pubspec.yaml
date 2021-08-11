@@ -59,6 +59,8 @@ flutter:
     - assets/audio/
     - assets/audio/rosa_coeli/
     - assets/audio/kaple_sv_antonina/
+    - assets/audio/zidovska_ctvrt/
+    - assets/audio/synagoga/
     - assets/images/
     - assets/images/pamatky/
     - assets/images/pamatky/dk_znak/
@@ -75,6 +77,7 @@ flutter:
     - assets/images/pamatky/zamek/
     - assets/images/pamatky/zidovsky_hrbitov/
     - assets/images/pamatky/services/
+    - assets/images/pamatky/zidovska_ctvrt/
 
   fonts:
     - family: Kaushan
