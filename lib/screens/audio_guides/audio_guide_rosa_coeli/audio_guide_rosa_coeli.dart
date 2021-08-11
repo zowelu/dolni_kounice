@@ -3,15 +3,15 @@ import 'package:dolni_kounice/components/default_page_of_choice_with_floating_bu
 import 'package:dolni_kounice/constants/constants.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
 import 'package:dolni_kounice/components/container_header_image_background.dart';
-import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_1_portal.dart';
-import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_2_klasterni_kostel.dart';
-import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_3_vezicka.dart';
-import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_4_prima_chramova_lod.dart';
-import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_5_rajska_zahrada.dart';
-import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_filmy_a_serialy.dart';
-import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_historie.dart';
-import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_strecha.dart';
-import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli_uvod.dart';
+import 'package:dolni_kounice/screens/audio_guides/audio_guide_rosa_coeli/audio_guide_rosa_coeli_1_portal.dart';
+import 'package:dolni_kounice/screens/audio_guides/audio_guide_rosa_coeli/audio_guide_rosa_coeli_2_klasterni_kostel.dart';
+import 'package:dolni_kounice/screens/audio_guides/audio_guide_rosa_coeli/audio_guide_rosa_coeli_3_vezicka.dart';
+import 'package:dolni_kounice/screens/audio_guides/audio_guide_rosa_coeli/audio_guide_rosa_coeli_4_prima_chramova_lod.dart';
+import 'package:dolni_kounice/screens/audio_guides/audio_guide_rosa_coeli/audio_guide_rosa_coeli_5_rajska_zahrada.dart';
+import 'package:dolni_kounice/screens/audio_guides/audio_guide_rosa_coeli/audio_guide_rosa_coeli_filmy_a_serialy.dart';
+import 'package:dolni_kounice/screens/audio_guides/audio_guide_rosa_coeli/audio_guide_rosa_coeli_historie.dart';
+import 'package:dolni_kounice/screens/audio_guides/audio_guide_rosa_coeli/audio_guide_rosa_coeli_strecha.dart';
+import 'package:dolni_kounice/screens/audio_guides/audio_guide_rosa_coeli/audio_guide_rosa_coeli_uvod.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
 
 class AudioGuideRosaCoeli extends StatefulWidget {
