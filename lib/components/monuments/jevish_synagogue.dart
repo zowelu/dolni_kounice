@@ -12,8 +12,8 @@ class JevishSynagogue {
   ];
 
   List<String> mp3 = [
-    'assets/audio/synagoga/synagoga.mp3',
-    'assets/audio/zidovska_ctvrt/zidovska_ctvrt.mp3',
+    'audio/synagoga/synagoga.mp3',
+    'audio/zidovska_ctvrt/zidovska_ctvrt.mp3',
   ];
 
   ///Map jednotlivých kapitol audioprůvodce a jejich přepisu
