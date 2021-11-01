@@ -1,7 +1,7 @@
 class SacralBuildings {
   String id = '/monumentsSacralBuildings';
   String name = 'Menší sakrální stavby';
-  String url = 'https://www.dolnikounice.cz/mensi-sakralni-stavby/d-78885/p1=5210';
+  String url = 'https://www.dolnikounice.cz/mensi-sakralni-stavby/ds-4781/archiv=0';
   String tag = 'monumentsSacralBuildings';
   String nameOfImageGallery = 'imageGallerySacralBuildings';
 
