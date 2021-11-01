@@ -1,7 +1,7 @@
 class ChapelOfStAntonine {
   String id = '/monumentsChapelOfStAntonine';
   String name = 'Kaple sv. Antonína';
-  String url = 'https://www.dolnikounice.cz/kaple-sv-antonina/d-78783/p1=4776';
+  String url = 'https://www.dolnikounice.cz/kaple-sv-antonina/ds-4776/p1=13316';
   String tag = 'monumentsChapelOfStAntonine';
   String nameOfImageGallery = 'imageGalleryChapelOfStAntonine';
 
