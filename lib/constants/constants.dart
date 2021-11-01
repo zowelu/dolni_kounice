@@ -29,5 +29,5 @@ double kDMarginLarger = 30.0;
 double kDMyAppBarHeight = 55.0;
 String kDAppIconPath = 'assets/images/DK_znak_200px.png';
 Color kDividerColor = Color(0xFFA63D40);
-String versionApp = '1.4.1';
+String versionApp = '1.5.0';
 
