@@ -1,7 +1,7 @@
 class JevishSynagogue {
   String id = '/monumentsJevishSynagogue';
   String name = 'Židovská synagoga';
-  String url = 'https://dolnikounice.cz/synagoga/d-78785/p1=4778';
+  String url = 'https://www.dolnikounice.cz/synagoga/ds-4774/p1=13316';
   String tag = 'monumentsSynagogue';
   String nameOfImageGallery = 'imageGalleryJevishSynagogue';
 
