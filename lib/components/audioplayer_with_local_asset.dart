@@ -1,6 +1,4 @@
-import 'dart:io';
 
-import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
@@ -18,7 +16,7 @@ class AudioPlayerWithLocalAsset extends StatefulWidget {
 
 class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
   AudioPlayer audioPlayer = AudioPlayer();
-  AudioPlayerState audioPlayerState = AudioPlayerState.PAUSED;
+  PlayerState audioPlayerState = PlayerState.PAUSED;
   AudioCache audioCache;
   String _path;
   int timeProgress = 0;
@@ -42,7 +40,7 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
     super.initState();
     _path = widget.path;
     audioCache = AudioCache(fixedPlayer: audioPlayer);
-    audioPlayer.onPlayerStateChanged.listen((AudioPlayerState s) {
+    audioPlayer.onPlayerStateChanged.listen((PlayerState s) {
       setState(() {
         audioPlayerState = s;
       });
@@ -60,7 +58,7 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
     super.dispose();
     audioPlayer.release();
     audioPlayer.dispose();
-    audioCache.clearCache();
+    audioCache.clearAll();
   }
 
   playMusic() async {
@@ -94,14 +92,14 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
         children: [
           IconButton(
             icon: Icon(
-              audioPlayerState == AudioPlayerState.PLAYING
+              audioPlayerState == PlayerState.PLAYING
                   ? Icons.pause_circle_filled
                   : Icons.play_circle_filled,
               color: kDColorPlayerButton,
             ),
             iconSize: 50.0,
             onPressed: () {
-              audioPlayerState == AudioPlayerState.PLAYING
+              audioPlayerState == PlayerState.PLAYING
                   ? pauseMusic()
                   : playMusic();
             },
@@ -164,7 +162,7 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
   }
 
   Future<int> _getAudioDuration() async {
-    File audioFile = await audioCache.load(_path);
+    Uri audioFile = await audioCache.load(_path);
     await audioPlayer.setUrl(audioFile.path);
     audioDuration = await Future.delayed(
       Duration(seconds: 2),
