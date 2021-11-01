@@ -1,7 +1,7 @@
 class JevishCemetery{
   String id = '/monumentsJevishCemetery';
   String name = 'Židovský hřbitov';
-  String url = 'https://www.dolnikounice.cz/zidovsky-hrbitov/d-78784/p1=4777';
+  String url = 'https://www.dolnikounice.cz/zidovsky-hrbitov/ds-4780/p1=13316';
   String tag = 'monumentsJevishCemetery';
   String nameOfImageGallery = 'imageGalleryJevishCemetery';
 
