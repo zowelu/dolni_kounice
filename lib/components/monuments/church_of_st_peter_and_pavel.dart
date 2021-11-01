@@ -1,7 +1,7 @@
 class ChurchOfStPeterAndPavel{
   String id = '/monumentsChurchOfStPeterAndPavel';
   String name = 'Kostel sv. Petra a Pavla';
-  String url = 'https://www.dolnikounice.cz/kostel-sv-petra-a-pavla/d-78786/p1=4758';
+  String url = 'https://www.dolnikounice.cz/kostel-sv-petra-a-pavla/ds-4779/p1=14850';
   String tag = 'monumentsChurchOfStPeterAndPavel';
   String nameOfImageGallery = 'imageGalleryChurchOfStPeterAndPavel';
 
