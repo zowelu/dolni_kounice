@@ -1,7 +1,7 @@
 class ChapelOfStJohnTheBaptist{
   String id = '/monumentsChapelOfStJohnTheBaptist';
   String name = 'Kaple sv. Jana Křtitele';
-  String url = 'https://www.dolnikounice.cz/kaple-sv-jana-krtitele/d-78788/p1=4781';
+  String url = 'https://www.dolnikounice.cz/kaple-sv-jana-krtitele/ds-4778/archiv=0';
   String tag = 'monumentsChapelOfStJohnTheBaptist';
   String nameOfImageGallery = 'imageGalleryChapelOfStJohnTheBaptist';
 
