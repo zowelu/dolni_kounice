@@ -3,7 +3,7 @@
 class StBarbaraChurch{
   String id = '/monumentsStBarbaraChurch';
   String name = 'Chrám sv. Barbory';
-  String url = 'https://www.dolnikounice.cz/chram-sv-barbory-barborka/d-78884/p1=5209';
+  String url = 'https://www.dolnikounice.cz/chram-sv-barbory/ds-4777/archiv=0';
   String tag = 'monumentsStBarbaraChurch';
   String nameOfImageGallery = 'imageGalleryStBarbaraChurch';
 
