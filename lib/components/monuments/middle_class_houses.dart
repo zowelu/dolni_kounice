@@ -1,7 +1,7 @@
 class MiddleClassHouses{
   String id = '/monumentsMiddleClassHouses';
   String name = 'Měšťanské domy';
-  String url = 'https://www.dolnikounice.cz/mestanske-domy/d-78787/p1=4780';
+  String url = 'https://www.dolnikounice.cz/mestanske-domy/ds-4782/archiv=0';
   String tag = 'monumentsMiddleClassHouses';
   String nameOfImageGallery = 'imageGalleryMiddleClassHouses';
 
