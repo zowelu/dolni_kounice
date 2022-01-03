@@ -67,6 +67,7 @@ void main() {
         photoSize: 130.0,
         loaderColor: Colors.white,
       ),
+      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
         HomePage.id: (context) => HomePage(),

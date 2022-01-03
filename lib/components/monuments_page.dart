@@ -30,6 +30,7 @@ class MonumentsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Město památek',
       home: Scaffold(
         backgroundColor: kBackgroundColor,
