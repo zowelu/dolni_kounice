@@ -107,7 +107,7 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(
-                    width: 22,
+                    width:0,
                   ),
                   Container(
                     padding: EdgeInsets.only(
@@ -124,6 +124,19 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
                     ),
                   ),
                 ],
+              ),
+              InkWell(
+                child: const Text(
+                  'www.zowelu.cz',
+                  style: TextStyle(
+                      fontSize: 14,
+                      decoration: TextDecoration.underline),
+                  textAlign: TextAlign.center,
+                ),
+                onTap: () async {
+                  //po stisknutí otevře stránku v externím prohlížeči
+                  OpenUrlInBrowser().openUrl('https://www.zowelu.cz/');
+                },
               ),
               SizedBox(
                 height: 22,
