@@ -3,7 +3,7 @@ import 'package:dolni_kounice/constants/constants.dart';
 
 class TextDefaultStandart extends StatelessWidget {
   ///Standartní text v aplikaci pro běžné texty
-  const TextDefaultStandart({@required this.text, this.textAlign});
+  const TextDefaultStandart({@required this.text, this.textAlign=TextAlign.start});
   final String text;
   final TextAlign textAlign;
 
