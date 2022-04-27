@@ -1,6 +1,7 @@
 import 'package:dolni_kounice/components/monuments/chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
+import 'package:dolni_kounice/screens/trips/kam_za_vinem_map.dart';
 import 'package:dolni_kounice/screens/trips/tripAroundDolniKounice.dart';
 import 'package:dolni_kounice/screens/trips/tripThreeMainDominants.dart';
 import 'package:dolni_kounice/screens/trips/tripToChapelOfStAntonine.dart';
@@ -104,6 +105,17 @@ class _TripsState extends State<Trips> {
             textOfChoice: TripAroundDolniKounice.name,
             onTap: () {
               Navigator.pushNamed(context, TripAroundDolniKounice.id);
+            },
+            isAudio: false,
+          ),
+        ),
+        Hero(
+          tag: 'kamzaVinem',
+          child: ChoiceContainer(
+            assetImageOfChoice: 'assets/images/kam_za_vinem/kam_za_vinem_1.jpg',
+            textOfChoice: 'Kam za vínem?',
+            onTap: () {
+              Navigator.pushNamed(context, KamZaVinemMap.id);
             },
             isAudio: false,
           ),

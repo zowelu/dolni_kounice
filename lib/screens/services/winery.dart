@@ -1,3 +1,4 @@
+import 'package:dolni_kounice/screens/trips/kam_za_vinem_map.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/monuments_page.dart';
 import 'package:dolni_kounice/components/card_of_subject.dart';
@@ -14,11 +15,11 @@ class Winery extends StatelessWidget {
       textOfAppBar: 'Služby',
       textHeader: name,
       tag: tag,
-      isFloatingButton: false,
+      isFloatingButton: true,
       onPressedFloatingButton: () {
-        Navigator.pushNamed(context, Winery.id);
+        Navigator.pushNamed(context, KamZaVinemMap.id);
       },
-      textOfFloatingButton: 'Mapa trasy',
+      textOfFloatingButton: 'Kam za vínem?',
       listOfWidget: [
         CardOfSubject(
           name: 'Sklep u Barborky',
@@ -55,7 +56,7 @@ class Winery extends StatelessWidget {
           webPageURL: 'http://www.vinarstvimusilovi.cz/',
           address: 'Bezručova 55a',
           addressURL:
-          'http://www.google.com/maps?q=49.0693202,16.4638589&z=14&t=m',
+              'http://www.google.com/maps?q=49.0693202,16.4638589&z=14&t=m',
           isLabel: false,
           label: '',
           isImage: true,
@@ -69,7 +70,7 @@ class Winery extends StatelessWidget {
           webPageURL: 'http://www.rosacoeli-vino.cz/',
           address: ' Zámecká 44',
           addressURL:
-          'http://www.google.com/maps?q=49.0654698,16.4721498&z=14&t=m',
+              'http://www.google.com/maps?q=49.0654698,16.4721498&z=14&t=m',
           isLabel: false,
           label: '',
           isImage: true,
@@ -83,7 +84,7 @@ class Winery extends StatelessWidget {
           webPageURL: 'http://www.vinoplacek.cz/',
           address: ' Moravské Bránice 348',
           addressURL:
-          'http://www.google.com/maps?q=49.0832605,16.4364398&z=14&t=m',
+              'http://www.google.com/maps?q=49.0832605,16.4364398&z=14&t=m',
           isLabel: false,
           label: '',
           isImage: true,
@@ -97,7 +98,7 @@ class Winery extends StatelessWidget {
           webPageURL: 'http://reginacoeli.cz/',
           address: ' Nové Bránice 39',
           addressURL:
-          'http://www.google.com/maps?q=49.0702899,16.4425728&z=14&t=m',
+              'http://www.google.com/maps?q=49.0702899,16.4425728&z=14&t=m',
           isLabel: false,
           label: '',
           isImage: true,
