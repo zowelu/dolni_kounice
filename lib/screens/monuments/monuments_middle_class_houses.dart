@@ -108,7 +108,7 @@ class MonumentsMiddleClassHouses extends StatelessWidget {
           adress: 'Hlavní 16',
           imageIndex: 5,
           text:
-              'v současnosti uzavřená pizzérie   Tento jeden z nejstarších domů byl vystaven roku 1590 tehdejším starostou Dolních Kounice - Janem Tišnovským z Cineperku. V domě bylo například: řeznictví, Denkova hospoda, smíšené zboží a donedávna pizzerie.',
+              'V současnosti uzavřená pizzérie. Tento jeden z nejstarších domů byl vystaven roku 1590 tehdejším starostou Dolních Kounice - Janem Tišnovským z Cineperku. V domě bylo například: řeznictví, Denkova hospoda, smíšené zboží a donedávna pizzerie.',
         ),
         MiddleClassHouse(
           adress: 'Hlavní 6',
