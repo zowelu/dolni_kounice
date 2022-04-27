@@ -22,6 +22,18 @@ class CoffeeAndRestaurant extends StatelessWidget {
       textOfFloatingButton: 'Mapa trasy',
       listOfWidget: [
         CardOfSubject(
+          name: 'Coffee First',
+          phoneNumber: '776 205 365',
+          webPage: 'Facebook',
+          webPageURL: 'https://www.facebook.com/coffeefirstDK',
+          address: 'Masarykovo náměstí 10',
+          addressURL: 'https://goo.gl/maps/CdFkekHSCAiMfcK2A',
+          isLabel: true,
+          label: 'Platba kartou, Se psem, pivo, limo, káva, sladká kuchyně',
+          isImage: false,
+        ),
+        DividerText(),
+        CardOfSubject(
           name: 'Cukrárna U Dvořáků',
           phoneNumber: '546 421 253',
           webPage: 'www.studena-kuchyne.cz',
@@ -33,7 +45,6 @@ class CoffeeAndRestaurant extends StatelessWidget {
           label:
               'Platba kartou, Se psem, Bezbariérové, Dětský koutek, Zahrádka',
           isImage: false,
-
         ),
         DividerText(),
         CardOfSubject(
@@ -51,17 +62,16 @@ class CoffeeAndRestaurant extends StatelessWidget {
         ),
         DividerText(),
         CardOfSubject(
-          name: 'Schůzka 7.13',
-          phoneNumber: '777 008 713',
-          webPage: 'www.schuzka7-13.cz',
-          webPageURL: 'www.schuzka7-13.cz',
+          name: 'Na Schůzce',
+          phoneNumber: '737 778 774',
+          webPage: 'facebook',
+          webPageURL: 'https://www.facebook.com/NaSchuzce',
           address: 'Tovární 3',
           addressURL:
               'http://www.google.com/maps?q=49.0702896,16.466907&z=14&t=m',
           isLabel: true,
           label: 'Platba kartou, pivo, víno, občerstvení, zahrádka',
           isImage: false,
-
         ),
         DividerText(),
         CardOfSubject(
@@ -74,7 +84,6 @@ class CoffeeAndRestaurant extends StatelessWidget {
           isLabel: false,
           label: '',
           isImage: false,
-
         ),
         DividerText(),
         CardOfSubject(
@@ -88,7 +97,6 @@ class CoffeeAndRestaurant extends StatelessWidget {
           isLabel: false,
           label: '',
           isImage: false,
-
         ),
         DividerText(),
         CardOfSubject(
@@ -101,7 +109,6 @@ class CoffeeAndRestaurant extends StatelessWidget {
           isLabel: true,
           label: 'Platba kartou, pivo, víno, občerstvení, zahrádka',
           isImage: false,
-
         ),
       ],
     );
