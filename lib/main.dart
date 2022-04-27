@@ -3,6 +3,7 @@ import 'package:dolni_kounice/screens/audio_guides/audio_guide_chapel_of_st_anto
 import 'package:dolni_kounice/screens/audio_guides/audio_guide_jevish_synagogue/audio_guide_jevish_synagogue.dart';
 import 'package:dolni_kounice/screens/audio_guides/audio_guide_jevish_synagogue/audio_guide_jevish_synagogue_1.dart';
 import 'package:dolni_kounice/screens/audio_guides/audio_guide_jevish_synagogue/audio_guide_jevish_synagogue_jevish_town.dart';
+import 'package:dolni_kounice/screens/kam_za_vinem_map.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_castle_and_chateau.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_antonine.dart';
 import 'package:dolni_kounice/screens/monuments/monuments_chapel_of_st_john_the_baptist.dart';
@@ -103,7 +104,8 @@ void main() {
         MonumentsChapelOfStJohnTheBaptist.id: (context) =>
             MonumentsChapelOfStJohnTheBaptist(),
         MonumentsJevishCemetery.id: (context) => MonumentsJevishCemetery(),
-        MonumentsMiddleClassHouses.id: (context) => MonumentsMiddleClassHouses(),
+        MonumentsMiddleClassHouses.id: (context) =>
+            MonumentsMiddleClassHouses(),
         MonumentsHistoryOfTheTown.id: (context) => MonumentsHistoryOfTheTown(),
         MonumentsSacralBuildings.id: (context) => MonumentsSacralBuildings(),
         TripThreeMainDominants.id: (context) => TripThreeMainDominants(),
@@ -115,11 +117,16 @@ void main() {
         Accommodations.id: (context) => Accommodations(),
         Shops.id: (context) => Shops(),
         Parking.id: (context) => Parking(),
-        AudioGuideChapelOfStAntonine.id: (context) => AudioGuideChapelOfStAntonine(),
-        AudioGuideChapelOfStAntonine1.id: (context) => AudioGuideChapelOfStAntonine1(),
+        AudioGuideChapelOfStAntonine.id: (context) =>
+            AudioGuideChapelOfStAntonine(),
+        AudioGuideChapelOfStAntonine1.id: (context) =>
+            AudioGuideChapelOfStAntonine1(),
         AudioGuideJevishSynagogue.id: (context) => AudioGuideJevishSynagogue(),
-        AudioGuideJevishSynagogue1.id: (context) => AudioGuideJevishSynagogue1(),
-        AudioGuideJevishSynagogueJevishTown.id: (context) => AudioGuideJevishSynagogueJevishTown(),
+        AudioGuideJevishSynagogue1.id: (context) =>
+            AudioGuideJevishSynagogue1(),
+        AudioGuideJevishSynagogueJevishTown.id: (context) =>
+            AudioGuideJevishSynagogueJevishTown(),
+        KamZaVinemMap.id: (context) => KamZaVinemMap(),
       },
     ),
   );
