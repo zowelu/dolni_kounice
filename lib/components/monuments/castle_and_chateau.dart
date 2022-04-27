@@ -3,7 +3,7 @@
 class CastleAndChateau {
   String id = '/monumentsCastleAndChateau';
   String name = 'Hrad a zámek';
-  String url = 'https://www.dolnikounice.cz/hrad-a-zamek/ds-4775/p1=13316';
+  String url = 'https://dolnikounice.cz/hrad-a-zamek/ds-4775/p1=13316';
   String tag = 'monumentsCastleAndChateau';
   String nameOfImageGallery = 'imageGalleryCastleAndChateau';
 
