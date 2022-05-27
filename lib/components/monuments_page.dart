@@ -49,33 +49,36 @@ class MonumentsPage extends StatelessWidget {
                 textOfFloatingButton: textOfFloatingButton)
             : null,
         body: SafeArea(
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Hero(
-                  tag: this.tag,
-                  child: ContainerHeaderImageBackground(
-                    assetImage: assetImage,
-                    textHeader: textHeader,
-                    text: '',
+          child: Scrollbar(
+            thumbVisibility: true,
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Hero(
+                    tag: this.tag,
+                    child: ContainerHeaderImageBackground(
+                      assetImage: assetImage,
+                      textHeader: textHeader,
+                      text: '',
+                    ),
                   ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(kDPadding),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      SizedBox(height: kDMargin),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: listOfWidget,
-                      ),
-                    ],
+                  Container(
+                    padding: EdgeInsets.all(kDPadding),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        SizedBox(height: kDMargin),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: listOfWidget,
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),

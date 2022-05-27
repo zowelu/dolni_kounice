@@ -1,3 +1,4 @@
+import 'package:dolni_kounice/components/text_default_standart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
@@ -42,40 +43,40 @@ class AudioPage extends StatelessWidget {
           ),
         ),
         body: SafeArea(
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Hero(
-                  tag: this.tag,
-                  child: ContainerHeaderImageBackground(
-                    assetImage: assetImage,
-                    textHeader: textHeader,
-                    text: '',
+          child: Scrollbar(
+            thumbVisibility: true,
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Hero(
+                    tag: this.tag,
+                    child: ContainerHeaderImageBackground(
+                      assetImage: assetImage,
+                      textHeader: textHeader,
+                      text: '',
+                    ),
                   ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(kDPadding),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Column(
-                        children: [
-                          SizedBox(
-                            height: 20.0,
-                          ),
-                          Text(
-                            textAudioMap.getAudioTextOfMap(keyOfMap),
-                            style: TextStyle(
-                                color: kDColorTextWhite,
-                                fontSize: kDFontSizeText),
-                          ),
-                        ],
-                      ),
-                    ],
+                  Container(
+                    padding: EdgeInsets.all(kDPadding),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Column(
+                          children: [
+                            SizedBox(
+                              height: 20.0,
+                            ),
+                            TextDefaultStandart(
+                              text: textAudioMap.getAudioTextOfMap(keyOfMap),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
