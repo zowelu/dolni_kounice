@@ -1,5 +1,4 @@
 import 'package:dolni_kounice/components/text_default_standart.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
 import 'package:dolni_kounice/components/container_header_image_background.dart';

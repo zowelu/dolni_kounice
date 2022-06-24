@@ -1,6 +1,5 @@
 import 'package:dolni_kounice/components/monuments/jevish_synagogue.dart';
 import 'package:dolni_kounice/screens/audio_guides/audio_guide_jevish_synagogue/audio_guide_jevish_synagogue.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/gallery_photo_view_page.dart';
 import 'package:dolni_kounice/components/monuments_page.dart';
