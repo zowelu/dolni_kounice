@@ -96,6 +96,48 @@ class _AboutAppDialogState extends State<AboutAppDialog> {
                   OpenUrlInBrowser().openUrl('https://webstrong.cz/');
                 },
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text(
+                    've spolupráci s ',
+                    style: TextStyle(
+                        fontSize: 14,
+                       ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(
+                    width:0,
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(
+                      bottom: 10.0,
+                      top: 0,
+                    ),
+                    child: GestureDetector(
+                      onTap: () async {
+                        //po stisknutí otevře stránku v externím prohlížeči
+                        OpenUrlInBrowser().openUrl('https://www.zowelu.cz/');
+                      },
+                      child: Image.asset('assets/images/zowelu_logo.png',
+                          height: 30),
+                    ),
+                  ),
+                ],
+              ),
+              InkWell(
+                child: const Text(
+                  'www.zowelu.cz',
+                  style: TextStyle(
+                      fontSize: 14,
+                      decoration: TextDecoration.underline),
+                  textAlign: TextAlign.center,
+                ),
+                onTap: () async {
+                  //po stisknutí otevře stránku v externím prohlížeči
+                  OpenUrlInBrowser().openUrl('https://www.zowelu.cz/');
+                },
+              ),
               SizedBox(
                 height: 22,
               ),

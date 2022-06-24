@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class Constants extends StatelessWidget {
@@ -8,7 +6,6 @@ class Constants extends StatelessWidget {
     return Container();
   }
 }
-
 
 Color kBackgroundColor = Color(0xFF005350);
 
@@ -29,5 +26,4 @@ double kDMarginLarger = 30.0;
 double kDMyAppBarHeight = 55.0;
 String kDAppIconPath = 'assets/images/DK_znak_200px.png';
 Color kDividerColor = Color(0xFFA63D40);
-String versionApp = '1.3.1';
-
+String versionApp = '1.5.0';

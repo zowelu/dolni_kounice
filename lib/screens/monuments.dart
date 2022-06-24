@@ -39,11 +39,11 @@ class _MonumentsState extends State<Monuments> {
       tittleOfAppbar: 'Průvodce památkami',
       textOfFloatingButton: 'Mapa památek',
       assetImageOfModal: 'assets/images/DK_znak_200px.png',
-      onPressedFloatingButton:() async {
-      //po stisknutí otevře stránku v externím prohlížeči
-      OpenUrlInBrowser().openUrl(
-          'https://www.google.com/maps/d/edit?mid=1DwOCwtBw3JTccht4w1IO8okqNxtFc4uS&usp=sharing');
-    },
+      onPressedFloatingButton: () async {
+        //po stisknutí otevře stránku v externím prohlížeči
+        OpenUrlInBrowser().openUrl(
+            'https://www.google.com/maps/d/viewer?mid=1XqQ6bGQI6qnkxQL9a2mL9Y3zs_wS0e_7&usp=sharing');
+      },
       // onPressedFloatingButton: (){
       //   showModalBottomSheet(
       //     context: context,
@@ -103,122 +103,123 @@ class _MonumentsState extends State<Monuments> {
         Hero(
           tag: RosaCoeli().tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-                RosaCoeli().imageGallery[1],
+            assetImageOfChoice: RosaCoeli().imageGallery[1],
             textOfChoice: RosaCoeli().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsRosaCoeli.id);
             },
+            isAudio: true,
           ),
         ),
         Hero(
           tag: JevishSynagogue().tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-                JevishSynagogue().imageGallery[0],
+            assetImageOfChoice: JevishSynagogue().imageGallery[0],
             textOfChoice: JevishSynagogue().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsJevishSynagogue.id);
             },
+            isAudio: true,
           ),
         ),
         Hero(
           tag: CastleAndChateau().tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-            CastleAndChateau().imageGallery[0],
+            assetImageOfChoice: CastleAndChateau().imageGallery[0],
             textOfChoice: CastleAndChateau().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsCastleAndChateau.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
           tag: ChapelOfStAntonine().tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-            ChapelOfStAntonine().imageGallery[0],
+            assetImageOfChoice: ChapelOfStAntonine().imageGallery[0],
             textOfChoice: ChapelOfStAntonine().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsChapelOfStAntonine.id);
             },
-          ),
-        ),
-        Hero(
-          tag: StBarbaraChurch().tag,
-          child: ChoiceContainer(
-            assetImageOfChoice:
-            StBarbaraChurch().imageGallery[0],
-            textOfChoice: StBarbaraChurch().name,
-            onTap: () {
-              Navigator.pushNamed(context, MonumentsStBarbaraChurch.id);
-            },
-          ),
-        ),
-        Hero(
-          tag: ChurchOfStPeterAndPavel().tag,
-          child: ChoiceContainer(
-            assetImageOfChoice:
-            ChurchOfStPeterAndPavel().imageGallery[0],
-            textOfChoice: ChurchOfStPeterAndPavel().name,
-            onTap: () {
-              Navigator.pushNamed(context, MonumentsChurchOfStPeterAndPavel.id);
-            },
-          ),
-        ),
-        Hero(
-          tag: ChapelOfStJohnTheBaptist().tag,
-          child: ChoiceContainer(
-            assetImageOfChoice:
-            ChapelOfStJohnTheBaptist().imageGallery[0],
-            textOfChoice: ChapelOfStJohnTheBaptist().name,
-            onTap: () {
-              Navigator.pushNamed(context, MonumentsChapelOfStJohnTheBaptist.id);
-            },
+            isAudio: true,
           ),
         ),
         Hero(
           tag: JevishCemetery().tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-            JevishCemetery().imageGallery[0],
+            assetImageOfChoice: JevishCemetery().imageGallery[0],
             textOfChoice: JevishCemetery().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsJevishCemetery.id);
             },
+            isAudio: false,
+          ),
+        ),
+        Hero(
+          tag: StBarbaraChurch().tag,
+          child: ChoiceContainer(
+            assetImageOfChoice: StBarbaraChurch().imageGallery[0],
+            textOfChoice: StBarbaraChurch().name,
+            onTap: () {
+              Navigator.pushNamed(context, MonumentsStBarbaraChurch.id);
+            },
+            isAudio: false,
+          ),
+        ),
+        Hero(
+          tag: ChurchOfStPeterAndPavel().tag,
+          child: ChoiceContainer(
+            assetImageOfChoice: ChurchOfStPeterAndPavel().imageGallery[0],
+            textOfChoice: ChurchOfStPeterAndPavel().name,
+            onTap: () {
+              Navigator.pushNamed(context, MonumentsChurchOfStPeterAndPavel.id);
+            },
+            isAudio: false,
+          ),
+        ),
+        Hero(
+          tag: ChapelOfStJohnTheBaptist().tag,
+          child: ChoiceContainer(
+            assetImageOfChoice: ChapelOfStJohnTheBaptist().imageGallery[0],
+            textOfChoice: ChapelOfStJohnTheBaptist().name,
+            onTap: () {
+              Navigator.pushNamed(
+                  context, MonumentsChapelOfStJohnTheBaptist.id);
+            },
+            isAudio: false,
           ),
         ),
         Hero(
           tag: MiddleClassHouses().tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-            MiddleClassHouses().imageGallery[0],
+            assetImageOfChoice: MiddleClassHouses().imageGallery[0],
             textOfChoice: MiddleClassHouses().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsMiddleClassHouses.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
           tag: SacralBuildings().tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-            SacralBuildings().imageGallery[0],
+            assetImageOfChoice: SacralBuildings().imageGallery[0],
             textOfChoice: 'Menší sakrální stavby',
             onTap: () {
               Navigator.pushNamed(context, MonumentsSacralBuildings.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
           tag: HistoryOfTheTown().tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-            HistoryOfTheTown().imageGallery[0],
+            assetImageOfChoice: HistoryOfTheTown().imageGallery[0],
             textOfChoice: HistoryOfTheTown().name,
             onTap: () {
               Navigator.pushNamed(context, MonumentsHistoryOfTheTown.id);
             },
+            isAudio: false,
           ),
         ),
       ],

@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:dolni_kounice/components/open_url_in_browser.dart';
 import 'package:dolni_kounice/screens/services.dart';
 import 'package:dolni_kounice/screens/trips.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
@@ -66,22 +65,26 @@ class _HomePageState extends State<HomePage> {
               Hero(
                 tag: 'pruvodcePamatkami',
                 child: ChoiceContainer(
-                    assetImageOfChoice:
-                        'assets/images/pamatky/klaster_rosa_coeli/klaster_krizova_chodba.jpg',
-                    textOfChoice: 'Průvodce památkami',
-                    onTap: () {
-                      Navigator.pushNamed(context, Monuments.id);
-                    }),
+                  assetImageOfChoice:
+                      'assets/images/pamatky/klaster_rosa_coeli/klaster_krizova_chodba.jpg',
+                  textOfChoice: 'Průvodce památkami',
+                  onTap: () {
+                    Navigator.pushNamed(context, Monuments.id);
+                  },
+                  isAudio: false,
+                ),
               ),
               Hero(
                 tag: 'turistickeTrasy',
                 child: ChoiceContainer(
-                    assetImageOfChoice:
-                        'assets/images/pamatky/mesto_pamatek_uvod/pexels-elina-sazonova-2705756_compressed.jpg',
-                    textOfChoice: 'Turistické trasy',
-                    onTap: () {
-                      Navigator.pushNamed(context, Trips.id);
-                    }),
+                  assetImageOfChoice:
+                      'assets/images/pamatky/mesto_pamatek_uvod/pexels-elina-sazonova-2705756_compressed.jpg',
+                  textOfChoice: 'Turistické trasy',
+                  onTap: () {
+                    Navigator.pushNamed(context, Trips.id);
+                  },
+                  isAudio: false,
+                ),
               ),
               Hero(
                 tag: 'services',
@@ -92,6 +95,7 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     Navigator.pushNamed(context, Services.id);
                   },
+                  isAudio: false,
                 ),
               ),
             ],

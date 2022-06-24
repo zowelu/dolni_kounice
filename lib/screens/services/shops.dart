@@ -10,8 +10,7 @@ class Shops extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MonumentsPage(
-      assetImage:
-      'assets/images/pamatky/services/obchody.jpg',
+      assetImage: 'assets/images/pamatky/services/obchody.jpg',
       textOfAppBar: 'Služby',
       textHeader: name,
       tag: tag,
@@ -28,12 +27,11 @@ class Shops extends StatelessWidget {
           webPageURL: 'ne',
           address: 'Masarykovo náměstí 1',
           addressURL:
-          'http://www.google.com/maps?q=49.0695904,16.4657692&z=14&t=m',
+              'http://www.google.com/maps?q=49.0695904,16.4657692&z=14&t=m',
           isLabel: false,
           label:
-          'Platba kartou, Se psem, Bezbariérové, Dětský koutek, Zahrádka',
+              'Platba kartou, Se psem, Bezbariérové, Dětský koutek, Zahrádka',
           isImage: false,
-
         ),
         DividerText(),
         CardOfSubject(
@@ -43,20 +41,20 @@ class Shops extends StatelessWidget {
           webPageURL: 'ne',
           address: 'Masarykovo náměstí 19',
           addressURL:
-          'http://www.google.com/maps?q=49.0702689,16.4658694&z=14&t=m',
+              'http://www.google.com/maps?q=49.0702689,16.4658694&z=14&t=m',
           isLabel: false,
           label: 'Platba kartou, Denní menu, Zahrádka',
           isImage: false,
         ),
         DividerText(),
         CardOfSubject(
-          name: 'Samoška Radost',
+          name: 'AZ Market',
           phoneNumber: '546 421 325',
           webPage: 'ne',
           webPageURL: 'ne',
           address: 'Náměstí míru 35',
           addressURL:
-          'http://www.google.com/maps?q=49.0730969,16.4648232&z=14&t=m',
+              'http://www.google.com/maps?q=49.0730969,16.4648232&z=14&t=m',
           isLabel: false,
           label: 'Platba kartou, Denní menu, Zahrádka',
           isImage: false,

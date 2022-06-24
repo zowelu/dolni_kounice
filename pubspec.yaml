@@ -15,7 +15,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.3.1+9
+version: 1.5.3+15
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -28,8 +28,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  audioplayers: ^0.18.3
-  photo_view: ^0.11.1
+  audioplayers: ^0.20.1
+  photo_view: ^0.13.0
   splashscreen: ^1.3.5
   change_app_package_name: ^1.0.0
   flutter_launcher_name: ^0.0.1
@@ -58,7 +58,11 @@ flutter:
   assets:
     - assets/audio/
     - assets/audio/rosa_coeli/
+    - assets/audio/kaple_sv_antonina/
+    - assets/audio/zidovska_ctvrt/
+    - assets/audio/synagoga/
     - assets/images/
+    - assets/images/kam_za_vinem/
     - assets/images/pamatky/
     - assets/images/pamatky/dk_znak/
     - assets/images/pamatky/chram_sv_barbory/
@@ -74,6 +78,7 @@ flutter:
     - assets/images/pamatky/zamek/
     - assets/images/pamatky/zidovsky_hrbitov/
     - assets/images/pamatky/services/
+    - assets/images/pamatky/zidovska_ctvrt/
 
   fonts:
     - family: Kaushan

@@ -68,70 +68,70 @@ class _ServicesState extends State<Services> {
       // },
       listOfWidget: [
         Hero(
-            tag: 'services',
-            child: ContainerHeaderImageBackground(
-              assetImage:
-              'assets/images/pamatky/mesto_pamatek_uvod/pexels-chevanon-photography-302899_compressed.jpg',
-              textHeader: 'Služby',
-              text: '',
-            ),),
+          tag: 'services',
+          child: ContainerHeaderImageBackground(
+            assetImage:
+                'assets/images/pamatky/mesto_pamatek_uvod/pexels-chevanon-photography-302899_compressed.jpg',
+            textHeader: 'Služby',
+            text: '',
+          ),
+        ),
         Hero(
           tag: CoffeeAndRestaurant.tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-            'assets/images/pamatky/services/kavarna.jpg',
+            assetImageOfChoice: 'assets/images/pamatky/services/kavarna.jpg',
             textOfChoice: CoffeeAndRestaurant.name,
             onTap: () {
               Navigator.pushNamed(context, CoffeeAndRestaurant.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
           tag: Winery.tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-            'assets/images/pamatky/services/vinarstvi.jpg',
+            assetImageOfChoice: 'assets/images/pamatky/services/vinarstvi.jpg',
             textOfChoice: Winery.name,
             onTap: () {
               Navigator.pushNamed(context, Winery.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
           tag: Accommodations.tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-            'assets/images/pamatky/services/ubytovani.jpg',
+            assetImageOfChoice: 'assets/images/pamatky/services/ubytovani.jpg',
             textOfChoice: Accommodations.name,
             onTap: () {
               Navigator.pushNamed(context, Accommodations.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
           tag: Shops.tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-            'assets/images/pamatky/services/obchody.jpg',
+            assetImageOfChoice: 'assets/images/pamatky/services/obchody.jpg',
             textOfChoice: Shops.name,
             onTap: () {
               Navigator.pushNamed(context, Shops.id);
             },
+            isAudio: false,
           ),
         ),
         Hero(
           tag: Parking.tag,
           child: ChoiceContainer(
-            assetImageOfChoice:
-            'assets/images/pamatky/services/parkovani.jpg',
+            assetImageOfChoice: 'assets/images/pamatky/services/parkovani.jpg',
             textOfChoice: Parking.name,
             onTap: () {
               Navigator.pushNamed(context, Parking.id);
             },
+            isAudio: false,
           ),
         ),
       ],
     );
   }
 }
-

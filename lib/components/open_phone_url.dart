@@ -7,7 +7,7 @@ class OpenPhoneURL {
   _launchPhoneURL(String phoneNumber) async {
     String url = 'tel:' + phoneNumber;
     if (await canLaunch(url)) {
-      await launch(url);
+      await _launchPhoneURL(url);
     } else {
       throw 'Could not launch $url';
     }
