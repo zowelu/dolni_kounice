@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:dolni_kounice/components/open_url_in_browser.dart';
 import 'package:dolni_kounice/screens/services.dart';
 import 'package:dolni_kounice/screens/trips.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/components/default_page_of_choice.dart';
 import 'package:dolni_kounice/components/choice_container.dart';

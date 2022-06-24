@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:audioplayers/audio_cache.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:dolni_kounice/constants/constants.dart';

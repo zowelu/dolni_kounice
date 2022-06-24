@@ -3,7 +3,6 @@ import 'package:dolni_kounice/components/monuments/chapel_of_st_john_the_baptist
 import 'package:dolni_kounice/components/single_photo_view_page.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/screens/audio_guide_rosa_coeli/audio_guide_rosa_coeli.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:dolni_kounice/components/gallery_photo_view_page.dart';
 import 'package:dolni_kounice/components/monuments_page.dart';
 import 'package:dolni_kounice/components/choice_container.dart';
@@ -15,7 +14,8 @@ import 'package:dolni_kounice/components/open_url_in_browser.dart';
 
 class MonumentsChapelOfStJohnTheBaptist extends StatelessWidget {
   static String id = ChapelOfStJohnTheBaptist().id;
-  static ChapelOfStJohnTheBaptist chapelOfStJohnTheBaptist = ChapelOfStJohnTheBaptist();
+  static ChapelOfStJohnTheBaptist chapelOfStJohnTheBaptist =
+      ChapelOfStJohnTheBaptist();
   @override
   Widget build(BuildContext context) {
     return MonumentsPage(
@@ -31,7 +31,7 @@ class MonumentsChapelOfStJohnTheBaptist extends StatelessWidget {
       listOfWidget: [
         TextDefaultStandart(
             text:
-            'Bývalá hřbitovní kaple na náměstí Míru ze šestnáctého století dotváří prostor u parku na druhém největším náměstí Dolních Kounic.'),
+                'Bývalá hřbitovní kaple na náměstí Míru ze šestnáctého století dotváří prostor u parku na druhém největším náměstí Dolních Kounic.'),
         SizedBox(height: kDMarginLarger),
         ChoiceContainer(
             assetImageOfChoice: chapelOfStJohnTheBaptist.imageGallery[1],
@@ -41,7 +41,8 @@ class MonumentsChapelOfStJohnTheBaptist extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => GalleryPhotoViewPage(
-                    nameOfImageGallery: chapelOfStJohnTheBaptist.nameOfImageGallery,
+                    nameOfImageGallery:
+                        chapelOfStJohnTheBaptist.nameOfImageGallery,
                   ),
                 ),
               );
@@ -52,7 +53,7 @@ class MonumentsChapelOfStJohnTheBaptist extends StatelessWidget {
         Center(
           child: MyButton(
             textOfButton:
-            'Informace o vstupném, otevírací době a dalších naleznete zde',
+                'Informace o vstupném, otevírací době a dalších naleznete zde',
             onPressed: () async {
               //po stisknutí otevře stránku v externím prohlížeči
               OpenUrlInBrowser().openUrl(chapelOfStJohnTheBaptist.url);
@@ -66,7 +67,7 @@ class MonumentsChapelOfStJohnTheBaptist extends StatelessWidget {
         SizedBox(height: kDMargin),
         TextDefaultStandart(
           text:
-          'Pozdně gotická stavba ze 16. stol. Stojí na Náměstí míru, kde se až do roku 1947 rozprostíral hřbitov.\n\nJan Tišnovský z Cynenberka (Czinenperku) jako starosta města Dolních Kounic daroval obci dům a parcelu s názvem „Vostřihom“ na vybudování nového hřbitova, kde se nacházel do r. 1947 hřbitov. Zde byla roku 1590 postavena kaple sv. Jana Křtitele. Má hvězdicovitou klenbu a prolíná se zčásti renesanční a zčásti gotický sloh. Kaple se v současnosti nachází asi 75 cm pod povrchem okolního terénu, neboť ten byl při rekonstrukcích náměstí po roce 1945 postupně navyšován.',
+              'Pozdně gotická stavba ze 16. stol. Stojí na Náměstí míru, kde se až do roku 1947 rozprostíral hřbitov.\n\nJan Tišnovský z Cynenberka (Czinenperku) jako starosta města Dolních Kounic daroval obci dům a parcelu s názvem „Vostřihom“ na vybudování nového hřbitova, kde se nacházel do r. 1947 hřbitov. Zde byla roku 1590 postavena kaple sv. Jana Křtitele. Má hvězdicovitou klenbu a prolíná se zčásti renesanční a zčásti gotický sloh. Kaple se v současnosti nachází asi 75 cm pod povrchem okolního terénu, neboť ten byl při rekonstrukcích náměstí po roce 1945 postupně navyšován.',
         ),
         SizedBox(height: kDMargin),
         ImageOnPageWithOnTap(
@@ -82,7 +83,9 @@ class MonumentsChapelOfStJohnTheBaptist extends StatelessWidget {
           },
         ),
         SizedBox(height: kDMargin),
-        TextDefaultStandart(text: 'Od 1. ledna 1938 se na starém hřbitově přestalo pohřbívat. Pro nový, tehdy tzv. komunální hřbitov, bylo určeno místo nad Kounicemi za židovským hřbitovem při cestě k Šibeničné. Starý hřbitov v Závodí pak byl ještě ponechán až do roku 1948, kdy z něho byly všechny kříže a pomníky odstraněny. Celková rekonstrukce kaple byla provedena roku 1958. V červnu byly zazděny dveře a okna hrotitých oblouků zhotovená z tvrdého dřeva dle původní podoby a položena cihlová šestiúhelníková dlažba, vyrobená ručně na zakázku v cihelně Karlovská. Další oprava vnější fasády byla provedena v devadesátých letech dvacátého století. Majitelem kaple je Město Dolní Kounice.')
+        TextDefaultStandart(
+            text:
+                'Od 1. ledna 1938 se na starém hřbitově přestalo pohřbívat. Pro nový, tehdy tzv. komunální hřbitov, bylo určeno místo nad Kounicemi za židovským hřbitovem při cestě k Šibeničné. Starý hřbitov v Závodí pak byl ještě ponechán až do roku 1948, kdy z něho byly všechny kříže a pomníky odstraněny. Celková rekonstrukce kaple byla provedena roku 1958. V červnu byly zazděny dveře a okna hrotitých oblouků zhotovená z tvrdého dřeva dle původní podoby a položena cihlová šestiúhelníková dlažba, vyrobená ručně na zakázku v cihelně Karlovská. Další oprava vnější fasády byla provedena v devadesátých letech dvacátého století. Majitelem kaple je Město Dolní Kounice.')
       ],
     );
   }

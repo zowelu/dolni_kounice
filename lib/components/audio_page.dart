@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dolni_kounice/constants/constants.dart';
 import 'package:dolni_kounice/components/monuments/rosa_coeli.dart';
