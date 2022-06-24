@@ -56,6 +56,7 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
     super.dispose();
     audioPlayer.release();
     audioPlayer.dispose();
+    //audioCache.clear();//
     audioCache.clearAll();
   }
 
@@ -134,11 +135,9 @@ class AudioPlayerWithLocalAssetState extends State<AudioPlayerWithLocalAsset> {
                     trackShape: RectangularSliderTrackShape(),
                     trackHeight: 5.0,
                     thumbColor: kDColorFloatingButton,
-                    thumbShape:
-                    RoundSliderThumbShape(enabledThumbRadius: 10.0),
+                    thumbShape: RoundSliderThumbShape(enabledThumbRadius: 10.0),
                     overlayColor: Color(0xB3A63D40),
-                    overlayShape:
-                    RoundSliderOverlayShape(overlayRadius: 20.0),
+                    overlayShape: RoundSliderOverlayShape(overlayRadius: 20.0),
                   ),
                   child: slider()),
             ],

@@ -190,22 +190,14 @@ packages:
       name: path_provider_linux
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
-    version: "2.0.2"
-=======
     version: "2.1.7"
->>>>>>> development_app
   path_provider_macos:
     dependency: transitive
     description:
       name: path_provider_macos
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
-    version: "2.0.2"
-=======
     version: "2.0.6"
->>>>>>> development_app
   path_provider_platform_interface:
     dependency: transitive
     description:
@@ -219,18 +211,14 @@ packages:
       name: path_provider_windows
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
-    version: "2.0.3"
-=======
     version: "2.1.0"
->>>>>>> development_app
   photo_view:
     dependency: "direct main"
     description:
       name: photo_view
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.13.0"
+    version: "0.14.0"
   platform:
     dependency: transitive
     description:
@@ -244,22 +232,14 @@ packages:
       name: plugin_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
-    version: "2.0.1"
-=======
     version: "2.1.2"
->>>>>>> development_app
   process:
     dependency: transitive
     description:
       name: process
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
-    version: "4.2.3"
-=======
     version: "4.2.4"
->>>>>>> development_app
   sky_engine:
     dependency: transitive
     description: flutter
@@ -348,22 +328,14 @@ packages:
       name: url_launcher_linux
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
-    version: "2.0.1"
-=======
     version: "3.0.1"
->>>>>>> development_app
   url_launcher_macos:
     dependency: transitive
     description:
       name: url_launcher_macos
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
-    version: "2.0.1"
-=======
     version: "3.0.1"
->>>>>>> development_app
   url_launcher_platform_interface:
     dependency: transitive
     description:
@@ -377,22 +349,14 @@ packages:
       name: url_launcher_web
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
-    version: "2.0.2"
-=======
     version: "2.0.12"
->>>>>>> development_app
   url_launcher_windows:
     dependency: transitive
     description:
       name: url_launcher_windows
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
-    version: "2.0.1"
-=======
     version: "3.0.1"
->>>>>>> development_app
   uuid:
     dependency: transitive
     description:
@@ -413,10 +377,7 @@ packages:
       name: webview_flutter
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
-    version: "2.0.12"
-=======
-    version: "2.8.0"
+    version: "3.0.4"
   webview_flutter_android:
     dependency: transitive
     description:
@@ -438,7 +399,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.8.1"
->>>>>>> development_app
   win32:
     dependency: transitive
     description:
@@ -461,10 +421,5 @@ packages:
     source: hosted
     version: "2.2.1"
 sdks:
-<<<<<<< HEAD
-  dart: ">=2.17.0-0 <3.0.0"
-  flutter: ">=2.0.0"
-=======
   dart: ">=2.17.0 <3.0.0"
   flutter: ">=3.0.0"
->>>>>>> development_app
