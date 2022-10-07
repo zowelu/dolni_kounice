@@ -42,7 +42,7 @@ class AudioPage extends StatelessWidget {
           ),
         ),
         body: SafeArea(
-          child: Scrollbar(
+          child: Scrollbar(controller: ScrollController(),
             thumbVisibility: true,
             child: SingleChildScrollView(
               child: Column(

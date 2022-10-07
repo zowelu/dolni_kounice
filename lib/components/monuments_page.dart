@@ -49,9 +49,9 @@ class MonumentsPage extends StatelessWidget {
                 textOfFloatingButton: textOfFloatingButton)
             : null,
         body: SafeArea(
-          child: Scrollbar(
+          child: Scrollbar(controller: ScrollController(),
             thumbVisibility: true,
-            child: SingleChildScrollView(
+            child: SingleChildScrollView(controller: ScrollController(),
               child: Column(
                 children: [
                   Hero(

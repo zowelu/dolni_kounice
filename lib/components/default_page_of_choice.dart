@@ -26,9 +26,9 @@ class DefaultPageOfChoice extends StatelessWidget {
           ),
         ),
         body: SafeArea(
-          child: Scrollbar(
+          child: Scrollbar(controller: ScrollController(),
             thumbVisibility: true,
-            child: SingleChildScrollView(
+            child: SingleChildScrollView(controller: ScrollController(),
               child: Column(
                 children: [
                   Container(
